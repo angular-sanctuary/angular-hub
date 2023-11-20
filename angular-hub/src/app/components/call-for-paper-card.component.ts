@@ -14,7 +14,7 @@ import {DatePipe, NgIf, NgOptimizedImage} from "@angular/common";
   ],
   template: `
     <a class="flex w-full items-center gap-4" [href]="cfp.attributes.url" target="_blank" [attr.aria-labelledby]="cfp.attributes.title">
-      <img class="rounded-xl" [ngSrc]="cfp.attributes.logo" height="80" width="80" priority alt="">
+      <img class="rounded-xl" [ngSrc]="cfp.attributes.logo" height="80" width="80" alt="">
       <div class="text-start">
         <span *ngIf="cfp.attributes.deadline" class="font-bold text-[#BF25B9]" itemprop="date">until {{cfp.attributes.deadline | date}}</span>
         <h3 [attr.id]="cfp.attributes.title" class="text-xl font-bold" itemprop="title">{{cfp.attributes.title}}</h3>

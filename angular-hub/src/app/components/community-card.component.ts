@@ -12,7 +12,7 @@ import {Community} from "../models/community.model";
   ],
   template: `
     <a class="flex w-full items-center gap-4" [href]="community.attributes.url" target="_blank" [attr.aria-labelledby]="community.attributes.title">
-      <img class="rounded-xl" [ngSrc]="community.attributes.logo" height="80" width="80" priority alt="">
+      <img class="rounded-xl" [ngSrc]="community.attributes.logo" height="80" width="80" alt="">
       <div class="text-start">
         <span class="font-bold text-[#BF25B9]" itemprop="type">{{community.attributes.type}}</span>
         <h3 [attr.aria-labelledby]="community.attributes.title" class="text-xl font-bold" itemprop="title">{{community.attributes.title}}</h3>

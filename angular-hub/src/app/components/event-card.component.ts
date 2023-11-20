@@ -10,7 +10,7 @@ import {DatePipe, NgIf, NgOptimizedImage} from "@angular/common";
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
       <a class="flex w-full items-center gap-4" [href]="event.attributes.url" target="_blank" [attr.aria-labelledby]="event.attributes.title">
-          <img class="rounded-xl" [ngSrc]="event.attributes.logo" height="80" width="80" priority alt="">
+          <img class="rounded-xl" [ngSrc]="event.attributes.logo" height="80" width="80" alt="">
           <div class="text-start">
               <span class="font-bold text-[#BF25B9]" itemprop="date">{{event.attributes.date | date}}</span>
               <h3 [attr.id]="event.attributes.title" class="text-xl font-bold" itemprop="title">{{event.attributes.title}}</h3>
