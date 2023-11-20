@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 
 import analog from '@analogjs/platform';
-import { defineConfig, Plugin, splitVendorChunkPlugin } from 'vite';
+import { defineConfig, splitVendorChunkPlugin } from 'vite';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 // https://vitejs.dev/config/
@@ -12,7 +12,21 @@ export default defineConfig(({ mode }) => {
     build: {
       target: ['es2020'],
     },
-    plugins: [analog(), nxViteTsPaths(), splitVendorChunkPlugin()],
+    plugins: [analog({
+      nitro: {
+        serveStatic: false
+      },
+      prerender: {
+        discover: true,
+        routes: async () => [
+          '/',
+          '/events',
+          '/communities',
+          '/cfp',
+          '/talks'
+        ]
+      },
+    }), nxViteTsPaths(), splitVendorChunkPlugin()],
     test: {
       globals: true,
       environment: 'jsdom',

@@ -1,0 +1,31 @@
+name: 🚀 Feature request
+description: Suggest a feature for Angular Hub project
+title: '[Feature Request]:'
+body:
+  - type: markdown
+    attributes:
+      value: '# Feature Request'
+  - type: dropdown
+    attributes:
+      label: Relevant Scope
+      description: What is the scope of this request?
+      options:
+        - angular application
+        - event content
+        - 'Other: describe below'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: ' <!-- ✍️--> '
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe the solution you'd like
+      description: If you have a solution in mind, please describe it.
+  - type: textarea
+    attributes:
+      label: Describe alternatives you've considered
+      description: Have you considered any alternative solutions or workarounds?

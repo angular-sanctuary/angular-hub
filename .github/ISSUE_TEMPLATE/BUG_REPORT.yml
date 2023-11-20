@@ -1,0 +1,22 @@
+name: 🐞 Bug report
+description: Report a bug in the Angular Hub project
+title: '[Bug]: '
+labels:
+  - bug
+body:
+  - type: dropdown
+    attributes:
+      label: Relevant scope
+      description: What is the scope of this request?
+      options:
+        - angular application
+        - event content
+        - 'Other: describe below'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: A clear and concise description of the problem
+    validations:
+      required: true
