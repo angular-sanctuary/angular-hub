@@ -1,3 +1,5 @@
+export type EventTag = 'On-Site' | 'Online' | 'Free';
+
 export interface Event {
   title: string;
   description: string;
@@ -5,4 +7,5 @@ export interface Event {
   url: string;
   logo: string;
   location: string;
+  tags: EventTag[];
 }

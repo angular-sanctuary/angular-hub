@@ -2,7 +2,8 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {Event} from "../models/event.model";
 import {ContentFile} from "@analogjs/content";
 import {RouterLink} from "@angular/router";
-import {DatePipe, NgIf, NgOptimizedImage} from "@angular/common";
+import {DatePipe, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
+import {EventTagComponent} from "./event-tag.component";
 
 @Component({
   selector: 'app-event-card',
@@ -15,6 +16,11 @@ import {DatePipe, NgIf, NgOptimizedImage} from "@angular/common";
               <span class="font-bold text-[#BF25B9]" itemprop="date">{{event.attributes.date | date}}</span>
               <h3 [attr.id]="event.attributes.title" class="text-xl font-bold" itemprop="title">{{event.attributes.title}}</h3>
               <span class="text-gray-500" itemprop="location">{{event.attributes.location}}</span>
+              <ul class="flex gap-2">
+                  <li *ngFor="let tag of event.attributes.tags" class="inline">
+                      <app-event-tag [name]="tag" />
+                  </li>
+              </ul>
           </div>
       </a>
   `,
@@ -22,7 +28,9 @@ import {DatePipe, NgIf, NgOptimizedImage} from "@angular/common";
     RouterLink,
     DatePipe,
     NgOptimizedImage,
-    NgIf
+    NgIf,
+    NgForOf,
+    EventTagComponent,
   ],
   styles: [
     `
