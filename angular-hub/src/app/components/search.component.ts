@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, forwardRef, signal} from "@angular/core";
-import {NgOptimizedImage} from "@angular/common";
+import {NgClass, NgOptimizedImage} from "@angular/common";
 import {ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR} from "@angular/forms";
 
 @Component({
@@ -8,7 +8,8 @@ import {ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR} from "@angular/for
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     NgOptimizedImage,
-    FormsModule
+    FormsModule,
+    NgClass
   ],
   providers: [
     {
@@ -20,7 +21,7 @@ import {ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR} from "@angular/for
   template: `
     <div
       class="flex justify-between border-2 border-gray-500 rounded-lg gap-4 p-1 mb-6"
-      [class.border-[#BF25B9]]="isFocused()"
+      [ngClass]="{'!border-[#BF25B9]': isFocused()}"
     >
       <img ngSrc="/assets/icons/search.svg" height="20" width="20" alt="">
       <input class="flex-1 outline-0 bg-transparent"
@@ -63,10 +64,12 @@ export class SearchComponent implements ControlValueAccessor {
   }
 
   onFocus() {
+    console.log('focus')
     this.isFocused.set(true);
   }
 
   onBlur(): void {
+    console.log('blur')
     this.isFocused.set(false);
     // @ts-expect-error ControlValueAccessor API
     this.onTouch();
