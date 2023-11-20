@@ -27,7 +27,15 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
 
 ### Events
 
-To add a new event, create a new markdown file in the `src/content/events` folder. The file name should be the date of the event in the format `YYYY-MM-DD-event-name.md`. The file should contain the following front matter:
+To add a new event, create a new markdown file in the `src/content/events` folder. 
+The file name should be the date of the event in the format `YYYY-MM-DD-event-name.md`. 
+
+Make sure to add at least one of the following tags:
+- On-Site
+- Online
+- Free
+
+The file should contain the following front matter:
 
 ```md
 ---
@@ -36,6 +44,8 @@ location: Athens, Greece
 date: 2023-11-30
 url: https://www.meetup.com/angular-athens/events/297342102/
 logo: https://pbs.twimg.com/profile_images/1702641363437719553/xxXXoN41_400x400.jpg
+tags:
+  - Online
 ---
 ```
 
@@ -51,6 +61,8 @@ location: Athens, Greece
 url: https://www.meetup.com/angular-athens/
 logo: https://pbs.twimg.com/profile_images/1702641363437719553/xxXXoN41_400x400.jpg
 twitter: https://twitter.com/AngularAthens
+tags:
+  - Online
 ---
 ```
 
@@ -72,6 +84,8 @@ location: Verona, Italy
 deadline: 2023-09-30
 url: https://2023.angularday.it/
 logo: https://pbs.twimg.com/profile_images/1118451217309609984/DiZ0M3wW_400x400.png
+tags:
+  - Online
 ---
 ```
 
