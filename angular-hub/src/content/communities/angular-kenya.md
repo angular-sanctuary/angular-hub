@@ -1,5 +1,5 @@
 ---
-name: Angular Kenya
+title: Angular Kenya
 type: 'meetup'
 location: Nairobi, Kenya
 url: https://www.linkedin.com/company/angular-kenya
