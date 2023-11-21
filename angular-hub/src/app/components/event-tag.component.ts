@@ -1,6 +1,5 @@
 import {ChangeDetectionStrategy, Component, computed, Input, signal, isDevMode} from '@angular/core';
-import {EventTag} from "../models/event.model";
-import {TAG_COLORS_MAP} from "../consts/tag-colors.const";
+import {Tag, TAG_COLORS_MAP} from "../consts/tag-colors.const";
 
 @Component({
   selector: 'app-event-tag',
@@ -16,7 +15,7 @@ import {TAG_COLORS_MAP} from "../consts/tag-colors.const";
   `,
 })
 export class EventTagComponent {
-  tag = signal<EventTag | null>(null);
+  tag = signal<Tag | null>(null);
   tagColor = computed(() => {
     const tag = this.tag();
     if (tag && TAG_COLORS_MAP[tag]) {
@@ -32,7 +31,7 @@ export class EventTagComponent {
   });
 
   @Input({required: true})
-  set name(value: EventTag) {
+  set name(value: Tag) {
     this.tag.set(value);
   }
 }
