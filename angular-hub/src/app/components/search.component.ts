@@ -63,13 +63,11 @@ export class SearchComponent implements ControlValueAccessor {
     this.onTouch = fn;
   }
 
-  onFocus() {
-    console.log('focus')
+  onFocus(): void {
     this.isFocused.set(true);
   }
 
   onBlur(): void {
-    console.log('blur')
     this.isFocused.set(false);
     // @ts-expect-error ControlValueAccessor API
     this.onTouch();
