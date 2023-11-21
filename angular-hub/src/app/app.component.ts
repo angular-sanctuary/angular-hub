@@ -1,31 +1,38 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {HeaderComponent} from "./components/header.component";
-import {FooterComponent} from "./components/footer.component";
+import {Component} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
+import {NavigationComponent} from "./components/navigation/navigation.component";
+import {DomSanitizer} from "@angular/platform-browser";
+import {MatIconRegistry} from "@angular/material/icon";
 
 @Component({
-  selector: 'angular-hub-root',
-  standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
-  template: `
-    <app-header></app-header>
-    <main class="flex-1">
-      <router-outlet></router-outlet>
-    </main>
-    <app-footer></app-footer>
-  `,
-  styles: [
-    `
-      :host {
-        width: 600px;
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 1.5rem;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-      }
+    selector: 'angular-hub-root',
+    standalone: true,
+    imports: [RouterOutlet, NavigationComponent],
+    template: `
+        <app-navigation class="h-full">
+        </app-navigation>
     `,
-  ],
+    styles: [
+        `
+            :host {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
+        `,
+    ],
 })
-export class AppComponent {}
+export class AppComponent {
+    icons = ['menu', 'settings'];
+
+    constructor(private readonly iconRegistry: MatIconRegistry,
+                private readonly sanitizer: DomSanitizer) {
+        this.icons.forEach(icon => {
+            this.iconRegistry.addSvgIcon(
+                icon,
+                this.sanitizer.bypassSecurityTrustResourceUrl(`assets/icons/${icon}.svg`)
+            );
+        });
+    }
+}

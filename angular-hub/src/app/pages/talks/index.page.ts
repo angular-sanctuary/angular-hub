@@ -16,7 +16,7 @@ import {TalkCardComponent} from "../../components/talk-card.component";
     TalkCardComponent
   ],
   template: `
-    <h1 class="text-3xl text-start sm:text-5xl font-bold my-8">Talks</h1>
+    <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">Talks</h1>
 
     <!-- <app-search></app-search> -->
 

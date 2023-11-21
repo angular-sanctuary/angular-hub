@@ -22,10 +22,10 @@ import {FormControl, ReactiveFormsModule} from "@angular/forms";
     ReactiveFormsModule,
   ],
   template: `
-    <h1 class="text-3xl text-start sm:text-5xl font-bold my-8">Agenda</h1>
+    <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">Agenda</h1>
     <app-search [formControl]="searchControl"></app-search>
     <nav>
-      <ul class="flex gap-4 mb-8">
+      <ul class="flex gap-2 mb-8">
         <li><a class="py-2 px-4" routerLink="." routerLinkActive="active"
                [queryParams]="{state: 'upcoming'}">Upcoming</a></li>
         <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'past'}">Past</a></li>
