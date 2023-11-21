@@ -92,6 +92,7 @@ export default class EvenementsComponent {
     return isTitleMatching || isLocationMatching;
   }
 
+  // TODO : to be removed with control flow update
   trackbyFn(index: number, event: ContentFile<Event>): string {
     return event.attributes.title;
   }

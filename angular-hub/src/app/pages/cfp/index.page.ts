@@ -9,7 +9,6 @@ import {CfpCardComponent} from "../../components/call-for-paper-card.component";
 import {SearchComponent} from "../../components/search.component";
 import {combineLatest, map, startWith} from "rxjs";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
-import {Event} from "../../models/event.model";
 
 @Component({
   selector: 'app-cfps',
@@ -35,7 +34,7 @@ import {Event} from "../../models/event.model";
     </nav>
     <app-search [formControl]="searchControl"></app-search>
     <ul class="flex flex-col gap-2">
-      <li *ngFor="let cfp of cfps$ | async; trackby: trackbyFn">
+      <li *ngFor="let cfp of cfps$ | async; trackBy: trackbyFn">
         <app-cfp-card
           class="border-2 border-transparent rounded-xl hover:border-gray-200"
           [cfp]="cfp"
@@ -81,18 +80,19 @@ export default class CallForPapersComponent {
     meta.updateTag({name: 'description', content: 'Curated list of Angular Call For Papers'});
   }
 
-  filterPredicate(event: Event, searchTerm: string): boolean {
+  filterPredicate(cfp: CallForPapers, searchTerm: string): boolean {
     if (searchTerm === '') {
       return true;
     }
 
-    const isTitleMatching = event.title.toLowerCase().includes(searchTerm.toLowerCase());
-    const isLocationMatching = event.location.toLowerCase().includes(searchTerm.toLowerCase());
+    const isTitleMatching = cfp.title.toLowerCase().includes(searchTerm.toLowerCase());
+    const isLocationMatching = cfp.location.toLowerCase().includes(searchTerm.toLowerCase());
 
     return isTitleMatching || isLocationMatching;
   }
 
-  trackbyFn(index: number, cfp: CallForPapers): string {
-    return cfp.title;
+  // TODO : to be removed with control flow update
+  trackbyFn(index: number, cfp: ContentFile<CallForPapers>): string {
+    return cfp.attributes.title;
   }
 }

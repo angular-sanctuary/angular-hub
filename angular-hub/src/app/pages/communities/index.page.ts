@@ -34,7 +34,7 @@ import {FormControl, ReactiveFormsModule} from "@angular/forms";
       </ul>
     </nav>
     <ul class="flex flex-col gap-2">
-      <li *ngFor="let community of communities$ | async">
+      <li *ngFor="let community of communities$ | async; trackBy: trackbyFn">
         <app-community-card
           class="border-2 border-transparent rounded-xl hover:border-gray-200"
           [community]="community"
@@ -91,5 +91,10 @@ export default class EvenementsComponent {
     const isLocationMatching = community.location.toLowerCase().includes(searchTerm.toLowerCase());
 
     return isTitleMatching || isLocationMatching;
+  }
+
+  // TODO : to be removed with control flow update
+  trackbyFn(index: number, community: ContentFile<Community>): string {
+    return community.attributes.title;
   }
 }
