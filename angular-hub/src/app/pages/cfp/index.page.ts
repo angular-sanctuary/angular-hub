@@ -25,6 +25,7 @@ import {FormControl, ReactiveFormsModule} from "@angular/forms";
   ],
   template: `
     <h1 class="text-3xl text-start sm:text-5xl font-bold my-8">Call For Papers</h1>
+    <app-search [formControl]="searchControl"></app-search>
     <nav>
       <ul class="flex gap-4 mb-4">
         <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'all'}">All</a></li>
@@ -32,7 +33,6 @@ import {FormControl, ReactiveFormsModule} from "@angular/forms";
         <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'meetups'}">Meetups</a></li>
       </ul>
     </nav>
-    <app-search [formControl]="searchControl"></app-search>
     <ul class="flex flex-col gap-2">
       <li *ngFor="let cfp of cfps$ | async; trackBy: trackbyFn">
         <app-cfp-card
