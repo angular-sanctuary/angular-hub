@@ -1,4 +1,21 @@
 {
   "projectName": "angular-hub",
-  "projectOwner": "angular-sanctuary"
+  "projectOwner": "angular-sanctuary",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "grand-rick001",
+      "name": "Patrick Murimi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89421020?v=4",
+      "profile": "https://linkfree.io/grand-rick001",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
 }
