@@ -5,12 +5,12 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <div class="flex justify-center">
-        <img alt="Analog Logo" class="logo analog" src="/assets/images/logo.webp" />
+        <img alt="Angular Hub Logo" class="logo" src="/assets/images/logo.webp" />
     </div>
 
     <h2 class="title text-6xl">ANGULAR HUB</h2>
 
-    <h3 class="text-2xl mt-2">Curated list of Angular Events</h3>
+    <h3 class="text-2xl mt-2">Curated list of Angular events and communities</h3>
   `,
   styles: [
     `
@@ -24,9 +24,6 @@ import { Component } from '@angular/core';
       }
       .logo:hover {
         filter: drop-shadow(0 0 2em #646cffaa);
-      }
-      .logo.angular:hover {
-        filter: drop-shadow(0 0 2em #42b883aa);
       }
       .title {
         font-family: 'Pixelify', 'sans-serif';
