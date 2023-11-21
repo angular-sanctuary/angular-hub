@@ -27,6 +27,8 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
 
 ### Events
 
+> If you adding a conference event, mind listing it on [developers-conferences-agenda](https://github.com/scraly/developers-conferences-agenda) too for a broader audience!
+
 To add a new event, create a new markdown file in the `src/content/events` folder. 
 The file name should be the date of the event in the format `YYYY-MM-DD-event-name.md`. 
 

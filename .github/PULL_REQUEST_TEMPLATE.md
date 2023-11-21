@@ -3,6 +3,8 @@ Make sure the PR is structured as followed:
 [docs/feat/fix/...](package): description
 -->
 
+<!-- Are you adding a conference event? Mind listing it on https://github.com/scraly/developers-conferences-agenda too for a broader audience! -->
+
 ## PR Checklist
 
 Please check if your PR fulfills the following requirements:
