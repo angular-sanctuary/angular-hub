@@ -23,6 +23,13 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://linkfree.io/grand-rick001"><img src="https://avatars.githubusercontent.com/u/89421020?v=4?s=100" width="100px;" alt="Patrick Murimi"/><br /><sub><b>Patrick Murimi</b></sub></a><br /><a href="#code-grand-rick001" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
