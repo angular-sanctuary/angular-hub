@@ -28,6 +28,7 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://linkfree.io/grand-rick001"><img src="https://avatars.githubusercontent.com/u/89421020?v=4?s=100" width="100px;" alt="Patrick Murimi"/><br /><sub><b>Patrick Murimi</b></sub></a><br /><a href="#code-grand-rick001" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/rlmestre"><img src="https://avatars.githubusercontent.com/u/277805?v=4?s=100" width="100px;" alt="Rafael Mestre"/><br /><sub><b>Rafael Mestre</b></sub></a><br /><a href="#bug-rlmestre" title="Bug reports">🐛</a> <a href="#code-rlmestre" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://nxext.dev"><img src="https://avatars.githubusercontent.com/u/77470?v=4?s=100" width="100px;" alt="Dominik Pieper"/><br /><sub><b>Dominik Pieper</b></sub></a><br /><a href="#code-DominikPieper" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
