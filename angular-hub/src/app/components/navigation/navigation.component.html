@@ -1,0 +1,56 @@
+<mat-sidenav-container class="h-full">
+    <mat-sidenav #navigation class="sidenav" fixedInViewport
+                 [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+                 [mode]="(isHandset$ | async) ? 'over' : 'side'"
+                 [opened]="(isHandset$ | async) === false">
+        <mat-toolbar class="flex justify-center">
+            <a class="title text-2xl" routerLink="/">ANGULAR HUB</a>
+        </mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item routerLink="/events" routerLinkActive="active"
+               [queryParams]="{state: 'upcoming'}">Agenda</a>
+            <a class="!text-white" mat-list-item routerLink="/cfp" routerLinkActive="active" [queryParams]="{state: 'all'}">CFP</a>
+            <a mat-list-item routerLink="/communities" routerLinkActive="active" [queryParams]="{state: 'all'}">Communities</a>
+            <a mat-list-item routerLink="/talks" routerLinkActive="active">Talks</a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <!--
+    <mat-sidenav #settings class="min-w-[200px]" fixedInViewport
+                 [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+                 [mode]="(isHandset$ | async) ? 'over' : 'side'"
+                 position="end"
+                 [opened]="(isHandset$ | async) === false">
+        <mat-toolbar>Menu</mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item href="#">Link 1</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    -->
+    <mat-sidenav-content class="!flex flex-col p-4">
+        <header class="flex justify-between items-center">
+            <button
+                    type="button"
+                    aria-label="Toggle navigation menu"
+                    mat-icon-button
+                    (click)="navigation.toggle()"
+                    *ngIf="isHandset$ | async">
+                <mat-icon svgIcon="menu"></mat-icon>
+            </button>
+            <!--
+            <button
+                    type="button"
+                    aria-label="Toggle settings menu"
+                    mat-icon-button
+                    (click)="settings.toggle()"
+                    *ngIf="isHandset$ | async">
+                <mat-icon svgIcon="settings"></mat-icon>
+            </button>
+            -->
+        </header>
+        <main class="flex-1">
+            <router-outlet></router-outlet>
+        </main>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>

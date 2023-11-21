@@ -8,7 +8,7 @@ import {TAG_COLORS_MAP} from "../consts/tag-colors.const";
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div
-      class="inline-block px-2 text-sm font-semibold rounded-md"
+      class="inline-block px-2 text-sm font-semibold rounded-md text-white"
       [style.background]="tagColor()"
     >
       {{ tag() }}

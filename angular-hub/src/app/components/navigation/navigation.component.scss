@@ -1,0 +1,19 @@
+.sidenav {
+  min-width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+@media (prefers-color-scheme: light) {
+  .active {
+    background-color: #00BEE0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .active {
+    background-color: #BF25B9;
+  }
+}
