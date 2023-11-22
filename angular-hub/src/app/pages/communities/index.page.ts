@@ -56,7 +56,7 @@ export default class EvenementsComponent {
   communities = injectContentFiles<Community>(({filename}) => filename.startsWith('/src/content/communities/'));
 
   communities$ = this.route.queryParams.pipe(
-    map(({q: searchTerm, state}) => {
+    map(({q: searchTerm = '', state}) => {
       let communities: ContentFile<Community>[] = this.communities;
 
       if (state === 'meetups') {
