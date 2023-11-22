@@ -56,7 +56,7 @@ export default class CallForPapersComponent {
   cfps = injectContentFiles<CallForPapers>(({filename}) => filename.startsWith('/src/content/cfp/'));
 
   cfps$ = this.route.queryParams.pipe(
-    map(({q: searchTerm = '', state}) => {
+    map(({search: searchTerm = '', state}) => {
       let cfps: ContentFile<CallForPapers>[] = this.cfps;
 
       if (state === 'meetups') {
@@ -87,7 +87,7 @@ export default class CallForPapersComponent {
       )
       .subscribe((value) => {
         this.router.navigate(['.'], { 
-          queryParams: { q: value || null },
+          queryParams: { search: value || null },
           queryParamsHandling: 'merge',
           relativeTo: this.route 
         });
