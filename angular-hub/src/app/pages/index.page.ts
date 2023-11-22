@@ -7,7 +7,7 @@ import {NgOptimizedImage} from "@angular/common";
   standalone: true,
   template: `
     <div class="flex justify-center">
-      <img alt="Angular Hub Logo" class="logo" ngSrc="/assets/images/logo.webp" height="500" width="500"/>
+      <img alt="Angular Hub Logo" class="logo" ngSrc="/assets/images/logo.webp" height="500" width="500" priority />
     </div>
 
     <h2 class="title text-6xl">ANGULAR HUB</h2>
