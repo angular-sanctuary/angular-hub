@@ -9,9 +9,9 @@
         </mat-toolbar>
         <mat-nav-list class="flex-1">
             <a mat-list-item routerLink="/events" routerLinkActive="active"
-               [queryParams]="{state: 'upcoming'}" [queryParamsHandling]="'merge'">Agenda</a>
-            <a class="!text-white" mat-list-item routerLink="/cfp" routerLinkActive="active" [queryParams]="{state: 'all'}" [queryParamsHandling]="'merge'">CFP</a>
-            <a mat-list-item routerLink="/communities" routerLinkActive="active" [queryParams]="{state: 'all'}" [queryParamsHandling]="'merge'">Communities</a>
+               [queryParams]="{state: 'upcoming'}">Agenda</a>
+            <a class="!text-white" mat-list-item routerLink="/cfp" routerLinkActive="active" [queryParams]="{state: 'all'}">CFP</a>
+            <a mat-list-item routerLink="/communities" routerLinkActive="active" [queryParams]="{state: 'all'}">Communities</a>
             <a mat-list-item routerLink="/podcasts" routerLinkActive="active">Podcasts</a>
             <a mat-list-item routerLink="/talks" routerLinkActive="active">Talks</a>
         </mat-nav-list>
