@@ -1,4 +1,4 @@
-import {Component, Input, computed, signal} from '@angular/core';
+import {Component} from '@angular/core';
 import {ContentFile, injectContentFiles} from "@analogjs/content";
 import {AsyncPipe, NgForOf} from "@angular/common";
 import {Meta, Title} from "@angular/platform-browser";
@@ -8,7 +8,7 @@ import {debounceTime, distinctUntilChanged, map} from "rxjs";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import {Podcast} from "../../models/podcast.model";
 import {PodcasttCardComponent} from "../../components/podcast-card.component";
-import { takeUntilDestroyed, toObservable } from '@angular/core/rxjs-interop';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
     selector: 'app-podcasts',
@@ -46,19 +46,12 @@ export default class PodcastsComponent {
     searchControl = new FormControl<string>('', {nonNullable: true});
     podcasts = injectContentFiles<Podcast>(({filename}) => filename.startsWith('/src/content/podcasts/'));
 
-    q = signal('');
-    filterOptions = computed(() => ({searchTerm: this.q()}));
 
-    podcasts$ = toObservable(this.filterOptions).pipe(
-        map(({searchTerm}) => {
+    podcasts$ = this.route.queryParams.pipe(
+        map(({search: searchTerm = ''}) => {
             return this.podcasts.filter(podcast => this.filterPredicate(podcast.attributes, searchTerm));
         })
     );
-
-    @Input({alias: 'q', transform: (value: string) => value ?? ''})
-    set searchTerm(term: string) {
-        this.q.set(term);
-    }
 
     constructor(
         private readonly title: Title,
@@ -78,7 +71,7 @@ export default class PodcastsComponent {
             )
             .subscribe(value => {
                 this.router.navigate(['.'], { 
-                    queryParams: { q: value || null }, 
+                    queryParams: { search: value || null }, 
                     queryParamsHandling: 'merge', 
                     relativeTo: this.route 
                 });
