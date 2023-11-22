@@ -4,10 +4,11 @@ import {AsyncPipe, NgForOf} from "@angular/common";
 import {Meta, Title} from "@angular/platform-browser";
 import {Community} from "../../models/community.model";
 import {CommunityCardComponent} from "../../components/community-card.component";
-import {ActivatedRoute, RouterLink, RouterLinkActive} from "@angular/router";
+import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {SearchComponent} from "../../components/search.component";
-import {combineLatest, map, startWith} from "rxjs";
+import {debounceTime, distinctUntilChanged, map, startWith} from "rxjs";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-communities',
@@ -54,16 +55,15 @@ export default class EvenementsComponent {
   searchControl = new FormControl<string>('', {nonNullable: true});
   communities = injectContentFiles<Community>(({filename}) => filename.startsWith('/src/content/communities/'));
 
-  communities$ = combineLatest([
-    this.searchControl.valueChanges.pipe(startWith('')),
-    this.route.queryParams.pipe(map(({state}) => state))
-  ]).pipe(
-    map(([searchTerm, state]) => {
+  communities$ = this.route.queryParams.pipe(
+    map(({q: searchTerm, state}) => {
       let communities: ContentFile<Community>[] = this.communities;
+
       if (state === 'meetups') {
         communities = this.communities
           .filter(({attributes}) => attributes.type === 'meetup');
       }
+
       if (state === 'conferences') {
         communities = this.communities
           .filter(({attributes}) => attributes.type === 'conference');
@@ -76,10 +76,26 @@ export default class EvenementsComponent {
   constructor(
     private readonly title: Title,
     private readonly meta: Meta,
-    private readonly route: ActivatedRoute
+    private readonly route: ActivatedRoute,
+    private readonly router: Router
   ) {
     title.setTitle('ANGULAR HUB - Curated list of Angular communities');
     meta.updateTag({name: 'description', content: 'Curated list of Angular communities'});
+
+    this.searchControl.valueChanges
+      .pipe(
+        startWith(''),
+        debounceTime(300),
+        distinctUntilChanged(),
+        takeUntilDestroyed()
+      )
+      .subscribe((value) => {
+        this.router.navigate(['.'], { 
+          queryParams: { q: value || null },
+          queryParamsHandling: 'merge',
+          relativeTo: this.route 
+        });
+      });
   }
 
   filterPredicate(community: Community, searchTerm: string): boolean {
