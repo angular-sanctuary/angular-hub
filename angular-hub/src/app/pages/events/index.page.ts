@@ -28,8 +28,8 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     <nav>
       <ul class="flex gap-2 mb-8">
         <li><a class="py-2 px-4" routerLink="." routerLinkActive="active"
-               [queryParams]="{state: 'upcoming'}">Upcoming</a></li>
-        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'past'}">Past</a></li>
+               [queryParams]="{state: 'upcoming'}" [queryParamsHandling]="'merge'">Upcoming</a></li>
+        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'past'}" [queryParamsHandling]="'merge'">Past</a></li>
       </ul>
     </nav>
     <ul class="flex flex-col gap-2">

@@ -29,9 +29,9 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     <app-search [formControl]="searchControl"></app-search>
     <nav>
       <ul class="flex gap-2 mb-4">
-        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'all'}">All</a></li>
-        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'conferences'}">Conferences</a></li>
-        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'meetups'}">Meetups</a></li>
+        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'all'}" [queryParamsHandling]="'merge'">All</a></li>
+        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'conferences'}" [queryParamsHandling]="'merge'">Conferences</a></li>
+        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'meetups'}" [queryParamsHandling]="'merge'">Meetups</a></li>
       </ul>
     </nav>
     <ul class="flex flex-col gap-2">
