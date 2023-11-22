@@ -56,7 +56,7 @@ export default class CallForPapersComponent {
   cfps = injectContentFiles<CallForPapers>(({filename}) => filename.startsWith('/src/content/cfp/'));
 
   cfps$ = this.route.queryParams.pipe(
-    map(({q: searchTerm, state}) => {
+    map(({q: searchTerm = '', state}) => {
       let cfps: ContentFile<CallForPapers>[] = this.cfps;
 
       if (state === 'meetups') {

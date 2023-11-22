@@ -60,7 +60,7 @@ export default class EvenementsComponent {
   upcomingEvents = this.evenements.filter(event => new Date(event.attributes.date).getTime() > Date.now());
 
   events$ = this.route.queryParams.pipe(
-    map(({q: searchTerm, state}) => {
+    map(({q: searchTerm = '', state}) => {
       if (state === 'past') {
         return this.pastEvents.filter(event => this.filterPredicate(event.attributes, searchTerm));
       } else {
