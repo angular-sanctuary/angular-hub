@@ -7,7 +7,7 @@ import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/rou
 import {CallForPapers} from "../../models/call-for-papers.model";
 import {CfpCardComponent} from "../../components/call-for-paper-card.component";
 import {SearchComponent} from "../../components/search.component";
-import {debounceTime, distinctUntilChanged, map} from "rxjs";
+import {debounceTime, distinctUntilChanged, map, tap} from "rxjs";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
@@ -56,6 +56,7 @@ export default class CallForPapersComponent {
   cfps = injectContentFiles<CallForPapers>(({filename}) => filename.startsWith('/src/content/cfp/'));
 
   cfps$ = this.route.queryParams.pipe(
+    tap(({search = ''}) => this.searchControl.setValue(search, {emitEvent: false})),
     map(({search: searchTerm = '', state}) => {
       let cfps: ContentFile<CallForPapers>[] = this.cfps;
 

@@ -6,7 +6,7 @@ import {Community} from "../../models/community.model";
 import {CommunityCardComponent} from "../../components/community-card.component";
 import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {SearchComponent} from "../../components/search.component";
-import {debounceTime, distinctUntilChanged, map} from "rxjs";
+import {debounceTime, distinctUntilChanged, map, tap} from "rxjs";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
@@ -56,6 +56,7 @@ export default class EvenementsComponent {
   communities = injectContentFiles<Community>(({filename}) => filename.startsWith('/src/content/communities/'));
 
   communities$ = this.route.queryParams.pipe(
+    tap(({search = ''}) => this.searchControl.setValue(search, {emitEvent: false})),
     map(({search: searchTerm = '', state}) => {
       let communities: ContentFile<Community>[] = this.communities;
 

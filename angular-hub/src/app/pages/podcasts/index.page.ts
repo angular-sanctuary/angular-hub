@@ -4,7 +4,7 @@ import {AsyncPipe, NgForOf} from "@angular/common";
 import {Meta, Title} from "@angular/platform-browser";
 import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {SearchComponent} from "../../components/search.component";
-import {debounceTime, distinctUntilChanged, map} from "rxjs";
+import {debounceTime, distinctUntilChanged, map, tap} from "rxjs";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import {Podcast} from "../../models/podcast.model";
 import {PodcasttCardComponent} from "../../components/podcast-card.component";
@@ -48,6 +48,7 @@ export default class PodcastsComponent {
 
 
     podcasts$ = this.route.queryParams.pipe(
+        tap(({search = ''}) => this.searchControl.setValue(search, {emitEvent: false})),
         map(({search: searchTerm = ''}) => {
             return this.podcasts.filter(podcast => this.filterPredicate(podcast.attributes, searchTerm));
         })
