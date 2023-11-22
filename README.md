@@ -20,6 +20,8 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
 
 ## Contributors
 
+> We are appreciative of all non-coding contributors who have helped shape this project through discussions or promotions. Your input has had a significant impact on the project, and we aim to acknowledge and recognize all contributions made.
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
