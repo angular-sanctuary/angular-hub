@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   template: `
     <div class="flex justify-center">
-      <img alt="Angular Hub Logo" class="logo" src="/assets/images/logo.webp"/>
+      <img alt="Angular Hub Logo" class="logo" ngSrc="/assets/images/logo.webp" height="500" width="500"/>
     </div>
 
     <h2 class="title text-6xl">ANGULAR HUB</h2>
@@ -33,7 +34,7 @@ import {RouterLink} from "@angular/router";
     `,
   ],
   imports: [
-    RouterLink
+    RouterLink, NgOptimizedImage
   ]
 })
 export default class HomeComponent {
