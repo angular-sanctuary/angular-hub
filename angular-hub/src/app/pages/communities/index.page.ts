@@ -6,7 +6,7 @@ import {Community} from "../../models/community.model";
 import {CommunityCardComponent} from "../../components/community-card.component";
 import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {SearchComponent} from "../../components/search.component";
-import {debounceTime, distinctUntilChanged, map, startWith} from "rxjs";
+import {debounceTime, distinctUntilChanged, map} from "rxjs";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
@@ -84,7 +84,6 @@ export default class EvenementsComponent {
 
     this.searchControl.valueChanges
       .pipe(
-        startWith(''),
         debounceTime(300),
         distinctUntilChanged(),
         takeUntilDestroyed()

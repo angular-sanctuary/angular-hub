@@ -5,7 +5,7 @@ import {AsyncPipe, NgForOf} from "@angular/common";
 import {Event} from "../../models/event.model";
 import {Meta, Title} from "@angular/platform-browser";
 import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/router";
-import {debounceTime, distinctUntilChanged, map, startWith} from "rxjs";
+import {debounceTime, distinctUntilChanged, map} from "rxjs";
 import {SearchComponent} from "../../components/search.component";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -81,7 +81,6 @@ export default class EvenementsComponent {
 
     this.searchControl.valueChanges
       .pipe(
-        startWith(''),
         debounceTime(300),
         distinctUntilChanged(),
         takeUntilDestroyed()
