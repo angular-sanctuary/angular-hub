@@ -3,12 +3,13 @@ import {EventCardComponent} from "../../components/event-card.component";
 import {ContentFile, injectContentFiles} from "@analogjs/content";
 import {AsyncPipe, NgForOf} from "@angular/common";
 import {Meta, Title} from "@angular/platform-browser";
-import {ActivatedRoute, RouterLink, RouterLinkActive} from "@angular/router";
+import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {CallForPapers} from "../../models/call-for-papers.model";
 import {CfpCardComponent} from "../../components/call-for-paper-card.component";
 import {SearchComponent} from "../../components/search.component";
-import {combineLatest, map, startWith} from "rxjs";
+import {debounceTime, distinctUntilChanged, map, startWith} from "rxjs";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-cfps',
@@ -54,16 +55,14 @@ export default class CallForPapersComponent {
   searchControl = new FormControl<string>('', {nonNullable: true});
   cfps = injectContentFiles<CallForPapers>(({filename}) => filename.startsWith('/src/content/cfp/'));
 
-
-  cfps$ = combineLatest([
-    this.searchControl.valueChanges.pipe(startWith('')),
-    this.route.queryParams.pipe(map(({state}) => state))
-  ]).pipe(
-    map(([searchTerm, state]) => {
+  cfps$ = this.route.queryParams.pipe(
+    map(({q: searchTerm, state}) => {
       let cfps: ContentFile<CallForPapers>[] = this.cfps;
+
       if (state === 'meetups') {
         cfps = this.cfps.filter(({attributes}) => attributes.type === 'meetup');
       }
+
       if (state === 'conferences') {
         cfps = this.cfps.filter(({attributes}) => attributes.type === 'conference');
       }
@@ -74,10 +73,26 @@ export default class CallForPapersComponent {
   constructor(
     private readonly title: Title,
     private readonly meta: Meta,
-    private readonly route: ActivatedRoute
+    private readonly route: ActivatedRoute,
+    private readonly router: Router
   ) {
     title.setTitle('ANGULAR HUB - Curated list of Angular Call For Papers');
     meta.updateTag({name: 'description', content: 'Curated list of Angular Call For Papers'});
+
+    this.searchControl.valueChanges
+      .pipe(
+        startWith(''),
+        debounceTime(300),
+        distinctUntilChanged(),
+        takeUntilDestroyed()
+      )
+      .subscribe((value) => {
+        this.router.navigate(['.'], { 
+          queryParams: { q: value || null },
+          queryParamsHandling: 'merge',
+          relativeTo: this.route 
+        });
+      });
   }
 
   filterPredicate(cfp: CallForPapers, searchTerm: string): boolean {

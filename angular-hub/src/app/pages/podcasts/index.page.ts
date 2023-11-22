@@ -1,13 +1,14 @@
-import {Component} from '@angular/core';
+import {Component, Input, computed, signal} from '@angular/core';
 import {ContentFile, injectContentFiles} from "@analogjs/content";
 import {AsyncPipe, NgForOf} from "@angular/common";
 import {Meta, Title} from "@angular/platform-browser";
-import {RouterLink, RouterLinkActive} from "@angular/router";
+import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/router";
 import {SearchComponent} from "../../components/search.component";
-import {map, startWith} from "rxjs";
+import {debounceTime, distinctUntilChanged, map} from "rxjs";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import {Podcast} from "../../models/podcast.model";
 import {PodcasttCardComponent} from "../../components/podcast-card.component";
+import { takeUntilDestroyed, toObservable } from '@angular/core/rxjs-interop';
 
 @Component({
     selector: 'app-podcasts',
@@ -45,19 +46,43 @@ export default class PodcastsComponent {
     searchControl = new FormControl<string>('', {nonNullable: true});
     podcasts = injectContentFiles<Podcast>(({filename}) => filename.startsWith('/src/content/podcasts/'));
 
-    podcasts$ = this.searchControl.valueChanges.pipe(
-        startWith(''),
-        map((searchTerm) => {
+    q = signal('');
+    filterOptions = computed(() => ({searchTerm: this.q()}));
+
+    podcasts$ = toObservable(this.filterOptions).pipe(
+        map(({searchTerm}) => {
             return this.podcasts.filter(podcast => this.filterPredicate(podcast.attributes, searchTerm));
         })
     );
 
+    @Input({alias: 'q', transform: (value: string) => value ?? ''})
+    set searchTerm(term: string) {
+        this.q.set(term);
+    }
+
     constructor(
         private readonly title: Title,
         private readonly meta: Meta,
+        private router: Router,
+        private route: ActivatedRoute
     ) {
         title.setTitle('ANGULAR HUB - Curated list of Angular podcasts');
         meta.updateTag({name: 'description', content: 'Curated list of Angular podcasts'});
+
+
+        this.searchControl.valueChanges
+            .pipe(
+                debounceTime(300),
+                distinctUntilChanged(),
+                takeUntilDestroyed()
+            )
+            .subscribe(value => {
+                this.router.navigate(['.'], { 
+                    queryParams: { q: value || null }, 
+                    queryParamsHandling: 'merge', 
+                    relativeTo: this.route 
+                });
+            });
     }
 
     filterPredicate(podcast: Podcast, searchTerm: string): boolean {

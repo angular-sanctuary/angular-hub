@@ -4,10 +4,11 @@ import {ContentFile, injectContentFiles} from "@analogjs/content";
 import {AsyncPipe, NgForOf} from "@angular/common";
 import {Event} from "../../models/event.model";
 import {Meta, Title} from "@angular/platform-browser";
-import {ActivatedRoute, RouterLink, RouterLinkActive} from "@angular/router";
-import {combineLatest, map, startWith} from "rxjs";
+import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/router";
+import {debounceTime, distinctUntilChanged, map, startWith} from "rxjs";
 import {SearchComponent} from "../../components/search.component";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-evenements',
@@ -58,12 +59,8 @@ export default class EvenementsComponent {
   pastEvents = this.evenements.filter(event => new Date(event.attributes.date).getTime() < Date.now());
   upcomingEvents = this.evenements.filter(event => new Date(event.attributes.date).getTime() > Date.now());
 
-  events$ = combineLatest([
-    this.searchControl.valueChanges.pipe(startWith('')),
-    this.route.queryParamMap
-  ]).pipe(
-    map(([searchTerm, params]) => {
-      const state = params.get('state');
+  events$ = this.route.queryParams.pipe(
+    map(({q: searchTerm, state}) => {
       if (state === 'past') {
         return this.pastEvents.filter(event => this.filterPredicate(event.attributes, searchTerm));
       } else {
@@ -75,10 +72,27 @@ export default class EvenementsComponent {
   constructor(
     private readonly title: Title,
     private readonly meta: Meta,
-    private route: ActivatedRoute
+    private readonly route: ActivatedRoute,
+    private readonly router: Router
+
   ) {
     title.setTitle('ANGULAR HUB - Curated list of Angular events');
     meta.updateTag({name: 'description', content: 'Curated list of Angular events'});
+
+    this.searchControl.valueChanges
+      .pipe(
+        startWith(''),
+        debounceTime(300),
+        distinctUntilChanged(),
+        takeUntilDestroyed()
+      )
+      .subscribe((value) => {
+        this.router.navigate(['.'], { 
+          queryParams: { q: value || null },
+          queryParamsHandling: 'merge',
+          relativeTo: this.route 
+        });
+      });
   }
 
   filterPredicate(event: Event, searchTerm: string): boolean {
