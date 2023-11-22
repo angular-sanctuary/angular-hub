@@ -5,7 +5,7 @@ import {AsyncPipe, NgForOf} from "@angular/common";
 import {Event} from "../../models/event.model";
 import {Meta, Title} from "@angular/platform-browser";
 import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/router";
-import {debounceTime, distinctUntilChanged, map} from "rxjs";
+import {debounceTime, distinctUntilChanged, map, tap} from "rxjs";
 import {SearchComponent} from "../../components/search.component";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -60,6 +60,7 @@ export default class EvenementsComponent {
   upcomingEvents = this.evenements.filter(event => new Date(event.attributes.date).getTime() > Date.now());
 
   events$ = this.route.queryParams.pipe(
+    tap(({search = ''}) => this.searchControl.setValue(search, {emitEvent: false})),
     map(({search: searchTerm = '', state}) => {
       if (state === 'past') {
         return this.pastEvents.filter(event => this.filterPredicate(event.attributes, searchTerm));
