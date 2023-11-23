@@ -7,6 +7,7 @@
 - Angular events
 - Angular Communities
 - Angular CFPs
+- Angular Podcasts
 
 ## Contributing
 
