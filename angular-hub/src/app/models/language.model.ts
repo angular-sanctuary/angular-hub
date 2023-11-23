@@ -1,1 +1,1 @@
-export type LanguageTag = 'English' | 'Spanish';
+export type LanguageTag = 'English' | 'Spanish' | 'French';

@@ -7,6 +7,7 @@ export const TAG_COLORS_MAP: Record<Tag, string> = {
   'On-Site': '#963232',
   Online: '#328496',
   Free: '#629632',
-  English: '#323296',
+  English: '#963296',
   Spanish: '#963296',
+  French: '#963296',
 };
