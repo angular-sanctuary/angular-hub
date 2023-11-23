@@ -7,4 +7,5 @@ logo: assets/logos/official-logo.webp
 tags:
   - Free
   - On-Site
+language: English
 ---

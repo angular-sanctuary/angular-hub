@@ -6,4 +6,5 @@ url: https://www.eventbrite.com/e/comunidad-angular-costa-rica-en-vivo-tickets-7
 logo: https://pbs.twimg.com/profile_images/1275887771048083459/SldZRi5t_400x400.jpg
 tags:
   - On-Site
+language: Spanish
 ---
