@@ -4,7 +4,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideFileRouter } from '@analogjs/router';
 import { provideContent, withMarkdownRenderer } from '@analogjs/content';
-import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideAnimations } from '@angular/platform-browser/animations/async';
 import { withViewTransitions } from '@angular/router';
 
 export const appConfig: ApplicationConfig = {
@@ -14,6 +14,6 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(),
     provideHttpClient(withFetch()),
     provideContent(withMarkdownRenderer()),
-    provideAnimations(),
+    provideAnimationsAsync(),
   ],
 };
