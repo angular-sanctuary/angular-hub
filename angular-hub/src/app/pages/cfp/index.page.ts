@@ -25,23 +25,30 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     ReactiveFormsModule
   ],
   template: `
-    <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">Call For Papers</h1>
-    <app-search [formControl]="searchControl"></app-search>
-    <nav>
-      <ul class="flex gap-2 mb-4">
-        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'all'}" [queryParamsHandling]="'merge'">All</a></li>
-        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'conferences'}" [queryParamsHandling]="'merge'">Conferences</a></li>
-        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'meetups'}" [queryParamsHandling]="'merge'">Meetups</a></li>
+      <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">Call For Papers</h1>
+      <p class="text-start border-l-4 border-l-[#BF25B9] pl-3 mb-4 max-w-screen-lg">
+          Welcome to our Call for Papers (CFP) page! Whether you're a seasoned speaker or new to presenting, we
+          encourage you to share your knowledge and engage our community. Submit your proposals to these communities!
+      </p>
+      <app-search [formControl]="searchControl"></app-search>
+      <nav>
+          <ul class="flex gap-2 mb-4">
+              <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'all'}"
+                     [queryParamsHandling]="'merge'">All</a></li>
+              <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'conferences'}"
+                     [queryParamsHandling]="'merge'">Conferences</a></li>
+              <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'meetups'}"
+                     [queryParamsHandling]="'merge'">Meetups</a></li>
+          </ul>
+      </nav>
+      <ul class="flex flex-col gap-2">
+          <li *ngFor="let cfp of cfps$ | async; trackBy: trackbyFn">
+              <app-cfp-card
+                      class="border-2 border-transparent rounded-xl hover:border-gray-200"
+                      [cfp]="cfp"
+              ></app-cfp-card>
+          </li>
       </ul>
-    </nav>
-    <ul class="flex flex-col gap-2">
-      <li *ngFor="let cfp of cfps$ | async; trackBy: trackbyFn">
-        <app-cfp-card
-          class="border-2 border-transparent rounded-xl hover:border-gray-200"
-          [cfp]="cfp"
-        ></app-cfp-card>
-      </li>
-    </ul>
   `,
   styles: `
     .active {
@@ -87,10 +94,10 @@ export default class CallForPapersComponent {
         takeUntilDestroyed()
       )
       .subscribe((value) => {
-        this.router.navigate(['.'], { 
+        this.router.navigate(['.'], {
           queryParams: { search: value || null },
           queryParamsHandling: 'merge',
-          relativeTo: this.route 
+          relativeTo: this.route
         });
       });
   }
