@@ -1,25 +1,52 @@
 <mat-sidenav-container class="h-full">
-    <mat-sidenav #navigation class="sidenav" fixedInViewport
-                 [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-                 [mode]="(isHandset$ | async) ? 'over' : 'side'"
-                 [opened]="(isHandset$ | async) === false">
-        <div class="flex flex-col h-full">
-        <mat-toolbar class="flex justify-center">
-            <a class="title text-2xl" routerLink="/">ANGULAR HUB</a>
-        </mat-toolbar>
-        <mat-nav-list class="flex-1">
-            <a mat-list-item routerLink="/events" routerLinkActive="active"
-               [queryParams]="{state: 'upcoming'}">Agenda</a>
-            <a class="!text-white" mat-list-item routerLink="/cfp" routerLinkActive="active" [queryParams]="{state: 'all'}">CFP</a>
-            <a mat-list-item routerLink="/communities" routerLinkActive="active" [queryParams]="{state: 'all'}">Communities</a>
-            <a mat-list-item routerLink="/podcasts" routerLinkActive="active">Podcasts</a>
-            <a mat-list-item routerLink="/talks" routerLinkActive="active">Talks</a>
-        </mat-nav-list>
-        <app-footer *ngIf="(isHandset$ | async) === false" [isHandset]="false"></app-footer>
-        </div>
-    </mat-sidenav>
+  <mat-sidenav
+    #navigation
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <div class="flex flex-col h-full">
+      <mat-toolbar class="flex justify-center">
+        <a class="title text-2xl" routerLink="/">ANGULAR HUB</a>
+      </mat-toolbar>
+      <mat-nav-list class="flex-1">
+        <a
+          mat-list-item
+          routerLink="/events"
+          routerLinkActive="active"
+          [queryParams]="{ state: 'upcoming' }"
+          >Agenda</a
+        >
+        <a
+          class="!text-white"
+          mat-list-item
+          routerLink="/cfp"
+          routerLinkActive="active"
+          [queryParams]="{ state: 'all' }"
+          >CFP</a
+        >
+        <a
+          mat-list-item
+          routerLink="/communities"
+          routerLinkActive="active"
+          [queryParams]="{ state: 'all' }"
+          >Communities</a
+        >
+        <a mat-list-item routerLink="/podcasts" routerLinkActive="active"
+          >Podcasts</a
+        >
+        <a mat-list-item routerLink="/talks" routerLinkActive="active">Talks</a>
+      </mat-nav-list>
+      <app-footer
+        *ngIf="(isHandset$ | async) === false"
+        [isHandset]="false"
+      ></app-footer>
+    </div>
+  </mat-sidenav>
 
-    <!--
+  <!--
     <mat-sidenav #settings class="min-w-[200px]" fixedInViewport
                  [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
                  [mode]="(isHandset$ | async) ? 'over' : 'side'"
@@ -31,17 +58,18 @@
         </mat-nav-list>
     </mat-sidenav>
     -->
-    <mat-sidenav-content class="!flex flex-col p-4">
-        <header class="flex justify-between items-center">
-            <button
-                    type="button"
-                    aria-label="Toggle navigation menu"
-                    mat-icon-button
-                    (click)="navigation.toggle()"
-                    *ngIf="isHandset$ | async">
-                <mat-icon svgIcon="menu"></mat-icon>
-            </button>
-            <!--
+  <mat-sidenav-content class="!flex flex-col p-4">
+    <header class="flex justify-between items-center">
+      <button
+        type="button"
+        aria-label="Toggle navigation menu"
+        mat-icon-button
+        (click)="navigation.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon svgIcon="menu"></mat-icon>
+      </button>
+      <!--
             <button
                     type="button"
                     aria-label="Toggle settings menu"
@@ -51,10 +79,10 @@
                 <mat-icon svgIcon="settings"></mat-icon>
             </button>
             -->
-        </header>
-        <main class="flex-1">
-            <router-outlet></router-outlet>
-        </main>
-        <app-footer *ngIf="isHandset$ | async"></app-footer>
-    </mat-sidenav-content>
+    </header>
+    <main class="flex-1">
+      <router-outlet></router-outlet>
+    </main>
+    <app-footer *ngIf="isHandset$ | async"></app-footer>
+  </mat-sidenav-content>
 </mat-sidenav-container>

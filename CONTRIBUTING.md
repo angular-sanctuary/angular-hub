@@ -18,7 +18,7 @@ Run `npx nx build angular-hub` to build the client project. The client build art
 
 ## Licenses
 
-This project uses the  MIT License for the project code.
+This project uses the MIT License for the project code.
 It excludes the `src/content` folder, which includes trademarks and logos from the Angular community.
 
 # Contribute
@@ -29,10 +29,11 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
 
 > If you adding a conference event, mind listing it on [developers-conferences-agenda](https://github.com/scraly/developers-conferences-agenda) too for a broader audience!
 
-To add a new event, create a new markdown file in the `src/content/events` folder. 
-The file name should be the date of the event in the format `YYYY-MM-DD-event-name.md`. 
+To add a new event, create a new markdown file in the `src/content/events` folder.
+The file name should be the date of the event in the format `YYYY-MM-DD-event-name.md`.
 
 Make sure to add at least one of the following tags:
+
 - On-Site
 - Online
 - Free
@@ -77,7 +78,6 @@ File name format depends on the CFP type:
 - For a CFP that is open all year round like a meetup, the file name should be `cfp-name.md`.
 - For a CFP that is open for a specific period of time, the file name should be `YYYY-MM-DD-cfp-name.md`.
 
-
 ```md
 ---
 name: Angular Day
@@ -90,4 +90,3 @@ tags:
   - Online
 ---
 ```
-

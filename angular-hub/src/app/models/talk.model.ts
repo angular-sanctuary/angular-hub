@@ -1,4 +1,4 @@
-import {Author} from "./author.model";
+import { Author } from './author.model';
 
 export interface Talk {
   title: string;

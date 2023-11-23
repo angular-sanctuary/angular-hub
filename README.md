@@ -4,7 +4,6 @@
 
 > Curated list of our beloved Angular events!
 
-
 - Angular events
 - Angular Communities
 - Angular CFPs
@@ -15,7 +14,7 @@ Please read the [contribution guidelines](CONTRIBUTING.md) to learn how to contr
 
 ## Licenses
 
-This project uses the  MIT License for the project code.  
+This project uses the MIT License for the project code.  
 It excludes the `src/content` folder, which includes trademarks and logos from the Angular community.
 
 ## Contributors

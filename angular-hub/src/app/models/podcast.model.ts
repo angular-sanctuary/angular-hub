@@ -1,8 +1,8 @@
-import {LanguageTag} from "./language.model";
+import { LanguageTag } from './language.model';
 
 export interface Podcast {
-    title: string;
-    url: string;
-    logo: string;
-    language: LanguageTag;
+  title: string;
+  url: string;
+  logo: string;
+  language: LanguageTag;
 }

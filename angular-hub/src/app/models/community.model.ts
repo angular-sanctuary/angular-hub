@@ -1,4 +1,4 @@
-import {EventType} from "./event-type.model";
+import { EventType } from './event-type.model';
 
 export interface Community {
   title: string;

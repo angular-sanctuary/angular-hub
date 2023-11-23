@@ -1,13 +1,18 @@
-import {Component} from '@angular/core';
-import {EventCardComponent} from "../../components/event-card.component";
-import {ContentFile, injectContentFiles} from "@analogjs/content";
-import {AsyncPipe, NgForOf} from "@angular/common";
-import {Event} from "../../models/event.model";
-import {Meta, Title} from "@angular/platform-browser";
-import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from "@angular/router";
-import {debounceTime, distinctUntilChanged, map, tap} from "rxjs";
-import {SearchComponent} from "../../components/search.component";
-import {FormControl, ReactiveFormsModule} from "@angular/forms";
+import { Component } from '@angular/core';
+import { EventCardComponent } from '../../components/event-card.component';
+import { ContentFile, injectContentFiles } from '@analogjs/content';
+import { AsyncPipe, NgForOf } from '@angular/common';
+import { Event } from '../../models/event.model';
+import { Meta, Title } from '@angular/platform-browser';
+import {
+  ActivatedRoute,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+} from '@angular/router';
+import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs';
+import { SearchComponent } from '../../components/search.component';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
@@ -27,9 +32,26 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     <app-search [formControl]="searchControl"></app-search>
     <nav>
       <ul class="flex gap-2 mb-8">
-        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active"
-               [queryParams]="{state: 'upcoming'}" [queryParamsHandling]="'merge'">Upcoming</a></li>
-        <li><a class="py-2 px-4" routerLink="." routerLinkActive="active" [queryParams]="{state: 'past'}" [queryParamsHandling]="'merge'">Past</a></li>
+        <li>
+          <a
+            class="py-2 px-4"
+            routerLink="."
+            routerLinkActive="active"
+            [queryParams]="{ state: 'upcoming' }"
+            [queryParamsHandling]="'merge'"
+            >Upcoming</a
+          >
+        </li>
+        <li>
+          <a
+            class="py-2 px-4"
+            routerLink="."
+            routerLinkActive="active"
+            [queryParams]="{ state: 'past' }"
+            [queryParamsHandling]="'merge'"
+            >Past</a
+          >
+        </li>
       </ul>
     </nav>
     <ul class="flex flex-col gap-2">
@@ -48,24 +70,38 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
       color: white;
       border-radius: 0.5rem;
     }
-  `
+  `,
 })
 export default class EvenementsComponent {
-  searchControl = new FormControl<string>('', {nonNullable: true});
+  searchControl = new FormControl<string>('', { nonNullable: true });
 
-  evenements = injectContentFiles<Event>(({filename}) => filename.startsWith('/src/content/events/')).sort(
-    (a, b) => new Date(a.attributes.date).getTime() - new Date(b.attributes.date).getTime()
+  evenements = injectContentFiles<Event>(({ filename }) =>
+    filename.startsWith('/src/content/events/')
+  ).sort(
+    (a, b) =>
+      new Date(a.attributes.date).getTime() -
+      new Date(b.attributes.date).getTime()
   );
-  pastEvents = this.evenements.filter(event => new Date(event.attributes.date).getTime() < Date.now());
-  upcomingEvents = this.evenements.filter(event => new Date(event.attributes.date) >= this.today());
+  pastEvents = this.evenements.filter(
+    (event) => new Date(event.attributes.date).getTime() < Date.now()
+  );
+  upcomingEvents = this.evenements.filter(
+    (event) => new Date(event.attributes.date) >= this.today()
+  );
 
   events$ = this.route.queryParams.pipe(
-    tap(({search = ''}) => this.searchControl.setValue(search, {emitEvent: false})),
-    map(({search: searchTerm = '', state}) => {
+    tap(({ search = '' }) =>
+      this.searchControl.setValue(search, { emitEvent: false })
+    ),
+    map(({ search: searchTerm = '', state }) => {
       if (state === 'past') {
-        return this.pastEvents.filter(event => this.filterPredicate(event.attributes, searchTerm));
+        return this.pastEvents.filter((event) =>
+          this.filterPredicate(event.attributes, searchTerm)
+        );
       } else {
-        return this.upcomingEvents.filter(event => this.filterPredicate(event.attributes, searchTerm));
+        return this.upcomingEvents.filter((event) =>
+          this.filterPredicate(event.attributes, searchTerm)
+        );
       }
     })
   );
@@ -75,22 +111,20 @@ export default class EvenementsComponent {
     private readonly meta: Meta,
     private readonly route: ActivatedRoute,
     private readonly router: Router
-
   ) {
     title.setTitle('ANGULAR HUB - Curated list of Angular events');
-    meta.updateTag({name: 'description', content: 'Curated list of Angular events'});
+    meta.updateTag({
+      name: 'description',
+      content: 'Curated list of Angular events',
+    });
 
     this.searchControl.valueChanges
-      .pipe(
-        debounceTime(300),
-        distinctUntilChanged(),
-        takeUntilDestroyed()
-      )
+      .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())
       .subscribe((value) => {
         this.router.navigate(['.'], {
           queryParams: { search: value || null },
           queryParamsHandling: 'merge',
-          relativeTo: this.route
+          relativeTo: this.route,
         });
       });
   }
@@ -100,8 +134,12 @@ export default class EvenementsComponent {
       return true;
     }
 
-    const isTitleMatching = event.title.toLowerCase().includes(searchTerm.toLowerCase());
-    const isLocationMatching = event.location.toLowerCase().includes(searchTerm.toLowerCase());
+    const isTitleMatching = event.title
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    const isLocationMatching = event.location
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
 
     return isTitleMatching || isLocationMatching;
   }
