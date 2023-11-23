@@ -34,6 +34,7 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/giovnzcr"><img src="https://avatars.githubusercontent.com/u/11030212?v=4?s=100" width="100px;" alt="giovnzcr"/><br /><sub><b>giovnzcr</b></sub></a><br /><a href="#code-giovnzcr" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Dyqmin"><img src="https://avatars.githubusercontent.com/u/23712053?v=4?s=100" width="100px;" alt="Dominik Donoch"/><br /><sub><b>Dominik Donoch</b></sub></a><br /><a href="#bug-Dyqmin" title="Bug reports">🐛</a> <a href="#code-Dyqmin" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ilirbeqirii"><img src="https://avatars.githubusercontent.com/u/24731032?v=4?s=100" width="100px;" alt="Ilir Beqiri"/><br /><sub><b>Ilir Beqiri</b></sub></a><br /><a href="#code-ilirbeqirii" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://eneajaho.me"><img src="https://avatars.githubusercontent.com/u/25394362?v=4?s=100" width="100px;" alt="Enea Jahollari"/><br /><sub><b>Enea Jahollari</b></sub></a><br /><a href="#code-eneajaho" title="Code">💻</a> <a href="#bug-eneajaho" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
