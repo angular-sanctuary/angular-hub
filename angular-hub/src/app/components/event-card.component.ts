@@ -38,7 +38,7 @@ import { EventTagComponent } from './event-tag.component';
           event.attributes.location
         }}</span>
         <ul class="flex gap-2">
-        <li class="inline">
+          <li class="inline">
             <app-event-tag [name]="event.attributes.language" />
           </li>
           <li *ngFor="let tag of event.attributes.tags" class="inline">
