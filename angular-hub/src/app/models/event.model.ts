@@ -1,4 +1,4 @@
-import { LanguageTag } from "./language.model";
+import { LanguageTag } from './language.model';
 
 export type EventTag = 'On-Site' | 'Online' | 'Free';
 
