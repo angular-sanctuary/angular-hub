@@ -9,6 +9,7 @@ import { MatDrawer, MatSidenavModule } from '@angular/material/sidenav';
 import { AsyncPipe, NgIf } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
 import {
+  IsActiveMatchOptions,
   NavigationEnd,
   Router,
   RouterLink,
@@ -48,6 +49,13 @@ export class NavigationComponent implements OnInit {
     );
 
   @ViewChild('navigation') drawer!: MatDrawer;
+
+  myMatchOptions: IsActiveMatchOptions = {
+    queryParams: 'ignored',
+    matrixParams: 'exact',
+    paths: 'exact',
+    fragment: 'exact',
+  };
 
   ngOnInit(): void {
     this.#router.events
