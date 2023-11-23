@@ -38,6 +38,7 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://ahmed-moustafa.de/"><img src="https://avatars.githubusercontent.com/u/43710157?v=4?s=100" width="100px;" alt="Ahmed Moustafa"/><br /><sub><b>Ahmed Moustafa</b></sub></a><br /><a href="#code-ahmedhmf" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.rainerhahnekamp.com"><img src="https://avatars.githubusercontent.com/u/5721205?v=4?s=100" width="100px;" alt="Rainer Hahnekamp"/><br /><sub><b>Rainer Hahnekamp</b></sub></a><br /><a href="#code-rainerhahnekamp" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
