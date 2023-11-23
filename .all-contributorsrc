@@ -73,6 +73,15 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "ahmedhmf",
+      "name": "Ahmed Moustafa",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43710157?v=4",
+      "profile": "https://ahmed-moustafa.de/",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
