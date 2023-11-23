@@ -10,12 +10,13 @@ import {
   FormsModule,
   NG_VALUE_ACCESSOR,
 } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-search',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage, FormsModule, NgClass],
+  imports: [NgOptimizedImage, FormsModule, NgClass, MatIconModule],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -28,7 +29,7 @@ import {
       class="flex justify-between border-2 border-gray-500 rounded-lg gap-4 p-1 mb-6 max-w-md"
       [ngClass]="{ '!border-[#BF25B9]': isFocused() }"
     >
-      <img ngSrc="/assets/icons/search.svg" height="20" width="20" alt="" />
+      <mat-icon svgIcon="search"></mat-icon>
       <input
         class="flex-1 outline-0 bg-transparent"
         type="text"
