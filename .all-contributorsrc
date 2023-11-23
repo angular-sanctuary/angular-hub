@@ -63,6 +63,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "eneajaho",
+      "name": "Enea Jahollari",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25394362?v=4",
+      "profile": "https://eneajaho.me",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ]
 }
