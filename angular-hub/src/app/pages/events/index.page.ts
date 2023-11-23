@@ -57,7 +57,7 @@ export default class EvenementsComponent {
     (a, b) => new Date(a.attributes.date).getTime() - new Date(b.attributes.date).getTime()
   );
   pastEvents = this.evenements.filter(event => new Date(event.attributes.date).getTime() < Date.now());
-  upcomingEvents = this.evenements.filter(event => new Date(event.attributes.date).getTime() > Date.now());
+  upcomingEvents = this.evenements.filter(event => new Date(event.attributes.date) >= this.today());
 
   events$ = this.route.queryParams.pipe(
     tap(({search = ''}) => this.searchControl.setValue(search, {emitEvent: false})),
@@ -87,10 +87,10 @@ export default class EvenementsComponent {
         takeUntilDestroyed()
       )
       .subscribe((value) => {
-        this.router.navigate(['.'], { 
+        this.router.navigate(['.'], {
           queryParams: { search: value || null },
           queryParamsHandling: 'merge',
-          relativeTo: this.route 
+          relativeTo: this.route
         });
       });
   }
@@ -109,5 +109,11 @@ export default class EvenementsComponent {
   // TODO : to be removed with control flow update
   trackbyFn(index: number, event: ContentFile<Event>): string {
     return event.attributes.title;
+  }
+
+  today(): Date {
+    const currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0);
+    return currentDate;
   }
 }
