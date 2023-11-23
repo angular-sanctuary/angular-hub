@@ -83,7 +83,7 @@ export default class EvenementsComponent {
       new Date(b.attributes.date).getTime()
   );
   pastEvents = this.evenements.filter(
-    (event) => new Date(event.attributes.date).getTime() < Date.now()
+    (event) => new Date(event.attributes.date).getTime() < this.today().getTime()
   );
   upcomingEvents = this.evenements.filter(
     (event) => new Date(event.attributes.date) >= this.today()
