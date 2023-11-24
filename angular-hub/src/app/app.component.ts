@@ -21,7 +21,7 @@ import { MatIconRegistry } from '@angular/material/icon';
   ],
 })
 export class AppComponent {
-  icons = ['menu', 'settings', 'search'];
+  icons = ['menu', 'settings', 'search', 'cancel'];
 
   constructor(
     private readonly iconRegistry: MatIconRegistry,
