@@ -14,6 +14,7 @@ import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs';
 import { SearchComponent } from '../../components/search.component';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { MatListModule } from '@angular/material/list';
 
 @Component({
   selector: 'app-evenements',
@@ -26,6 +27,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     RouterLinkActive,
     SearchComponent,
     ReactiveFormsModule,
+    MatListModule,
   ],
   template: `
     <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">Agenda</h1>
@@ -54,15 +56,18 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
         </li>
       </ul>
     </nav>
-    <ul class="flex flex-col gap-2">
-      <li *ngFor="let event of events$ | async; trackBy: trackbyFn">
-        <app-event-card
-          class="border-2 border-transparent rounded-xl hover:border-gray-200"
-          [event]="event"
-        ></app-event-card>
-      </li>
-      <!-- TODO : add empty control flow -->
-    </ul>
+
+    <mat-nav-list>
+      <a
+        mat-list-item
+        *ngFor="let event of events$ | async; trackBy: trackbyFn"
+        [attr.aria-labelledby]="event.attributes.title"
+        [href]="event.attributes.url"
+        target="_blank"
+      >
+        <app-event-card [event]="event"></app-event-card>
+      </a>
+    </mat-nav-list>
   `,
   styles: `
     .active {
@@ -83,7 +88,8 @@ export default class EvenementsComponent {
       new Date(b.attributes.date).getTime()
   );
   pastEvents = this.evenements.filter(
-    (event) => new Date(event.attributes.date).getTime() < this.today().getTime()
+    (event) =>
+      new Date(event.attributes.date).getTime() < this.today().getTime()
   );
   upcomingEvents = this.evenements.filter(
     (event) => new Date(event.attributes.date) >= this.today()

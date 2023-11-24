@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Event } from '../models/event.model';
 import { ContentFile } from '@analogjs/content';
-import { RouterLink } from '@angular/router';
 import { DatePipe, NgForOf, NgIf, NgOptimizedImage } from '@angular/common';
 import { EventTagComponent } from './event-tag.component';
 
@@ -10,12 +9,7 @@ import { EventTagComponent } from './event-tag.component';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <a
-      class="flex w-full items-center gap-4"
-      [href]="event.attributes.url"
-      target="_blank"
-      [attr.aria-labelledby]="event.attributes.title"
-    >
+    <article class="flex w-full items-center gap-4">
       <img
         class="rounded-xl"
         [ngSrc]="event.attributes.logo"
@@ -46,22 +40,14 @@ import { EventTagComponent } from './event-tag.component';
           </li>
         </ul>
       </div>
-    </a>
+    </article>
   `,
-  imports: [
-    RouterLink,
-    DatePipe,
-    NgOptimizedImage,
-    NgIf,
-    NgForOf,
-    EventTagComponent,
-  ],
+  imports: [DatePipe, NgOptimizedImage, NgIf, NgForOf, EventTagComponent],
   styles: [
     `
       :host {
-        display: flex;
-        justify-content: center;
-        padding: 0.25rem;
+        display: block;
+        padding-block: 0.5rem;
       }
     `,
   ],

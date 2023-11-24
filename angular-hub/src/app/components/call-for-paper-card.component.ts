@@ -9,12 +9,7 @@ import { DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgOptimizedImage, DatePipe, NgIf],
   template: `
-    <a
-      class="flex w-full items-center gap-4"
-      [href]="cfp.attributes.url"
-      target="_blank"
-      [attr.aria-labelledby]="cfp.attributes.title"
-    >
+    <article class="flex w-full items-center gap-4">
       <img
         class="rounded-xl"
         [ngSrc]="cfp.attributes.logo"
@@ -40,14 +35,13 @@ import { DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
           cfp.attributes.location
         }}</span>
       </div>
-    </a>
+    </article>
   `,
   styles: [
     `
       :host {
-        display: flex;
-        justify-content: center;
-        padding: 0.25rem;
+        display: block;
+        padding-block: 0.5rem;
       }
     `,
   ],

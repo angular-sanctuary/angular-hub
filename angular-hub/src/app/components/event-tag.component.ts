@@ -16,6 +16,7 @@ import { Tag, TAG_COLORS_MAP } from '../consts/tag-colors.const';
     <div
       class="inline-block px-2 text-sm font-semibold rounded-md text-white"
       [style.background]="tagColor()"
+      itemprop="tag"
     >
       {{ tag() }}
     </div>

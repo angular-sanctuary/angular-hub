@@ -14,6 +14,7 @@ import { SearchComponent } from '../../components/search.component';
 import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { MatListModule } from '@angular/material/list';
 
 @Component({
   selector: 'app-communities',
@@ -26,6 +27,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     RouterLinkActive,
     AsyncPipe,
     ReactiveFormsModule,
+    MatListModule,
   ],
   template: `
     <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
@@ -66,14 +68,17 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
         </li>
       </ul>
     </nav>
-    <ul class="flex flex-col gap-2">
-      <li *ngFor="let community of communities$ | async; trackBy: trackbyFn">
-        <app-community-card
-          class="border-2 border-transparent rounded-xl hover:border-gray-200"
-          [community]="community"
-        ></app-community-card>
-      </li>
-    </ul>
+    <mat-nav-list>
+      <a
+        mat-list-item
+        *ngFor="let community of communities$ | async; trackBy: trackbyFn"
+        [attr.aria-labelledby]="community.attributes.title"
+        [href]="community.attributes.url"
+        target="_blank"
+      >
+        <app-community-card [community]="community"></app-community-card>
+      </a>
+    </mat-nav-list>
   `,
   styles: `
     .active {

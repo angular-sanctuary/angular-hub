@@ -14,6 +14,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { Podcast } from '../../models/podcast.model';
 import { PodcasttCardComponent } from '../../components/podcast-card.component';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { MatListModule } from '@angular/material/list';
 
 @Component({
   selector: 'app-podcasts',
@@ -26,20 +27,24 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     AsyncPipe,
     ReactiveFormsModule,
     PodcasttCardComponent,
+    MatListModule,
   ],
   template: `
     <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
       Podcasts
     </h1>
     <app-search [formControl]="searchControl"></app-search>
-    <ul class="flex flex-col gap-2">
-      <li *ngFor="let podcast of podcasts$ | async; trackBy: trackbyFn">
-        <app-podcast-card
-          class="border-2 border-transparent rounded-xl hover:border-gray-200"
-          [podcast]="podcast"
-        ></app-podcast-card>
-      </li>
-    </ul>
+    <mat-nav-list>
+      <a
+        mat-list-item
+        *ngFor="let podcast of podcasts$ | async; trackBy: trackbyFn"
+        [attr.aria-labelledby]="podcast.attributes.title"
+        [href]="podcast.attributes.url"
+        target="_blank"
+      >
+        <app-podcast-card [podcast]="podcast"></app-podcast-card>
+      </a>
+    </mat-nav-list>
   `,
   styles: `
     .active {
