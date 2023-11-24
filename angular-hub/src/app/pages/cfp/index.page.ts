@@ -15,6 +15,7 @@ import { SearchComponent } from '../../components/search.component';
 import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { MatListModule } from '@angular/material/list';
 
 @Component({
   selector: 'app-cfps',
@@ -28,6 +29,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     AsyncPipe,
     EventCardComponent,
     ReactiveFormsModule,
+    MatListModule,
   ],
   template: `
     <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
@@ -75,14 +77,17 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
         </li>
       </ul>
     </nav>
-    <ul class="flex flex-col gap-2">
-      <li *ngFor="let cfp of cfps$ | async; trackBy: trackbyFn">
-        <app-cfp-card
-          class="border-2 border-transparent rounded-xl hover:border-gray-200"
-          [cfp]="cfp"
-        ></app-cfp-card>
-      </li>
-    </ul>
+    <mat-nav-list>
+      <a
+        mat-list-item
+        *ngFor="let cfp of cfps$ | async; trackBy: trackbyFn"
+        [attr.aria-labelledby]="cfp.attributes.title"
+        [href]="cfp.attributes.url"
+        target="_blank"
+      >
+        <app-cfp-card [cfp]="cfp"></app-cfp-card>
+      </a>
+    </mat-nav-list>
   `,
   styles: `
     .active {

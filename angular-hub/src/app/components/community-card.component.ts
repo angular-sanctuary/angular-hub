@@ -9,12 +9,7 @@ import { Community } from '../models/community.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgOptimizedImage],
   template: `
-    <a
-      class="flex w-full items-center gap-4"
-      [href]="community.attributes.url"
-      target="_blank"
-      [attr.aria-labelledby]="community.attributes.title"
-    >
+    <article class="flex w-full items-center gap-4">
       <img
         class="rounded-xl"
         [ngSrc]="community.attributes.logo"
@@ -37,14 +32,13 @@ import { Community } from '../models/community.model';
           community.attributes.location
         }}</span>
       </div>
-    </a>
+    </article>
   `,
   styles: [
     `
       :host {
-        display: flex;
-        justify-content: center;
-        padding: 0.25rem;
+        display: block;
+        padding-block: 0.5rem;
       }
     `,
   ],

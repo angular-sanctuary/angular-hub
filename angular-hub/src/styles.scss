@@ -57,10 +57,6 @@ $dark--theme: mat.define-dark-theme(
   )
 );
 
-.darkMode {
-  @include mat.all-component-themes($dark--theme);
-}
-
 /* Tailwind directives  */
 @tailwind base;
 @tailwind components;
@@ -121,16 +117,22 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+mat-sidenav-content {
+  --mdc-list-list-item-one-line-container-height: fit-content;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
+
+    --mat-sidenav-content-background-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    @include mat.all-component-themes($dark--theme);
+    @include mat.all-component-colors($dark--theme);
 
     --mdc-list-list-item-label-text-color: white;
   }
