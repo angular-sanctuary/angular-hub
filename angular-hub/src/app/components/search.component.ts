@@ -31,7 +31,7 @@ import { MatIconModule } from '@angular/material/icon';
     >
       <mat-icon svgIcon="search"></mat-icon>
       <input
-        class="flex-1 outline-0 bg-transparent"
+        class="flex-1 outline-none bg-transparent"
         type="text"
         aria-label="Search"
         [(ngModel)]="searchTerm"
