@@ -41,12 +41,13 @@ import { MatIconModule } from '@angular/material/icon';
       />
       <button
         type="button"
+        class="flex items-center"
         aria-label="Reset search"
         [style.visibility]="searchTerm.length ? 'visible' : 'hidden'"
         [attr.aria-hidden]="!searchTerm.length"
         (click)="reset()"
       >
-        <img ngSrc="/assets/icons/cancel.svg" height="20" width="20" alt="" />
+        <mat-icon svgIcon="cancel"></mat-icon>
       </button>
     </div>
   `,
