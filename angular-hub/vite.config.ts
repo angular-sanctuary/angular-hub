@@ -12,26 +12,7 @@ export default defineConfig(({ mode }) => {
     build: {
       target: ['es2020'],
     },
-    plugins: [
-      analog({
-        nitro: {
-          serveStatic: false,
-        },
-        prerender: {
-          discover: true,
-          routes: async () => [
-            '/',
-            '/events',
-            '/communities',
-            '/cfp',
-            '/talks',
-            '/podcasts',
-          ],
-        },
-      }),
-      nxViteTsPaths(),
-      splitVendorChunkPlugin(),
-    ],
+    plugins: [analog(), nxViteTsPaths(), splitVendorChunkPlugin()],
     test: {
       globals: true,
       environment: 'jsdom',
