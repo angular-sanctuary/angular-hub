@@ -56,7 +56,7 @@ export class NavigationComponent implements OnInit {
   #renderer = inject(Renderer2);
   #userPreferencesService = inject(UserPreferencesService);
 
-  #theme = signal<Theme | undefined>(undefined);
+  #theme = signal<Theme | undefined>('system');
 
   isLightTheme = computed(() => this.#theme() === 'light');
   isDarkTheme = computed(() => this.#theme() === 'dark');
@@ -84,7 +84,7 @@ export class NavigationComponent implements OnInit {
     });
 
     effect(() => {
-      this.#userPreferencesService.setTheme(this.#theme()!);
+      this.#userPreferencesService.setTheme(this.#theme() as Theme);
       switch (this.#theme()) {
         case 'light':
           this.#renderer.addClass(document.body, 'lightMode');
