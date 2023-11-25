@@ -66,6 +66,7 @@
         type="button"
         (click)="settings.close()"
         aria-label="Close settings panel"
+        *ngIf="isHandset$ | async"
       >
         <mat-icon svgIcon="close"></mat-icon>
       </button>
