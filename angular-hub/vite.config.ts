@@ -12,11 +12,7 @@ export default defineConfig(({ mode }) => {
     build: {
       target: ['es2020'],
     },
-    plugins: [
-      analog({ ssr: false }),
-      nxViteTsPaths(),
-      splitVendorChunkPlugin(),
-    ],
+    plugins: [analog(), nxViteTsPaths(), splitVendorChunkPlugin()],
     test: {
       globals: true,
       environment: 'jsdom',
