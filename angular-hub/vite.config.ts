@@ -12,7 +12,18 @@ export default defineConfig(({ mode }) => {
     build: {
       target: ['es2020'],
     },
-    plugins: [analog(), nxViteTsPaths(), splitVendorChunkPlugin()],
+    plugins: [
+      analog({
+        nitro: {
+          output: {
+            dir: './dist/analog',
+            serverDir: '{{ rootDir }}/.netlify/functions-internal',
+          },
+        },
+      }),
+      nxViteTsPaths(),
+      splitVendorChunkPlugin(),
+    ],
     test: {
       globals: true,
       environment: 'jsdom',
