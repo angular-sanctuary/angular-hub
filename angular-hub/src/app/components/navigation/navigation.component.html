@@ -5,7 +5,7 @@
     fixedInViewport
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="(isHandset$ | async) === false"
+    [opened]="(isHandset$ | async) === false && isBrowser"
     [disableClose]="(isHandset$ | async) === false"
   >
     <div class="flex flex-col h-full">
@@ -57,7 +57,7 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     position="end"
-    [opened]="(isHandset$ | async) === false"
+    [opened]="(isHandset$ | async) === false && isBrowser"
     [autoFocus]="false"
     [disableClose]="(isHandset$ | async) === false"
   >

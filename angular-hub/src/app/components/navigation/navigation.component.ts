@@ -5,6 +5,7 @@ import {
   effect,
   inject,
   OnInit,
+  PLATFORM_ID,
   Renderer2,
   signal,
   ViewChild,
@@ -16,7 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDrawer, MatSidenavModule } from '@angular/material/sidenav';
-import { AsyncPipe, NgClass, NgIf } from '@angular/common';
+import { AsyncPipe, isPlatformBrowser, NgClass, NgIf } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
 import {
   IsActiveMatchOptions,
@@ -55,12 +56,15 @@ export class NavigationComponent implements OnInit {
   #router = inject(Router);
   #renderer = inject(Renderer2);
   #userPreferencesService = inject(UserPreferencesService);
+  #platform = inject(PLATFORM_ID);
 
   #theme = signal<Theme | undefined>('system');
 
   isLightTheme = computed(() => this.#theme() === 'light');
   isDarkTheme = computed(() => this.#theme() === 'dark');
   isSystemTheme = computed(() => this.#theme() === 'system');
+
+  isBrowser = isPlatformBrowser(this.#platform);
 
   isHandset$: Observable<boolean> = this.#breakpointObserver
     .observe(Breakpoints.Handset)
