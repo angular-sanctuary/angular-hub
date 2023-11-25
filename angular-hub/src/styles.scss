@@ -121,8 +121,22 @@ mat-sidenav-content {
   --mdc-list-list-item-one-line-container-height: fit-content;
 }
 
+.lightMode {
+  @include mat.all-component-colors(
+    $angular-material-dark-theme-switcher-theme
+  );
+  --mat-sidenav-content-background-color: #ffffff;
+}
+
+.darkMode {
+  @include mat.all-component-colors($dark--theme);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
+    @include mat.all-component-colors(
+      $angular-material-dark-theme-switcher-theme
+    );
     color: #213547;
     background-color: #ffffff;
 
