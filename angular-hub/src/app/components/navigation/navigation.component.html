@@ -6,6 +6,7 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
+    [disableClose]="(isHandset$ | async) === false"
   >
     <div class="flex flex-col h-full">
       <mat-toolbar class="flex justify-center">
@@ -58,6 +59,7 @@
     position="end"
     [opened]="(isHandset$ | async) === false"
     [autoFocus]="false"
+    [disableClose]="(isHandset$ | async) === false"
   >
     <mat-toolbar class="flex justify-between items-center">
       <span class="font-bold text-lg">Settings</span>
