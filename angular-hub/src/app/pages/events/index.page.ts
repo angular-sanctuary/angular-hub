@@ -82,14 +82,9 @@ export default class EvenementsComponent {
 
   evenements = injectContentFiles<Event>(({ filename }) =>
     filename.startsWith('/src/content/events/')
-  ).sort(
-    (a, b) =>
-      new Date(a.attributes.date).getTime() -
-      new Date(b.attributes.date).getTime()
   );
   pastEvents = this.evenements.filter(
-    (event) =>
-      new Date(event.attributes.date).getTime() < this.today().getTime()
+    (event) => new Date(event.attributes.date) < this.today()
   );
   upcomingEvents = this.evenements.filter(
     (event) => new Date(event.attributes.date) >= this.today()
@@ -101,14 +96,23 @@ export default class EvenementsComponent {
     ),
     map(({ search: searchTerm = '', state }) => {
       if (state === 'past') {
-        return this.pastEvents.filter((event) =>
-          this.filterPredicate(event.attributes, searchTerm)
-        );
-      } else {
-        return this.upcomingEvents.filter((event) =>
-          this.filterPredicate(event.attributes, searchTerm)
-        );
+        return this.pastEvents
+          .filter((event) => this.filterPredicate(event.attributes, searchTerm))
+          .sort((a, b) => {
+            return (
+              new Date(b.attributes.date).getTime() -
+              new Date(a.attributes.date).getTime()
+            );
+          });
       }
+      return this.upcomingEvents
+        .filter((event) => this.filterPredicate(event.attributes, searchTerm))
+        .sort((a, b) => {
+          return (
+            new Date(a.attributes.date).getTime() -
+            new Date(b.attributes.date).getTime()
+          );
+        });
     })
   );
 
