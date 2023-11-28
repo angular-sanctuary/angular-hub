@@ -18,7 +18,7 @@ import { EventTagComponent } from './event-tag.component';
         alt=""
       />
       <div class="text-start">
-        <span class="font-bold text-[#BF25B9]" itemprop="date">{{
+        <span class="font-bold text-primary" itemprop="date">{{
           event.attributes.date | date
         }}</span>
         <h3

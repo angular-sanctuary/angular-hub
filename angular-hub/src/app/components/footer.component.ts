@@ -14,24 +14,13 @@ import { NgClass } from '@angular/common';
         >Powered by Analog</a
       >
       <a
-        class="contribute-btn"
+        class="contribute-btn bg-secondary text-black font-bold rounded-lg px-6 py-2"
         href="https://github.com/angular-sanctuary/angular-hub"
         target="_blank"
         >Contribute</a
       >
     </footer>
   `,
-  styles: [
-    `
-      .contribute-btn {
-        background-color: #00bee0;
-        color: black;
-        font-weight: bold;
-        border-radius: 0.5rem;
-        padding: 0.5rem 1.5rem;
-      }
-    `,
-  ],
   imports: [NgClass],
 })
 export class FooterComponent {

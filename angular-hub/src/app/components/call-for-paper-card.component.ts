@@ -20,7 +20,7 @@ import { DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
       <div class="text-start">
         <span
           *ngIf="cfp.attributes.deadline"
-          class="font-bold text-[#BF25B9]"
+          class="font-bold text-primary"
           itemprop="date"
           >until {{ cfp.attributes.deadline | date }}</span
         >

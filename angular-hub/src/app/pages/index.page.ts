@@ -24,7 +24,7 @@ import { NgOptimizedImage } from '@angular/common';
     </h3>
 
     <a
-      class="text-xl font-bold bg-[#BF25B9] px-6 py-2 rounded-lg"
+      class="text-xl font-bold bg-primary px-6 py-2 rounded-lg"
       routerLink="/events"
       [queryParams]="{ state: 'upcoming' }"
       >Discover upcoming events</a

@@ -35,9 +35,7 @@ import { MatListModule } from '@angular/material/list';
     <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
       Call For Papers
     </h1>
-    <p
-      class="text-start border-l-4 border-l-[#BF25B9] pl-3 mb-4 max-w-screen-lg"
-    >
+    <p class="text-start border-l-4 border-l-primary pl-3 mb-4 max-w-screen-lg">
       Welcome to our Call for Papers (CFP) page! Whether you're a seasoned
       speaker or new to presenting, we encourage you to share your knowledge and
       engage our community. Submit your proposals to these communities!

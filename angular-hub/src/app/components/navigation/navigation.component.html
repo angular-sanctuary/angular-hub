@@ -81,7 +81,7 @@
             <button
               type="button"
               class="h-10 w-20 border-2 border-gray-400 rounded-lg flex justify-center items-center bg-white"
-              [ngClass]="{ '!border-[#BF25B9] shadow-xl': isLightTheme() }"
+              [ngClass]="{ '!border-primary shadow-xl': isLightTheme() }"
               aria-labelledby="light"
               (click)="setTheme('light')"
             >
@@ -98,7 +98,7 @@
             <button
               type="button"
               class="h-10 w-20 border-2 border-gray-400 rounded-lg flex justify-center items-center bg-[#212121]"
-              [ngClass]="{ '!border-[#BF25B9] shadow-xl': isDarkTheme() }"
+              [ngClass]="{ '!border-primary] shadow-xl': isDarkTheme() }"
               aria-labelledby="dark"
               (click)="setTheme('dark')"
             >
@@ -115,7 +115,7 @@
             <button
               type="button"
               class="h-10 w-20 border-2 border-gray-400 rounded-lg flex justify-center items-center gap-3 bg-gradient-to-r from-white via-50% from-50% via-[#212121] to-[#212121]"
-              [ngClass]="{ '!border-[#BF25B9] shadow-xl': isSystemTheme() }"
+              [ngClass]="{ '!border-primary shadow-xl': isSystemTheme() }"
               aria-labelledby="system"
               (click)="setTheme('system')"
             >

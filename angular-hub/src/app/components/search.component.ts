@@ -27,7 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
   template: `
     <div
       class="flex justify-between border-2 border-gray-500 rounded-lg gap-4 p-1 mb-6 max-w-md"
-      [ngClass]="{ '!border-[#BF25B9]': isFocused() }"
+      [ngClass]="{ '!border-primary': isFocused() }"
     >
       <mat-icon svgIcon="search"></mat-icon>
       <input

@@ -18,7 +18,7 @@ import { Community } from '../models/community.model';
         alt=""
       />
       <div class="text-start">
-        <span class="font-bold text-[#BF25B9]" itemprop="type">{{
+        <span class="font-bold text-primary" itemprop="type">{{
           community.attributes.type
         }}</span>
         <h3
