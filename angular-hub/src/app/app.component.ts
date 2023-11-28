@@ -14,8 +14,6 @@ import { MatIconRegistry } from '@angular/material/icon';
       :host {
         width: 100%;
         text-align: center;
-        display: flex;
-        flex-direction: column;
       }
     `,
   ],
