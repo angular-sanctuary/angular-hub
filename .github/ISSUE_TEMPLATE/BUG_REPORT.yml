@@ -20,3 +20,12 @@ body:
       description: A clear and concise description of the problem
     validations:
       required: true
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Do you want to contribute with a pull request?
+      options:
+        - 'Yes'
+        - 'No'
+    validations:
+      required: true

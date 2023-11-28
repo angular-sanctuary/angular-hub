@@ -29,3 +29,12 @@ body:
     attributes:
       label: Describe alternatives you've considered
       description: Have you considered any alternative solutions or workarounds?
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Do you want to contribute with a pull request?
+      options:
+        - 'Yes'
+        - 'No'
+    validations:
+      required: true
