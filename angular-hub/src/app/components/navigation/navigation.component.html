@@ -1,7 +1,7 @@
 <mat-sidenav-container class="h-full">
   <mat-sidenav
     #navigation
-    class="sidenav"
+    class="min-w-[200px]"
     fixedInViewport
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
@@ -9,7 +9,7 @@
     [disableClose]="(isHandset$ | async) === false"
   >
     <div class="flex flex-col h-full">
-      <mat-toolbar class="flex justify-center">
+      <mat-toolbar class="flex justify-center !bg-inherit">
         <a class="title text-2xl" routerLink="/">ANGULAR HUB</a>
       </mat-toolbar>
       <mat-nav-list class="flex-1">
@@ -61,7 +61,7 @@
     [autoFocus]="false"
     [disableClose]="(isHandset$ | async) === false"
   >
-    <mat-toolbar class="flex justify-between items-center">
+    <mat-toolbar class="flex justify-between items-center !bg-inherit">
       <span class="font-bold text-lg">Settings</span>
       <button
         mat-icon-button
