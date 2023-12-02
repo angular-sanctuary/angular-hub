@@ -54,12 +54,10 @@
     #settings
     class="min-w-[300px]"
     fixedInViewport
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [attr.role]="'dialog'"
+    mode="over"
     position="end"
-    [opened]="(isHandset$ | async) === false && isBrowser"
     [autoFocus]="false"
-    [disableClose]="(isHandset$ | async) === false"
   >
     <mat-toolbar class="flex justify-between items-center !bg-inherit">
       <span class="font-bold text-lg">Settings</span>
@@ -136,10 +134,14 @@
 
   <mat-sidenav-content class="!flex flex-col p-4">
     <header
-      *ngIf="isHandset$ | async"
-      class="flex justify-between items-center"
+      class="flex justify-between"
+      [ngClass]="{
+        'items-center': isHandset$ | async,
+        'items-start': (isHandset$ | async) === false
+      }"
     >
       <button
+        *ngIf="isHandset$ | async"
         type="button"
         aria-label="Open navigation menu"
         mat-icon-button
@@ -148,17 +150,41 @@
         <mat-icon svgIcon="menu"></mat-icon>
       </button>
 
-      <span class="title text-2xl">ANGULAR HUB</span>
-      <button
-        type="button"
-        aria-label="Open settings menu"
-        mat-icon-button
-        (click)="settings.toggle()"
+      <span *ngIf="isHandset$ | async" class="title text-2xl">ANGULAR HUB</span>
+      <h1
+        *ngIf="(isHandset$ | async) === false"
+        class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6"
       >
-        <mat-icon svgIcon="settings"></mat-icon>
-      </button>
+        {{ headerTitle() }}
+      </h1>
+
+      <div>
+        <button
+          type="button"
+          aria-label="Open search"
+          mat-icon-button
+          (click)="openSearch()"
+        >
+          <mat-icon svgIcon="search"></mat-icon>
+        </button>
+
+        <button
+          type="button"
+          aria-label="Open settings menu"
+          mat-icon-button
+          (click)="settings.toggle()"
+        >
+          <mat-icon svgIcon="settings"></mat-icon>
+        </button>
+      </div>
     </header>
     <main class="flex-1">
+      <h1
+        *ngIf="(isHandset$ | async) && headerTitle()"
+        class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6"
+      >
+        {{ headerTitle() }}
+      </h1>
       <router-outlet></router-outlet>
     </main>
     <app-footer *ngIf="isHandset$ | async"></app-footer>

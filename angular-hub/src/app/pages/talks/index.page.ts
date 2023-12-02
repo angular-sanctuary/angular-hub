@@ -1,9 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { NgForOf, NgOptimizedImage } from '@angular/common';
-import { Meta, Title } from '@angular/platform-browser';
-import { CommunityCardComponent } from '../../components/community-card.component';
+import { CommunityCardComponent } from '../../components/cards/community-card.component';
 import { RouterLink } from '@angular/router';
-import { TalkCardComponent } from '../../components/talk-card.component';
+import { TalkCardComponent } from '../../components/cards/talk-card.component';
+import { RouteMeta } from '@analogjs/router';
+import { HeaderService } from '../../services/header.service';
+
+export const routeMeta: RouteMeta = {
+  title: 'ANGULAR HUB - Curated list of Angular Talks',
+  meta: [
+    {
+      name: 'description',
+      content: 'Curated list of Angular Talks',
+    },
+  ],
+  data: {
+    header: 'Talks',
+  },
+};
 
 @Component({
   selector: 'app-talks',
@@ -16,19 +30,14 @@ import { TalkCardComponent } from '../../components/talk-card.component';
     TalkCardComponent,
   ],
   template: `
-    <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">Talks</h1>
-
-    <!-- <app-search></app-search> -->
+    <!-- <app-search-bar></app-search-bar> -->
 
     <p>Share your talks soon!</p>
   `,
 })
 export default class TalksComponent {
-  constructor(private readonly title: Title, private readonly meta: Meta) {
-    title.setTitle('ANGULAR HUB - Curated list of Angular Talks');
-    meta.updateTag({
-      name: 'description',
-      content: 'Curated list of Angular Talks',
-    });
+  #headerService = inject(HeaderService);
+  @Input() set header(header: string) {
+    this.#headerService.setHeaderTitle(header);
   }
 }

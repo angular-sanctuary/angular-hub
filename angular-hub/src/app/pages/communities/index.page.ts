@@ -1,20 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ContentFile, injectContentFiles } from '@analogjs/content';
 import { AsyncPipe, NgForOf } from '@angular/common';
-import { Meta, Title } from '@angular/platform-browser';
 import { Community } from '../../models/community.model';
-import { CommunityCardComponent } from '../../components/community-card.component';
+import { CommunityCardComponent } from '../../components/cards/community-card.component';
 import {
   ActivatedRoute,
   Router,
   RouterLink,
   RouterLinkActive,
 } from '@angular/router';
-import { SearchComponent } from '../../components/search.component';
+import { SearchBarComponent } from '../../components/search-bar.component';
 import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatListModule } from '@angular/material/list';
+import { RouteMeta } from '@analogjs/router';
+import { HeaderService } from '../../services/header.service';
+
+export const routeMeta: RouteMeta = {
+  title: 'ANGULAR HUB - Curated list of Angular communities',
+  meta: [
+    {
+      name: 'description',
+      content: 'Curated list of Angular communities',
+    },
+  ],
+  data: {
+    header: 'Communities',
+  },
+};
 
 @Component({
   selector: 'app-communities',
@@ -23,17 +37,14 @@ import { MatListModule } from '@angular/material/list';
     NgForOf,
     CommunityCardComponent,
     RouterLink,
-    SearchComponent,
+    SearchBarComponent,
     RouterLinkActive,
     AsyncPipe,
     ReactiveFormsModule,
     MatListModule,
   ],
   template: `
-    <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
-      Communities
-    </h1>
-    <app-search [formControl]="searchControl"></app-search>
+    <app-search-bar [formControl]="searchControl"></app-search-bar>
     <nav>
       <ul class="flex gap-2 mb-4">
         <li>
@@ -76,7 +87,9 @@ import { MatListModule } from '@angular/material/list';
         [href]="community.attributes.url"
         target="_blank"
       >
-        <app-community-card [community]="community"></app-community-card>
+        <app-community-card
+          [community]="community.attributes"
+        ></app-community-card>
       </a>
     </mat-nav-list>
   `,
@@ -119,22 +132,19 @@ export default class EvenementsComponent {
     })
   );
 
+  @Input() set header(header: string) {
+    this.headerService.setHeaderTitle(header);
+  }
+
   constructor(
-    private readonly title: Title,
-    private readonly meta: Meta,
+    private readonly headerService: HeaderService,
     private readonly route: ActivatedRoute,
     private readonly router: Router
   ) {
-    title.setTitle('ANGULAR HUB - Curated list of Angular communities');
-    meta.updateTag({
-      name: 'description',
-      content: 'Curated list of Angular communities',
-    });
-
     this.searchControl.valueChanges
       .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())
       .subscribe((value) => {
-        this.router.navigate(['.'], {
+        void this.router.navigate(['.'], {
           queryParams: { search: value || null },
           queryParamsHandling: 'merge',
           relativeTo: this.route,

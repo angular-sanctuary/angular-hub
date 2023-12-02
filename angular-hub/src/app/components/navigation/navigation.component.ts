@@ -27,9 +27,12 @@ import {
   RouterLinkActive,
   RouterOutlet,
 } from '@angular/router';
-import { FooterComponent } from '../footer.component';
+import { FooterComponent } from '../layout/footer.component';
 import { Theme } from '../../models/theme.model';
 import { UserPreferencesService } from '../../services/user-preferences.service';
+import { MatDialog } from '@angular/material/dialog';
+import { SearchModalComponent } from '../search-modal.component';
+import { HeaderService } from '../../services/header.service';
 
 @Component({
   selector: 'app-navigation',
@@ -57,6 +60,8 @@ export class NavigationComponent implements OnInit {
   #renderer = inject(Renderer2);
   #userPreferencesService = inject(UserPreferencesService);
   #platform = inject(PLATFORM_ID);
+  #dialog = inject(MatDialog);
+  headerTitle = inject(HeaderService).title;
 
   #theme = signal<Theme | undefined>('system');
 
@@ -117,5 +122,12 @@ export class NavigationComponent implements OnInit {
 
   setTheme(theme: Theme): void {
     this.#theme.set(theme);
+  }
+
+  openSearch(): void {
+    this.#dialog.open(SearchModalComponent, {
+      width: '80%',
+      position: { top: '8%' },
+    });
   }
 }
