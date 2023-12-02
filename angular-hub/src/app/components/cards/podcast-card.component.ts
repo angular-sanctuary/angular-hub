@@ -1,8 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { ContentFile } from '@analogjs/content';
 import { NgForOf, NgIf, NgOptimizedImage } from '@angular/common';
-import { EventTagComponent } from './event-tag.component';
-import { Podcast } from '../models/podcast.model';
+import { EventTagComponent } from '../event-tag.component';
+import { Podcast } from '../../models/podcast.model';
 
 @Component({
   selector: 'app-podcast-card',
@@ -12,20 +11,20 @@ import { Podcast } from '../models/podcast.model';
     <article class="flex w-full items-center gap-4">
       <img
         class="rounded-xl"
-        [ngSrc]="podcast.attributes.logo"
+        [ngSrc]="podcast.logo"
         height="80"
         width="80"
         alt=""
       />
       <div class="text-start">
         <h3
-          [attr.id]="podcast.attributes.title"
+          [attr.id]="podcast.title"
           class="text-xl font-bold"
           itemprop="title"
         >
-          {{ podcast.attributes.title }}
+          {{ podcast.title }}
         </h3>
-        <app-event-tag [name]="podcast.attributes.language" />
+        <app-event-tag [name]="podcast.language" />
       </div>
     </article>
   `,
@@ -39,6 +38,6 @@ import { Podcast } from '../models/podcast.model';
     `,
   ],
 })
-export class PodcasttCardComponent {
-  @Input({ required: true }) podcast!: ContentFile<Podcast>;
+export class PodcastCardComponent {
+  @Input({ required: true }) podcast!: Podcast;
 }

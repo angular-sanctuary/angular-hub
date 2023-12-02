@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { ContentFile } from '@analogjs/content';
-import { CallForPapers } from '../models/call-for-papers.model';
+import { CallForPapers } from '../../models/call-for-papers.model';
 import { DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
 
 @Component({
@@ -12,27 +11,23 @@ import { DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
     <article class="flex w-full items-center gap-4">
       <img
         class="rounded-xl"
-        [ngSrc]="cfp.attributes.logo"
+        [ngSrc]="cfp.logo"
         height="80"
         width="80"
         alt=""
       />
       <div class="text-start">
         <span
-          *ngIf="cfp.attributes.deadline"
+          *ngIf="cfp.deadline"
           class="font-bold text-primary"
           itemprop="date"
-          >until {{ cfp.attributes.deadline | date }}</span
+          >until {{ cfp.deadline | date }}</span
         >
-        <h3
-          [attr.id]="cfp.attributes.title"
-          class="text-xl font-bold"
-          itemprop="title"
-        >
-          {{ cfp.attributes.title }}
+        <h3 [attr.id]="cfp.title" class="text-xl font-bold" itemprop="title">
+          {{ cfp.title }}
         </h3>
-        <span class="text-gray-500" itemprop="location">{{
-          cfp.attributes.location
+        <span class="text-gray-500 dark:text-gray-400" itemprop="location">{{
+          cfp.location
         }}</span>
       </div>
     </article>
@@ -47,5 +42,5 @@ import { DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
   ],
 })
 export class CfpCardComponent {
-  @Input({ required: true }) cfp!: ContentFile<CallForPapers>;
+  @Input({ required: true }) cfp!: CallForPapers;
 }

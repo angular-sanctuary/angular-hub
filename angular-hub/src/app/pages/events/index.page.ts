@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
-import { EventCardComponent } from '../../components/event-card.component';
+import { Component, Input } from '@angular/core';
+import { EventCardComponent } from '../../components/cards/event-card.component';
 import { ContentFile, injectContentFiles } from '@analogjs/content';
 import { AsyncPipe, NgForOf } from '@angular/common';
 import { Event } from '../../models/event.model';
-import { Meta, Title } from '@angular/platform-browser';
 import {
   ActivatedRoute,
   Router,
@@ -11,10 +10,25 @@ import {
   RouterLinkActive,
 } from '@angular/router';
 import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs';
-import { SearchComponent } from '../../components/search.component';
+import { SearchBarComponent } from '../../components/search-bar.component';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatListModule } from '@angular/material/list';
+import { RouteMeta } from '@analogjs/router';
+import { HeaderService } from '../../services/header.service';
+
+export const routeMeta: RouteMeta = {
+  title: 'ANGULAR HUB - Curated list of Angular events',
+  meta: [
+    {
+      name: 'description',
+      content: 'Curated list of Angular events',
+    },
+  ],
+  data: {
+    header: 'Events',
+  },
+};
 
 @Component({
   selector: 'app-evenements',
@@ -25,13 +39,12 @@ import { MatListModule } from '@angular/material/list';
     RouterLink,
     AsyncPipe,
     RouterLinkActive,
-    SearchComponent,
+    SearchBarComponent,
     ReactiveFormsModule,
     MatListModule,
   ],
   template: `
-    <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">Agenda</h1>
-    <app-search [formControl]="searchControl"></app-search>
+    <app-search-bar [formControl]="searchControl"></app-search-bar>
     <nav>
       <ul class="flex gap-2 mb-8">
         <li>
@@ -65,7 +78,7 @@ import { MatListModule } from '@angular/material/list';
         [href]="event.attributes.url"
         target="_blank"
       >
-        <app-event-card [event]="event"></app-event-card>
+        <app-event-card [event]="event.attributes"></app-event-card>
       </a>
     </mat-nav-list>
   `,
@@ -121,22 +134,19 @@ export default class EvenementsComponent {
     })
   );
 
+  @Input() set header(header: string) {
+    this.headerService.setHeaderTitle(header);
+  }
+
   constructor(
-    private readonly title: Title,
-    private readonly meta: Meta,
+    private headerService: HeaderService,
     private readonly route: ActivatedRoute,
     private readonly router: Router
   ) {
-    title.setTitle('ANGULAR HUB - Curated list of Angular events');
-    meta.updateTag({
-      name: 'description',
-      content: 'Curated list of Angular events',
-    });
-
     this.searchControl.valueChanges
       .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())
       .subscribe((value) => {
-        this.router.navigate(['.'], {
+        void this.router.navigate(['.'], {
           queryParams: { search: value || null },
           queryParamsHandling: 'merge',
           relativeTo: this.route,

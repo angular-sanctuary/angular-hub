@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { ContentFile } from '@analogjs/content';
-import { Talk } from '../models/talk.model';
+import { Talk } from '../../models/talk.model';
 
 @Component({
   selector: 'app-talk-card',
@@ -21,13 +20,13 @@ import { Talk } from '../models/talk.model';
       />
       <div>
         <h3 class="text-start font-bold" itemprop="title">
-          {{ talk.attributes.title }}
+          {{ talk.title }}
         </h3>
-        <p class="text-start">{{ talk.attributes.author.name }}</p>
+        <p class="text-start">{{ talk.author.name }}</p>
       </div>
     </article>
   `,
 })
 export class TalkCardComponent {
-  @Input({ required: true }) talk!: ContentFile<Talk>;
+  @Input({ required: true }) talk!: Talk;
 }

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
+import { HeaderService } from '../services/header.service';
 
 @Component({
   selector: 'app-home',
@@ -49,4 +50,10 @@ import { NgOptimizedImage } from '@angular/common';
   ],
   imports: [RouterLink, NgOptimizedImage],
 })
-export default class HomeComponent {}
+export default class HomeComponent {
+  #headerService = inject(HeaderService);
+
+  @Input() set header(header: string) {
+    this.#headerService.setHeaderTitle(header);
+  }
+}

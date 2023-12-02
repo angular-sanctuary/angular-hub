@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { ContentFile } from '@analogjs/content';
-import { Community } from '../models/community.model';
+import { Community } from '../../models/community.model';
 
 @Component({
   selector: 'app-community-card',
@@ -12,24 +11,24 @@ import { Community } from '../models/community.model';
     <article class="flex w-full items-center gap-4">
       <img
         class="rounded-xl"
-        [ngSrc]="community.attributes.logo"
+        [ngSrc]="community.logo"
         height="80"
         width="80"
         alt=""
       />
       <div class="text-start">
         <span class="font-bold text-primary" itemprop="type">{{
-          community.attributes.type
+          community.type
         }}</span>
         <h3
-          [attr.aria-labelledby]="community.attributes.title"
+          [attr.aria-labelledby]="community.title"
           class="text-xl font-bold"
           itemprop="title"
         >
-          {{ community.attributes.title }}
+          {{ community.title }}
         </h3>
-        <span class="text-gray-500" itemprop="location">{{
-          community.attributes.location
+        <span class="text-gray-500 dark:text-gray-400" itemprop="location">{{
+          community.location
         }}</span>
       </div>
     </article>
@@ -44,5 +43,5 @@ import { Community } from '../models/community.model';
   ],
 })
 export class CommunityCardComponent {
-  @Input({ required: true }) community!: ContentFile<Community>;
+  @Input({ required: true }) community!: Community;
 }

@@ -5,12 +5,15 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { provideFileRouter } from '@analogjs/router';
 import { provideContent, withMarkdownRenderer } from '@analogjs/content';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { withViewTransitions } from '@angular/router';
+import {
+  withComponentInputBinding,
+  withViewTransitions,
+} from '@angular/router';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     { provide: DATE_PIPE_DEFAULT_OPTIONS, useValue: { timezone: '+0000' } },
-    provideFileRouter(withViewTransitions()),
+    provideFileRouter(withViewTransitions(), withComponentInputBinding()),
     provideClientHydration(),
     provideHttpClient(withFetch()),
     provideContent(withMarkdownRenderer()),

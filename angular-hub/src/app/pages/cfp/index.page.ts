@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
-import { EventCardComponent } from '../../components/event-card.component';
+import { Component, Input } from '@angular/core';
+import { EventCardComponent } from '../../components/cards/event-card.component';
 import { ContentFile, injectContentFiles } from '@analogjs/content';
 import { AsyncPipe, NgForOf } from '@angular/common';
-import { Meta, Title } from '@angular/platform-browser';
 import {
   ActivatedRoute,
   Router,
@@ -10,12 +9,27 @@ import {
   RouterLinkActive,
 } from '@angular/router';
 import { CallForPapers } from '../../models/call-for-papers.model';
-import { CfpCardComponent } from '../../components/call-for-paper-card.component';
-import { SearchComponent } from '../../components/search.component';
+import { CfpCardComponent } from '../../components/cards/call-for-paper-card.component';
+import { SearchBarComponent } from '../../components/search-bar.component';
 import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatListModule } from '@angular/material/list';
+import { RouteMeta } from '@analogjs/router';
+import { HeaderService } from '../../services/header.service';
+
+export const routeMeta: RouteMeta = {
+  title: 'ANGULAR HUB - Curated list of Angular Call For Papers',
+  meta: [
+    {
+      name: 'description',
+      content: 'Curated list of Angular Call For Papers',
+    },
+  ],
+  data: {
+    header: 'Call for papers',
+  },
+};
 
 @Component({
   selector: 'app-cfps',
@@ -24,7 +38,7 @@ import { MatListModule } from '@angular/material/list';
     NgForOf,
     RouterLink,
     CfpCardComponent,
-    SearchComponent,
+    SearchBarComponent,
     RouterLinkActive,
     AsyncPipe,
     EventCardComponent,
@@ -32,15 +46,12 @@ import { MatListModule } from '@angular/material/list';
     MatListModule,
   ],
   template: `
-    <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
-      Call For Papers
-    </h1>
     <p class="text-start border-l-4 border-l-primary pl-3 mb-4 max-w-screen-lg">
       Welcome to our Call for Papers (CFP) page! Whether you're a seasoned
       speaker or new to presenting, we encourage you to share your knowledge and
       engage our community. Submit your proposals to these communities!
     </p>
-    <app-search [formControl]="searchControl"></app-search>
+    <app-search-bar [formControl]="searchControl"></app-search-bar>
     <nav>
       <ul class="flex gap-2 mb-4">
         <li>
@@ -83,7 +94,7 @@ import { MatListModule } from '@angular/material/list';
         [href]="cfp.attributes.url"
         target="_blank"
       >
-        <app-cfp-card [cfp]="cfp"></app-cfp-card>
+        <app-cfp-card [cfp]="cfp.attributes"></app-cfp-card>
       </a>
     </mat-nav-list>
   `,
@@ -125,22 +136,19 @@ export default class CallForPapersComponent {
     })
   );
 
+  @Input() set header(header: string) {
+    this.headerService.setHeaderTitle(header);
+  }
+
   constructor(
-    private readonly title: Title,
-    private readonly meta: Meta,
+    private readonly headerService: HeaderService,
     private readonly route: ActivatedRoute,
     private readonly router: Router
   ) {
-    title.setTitle('ANGULAR HUB - Curated list of Angular Call For Papers');
-    meta.updateTag({
-      name: 'description',
-      content: 'Curated list of Angular Call For Papers',
-    });
-
     this.searchControl.valueChanges
       .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())
       .subscribe((value) => {
-        this.router.navigate(['.'], {
+        void this.router.navigate(['.'], {
           queryParams: { search: value || null },
           queryParamsHandling: 'merge',
           relativeTo: this.route,

@@ -1,20 +1,33 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ContentFile, injectContentFiles } from '@analogjs/content';
 import { AsyncPipe, NgForOf } from '@angular/common';
-import { Meta, Title } from '@angular/platform-browser';
 import {
   ActivatedRoute,
   Router,
   RouterLink,
   RouterLinkActive,
 } from '@angular/router';
-import { SearchComponent } from '../../components/search.component';
+import { SearchBarComponent } from '../../components/search-bar.component';
 import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { Podcast } from '../../models/podcast.model';
-import { PodcasttCardComponent } from '../../components/podcast-card.component';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatListModule } from '@angular/material/list';
+import { PodcastCardComponent } from '../../components/cards/podcast-card.component';
+import { RouteMeta } from '@analogjs/router';
+import { HeaderService } from '../../services/header.service';
+
+export const routeMeta: RouteMeta = {
+  meta: [
+    {
+      name: 'description',
+      content: 'Curated list of Angular Talks',
+    },
+  ],
+  data: {
+    header: 'Podcasts',
+  },
+};
 
 @Component({
   selector: 'app-podcasts',
@@ -22,18 +35,15 @@ import { MatListModule } from '@angular/material/list';
   imports: [
     NgForOf,
     RouterLink,
-    SearchComponent,
+    SearchBarComponent,
     RouterLinkActive,
     AsyncPipe,
     ReactiveFormsModule,
-    PodcasttCardComponent,
     MatListModule,
+    PodcastCardComponent,
   ],
   template: `
-    <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
-      Podcasts
-    </h1>
-    <app-search [formControl]="searchControl"></app-search>
+    <app-search-bar [formControl]="searchControl"></app-search-bar>
     <mat-nav-list>
       <a
         mat-list-item
@@ -42,7 +52,7 @@ import { MatListModule } from '@angular/material/list';
         [href]="podcast.attributes.url"
         target="_blank"
       >
-        <app-podcast-card [podcast]="podcast"></app-podcast-card>
+        <app-podcast-card [podcast]="podcast.attributes"></app-podcast-card>
       </a>
     </mat-nav-list>
   `,
@@ -71,22 +81,19 @@ export default class PodcastsComponent {
     })
   );
 
+  @Input() set header(header: string) {
+    this.headerService.setHeaderTitle(header);
+  }
+
   constructor(
-    private readonly title: Title,
-    private readonly meta: Meta,
+    private headerService: HeaderService,
     private router: Router,
     private route: ActivatedRoute
   ) {
-    title.setTitle('ANGULAR HUB - Curated list of Angular podcasts');
-    meta.updateTag({
-      name: 'description',
-      content: 'Curated list of Angular podcasts',
-    });
-
     this.searchControl.valueChanges
       .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())
       .subscribe((value) => {
-        this.router.navigate(['.'], {
+        void this.router.navigate(['.'], {
           queryParams: { search: value || null },
           queryParamsHandling: 'merge',
           relativeTo: this.route,

@@ -13,14 +13,14 @@ import {
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-search',
+  selector: 'app-search-bar',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgOptimizedImage, FormsModule, NgClass, MatIconModule],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => SearchComponent),
+      useExisting: forwardRef(() => SearchBarComponent),
       multi: true,
     },
   ],
@@ -52,7 +52,7 @@ import { MatIconModule } from '@angular/material/icon';
     </div>
   `,
 })
-export class SearchComponent implements ControlValueAccessor {
+export class SearchBarComponent implements ControlValueAccessor {
   isFocused = signal(false);
   searchTerm: string = '';
   onChange: unknown = () => {};
