@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "17.0.4",
     "@angular/platform-server": "17.0.4",
     "@angular/router": "17.0.4",
+    "@rx-angular/template": "^17.0.0",
     "eslint-plugin-html": "^7.1.0",
     "front-matter": "^4.0.2",
     "marked": "^5.0.2",
