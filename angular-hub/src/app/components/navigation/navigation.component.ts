@@ -17,7 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDrawer, MatSidenavModule } from '@angular/material/sidenav';
-import { AsyncPipe, isPlatformBrowser, NgClass, NgIf } from '@angular/common';
+import { isPlatformBrowser, NgClass, NgIf } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
 import {
   IsActiveMatchOptions,
@@ -33,6 +33,7 @@ import { UserPreferencesService } from '../../services/user-preferences.service'
 import { MatDialog } from '@angular/material/dialog';
 import { SearchModalComponent } from '../search-modal.component';
 import { HeaderService } from '../../services/header.service';
+import { RxLet } from '@rx-angular/template/let';
 
 @Component({
   selector: 'app-navigation',
@@ -44,7 +45,6 @@ import { HeaderService } from '../../services/header.service';
     MatButtonModule,
     MatToolbarModule,
     MatSidenavModule,
-    AsyncPipe,
     MatListModule,
     NgIf,
     RouterLink,
@@ -52,6 +52,7 @@ import { HeaderService } from '../../services/header.service';
     FooterComponent,
     RouterOutlet,
     NgClass,
+    RxLet,
   ],
 })
 export class NavigationComponent implements OnInit {
