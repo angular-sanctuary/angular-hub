@@ -1,5 +1,8 @@
 name: CI
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -20,8 +23,6 @@ jobs:
       - run: npm ci
       - uses: nrwl/nx-set-shas@v3
 
-      # This line is needed for nx affected to work when CI is running on a PR
-      - run: git branch --track main origin/main
-
       - run: npx nx format:check
-      - run: npx nx affected -t lint,build --parallel=2
+      - run: npx nx run angular-hub:lint
+      - run: npx nx run angular-hub:build:production
