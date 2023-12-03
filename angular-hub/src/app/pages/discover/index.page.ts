@@ -2,13 +2,15 @@ import { Component, inject, Input } from '@angular/core';
 import { HeaderService } from '../../services/header.service';
 import { RouteMeta } from '@analogjs/router';
 import { injectContentFiles } from '@analogjs/content';
-import { NgForOf, NgOptimizedImage } from '@angular/common';
+import { NgForOf, NgIf, NgOptimizedImage } from '@angular/common';
 import { Event } from '../../models/event.model';
 import isThisSOWeek from 'date-fns/isThisISOWeek';
 import { EventCardComponent } from '../../components/cards/event-card.component';
 import { MatListModule } from '@angular/material/list';
 import { CallForPapers } from '../../models/call-for-papers.model';
 import { CfpCardComponent } from '../../components/cards/call-for-paper-card.component';
+import { isFuture } from 'date-fns';
+import { RouterLink } from '@angular/router';
 
 export const routeMeta: RouteMeta = {
   title: 'ANGULAR HUB - Latest Angular community activities',
@@ -63,6 +65,15 @@ export const routeMeta: RouteMeta = {
             <app-event-card [event]="event.attributes"></app-event-card>
           </a>
         </mat-nav-list>
+        <ng-container *ngIf="!currentWeekEvents.length">
+          <p class="mb-4">There are no more events planned this week!</p>
+          <a
+            class="text-xl font-bold bg-primary px-6 py-2 rounded-lg"
+            routerLink="/events"
+            [queryParams]="{ state: 'upcoming' }"
+            >Discover upcoming events</a
+          >
+        </ng-container>
       </section>
       <section>
         <h2 class="text-2xl text-start sm:text-3xl font-bold mt-2 mb-4">
@@ -89,6 +100,8 @@ export const routeMeta: RouteMeta = {
     MatListModule,
     CfpCardComponent,
     NgOptimizedImage,
+    NgIf,
+    RouterLink,
   ],
   styles: `
     .christmas {
@@ -106,7 +119,9 @@ export default class DiscoverComponent {
 
   currentWeekEvents = injectContentFiles<Event>(({ filename }) =>
     filename.startsWith('/src/content/events/')
-  ).filter((event) => isThisSOWeek(new Date(event.attributes.date)));
+  )
+    .filter((event) => isThisSOWeek(new Date(event.attributes.date)))
+    .filter((event) => isFuture(new Date(event.attributes.date)));
 
   activeCallForPapers = injectContentFiles<CallForPapers>(({ filename }) =>
     filename.startsWith('/src/content/cfp/')
