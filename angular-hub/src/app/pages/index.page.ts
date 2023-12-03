@@ -26,8 +26,7 @@ import { HeaderService } from '../services/header.service';
 
     <a
       class="text-xl font-bold bg-primary px-6 py-2 rounded-lg"
-      routerLink="/events"
-      [queryParams]="{ state: 'upcoming' }"
+      routerLink="/discover"
       >Discover upcoming events</a
     >
   `,

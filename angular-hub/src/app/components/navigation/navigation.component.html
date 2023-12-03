@@ -15,6 +15,13 @@
       <mat-nav-list class="flex-1">
         <a
           mat-list-item
+          routerLink="/discover"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="myMatchOptions"
+          >Discover</a
+        >
+        <a
+          mat-list-item
           routerLink="/events"
           routerLinkActive="active"
           [routerLinkActiveOptions]="myMatchOptions"
