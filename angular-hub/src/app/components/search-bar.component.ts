@@ -33,6 +33,7 @@ import { MatIconModule } from '@angular/material/icon';
       <input
         class="flex-1 outline-none bg-transparent"
         type="text"
+        placeholder="Search"
         aria-label="Search"
         [(ngModel)]="searchTerm"
         (ngModelChange)="onChange($event)"
