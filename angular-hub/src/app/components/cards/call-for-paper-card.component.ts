@@ -21,7 +21,7 @@ import { DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
           *ngIf="cfp.deadline"
           class="font-bold text-primary"
           itemprop="date"
-          >until {{ cfp.deadline | date }}</span
+          >Until {{ cfp.deadline | date }}</span
         >
         <h3 [attr.id]="cfp.title" class="text-xl font-bold" itemprop="title">
           {{ cfp.title }}
