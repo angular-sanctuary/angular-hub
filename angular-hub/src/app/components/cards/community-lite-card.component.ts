@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage, TitleCasePipe } from '@angular/common';
 import { Community } from '../../models/community.model';
 
 @Component({
   selector: 'app-community-lite-card',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, TitleCasePipe],
   template: `
     <article class="flex flex-col w-full">
       <div class="flex flex-wrap items-center">
@@ -23,7 +23,7 @@ import { Community } from '../../models/community.model';
       </div>
       <div>
         <span class="font-bold text-primary" itemprop="type">{{
-          community.type
+          community.type | titlecase
         }}</span>
       </div>
     </article>
