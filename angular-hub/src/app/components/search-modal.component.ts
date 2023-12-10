@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { injectContentFiles } from '@analogjs/content';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { AsyncPipe, NgForOf, NgIf } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { Podcast } from '../models/podcast.model';
 import { Event } from '../models/event.model';
 import { CallForPapers } from '../models/call-for-papers.model';
@@ -30,96 +30,98 @@ type SearchResults = {
 @Component({
   selector: 'app-search-modal',
   template: `
-    <mat-dialog-content class="!pt-0" *ngIf="results$ | async as results">
-      <mat-form-field
-        class="sticky w-full z-10 search-field bg-[#424242] pt-5"
-        appearance="outline"
-        subscriptSizing="dynamic"
-      >
-        <mat-icon matPrefix svgIcon="search"></mat-icon>
-        <input
-          [formControl]="searchControl"
-          matInput
-          type="text"
-          placeholder="Search"
-          aria-label="Search activities across the whole application"
-        />
-        <button
-          *ngIf="searchControl.value"
-          type="button"
-          mat-icon-button
-          matSuffix
-          (click)="reset()"
+    @if (results$ | async; as results) {
+      <mat-dialog-content class="!pt-0">
+        <mat-form-field
+          class="sticky w-full z-10 search-field bg-[#424242] pt-5"
+          appearance="outline"
+          subscriptSizing="dynamic"
         >
-          <mat-icon svgIcon="cancel"></mat-icon>
-        </button>
-      </mat-form-field>
-      <ng-container *ngIf="results.events.length">
-        <div class="mt-2">Events</div>
-        <mat-nav-list>
-          <a
-            mat-list-item
-            *ngFor="let event of results.events"
-            [attr.aria-labelledby]="event.title"
-            [href]="event.url"
-            target="_blank"
-          >
-            <app-event-lite-card [event]="event"></app-event-lite-card>
-          </a>
-        </mat-nav-list>
-      </ng-container>
-      <ng-container *ngIf="results.cfp.length">
-        <div class="mt-2">Call for papers</div>
-        <mat-nav-list>
-          <a
-            mat-list-item
-            *ngFor="let cfp of results.cfp"
-            [attr.aria-labelledby]="cfp.title"
-            [href]="cfp.url"
-            target="_blank"
-          >
-            <app-cfp-lite-card [cfp]="cfp"></app-cfp-lite-card>
-          </a>
-        </mat-nav-list>
-      </ng-container>
-      <ng-container *ngIf="results.communities.length">
-        <div class="mt-2">Communities</div>
-        <mat-nav-list>
-          <a
-            mat-list-item
-            *ngFor="let community of results.communities"
-            [attr.aria-labelledby]="community.title"
-            [href]="community.url"
-            target="_blank"
-          >
-            <app-community-lite-card
-              [community]="community"
-            ></app-community-lite-card>
-          </a>
-        </mat-nav-list>
-      </ng-container>
-      <ng-container *ngIf="results.podcasts.length">
-        <div class="mt-2">Podcasts</div>
-        <mat-nav-list>
-          <a
-            mat-list-item
-            *ngFor="let podcast of results.podcasts"
-            [attr.aria-labelledby]="podcast.title"
-            [href]="podcast.url"
-            target="_blank"
-          >
-            <app-podcast-lite-card [podcast]="podcast"></app-podcast-lite-card>
-          </a>
-        </mat-nav-list>
-      </ng-container>
-    </mat-dialog-content>
+          <mat-icon matPrefix svgIcon="search"></mat-icon>
+          <input
+            [formControl]="searchControl"
+            matInput
+            type="text"
+            placeholder="Search"
+            aria-label="Search activities across the whole application"
+          />
+          @if (searchControl.value) {
+            <button type="button" mat-icon-button matSuffix (click)="reset()">
+              <mat-icon svgIcon="cancel"></mat-icon>
+            </button>
+          }
+        </mat-form-field>
+        @if (results.events.length) {
+          <div class="mt-2">Events</div>
+          <mat-nav-list>
+            @for (event of results.events; track event.title) {
+              <a
+                mat-list-item
+                [attr.aria-labelledby]="event.title"
+                [href]="event.url"
+                target="_blank"
+              >
+                <app-event-lite-card [event]="event"></app-event-lite-card>
+              </a>
+            }
+          </mat-nav-list>
+        }
+        @if (results.cfp.length) {
+          <div class="mt-2">Call for papers</div>
+          <mat-nav-list>
+            @for (cfp of results.cfp; track cfp.title) {
+              <a
+                mat-list-item
+                [attr.aria-labelledby]="cfp.title"
+                [href]="cfp.url"
+                target="_blank"
+              >
+                <app-cfp-lite-card [cfp]="cfp"></app-cfp-lite-card>
+              </a>
+            }
+          </mat-nav-list>
+        }
+        @if (results.communities.length) {
+          <div class="mt-2">Communities</div>
+          <mat-nav-list>
+            @for (community of results.communities; track community.title) {
+              <a
+                mat-list-item
+                [attr.aria-labelledby]="community.title"
+                [href]="community.url"
+                target="_blank"
+              >
+                <app-community-lite-card
+                  [community]="community"
+                ></app-community-lite-card>
+              </a>
+            }
+          </mat-nav-list>
+        }
+        @if (results.podcasts.length) {
+          <div class="mt-2">Podcasts</div>
+          <mat-nav-list>
+            @for (podcast of results.podcasts; track podcast.title) {
+              <a
+                mat-list-item
+                [attr.aria-labelledby]="podcast.title"
+                [href]="podcast.url"
+                target="_blank"
+              >
+                <app-podcast-lite-card
+                  [podcast]="podcast"
+                ></app-podcast-lite-card>
+              </a>
+            }
+          </mat-nav-list>
+        }
+      </mat-dialog-content>
+    }
   `,
   standalone: true,
   imports: [
     MatFormFieldModule,
     MatInputModule,
-    NgForOf,
-    NgIf,
     AsyncPipe,
     MatListModule,
     MatIconModule,

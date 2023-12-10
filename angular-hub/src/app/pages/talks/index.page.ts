@@ -1,5 +1,5 @@
 import { Component, inject, Input } from '@angular/core';
-import { NgForOf, NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { CommunityCardComponent } from '../../components/cards/community-card.component';
 import { RouterLink } from '@angular/router';
 import { TalkCardComponent } from '../../components/cards/talk-card.component';
@@ -23,7 +23,6 @@ export const routeMeta: RouteMeta = {
   selector: 'app-talks',
   standalone: true,
   imports: [
-    NgForOf,
     NgOptimizedImage,
     CommunityCardComponent,
     RouterLink,

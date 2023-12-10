@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ContentFile, injectContentFiles } from '@analogjs/content';
-import { AsyncPipe, NgForOf } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { Community } from '../../models/community.model';
 import { CommunityCardComponent } from '../../components/cards/community-card.component';
 import {
@@ -34,7 +34,6 @@ export const routeMeta: RouteMeta = {
   selector: 'app-communities',
   standalone: true,
   imports: [
-    NgForOf,
     CommunityCardComponent,
     RouterLink,
     SearchBarComponent,
@@ -80,17 +79,21 @@ export const routeMeta: RouteMeta = {
       </ul>
     </nav>
     <mat-nav-list>
-      <a
-        mat-list-item
-        *ngFor="let community of communities$ | async; trackBy: trackbyFn"
-        [attr.aria-labelledby]="community.attributes.title"
-        [href]="community.attributes.url"
-        target="_blank"
-      >
-        <app-community-card
-          [community]="community.attributes"
-        ></app-community-card>
-      </a>
+      @for (
+        community of communities$ | async;
+        track community.attributes.title
+      ) {
+        <a
+          mat-list-item
+          [attr.aria-labelledby]="community.attributes.title"
+          [href]="community.attributes.url"
+          target="_blank"
+        >
+          <app-community-card
+            [community]="community.attributes"
+          ></app-community-card>
+        </a>
+      }
     </mat-nav-list>
   `,
   styles: `
@@ -165,10 +168,5 @@ export default class EvenementsComponent {
       .includes(searchTerm.toLowerCase());
 
     return isTitleMatching || isLocationMatching;
-  }
-
-  // TODO : to be removed with control flow update
-  trackbyFn(index: number, community: ContentFile<Community>): string {
-    return community.attributes.title;
   }
 }
