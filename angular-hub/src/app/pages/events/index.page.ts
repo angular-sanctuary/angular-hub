@@ -78,6 +78,8 @@ export const routeMeta: RouteMeta = {
         >
           <app-event-card [event]="event.attributes"></app-event-card>
         </a>
+      } @empty {
+        <span>No Events found!</span>
       }
     </mat-nav-list>
   `,

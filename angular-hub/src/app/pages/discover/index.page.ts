@@ -63,17 +63,16 @@ export const routeMeta: RouteMeta = {
             >
               <app-event-card [event]="event.attributes"></app-event-card>
             </a>
+          } @empty {
+            <p class="mb-4">There are no more events planned this week!</p>
+            <a
+              class="text-xl font-bold bg-primary px-6 py-2 rounded-lg"
+              routerLink="/events"
+              [queryParams]="{ state: 'upcoming' }"
+              >Discover upcoming events</a
+            >
           }
         </mat-nav-list>
-        @if (!currentWeekEvents.length) {
-          <p class="mb-4">There are no more events planned this week!</p>
-          <a
-            class="text-xl font-bold bg-primary px-6 py-2 rounded-lg"
-            routerLink="/events"
-            [queryParams]="{ state: 'upcoming' }"
-            >Discover upcoming events</a
-          >
-        }
       </section>
       <section>
         <h2 class="text-2xl text-start sm:text-3xl font-bold mt-2 mb-4">
@@ -89,6 +88,8 @@ export const routeMeta: RouteMeta = {
             >
               <app-cfp-card [cfp]="cfp.attributes"></app-cfp-card>
             </a>
+          } @empty {
+            <span>No CFPs at the moment!</span>
           }
         </mat-nav-list>
       </section>
