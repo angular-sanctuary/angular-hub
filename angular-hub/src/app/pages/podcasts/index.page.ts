@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { ContentFile, injectContentFiles } from '@analogjs/content';
-import { AsyncPipe, NgForOf } from '@angular/common';
+import { injectContentFiles } from '@analogjs/content';
+import { AsyncPipe } from '@angular/common';
 import {
   ActivatedRoute,
   Router,
@@ -33,7 +33,6 @@ export const routeMeta: RouteMeta = {
   selector: 'app-podcasts',
   standalone: true,
   imports: [
-    NgForOf,
     RouterLink,
     SearchBarComponent,
     RouterLinkActive,
@@ -45,15 +44,16 @@ export const routeMeta: RouteMeta = {
   template: `
     <app-search-bar [formControl]="searchControl"></app-search-bar>
     <mat-nav-list>
-      <a
-        mat-list-item
-        *ngFor="let podcast of podcasts$ | async; trackBy: trackbyFn"
-        [attr.aria-labelledby]="podcast.attributes.title"
-        [href]="podcast.attributes.url"
-        target="_blank"
-      >
-        <app-podcast-card [podcast]="podcast.attributes"></app-podcast-card>
-      </a>
+      @for (podcast of podcasts$ | async; track podcast.attributes.title) {
+        <a
+          mat-list-item
+          [attr.aria-labelledby]="podcast.attributes.title"
+          [href]="podcast.attributes.url"
+          target="_blank"
+        >
+          <app-podcast-card [podcast]="podcast.attributes"></app-podcast-card>
+        </a>
+      }
     </mat-nav-list>
   `,
   styles: `
@@ -107,10 +107,5 @@ export default class PodcastsComponent {
     }
 
     return podcast.title.toLowerCase().includes(searchTerm.toLowerCase());
-  }
-
-  // TODO : to be removed with control flow update
-  trackbyFn(index: number, podcast: ContentFile<Podcast>): string {
-    return podcast.attributes.title;
   }
 }

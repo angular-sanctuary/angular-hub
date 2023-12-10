@@ -17,7 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDrawer, MatSidenavModule } from '@angular/material/sidenav';
-import { isPlatformBrowser, NgClass, NgIf } from '@angular/common';
+import { isPlatformBrowser, NgClass } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
 import {
   IsActiveMatchOptions,
@@ -46,7 +46,6 @@ import { RxLet } from '@rx-angular/template/let';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    NgIf,
     RouterLink,
     RouterLinkActive,
     FooterComponent,

@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CallForPapers } from '../../models/call-for-papers.model';
-import { DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
+import { DatePipe, NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-cfp-card',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage, DatePipe, NgIf],
+  imports: [NgOptimizedImage, DatePipe],
   template: `
     <article class="flex w-full items-center gap-4">
       <img
@@ -17,12 +17,11 @@ import { DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
         alt=""
       />
       <div class="text-start">
-        <span
-          *ngIf="cfp.deadline"
-          class="font-bold text-primary"
-          itemprop="date"
-          >Until {{ cfp.deadline | date }}</span
-        >
+        @if (cfp.deadline) {
+          <span class="font-bold text-primary" itemprop="date"
+            >Until {{ cfp.deadline | date }}</span
+          >
+        }
         <h3 [attr.id]="cfp.title" class="text-xl font-bold" itemprop="title">
           {{ cfp.title }}
         </h3>

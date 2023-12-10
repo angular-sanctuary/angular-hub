@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { EventCardComponent } from '../../components/cards/event-card.component';
 import { ContentFile, injectContentFiles } from '@analogjs/content';
-import { AsyncPipe, NgForOf } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import {
   ActivatedRoute,
   Router,
@@ -35,7 +35,6 @@ export const routeMeta: RouteMeta = {
   selector: 'app-cfps',
   standalone: true,
   imports: [
-    NgForOf,
     RouterLink,
     CfpCardComponent,
     SearchBarComponent,
@@ -87,15 +86,16 @@ export const routeMeta: RouteMeta = {
       </ul>
     </nav>
     <mat-nav-list>
-      <a
-        mat-list-item
-        *ngFor="let cfp of cfps$ | async; trackBy: trackbyFn"
-        [attr.aria-labelledby]="cfp.attributes.title"
-        [href]="cfp.attributes.url"
-        target="_blank"
-      >
-        <app-cfp-card [cfp]="cfp.attributes"></app-cfp-card>
-      </a>
+      @for (cfp of cfps$ | async; track cfp.attributes.title) {
+        <a
+          mat-list-item
+          [attr.aria-labelledby]="cfp.attributes.title"
+          [href]="cfp.attributes.url"
+          target="_blank"
+        >
+          <app-cfp-card [cfp]="cfp.attributes"></app-cfp-card>
+        </a>
+      }
     </mat-nav-list>
   `,
   styles: `
@@ -169,10 +169,5 @@ export default class CallForPapersComponent {
       .includes(searchTerm.toLowerCase());
 
     return isTitleMatching || isLocationMatching;
-  }
-
-  // TODO : to be removed with control flow update
-  trackbyFn(index: number, cfp: ContentFile<CallForPapers>): string {
-    return cfp.attributes.title;
   }
 }

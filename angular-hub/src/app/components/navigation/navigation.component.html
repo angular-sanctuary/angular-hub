@@ -50,10 +50,11 @@
         >
         <a mat-list-item routerLink="/talks" routerLinkActive="active">Talks</a>
       </mat-nav-list>
-      <app-footer *ngIf="!isHandset" [isHandset]="false"></app-footer>
+      @if (!isHandset) {
+        <app-footer [isHandset]="false"></app-footer>
+      }
     </div>
   </mat-sidenav>
-
   <mat-sidenav
     #settings
     class="min-w-[300px]"
@@ -65,15 +66,16 @@
   >
     <mat-toolbar class="flex justify-between items-center !bg-inherit">
       <span class="font-bold text-lg">Settings</span>
-      <button
-        mat-icon-button
-        type="button"
-        (click)="settings.close()"
-        aria-label="Close settings panel"
-        *ngIf="isHandset"
-      >
-        <mat-icon svgIcon="close"></mat-icon>
-      </button>
+      @if (isHandset) {
+        <button
+          mat-icon-button
+          type="button"
+          (click)="settings.close()"
+          aria-label="Close settings panel"
+        >
+          <mat-icon svgIcon="close"></mat-icon>
+        </button>
+      }
     </mat-toolbar>
     <section class="p-2">
       <fieldset>
@@ -135,7 +137,6 @@
       </fieldset>
     </section>
   </mat-sidenav>
-
   <mat-sidenav-content class="!flex flex-col p-4">
     <header
       class="flex justify-between"
@@ -144,24 +145,21 @@
         'items-start': !isHandset
       }"
     >
-      <button
-        *ngIf="isHandset"
-        type="button"
-        aria-label="Open navigation menu"
-        mat-icon-button
-        (click)="navigation.toggle()"
-      >
-        <mat-icon svgIcon="menu"></mat-icon>
-      </button>
-
-      <span *ngIf="isHandset" class="title text-2xl">ANGULAR HUB</span>
-      <h1
-        *ngIf="!isHandset"
-        class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6"
-      >
-        {{ headerTitle() }}
-      </h1>
-
+      @if (isHandset) {
+        <button
+          type="button"
+          aria-label="Open navigation menu"
+          mat-icon-button
+          (click)="navigation.toggle()"
+        >
+          <mat-icon svgIcon="menu"></mat-icon>
+        </button>
+        <span class="title text-2xl">ANGULAR HUB</span>
+      } @else {
+        <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
+          {{ headerTitle() }}
+        </h1>
+      }
       <div>
         <button
           type="button"
@@ -171,7 +169,6 @@
         >
           <mat-icon svgIcon="search"></mat-icon>
         </button>
-
         <button
           type="button"
           aria-label="Open settings menu"
@@ -183,14 +180,15 @@
       </div>
     </header>
     <main class="flex-1">
-      <h1
-        *ngIf="isHandset && headerTitle()"
-        class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6"
-      >
-        {{ headerTitle() }}
-      </h1>
+      @if (isHandset && headerTitle()) {
+        <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
+          {{ headerTitle() }}
+        </h1>
+      }
       <router-outlet></router-outlet>
     </main>
-    <app-footer *ngIf="isHandset"></app-footer>
+    @if (isHandset) {
+      <app-footer></app-footer>
+    }
   </mat-sidenav-content>
 </mat-sidenav-container>

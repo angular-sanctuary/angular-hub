@@ -2,7 +2,7 @@ import { Component, inject, Input } from '@angular/core';
 import { HeaderService } from '../../services/header.service';
 import { RouteMeta } from '@analogjs/router';
 import { injectContentFiles } from '@analogjs/content';
-import { NgForOf, NgIf, NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { Event } from '../../models/event.model';
 import isThisSOWeek from 'date-fns/isThisISOWeek';
 import { EventCardComponent } from '../../components/cards/event-card.component';
@@ -32,7 +32,6 @@ export const routeMeta: RouteMeta = {
       Explore upcoming events and latest call for papers in the Angular
       community.
     </p>
-
     <a
       class="flex gap-2 items-center bg-white rounded-lg w-fit p-2 mt-8 mb-8 border-primary border-2 dark:border-white"
       href="https://t.co/Ho7xL97EDq"
@@ -55,17 +54,18 @@ export const routeMeta: RouteMeta = {
           Upcoming events this week
         </h2>
         <mat-nav-list>
-          <a
-            mat-list-item
-            *ngFor="let event of currentWeekEvents"
-            [attr.aria-labelledby]="event.attributes.title"
-            [href]="event.attributes.url"
-            target="_blank"
-          >
-            <app-event-card [event]="event.attributes"></app-event-card>
-          </a>
+          @for (event of currentWeekEvents; track event.attributes.title) {
+            <a
+              mat-list-item
+              [attr.aria-labelledby]="event.attributes.title"
+              [href]="event.attributes.url"
+              target="_blank"
+            >
+              <app-event-card [event]="event.attributes"></app-event-card>
+            </a>
+          }
         </mat-nav-list>
-        <ng-container *ngIf="!currentWeekEvents.length">
+        @if (!currentWeekEvents.length) {
           <p class="mb-4">There are no more events planned this week!</p>
           <a
             class="text-xl font-bold bg-primary px-6 py-2 rounded-lg"
@@ -73,34 +73,33 @@ export const routeMeta: RouteMeta = {
             [queryParams]="{ state: 'upcoming' }"
             >Discover upcoming events</a
           >
-        </ng-container>
+        }
       </section>
       <section>
         <h2 class="text-2xl text-start sm:text-3xl font-bold mt-2 mb-4">
           Submit your talks!
         </h2>
         <mat-nav-list>
-          <a
-            mat-list-item
-            *ngFor="let cfp of activeCallForPapers"
-            [attr.aria-labelledby]="cfp.attributes.title"
-            [href]="cfp.attributes.url"
-            target="_blank"
-          >
-            <app-cfp-card [cfp]="cfp.attributes"></app-cfp-card>
-          </a>
+          @for (cfp of activeCallForPapers; track cfp.attributes.title) {
+            <a
+              mat-list-item
+              [attr.aria-labelledby]="cfp.attributes.title"
+              [href]="cfp.attributes.url"
+              target="_blank"
+            >
+              <app-cfp-card [cfp]="cfp.attributes"></app-cfp-card>
+            </a>
+          }
         </mat-nav-list>
       </section>
     </div>
   `,
   standalone: true,
   imports: [
-    NgForOf,
     EventCardComponent,
     MatListModule,
     CfpCardComponent,
     NgOptimizedImage,
-    NgIf,
     RouterLink,
   ],
   styles: `

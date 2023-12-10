@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Event } from '../../models/event.model';
-import { DatePipe, NgForOf, NgIf, NgOptimizedImage } from '@angular/common';
+import { DatePipe, NgOptimizedImage } from '@angular/common';
 import { EventTagComponent } from '../event-tag.component';
 
 @Component({
@@ -25,19 +25,20 @@ import { EventTagComponent } from '../event-tag.component';
         <span class="font-bold text-primary mr-4" itemprop="date">{{
           event.date | date
         }}</span>
-
         <ul class="flex flex-wrap gap-2">
           <li class="inline">
             <app-event-tag [name]="event.language" />
           </li>
-          <li *ngFor="let tag of event.tags" class="inline">
-            <app-event-tag [name]="tag" />
-          </li>
+          @for (tag of event.tags; track tag) {
+            <li class="inline">
+              <app-event-tag [name]="tag" />
+            </li>
+          }
         </ul>
       </div>
     </article>
   `,
-  imports: [DatePipe, NgOptimizedImage, NgIf, NgForOf, EventTagComponent],
+  imports: [DatePipe, NgOptimizedImage, EventTagComponent],
   styles: [
     `
       :host {

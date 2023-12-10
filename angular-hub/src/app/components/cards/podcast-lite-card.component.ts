@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { NgForOf, NgIf, NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { EventTagComponent } from '../event-tag.component';
 import { Podcast } from '../../models/podcast.model';
 
@@ -15,7 +15,7 @@ import { Podcast } from '../../models/podcast.model';
       <app-event-tag [name]="podcast.language" />
     </article>
   `,
-  imports: [NgOptimizedImage, NgIf, NgForOf, EventTagComponent],
+  imports: [NgOptimizedImage, EventTagComponent],
   styles: [
     `
       :host {

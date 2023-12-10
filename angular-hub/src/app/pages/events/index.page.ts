@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { EventCardComponent } from '../../components/cards/event-card.component';
-import { ContentFile, injectContentFiles } from '@analogjs/content';
-import { AsyncPipe, NgForOf } from '@angular/common';
+import { injectContentFiles } from '@analogjs/content';
+import { AsyncPipe } from '@angular/common';
 import { Event } from '../../models/event.model';
 import {
   ActivatedRoute,
@@ -34,7 +34,6 @@ export const routeMeta: RouteMeta = {
   selector: 'app-evenements',
   standalone: true,
   imports: [
-    NgForOf,
     EventCardComponent,
     RouterLink,
     AsyncPipe,
@@ -69,17 +68,17 @@ export const routeMeta: RouteMeta = {
         </li>
       </ul>
     </nav>
-
     <mat-nav-list>
-      <a
-        mat-list-item
-        *ngFor="let event of events$ | async; trackBy: trackbyFn"
-        [attr.aria-labelledby]="event.attributes.title"
-        [href]="event.attributes.url"
-        target="_blank"
-      >
-        <app-event-card [event]="event.attributes"></app-event-card>
-      </a>
+      @for (event of events$ | async; track event.attributes.title) {
+        <a
+          mat-list-item
+          [attr.aria-labelledby]="event.attributes.title"
+          [href]="event.attributes.url"
+          target="_blank"
+        >
+          <app-event-card [event]="event.attributes"></app-event-card>
+        </a>
+      }
     </mat-nav-list>
   `,
   styles: `
@@ -167,11 +166,6 @@ export default class EvenementsComponent {
       .includes(searchTerm.toLowerCase());
 
     return isTitleMatching || isLocationMatching;
-  }
-
-  // TODO : to be removed with control flow update
-  trackbyFn(index: number, event: ContentFile<Event>): string {
-    return event.attributes.title;
   }
 
   today(): Date {
