@@ -76,7 +76,7 @@ export class NavigationComponent implements OnInit {
     .observe(Breakpoints.Handset)
     .pipe(
       map((result) => result.matches),
-      shareReplay()
+      shareReplay(),
     );
 
   @ViewChild('navigation') navigation!: MatDrawer;
@@ -116,7 +116,7 @@ export class NavigationComponent implements OnInit {
     this.#router.events
       .pipe(
         withLatestFrom(this.isHandset$),
-        filter(([a, b]) => b && a instanceof NavigationEnd)
+        filter(([a, b]) => b && a instanceof NavigationEnd),
       )
       .subscribe(() => this.navigation.close());
   }

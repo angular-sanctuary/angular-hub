@@ -109,31 +109,31 @@ export const routeMeta: RouteMeta = {
 export default class CallForPapersComponent {
   searchControl = new FormControl<string>('', { nonNullable: true });
   cfps = injectContentFiles<CallForPapers>(({ filename }) =>
-    filename.startsWith('/src/content/cfp/')
+    filename.startsWith('/src/content/cfp/'),
   );
 
   cfps$ = this.route.queryParams.pipe(
     tap(({ search = '' }) =>
-      this.searchControl.setValue(search, { emitEvent: false })
+      this.searchControl.setValue(search, { emitEvent: false }),
     ),
     map(({ search: searchTerm = '', state }) => {
       let cfps: ContentFile<CallForPapers>[] = this.cfps;
 
       if (state === 'meetups') {
         cfps = this.cfps.filter(
-          ({ attributes }) => attributes.type === 'meetup'
+          ({ attributes }) => attributes.type === 'meetup',
         );
       }
 
       if (state === 'conferences') {
         cfps = this.cfps.filter(
-          ({ attributes }) => attributes.type === 'conference'
+          ({ attributes }) => attributes.type === 'conference',
         );
       }
       return cfps.filter((cfp) =>
-        this.filterPredicate(cfp.attributes, searchTerm)
+        this.filterPredicate(cfp.attributes, searchTerm),
       );
-    })
+    }),
   );
 
   @Input() set header(header: string) {
@@ -143,7 +143,7 @@ export default class CallForPapersComponent {
   constructor(
     private readonly headerService: HeaderService,
     private readonly route: ActivatedRoute,
-    private readonly router: Router
+    private readonly router: Router,
   ) {
     this.searchControl.valueChanges
       .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())

@@ -145,25 +145,25 @@ export class SearchModalComponent {
   searchControl = new FormControl('', { nonNullable: true });
 
   events = injectContentFiles<Event>(({ filename }) =>
-    filename.startsWith('/src/content/events/')
+    filename.startsWith('/src/content/events/'),
   ).map((event) => event.attributes);
 
   callForPapers = injectContentFiles<CallForPapers>(({ filename }) =>
-    filename.startsWith('/src/content/cfp/')
+    filename.startsWith('/src/content/cfp/'),
   ).map((cfp) => cfp.attributes);
 
   communities = injectContentFiles<Community>(({ filename }) =>
-    filename.startsWith('/src/content/communities/')
+    filename.startsWith('/src/content/communities/'),
   ).map((community) => community.attributes);
 
   podcasts = injectContentFiles<Podcast>(({ filename }) =>
-    filename.startsWith('/src/content/podcasts/')
+    filename.startsWith('/src/content/podcasts/'),
   ).map((podcast) => podcast.attributes);
 
   results$: Observable<SearchResults> = this.searchControl.valueChanges.pipe(
     map((searchTerm: string) => this.filter(searchTerm)),
     startWith(this.setDefaultResults()),
-    shareReplay()
+    shareReplay(),
   );
 
   filter(searchTerm: string): SearchResults {

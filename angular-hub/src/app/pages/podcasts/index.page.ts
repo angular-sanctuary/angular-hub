@@ -67,18 +67,18 @@ export const routeMeta: RouteMeta = {
 export default class PodcastsComponent {
   searchControl = new FormControl<string>('', { nonNullable: true });
   podcasts = injectContentFiles<Podcast>(({ filename }) =>
-    filename.startsWith('/src/content/podcasts/')
+    filename.startsWith('/src/content/podcasts/'),
   );
 
   podcasts$ = this.route.queryParams.pipe(
     tap(({ search = '' }) =>
-      this.searchControl.setValue(search, { emitEvent: false })
+      this.searchControl.setValue(search, { emitEvent: false }),
     ),
     map(({ search: searchTerm = '' }) => {
       return this.podcasts.filter((podcast) =>
-        this.filterPredicate(podcast.attributes, searchTerm)
+        this.filterPredicate(podcast.attributes, searchTerm),
       );
-    })
+    }),
   );
 
   @Input() set header(header: string) {
@@ -88,7 +88,7 @@ export default class PodcastsComponent {
   constructor(
     private headerService: HeaderService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
   ) {
     this.searchControl.valueChanges
       .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())

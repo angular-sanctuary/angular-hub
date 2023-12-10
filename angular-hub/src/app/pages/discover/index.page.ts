@@ -118,13 +118,13 @@ export default class DiscoverComponent {
   #headerService = inject(HeaderService);
 
   currentWeekEvents = injectContentFiles<Event>(({ filename }) =>
-    filename.startsWith('/src/content/events/')
+    filename.startsWith('/src/content/events/'),
   )
     .filter((event) => isThisSOWeek(new Date(event.attributes.date)))
     .filter((event) => isFuture(new Date(event.attributes.date)));
 
   activeCallForPapers = injectContentFiles<CallForPapers>(({ filename }) =>
-    filename.startsWith('/src/content/cfp/')
+    filename.startsWith('/src/content/cfp/'),
   ).filter((event) => new Date(event.attributes.deadline) > new Date());
 
   @Input() set header(header: string) {

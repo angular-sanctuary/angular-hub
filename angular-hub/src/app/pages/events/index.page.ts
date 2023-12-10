@@ -94,18 +94,18 @@ export default class EvenementsComponent {
   searchControl = new FormControl<string>('', { nonNullable: true });
 
   evenements = injectContentFiles<Event>(({ filename }) =>
-    filename.startsWith('/src/content/events/')
+    filename.startsWith('/src/content/events/'),
   );
   pastEvents = this.evenements.filter(
-    (event) => new Date(event.attributes.date) < this.today()
+    (event) => new Date(event.attributes.date) < this.today(),
   );
   upcomingEvents = this.evenements.filter(
-    (event) => new Date(event.attributes.date) >= this.today()
+    (event) => new Date(event.attributes.date) >= this.today(),
   );
 
   events$ = this.route.queryParams.pipe(
     tap(({ search = '' }) =>
-      this.searchControl.setValue(search, { emitEvent: false })
+      this.searchControl.setValue(search, { emitEvent: false }),
     ),
     map(({ search: searchTerm = '', state }) => {
       if (state === 'past') {
@@ -131,7 +131,7 @@ export default class EvenementsComponent {
             ? a.attributes.title.localeCompare(b.attributes.title)
             : dayDiff;
         });
-    })
+    }),
   );
 
   @Input() set header(header: string) {
@@ -141,7 +141,7 @@ export default class EvenementsComponent {
   constructor(
     private headerService: HeaderService,
     private readonly route: ActivatedRoute,
-    private readonly router: Router
+    private readonly router: Router,
   ) {
     this.searchControl.valueChanges
       .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())
