@@ -23,14 +23,14 @@ export class AppComponent {
 
   constructor(
     private readonly iconRegistry: MatIconRegistry,
-    private readonly sanitizer: DomSanitizer
+    private readonly sanitizer: DomSanitizer,
   ) {
     this.icons.forEach((icon) => {
       this.iconRegistry.addSvgIcon(
         icon,
         this.sanitizer.bypassSecurityTrustResourceUrl(
-          `assets/icons/${icon}.svg`
-        )
+          `assets/icons/${icon}.svg`,
+        ),
       );
     });
   }

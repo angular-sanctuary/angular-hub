@@ -104,32 +104,32 @@ export const routeMeta: RouteMeta = {
 export default class EvenementsComponent {
   searchControl = new FormControl<string>('', { nonNullable: true });
   communities = injectContentFiles<Community>(({ filename }) =>
-    filename.startsWith('/src/content/communities/')
+    filename.startsWith('/src/content/communities/'),
   );
 
   communities$ = this.route.queryParams.pipe(
     tap(({ search = '' }) =>
-      this.searchControl.setValue(search, { emitEvent: false })
+      this.searchControl.setValue(search, { emitEvent: false }),
     ),
     map(({ search: searchTerm = '', state }) => {
       let communities: ContentFile<Community>[] = this.communities;
 
       if (state === 'meetups') {
         communities = this.communities.filter(
-          ({ attributes }) => attributes.type === 'meetup'
+          ({ attributes }) => attributes.type === 'meetup',
         );
       }
 
       if (state === 'conferences') {
         communities = this.communities.filter(
-          ({ attributes }) => attributes.type === 'conference'
+          ({ attributes }) => attributes.type === 'conference',
         );
       }
 
       return communities.filter((community) =>
-        this.filterPredicate(community.attributes, searchTerm)
+        this.filterPredicate(community.attributes, searchTerm),
       );
-    })
+    }),
   );
 
   @Input() set header(header: string) {
@@ -139,7 +139,7 @@ export default class EvenementsComponent {
   constructor(
     private readonly headerService: HeaderService,
     private readonly route: ActivatedRoute,
-    private readonly router: Router
+    private readonly router: Router,
   ) {
     this.searchControl.valueChanges
       .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())
