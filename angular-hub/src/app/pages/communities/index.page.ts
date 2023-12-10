@@ -93,6 +93,8 @@ export const routeMeta: RouteMeta = {
             [community]="community.attributes"
           ></app-community-card>
         </a>
+      } @empty {
+        <span>No Communities found!</span>
       }
     </mat-nav-list>
   `,

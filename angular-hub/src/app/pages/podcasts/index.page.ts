@@ -53,6 +53,8 @@ export const routeMeta: RouteMeta = {
         >
           <app-podcast-card [podcast]="podcast.attributes"></app-podcast-card>
         </a>
+      } @empty {
+        <span>No Podcasts found!</span>
       }
     </mat-nav-list>
   `,

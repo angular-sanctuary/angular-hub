@@ -95,6 +95,8 @@ export const routeMeta: RouteMeta = {
         >
           <app-cfp-card [cfp]="cfp.attributes"></app-cfp-card>
         </a>
+      } @empty {
+        <span>No CFPs found!</span>
       }
     </mat-nav-list>
   `,
