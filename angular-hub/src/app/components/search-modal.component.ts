@@ -32,7 +32,7 @@ type SearchResults = {
   template: `
     <mat-dialog-content class="!pt-0" *ngIf="results$ | async as results">
       <mat-form-field
-        class="sticky w-full z-10 search-field bg-[#424242] pt-5"
+        class="sticky w-full z-10 search-field bg-white dark:bg-[#424242] pt-5"
         appearance="outline"
         subscriptSizing="dynamic"
       >
