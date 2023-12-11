@@ -27,7 +27,7 @@
     "eslint-plugin-html": "^7.1.0",
     "front-matter": "^4.0.2",
     "marked": "^5.0.2",
-    "marked-gfm-heading-id": "^3.1.0",
+    "marked-gfm-heading-id": "^3.1.2",
     "marked-highlight": "^2.0.1",
     "mermaid": "^10.2.4",
     "prismjs": "^1.29.0",
