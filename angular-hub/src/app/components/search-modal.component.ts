@@ -31,91 +31,86 @@ type SearchResults = {
   selector: 'app-search-modal',
   template: `
     @if (results$ | async; as results) {
-      <mat-dialog-content class="!pt-0">
-        <mat-form-field
-          class="sticky w-full z-10 search-field bg-[#424242] pt-5"
-          appearance="outline"
-          subscriptSizing="dynamic"
+    <mat-dialog-content class="!pt-0">
+      <mat-form-field
+        class="sticky w-full z-10 search-field bg-white dark:bg-[#424242] pt-5"
+        appearance="outline"
+        subscriptSizing="dynamic"
+      >
+        <mat-icon matPrefix svgIcon="search"></mat-icon>
+        <input
+          [formControl]="searchControl"
+          matInput
+          type="text"
+          placeholder="Search"
+          aria-label="Search activities across the whole application"
+        />
+        @if (searchControl.value) {
+        <button type="button" mat-icon-button matSuffix (click)="reset()">
+          <mat-icon svgIcon="cancel"></mat-icon>
+        </button>
+        }
+      </mat-form-field>
+      @if (results.events.length) {
+      <div class="mt-2">Events</div>
+      <mat-nav-list>
+        @for (event of results.events; track event.title) {
+        <a
+          mat-list-item
+          [attr.aria-labelledby]="event.title"
+          [href]="event.url"
+          target="_blank"
         >
-          <mat-icon matPrefix svgIcon="search"></mat-icon>
-          <input
-            [formControl]="searchControl"
-            matInput
-            type="text"
-            placeholder="Search"
-            aria-label="Search activities across the whole application"
-          />
-          @if (searchControl.value) {
-            <button type="button" mat-icon-button matSuffix (click)="reset()">
-              <mat-icon svgIcon="cancel"></mat-icon>
-            </button>
-          }
-        </mat-form-field>
-        @if (results.events.length) {
-          <div class="mt-2">Events</div>
-          <mat-nav-list>
-            @for (event of results.events; track event.title) {
-              <a
-                mat-list-item
-                [attr.aria-labelledby]="event.title"
-                [href]="event.url"
-                target="_blank"
-              >
-                <app-event-lite-card [event]="event"></app-event-lite-card>
-              </a>
-            }
-          </mat-nav-list>
+          <app-event-lite-card [event]="event"></app-event-lite-card>
+        </a>
         }
-        @if (results.cfp.length) {
-          <div class="mt-2">Call for papers</div>
-          <mat-nav-list>
-            @for (cfp of results.cfp; track cfp.title) {
-              <a
-                mat-list-item
-                [attr.aria-labelledby]="cfp.title"
-                [href]="cfp.url"
-                target="_blank"
-              >
-                <app-cfp-lite-card [cfp]="cfp"></app-cfp-lite-card>
-              </a>
-            }
-          </mat-nav-list>
+      </mat-nav-list>
+      } @if (results.cfp.length) {
+      <div class="mt-2">Call for papers</div>
+      <mat-nav-list>
+        @for (cfp of results.cfp; track cfp.title) {
+        <a
+          mat-list-item
+          [attr.aria-labelledby]="cfp.title"
+          [href]="cfp.url"
+          target="_blank"
+        >
+          <app-cfp-lite-card [cfp]="cfp"></app-cfp-lite-card>
+        </a>
         }
-        @if (results.communities.length) {
-          <div class="mt-2">Communities</div>
-          <mat-nav-list>
-            @for (community of results.communities; track community.title) {
-              <a
-                mat-list-item
-                [attr.aria-labelledby]="community.title"
-                [href]="community.url"
-                target="_blank"
-              >
-                <app-community-lite-card
-                  [community]="community"
-                ></app-community-lite-card>
-              </a>
-            }
-          </mat-nav-list>
+      </mat-nav-list>
+      } @if (results.communities.length) {
+      <div class="mt-2">Communities</div>
+      <mat-nav-list>
+        @for (community of results.communities; track community.title) {
+        <a
+          mat-list-item
+          [attr.aria-labelledby]="community.title"
+          [href]="community.url"
+          target="_blank"
+        >
+          <app-community-lite-card
+            [community]="community"
+          ></app-community-lite-card>
+        </a>
         }
-        @if (results.podcasts.length) {
-          <div class="mt-2">Podcasts</div>
-          <mat-nav-list>
-            @for (podcast of results.podcasts; track podcast.title) {
-              <a
-                mat-list-item
-                [attr.aria-labelledby]="podcast.title"
-                [href]="podcast.url"
-                target="_blank"
-              >
-                <app-podcast-lite-card
-                  [podcast]="podcast"
-                ></app-podcast-lite-card>
-              </a>
-            }
-          </mat-nav-list>
+      </mat-nav-list>
+      } @if (results.podcasts.length) {
+      <div class="mt-2">Podcasts</div>
+      <mat-nav-list>
+        @for (podcast of results.podcasts; track podcast.title) {
+        <a
+          mat-list-item
+          [attr.aria-labelledby]="podcast.title"
+          [href]="podcast.url"
+          target="_blank"
+        >
+          <app-podcast-lite-card [podcast]="podcast"></app-podcast-lite-card>
+        </a>
         }
-      </mat-dialog-content>
+      </mat-nav-list>
+      }
+    </mat-dialog-content>
     }
   `,
   standalone: true,
@@ -147,25 +142,25 @@ export class SearchModalComponent {
   searchControl = new FormControl('', { nonNullable: true });
 
   events = injectContentFiles<Event>(({ filename }) =>
-    filename.startsWith('/src/content/events/'),
+    filename.startsWith('/src/content/events/')
   ).map((event) => event.attributes);
 
   callForPapers = injectContentFiles<CallForPapers>(({ filename }) =>
-    filename.startsWith('/src/content/cfp/'),
+    filename.startsWith('/src/content/cfp/')
   ).map((cfp) => cfp.attributes);
 
   communities = injectContentFiles<Community>(({ filename }) =>
-    filename.startsWith('/src/content/communities/'),
+    filename.startsWith('/src/content/communities/')
   ).map((community) => community.attributes);
 
   podcasts = injectContentFiles<Podcast>(({ filename }) =>
-    filename.startsWith('/src/content/podcasts/'),
+    filename.startsWith('/src/content/podcasts/')
   ).map((podcast) => podcast.attributes);
 
   results$: Observable<SearchResults> = this.searchControl.valueChanges.pipe(
     map((searchTerm: string) => this.filter(searchTerm)),
     startWith(this.setDefaultResults()),
-    shareReplay(),
+    shareReplay()
   );
 
   filter(searchTerm: string): SearchResults {
