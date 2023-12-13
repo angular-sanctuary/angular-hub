@@ -33,7 +33,7 @@ type SearchResults = {
     @if (results$ | async; as results) {
     <mat-dialog-content class="!pt-0">
       <mat-form-field
-        class="sticky w-full z-10 search-field bg-white dark:bg-[#424242] pt-5"
+        class="sticky w-full z-10 search-field pt-5"
         appearance="outline"
         subscriptSizing="dynamic"
       >
