@@ -4,12 +4,11 @@ import { RouteMeta } from '@analogjs/router';
 import { injectContentFiles } from '@analogjs/content';
 import { NgOptimizedImage } from '@angular/common';
 import { Event } from '../../models/event.model';
-import isThisSOWeek from 'date-fns/isThisISOWeek';
 import { EventCardComponent } from '../../components/cards/event-card.component';
 import { MatListModule } from '@angular/material/list';
 import { CallForPapers } from '../../models/call-for-papers.model';
 import { CfpCardComponent } from '../../components/cards/call-for-paper-card.component';
-import { isFuture } from 'date-fns';
+import { isFuture, isThisISOWeek, isToday } from 'date-fns';
 import { RouterLink } from '@angular/router';
 
 export const routeMeta: RouteMeta = {
@@ -119,9 +118,10 @@ export default class DiscoverComponent {
 
   currentWeekEvents = injectContentFiles<Event>(({ filename }) =>
     filename.startsWith('/src/content/events/'),
-  )
-    .filter((event) => isThisSOWeek(new Date(event.attributes.date)))
-    .filter((event) => isFuture(new Date(event.attributes.date)));
+  ).filter((event) => {
+    const date = new Date(event.attributes.date);
+    return isThisISOWeek(date) && (isToday(date) || isFuture(date));
+  });
 
   activeCallForPapers = injectContentFiles<CallForPapers>(({ filename }) =>
     filename.startsWith('/src/content/cfp/'),
