@@ -31,22 +31,7 @@ export const routeMeta: RouteMeta = {
       Explore upcoming events and latest call for papers in the Angular
       community.
     </p>
-    <a
-      class="flex gap-2 items-center bg-white rounded-lg w-fit p-2 mt-8 mb-8 border-primary border-2 dark:border-white"
-      href="https://t.co/Ho7xL97EDq"
-      target="_blank"
-      aria-labelledby="christmas"
-    >
-      <img
-        ngSrc="assets/logos/angular-space.webp"
-        alt=""
-        height="80"
-        width="80"
-      />
-      <span id="christmas" class="christmas text-xl font-bold sm:text-4xl"
-        >Angular Space Christmas Calendar</span
-      >
-    </a>
+
     <div class="flex flex-wrap gap-24">
       <section>
         <h2 class="text-2xl text-start sm:text-3xl font-bold mt-2 mb-4">
