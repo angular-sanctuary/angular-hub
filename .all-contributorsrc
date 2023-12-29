@@ -1,7 +1,9 @@
 {
   "projectName": "angular-hub",
   "projectOwner": "angular-sanctuary",
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "commitType": "docs",
   "commitConvention": "angular",
   "contributorsPerLine": 7,
@@ -11,84 +13,123 @@
       "name": "Patrick Murimi",
       "avatar_url": "https://avatars.githubusercontent.com/u/89421020?v=4",
       "profile": "https://linkfree.io/grand-rick001",
-      "contributions": ["code"]
+      "contributions": [
+        "code"
+      ]
     },
     {
       "login": "rlmestre",
       "name": "Rafael Mestre",
       "avatar_url": "https://avatars.githubusercontent.com/u/277805?v=4",
       "profile": "https://github.com/rlmestre",
-      "contributions": ["bug", "code"]
+      "contributions": [
+        "bug",
+        "code"
+      ]
     },
     {
       "login": "DominikPieper",
       "name": "Dominik Pieper",
       "avatar_url": "https://avatars.githubusercontent.com/u/77470?v=4",
       "profile": "http://nxext.dev",
-      "contributions": ["code"]
+      "contributions": [
+        "code"
+      ]
     },
     {
       "login": "giovnzcr",
       "name": "giovnzcr",
       "avatar_url": "https://avatars.githubusercontent.com/u/11030212?v=4",
       "profile": "https://github.com/giovnzcr",
-      "contributions": ["code"]
+      "contributions": [
+        "code"
+      ]
     },
     {
       "login": "Dyqmin",
       "name": "Dominik Donoch",
       "avatar_url": "https://avatars.githubusercontent.com/u/23712053?v=4",
       "profile": "https://github.com/Dyqmin",
-      "contributions": ["bug", "code"]
+      "contributions": [
+        "bug",
+        "code"
+      ]
     },
     {
       "login": "ilirbeqirii",
       "name": "Ilir Beqiri",
       "avatar_url": "https://avatars.githubusercontent.com/u/24731032?v=4",
       "profile": "https://github.com/ilirbeqirii",
-      "contributions": ["code"]
+      "contributions": [
+        "code"
+      ]
     },
     {
       "login": "eneajaho",
       "name": "Enea Jahollari",
       "avatar_url": "https://avatars.githubusercontent.com/u/25394362?v=4",
       "profile": "https://eneajaho.me",
-      "contributions": ["code", "bug"]
+      "contributions": [
+        "code",
+        "bug"
+      ]
     },
     {
       "login": "ahmedhmf",
       "name": "Ahmed Moustafa",
       "avatar_url": "https://avatars.githubusercontent.com/u/43710157?v=4",
       "profile": "https://ahmed-moustafa.de/",
-      "contributions": ["code"]
+      "contributions": [
+        "code"
+      ]
     },
     {
       "login": "rainerhahnekamp",
       "name": "Rainer Hahnekamp",
       "avatar_url": "https://avatars.githubusercontent.com/u/5721205?v=4",
       "profile": "https://www.rainerhahnekamp.com",
-      "contributions": ["code", "doc"]
+      "contributions": [
+        "code",
+        "doc"
+      ]
     },
     {
       "login": "ajitzero",
       "name": "Ajit Panigrahi",
       "avatar_url": "https://avatars.githubusercontent.com/u/19947758?v=4",
       "profile": "https://beta.ajitpanigrahi.com",
-      "contributions": ["code", "bug"]
+      "contributions": [
+        "code",
+        "bug"
+      ]
     },
     {
       "login": "nekomamoushi",
       "name": "nekomamoushi",
       "avatar_url": "https://avatars.githubusercontent.com/u/46743117?v=4",
       "profile": "https://github.com/nekomamoushi",
-      "contributions": ["code", "bug"]
+      "contributions": [
+        "code",
+        "bug"
+      ]
     },
     {
       "login": "d-koppenhagen",
       "name": "Danny Koppenhagen",
       "avatar_url": "https://avatars.githubusercontent.com/u/4279702?v=4",
       "profile": "https://k9n.dev",
-      "contributions": ["code"]
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "lucianomurr",
+      "name": "Luciano",
+      "avatar_url": "https://avatars.githubusercontent.com/u/281553?v=4",
+      "profile": "http://ngrome.io",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
