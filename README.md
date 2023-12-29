@@ -42,6 +42,7 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
       <td align="center" valign="top" width="14.28%"><a href="https://beta.ajitpanigrahi.com"><img src="https://avatars.githubusercontent.com/u/19947758?v=4?s=100" width="100px;" alt="Ajit Panigrahi"/><br /><sub><b>Ajit Panigrahi</b></sub></a><br /><a href="#code-ajitzero" title="Code">💻</a> <a href="#bug-ajitzero" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nekomamoushi"><img src="https://avatars.githubusercontent.com/u/46743117?v=4?s=100" width="100px;" alt="nekomamoushi"/><br /><sub><b>nekomamoushi</b></sub></a><br /><a href="#code-nekomamoushi" title="Code">💻</a> <a href="#bug-nekomamoushi" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://k9n.dev"><img src="https://avatars.githubusercontent.com/u/4279702?v=4?s=100" width="100px;" alt="Danny Koppenhagen"/><br /><sub><b>Danny Koppenhagen</b></sub></a><br /><a href="#code-d-koppenhagen" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://ngrome.io"><img src="https://avatars.githubusercontent.com/u/281553?v=4?s=100" width="100px;" alt="Luciano"/><br /><sub><b>Luciano</b></sub></a><br /><a href="#code-lucianomurr" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
