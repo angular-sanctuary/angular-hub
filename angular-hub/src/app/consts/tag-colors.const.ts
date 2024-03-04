@@ -10,4 +10,5 @@ export const TAG_COLORS_MAP: Record<Tag, string> = {
   English: '#963296',
   Spanish: '#963296',
   French: '#963296',
+  German: '#963296',
 };
