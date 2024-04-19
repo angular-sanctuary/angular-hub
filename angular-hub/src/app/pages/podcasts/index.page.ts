@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { injectContentFiles } from '@analogjs/content';
 import { AsyncPipe } from '@angular/common';
 import {
   ActivatedRoute,
@@ -11,11 +10,13 @@ import { SearchBarComponent } from '../../components/search-bar.component';
 import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { Podcast } from '../../models/podcast.model';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 import { MatListModule } from '@angular/material/list';
 import { PodcastCardComponent } from '../../components/cards/podcast-card.component';
-import { RouteMeta } from '@analogjs/router';
+import { injectLoad, RouteMeta } from '@analogjs/router';
 import { HeaderService } from '../../services/header.service';
+
+import { load } from './index.server';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -44,14 +45,14 @@ export const routeMeta: RouteMeta = {
   template: `
     <app-search-bar [formControl]="searchControl"></app-search-bar>
     <mat-nav-list>
-      @for (podcast of podcasts$ | async; track podcast.attributes.title) {
+      @for (podcast of podcasts$ | async; track podcast.title) {
         <a
           mat-list-item
-          [attr.aria-labelledby]="podcast.attributes.title"
-          [href]="podcast.attributes.url"
+          [attr.aria-labelledby]="podcast.title"
+          [href]="podcast.url"
           target="_blank"
         >
-          <app-podcast-card [podcast]="podcast.attributes"></app-podcast-card>
+          <app-podcast-card [podcast]="podcast"></app-podcast-card>
         </a>
       } @empty {
         <span>No Podcasts found!</span>
@@ -68,17 +69,16 @@ export const routeMeta: RouteMeta = {
 })
 export default class PodcastsComponent {
   searchControl = new FormControl<string>('', { nonNullable: true });
-  podcasts = injectContentFiles<Podcast>(({ filename }) =>
-    filename.startsWith('/src/content/podcasts/'),
-  );
+
+  podcasts = toSignal(injectLoad<typeof load>(), { requireSync: true });
 
   podcasts$ = this.route.queryParams.pipe(
     tap(({ search = '' }) =>
       this.searchControl.setValue(search, { emitEvent: false }),
     ),
     map(({ search: searchTerm = '' }) => {
-      return this.podcasts.filter((podcast) =>
-        this.filterPredicate(podcast.attributes, searchTerm),
+      return this.podcasts().filter((podcast) =>
+        this.filterPredicate(podcast, searchTerm),
       );
     }),
   );
