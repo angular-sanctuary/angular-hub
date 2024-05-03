@@ -296,11 +296,12 @@
     "callForPapers": null,
     "events": [
       {
-        "name": "NG Poland 2021",
+        "name": "NG Poland 2024",
         "type": "conference",
-        "date": "2021-10-07",
+        "date": "2024-11-06",
         "url": "https://ng-poland.pl/",
-        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform"
+        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform",
+        "callForPapersEndDate": "2024-10-01"
       }
     ]
   },
