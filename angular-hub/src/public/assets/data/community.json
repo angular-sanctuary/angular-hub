@@ -53,7 +53,8 @@
     "location": "Earth",
     "url": "https://angularcommunity.net/home",
     "logo": "https://pbs.twimg.com/profile_images/1547959576015749120/96f233Pr_400x400.jpg",
-    "twitter": "https://twitter.com/angular_meetup"
+    "twitter": "https://twitter.com/angular_meetup",
+    "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSf9FOzaJiqM9xnWY-Zq5ZeRmsNVIhjD9zwuf3xzmEZ5Modg4w/viewform"
   },
   {
     "title": "Angular Costa Rica",
@@ -61,7 +62,8 @@
     "location": "San Jose, Costa rica",
     "url": "https://www.facebook.com/angularcostarica",
     "logo": "https://pbs.twimg.com/profile_images/1275887771048083459/SldZRi5t_400x400.jpg",
-    "twitter": "https://twitter.com/AngularCR"
+    "twitter": "https://twitter.com/AngularCR",
+    "callForSpeakers": "https://bit.ly/CR-Ang-CFP"
   },
   {
     "title": "Angular Devs France",
@@ -69,7 +71,8 @@
     "location": "France",
     "url": "https://angulardevs.fr/",
     "logo": "assets/logos/angular-devs-france.webp",
-    "twitter": ""
+    "twitter": "",
+    "callForSpeakers": "https://conference-hall.io/public/event/xXhZVEbtz1mMoWZYhsoE"
   },
   {
     "title": "Angular Kenya",
@@ -93,7 +96,7 @@
     "location": "London, United Kingdom",
     "url": "https://www.meetup.com/fr-FR/angular-london/",
     "logo": "assets/logos/official-logo.webp",
-    "twitter": "https://twitter.com/AngularWroclaw"
+    "twitter": ""
   },
   {
     "title": "Angular Macedonia",
@@ -109,7 +112,8 @@
     "location": "Berlin, Germany",
     "url": "https://www.meetup.com/angular-meetup-berlin/",
     "logo": "https://pbs.twimg.com/profile_images/1729219640901951488/c4JxFpbx_400x400.jpg",
-    "twitter": "https://twitter.com/angular_berlin"
+    "twitter": "https://twitter.com/angular_berlin",
+    "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSf-_RihpWISuyoKt9PZW-TNNcYDFTZGZ5DPtca9i3tZLNN3CA/viewform"
   },
   {
     "title": "Angular Meetup Graz",
@@ -133,7 +137,8 @@
     "location": "Melbourne, Australia",
     "url": "https://www.meetup.com/angular-melbourne/",
     "logo": "assets/logos/official-logo.webp",
-    "twitter": "https://twitter.com/angularMelb"
+    "twitter": "https://twitter.com/angularMelb",
+    "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSexTnnXT51Tf1QDhEZJA2tGM803yUFUaplYjTqmsc6CmTMaFg/viewform"
   },
   {
     "title": "Angular NYC",
@@ -141,7 +146,8 @@
     "location": "New York, USA",
     "url": "https://angular.nyc/",
     "logo": "https://pbs.twimg.com/profile_images/869774200604688384/8mRWQji-_400x400.jpg",
-    "twitter": "https://twitter.com/AngularNYC"
+    "twitter": "https://twitter.com/AngularNYC",
+    "callForSpeakers": "https://angular.nyc/speak"
   },
   {
     "title": "Angular Ruhr",
@@ -164,7 +170,8 @@
     "location": "Vienna, Austria",
     "url": "https://www.meetup.com/fr-FR/angular-vienna/",
     "logo": "https://pbs.twimg.com/profile_images/1007998057718394880/BHFVi3HW_400x400.jpg",
-    "twitter": "https://twitter.com/AngularVienna"
+    "twitter": "https://twitter.com/AngularVienna",
+    "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSdAiM1tDDBTzUfo1R8wWc0gEDH05iOuS3bhF3uT_8KvC_G_uA/viewform"
   },
   {
     "title": "Angular Warsaw",
@@ -172,7 +179,8 @@
     "location": "Warsaw, Poland",
     "url": "https://www.meetup.com/Angular-Warsaw/",
     "logo": "https://pbs.twimg.com/profile_images/913024944933625857/TJV45SWW_400x400.jpg",
-    "twitter": "https://twitter.com/AngularWarsaw"
+    "twitter": "https://twitter.com/AngularWarsaw",
+    "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSd4wIfoMbhjXfb4keOLOLvBvx9dCz5-AseW4AzcKf6A18xC3A/viewform"
   },
   {
     "title": "Angular Wrocław",
@@ -180,7 +188,8 @@
     "location": "Wrocław, Poland",
     "url": "https://www.angularwroclaw.pl/",
     "logo": "https://pbs.twimg.com/profile_images/1004807532970500096/ACJf4KS7_400x400.jpg",
-    "twitter": "https://twitter.com/AngularWroclaw"
+    "twitter": "https://twitter.com/AngularWroclaw",
+    "callForSpeakers": "https://www.angularwroclaw.pl/"
   },
   {
     "title": "Angular Zurich",
@@ -212,7 +221,16 @@
     "location": "Warsaw, Poland",
     "url": "https://ng-poland.pl/",
     "logo": "https://pbs.twimg.com/profile_images/904812819941650432/ZDOemvtt_400x400.jpg",
-    "twitter": "https://twitter.com/ngPolandConf"
+    "twitter": "https://twitter.com/ngPolandConf",
+    "events": [
+      {
+        "title": "NG Poland 2021",
+        "type": "conference",
+        "date": "2021-10-07",
+        "url": "https://ng-poland.pl/",
+        "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform"
+      }
+    ]
   },
   {
     "title": "NG Rome",
