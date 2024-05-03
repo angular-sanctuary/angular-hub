@@ -7,7 +7,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1737417532133322752/RzyqSdcY_400x400.jpg",
     "twitter": "https://twitter.com/AngularLovePL",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -18,7 +18,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1755173401780486144/f1qf_cxl_400x400.jpg",
     "twitter": "https://twitter.com/athensangular",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -29,7 +29,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1751914584305205248/iqTMArsp_400x400.jpg",
     "twitter": null,
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -40,7 +40,7 @@
     "logo": "assets/logos/angular-belgrade.png",
     "twitter": "https://twitter.com/angularbelgrade",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -51,7 +51,7 @@
     "logo": "https://pbs.twimg.com/profile_images/989263965426470914/NvCmzUH-_400x400.jpg",
     "twitter": "https://twitter.com/ngbrum",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -62,7 +62,7 @@
     "logo": "https://pbs.twimg.com/profile_images/901109285660368897/o3SysHna_400x400.jpg",
     "twitter": "https://twitter.com/NgBoston",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -73,7 +73,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1547959576015749120/96f233Pr_400x400.jpg",
     "twitter": "https://twitter.com/angular_meetup",
     "linkedin": null,
-    "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSf9FOzaJiqM9xnWY-Zq5ZeRmsNVIhjD9zwuf3xzmEZ5Modg4w/viewform",
+    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSf9FOzaJiqM9xnWY-Zq5ZeRmsNVIhjD9zwuf3xzmEZ5Modg4w/viewform",
     "events": []
   },
   {
@@ -84,7 +84,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1275887771048083459/SldZRi5t_400x400.jpg",
     "twitter": "https://twitter.com/AngularCR",
     "linkedin": null,
-    "callForSpeakers": "https://bit.ly/CR-Ang-CFP",
+    "callForPapers": "https://bit.ly/CR-Ang-CFP",
     "events": []
   },
   {
@@ -95,7 +95,7 @@
     "logo": "assets/logos/angular-devs-france.webp",
     "twitter": null,
     "linkedin": null,
-    "callForSpeakers": "https://conference-hall.io/public/event/xXhZVEbtz1mMoWZYhsoE",
+    "callForPapers": "https://conference-hall.io/public/event/xXhZVEbtz1mMoWZYhsoE",
     "events": []
   },
   {
@@ -106,7 +106,7 @@
     "logo": "https://res.cloudinary.com/dv765kdgq/image/upload/v1700565420/angular-kenya_ax1bix.jpg",
     "twitter": "https://twitter.com/angular_kenya",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -117,7 +117,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1195421264351039488/CcSwDFwj_400x400.jpg",
     "twitter": "https://twitter.com/ngleipzig",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -128,7 +128,7 @@
     "logo": "assets/logos/official-logo.webp",
     "twitter": null,
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -139,7 +139,7 @@
     "logo": "https://www.angularmacedonia.org/logo-mk.png",
     "twitter": "https://www.linkedin.com/company/angular-macedonia/",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -150,7 +150,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1729219640901951488/c4JxFpbx_400x400.jpg",
     "twitter": "https://twitter.com/angular_berlin",
     "linkedin": null,
-    "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSf-_RihpWISuyoKt9PZW-TNNcYDFTZGZ5DPtca9i3tZLNN3CA/viewform",
+    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSf-_RihpWISuyoKt9PZW-TNNcYDFTZGZ5DPtca9i3tZLNN3CA/viewform",
     "events": []
   },
   {
@@ -161,7 +161,7 @@
     "logo": "assets/logos/official-logo.webp",
     "twitter": null,
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -172,7 +172,7 @@
     "logo": "https://pbs.twimg.com/profile_images/779215302324285440/ZW-a6Rkd_400x400.jpg",
     "twitter": "https://twitter.com/angular_hamburg",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -183,7 +183,7 @@
     "logo": "assets/logos/official-logo.webp",
     "twitter": "https://twitter.com/angularMelb",
     "linkedin": null,
-    "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSexTnnXT51Tf1QDhEZJA2tGM803yUFUaplYjTqmsc6CmTMaFg/viewform",
+    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSexTnnXT51Tf1QDhEZJA2tGM803yUFUaplYjTqmsc6CmTMaFg/viewform",
     "events": []
   },
   {
@@ -194,7 +194,7 @@
     "logo": "https://pbs.twimg.com/profile_images/869774200604688384/8mRWQji-_400x400.jpg",
     "twitter": "https://twitter.com/AngularNYC",
     "linkedin": null,
-    "callForSpeakers": "https://angular.nyc/speak",
+    "callForPapers": "https://angular.nyc/speak",
     "events": []
   },
   {
@@ -205,7 +205,7 @@
     "logo": "assets/logos/official-logo.webp",
     "twitter": null,
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -216,7 +216,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1392680645852209152/0adFuWWd_400x400.jpg",
     "twitter": "https://twitter.com/angularsg",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -227,7 +227,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1007998057718394880/BHFVi3HW_400x400.jpg",
     "twitter": "https://twitter.com/AngularVienna",
     "linkedin": null,
-    "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSdAiM1tDDBTzUfo1R8wWc0gEDH05iOuS3bhF3uT_8KvC_G_uA/viewform",
+    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSdAiM1tDDBTzUfo1R8wWc0gEDH05iOuS3bhF3uT_8KvC_G_uA/viewform",
     "events": []
   },
   {
@@ -238,7 +238,7 @@
     "logo": "https://pbs.twimg.com/profile_images/913024944933625857/TJV45SWW_400x400.jpg",
     "twitter": "https://twitter.com/AngularWarsaw",
     "linkedin": null,
-    "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSd4wIfoMbhjXfb4keOLOLvBvx9dCz5-AseW4AzcKf6A18xC3A/viewform",
+    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSd4wIfoMbhjXfb4keOLOLvBvx9dCz5-AseW4AzcKf6A18xC3A/viewform",
     "events": []
   },
   {
@@ -249,7 +249,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1004807532970500096/ACJf4KS7_400x400.jpg",
     "twitter": "https://twitter.com/AngularWroclaw",
     "linkedin": null,
-    "callForSpeakers": "https://www.angularwroclaw.pl/",
+    "callForPapers": "https://www.angularwroclaw.pl/",
     "events": []
   },
   {
@@ -260,7 +260,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1087264580831715328/jABSCpDF_400x400.jpg",
     "twitter": "https://twitter.com/AngularZurich",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -271,7 +271,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1751914584305205248/iqTMArsp_400x400.jpg",
     "twitter": "https://twitter.com/ngbeconf",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -282,7 +282,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1714328350041444353/wxDLFJbQ_400x400.jpg",
     "twitter": "https://twitter.com/ngconf",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -293,14 +293,14 @@
     "logo": "https://pbs.twimg.com/profile_images/904812819941650432/ZDOemvtt_400x400.jpg",
     "twitter": "https://twitter.com/ngPolandConf",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": [
       {
         "name": "NG Poland 2021",
         "type": "conference",
         "date": "2021-10-07",
         "url": "https://ng-poland.pl/",
-        "callForSpeakers": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform"
+        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform"
       }
     ]
   },
@@ -312,7 +312,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1090957096101822467/k6tT0dzE_400x400.jpg",
     "twitter": "https://twitter.com/ngromeconf",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   },
   {
@@ -323,7 +323,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1747266292191789056/6eDCWDd9_400x400.jpg",
     "twitter": "https://twitter.com/NgLodz",
     "linkedin": null,
-    "callForSpeakers": null,
+    "callForPapers": null,
     "events": []
   }
 ]
