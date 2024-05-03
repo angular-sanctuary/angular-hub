@@ -1,0 +1,233 @@
+[
+  {
+    "title": "Angular.love",
+    "type": "meetup",
+    "location": "Warsaw, Poland",
+    "url": "https://meetup.angular.love/",
+    "logo": "https://pbs.twimg.com/profile_images/1737417532133322752/RzyqSdcY_400x400.jpg",
+    "twitter": "https://twitter.com/AngularLovePL"
+  },
+  {
+    "title": "Angular Athens",
+    "type": "meetup",
+    "location": "Athens, Greece",
+    "url": "https://www.meetup.com/angular-athens/",
+    "logo": "https://pbs.twimg.com/profile_images/1755173401780486144/f1qf_cxl_400x400.jpg",
+    "twitter": "https://twitter.com/athensangular"
+  },
+  {
+    "title": "Angular Belgium",
+    "type": "meetup",
+    "location": "Brussels, Belgium",
+    "url": "https://www.meetup.com/angular-belgium/",
+    "logo": "https://pbs.twimg.com/profile_images/1751914584305205248/iqTMArsp_400x400.jpg",
+    "twitter": ""
+  },
+  {
+    "title": "Angular Belgrade",
+    "type": "conference",
+    "location": "Belgrade, Serbia",
+    "url": "https://angularbelgrade.org/",
+    "logo": "assets/logos/angular-belgrade.png",
+    "twitter": "https://twitter.com/angularbelgrade"
+  },
+  {
+    "title": "Angular Birmingham",
+    "type": "meetup",
+    "location": "Birmingham, United Kingdom",
+    "url": "https://www.meetup.com/fr-FR/angular-birmingham/",
+    "logo": "https://pbs.twimg.com/profile_images/989263965426470914/NvCmzUH-_400x400.jpg",
+    "twitter": "https://twitter.com/ngbrum"
+  },
+  {
+    "title": "Angular Boston",
+    "type": "meetup",
+    "location": "Boston, USA",
+    "url": "https://www.meetup.com/Angular-Boston/",
+    "logo": "https://pbs.twimg.com/profile_images/901109285660368897/o3SysHna_400x400.jpg",
+    "twitter": "https://twitter.com/NgBoston"
+  },
+  {
+    "title": "Angular Community Meetup",
+    "type": "meetup",
+    "location": "Earth",
+    "url": "https://angularcommunity.net/home",
+    "logo": "https://pbs.twimg.com/profile_images/1547959576015749120/96f233Pr_400x400.jpg",
+    "twitter": "https://twitter.com/angular_meetup"
+  },
+  {
+    "title": "Angular Costa Rica",
+    "type": "meetup",
+    "location": "San Jose, Costa rica",
+    "url": "https://www.facebook.com/angularcostarica",
+    "logo": "https://pbs.twimg.com/profile_images/1275887771048083459/SldZRi5t_400x400.jpg",
+    "twitter": "https://twitter.com/AngularCR"
+  },
+  {
+    "title": "Angular Devs France",
+    "type": "meetup",
+    "location": "France",
+    "url": "https://angulardevs.fr/",
+    "logo": "assets/logos/angular-devs-france.webp",
+    "twitter": ""
+  },
+  {
+    "title": "Angular Kenya",
+    "type": "meetup",
+    "location": "Nairobi, Kenya",
+    "url": "https://www.linkedin.com/company/angular-kenya",
+    "logo": "https://res.cloudinary.com/dv765kdgq/image/upload/v1700565420/angular-kenya_ax1bix.jpg",
+    "twitter": "https://twitter.com/angular_kenya"
+  },
+  {
+    "title": "Angular Leipzig",
+    "type": "meetup",
+    "location": "Leipzig, Germany",
+    "url": "https://www.meetup.com/fr-FR/angular-meetup-leipzig/",
+    "logo": "https://pbs.twimg.com/profile_images/1195421264351039488/CcSwDFwj_400x400.jpg",
+    "twitter": "https://twitter.com/ngleipzig"
+  },
+  {
+    "title": "Angular London",
+    "type": "meetup",
+    "location": "London, United Kingdom",
+    "url": "https://www.meetup.com/fr-FR/angular-london/",
+    "logo": "assets/logos/official-logo.webp",
+    "twitter": "https://twitter.com/AngularWroclaw"
+  },
+  {
+    "title": "Angular Macedonia",
+    "type": "meetup",
+    "location": "Skopje, Macedonia",
+    "url": "https://www.meetup.com/fr-FR/angular-macedonia/",
+    "logo": "https://www.angularmacedonia.org/logo-mk.png",
+    "twitter": "https://www.linkedin.com/company/angular-macedonia/"
+  },
+  {
+    "title": "Angular Meetup Berlin",
+    "type": "meetup",
+    "location": "Berlin, Germany",
+    "url": "https://www.meetup.com/angular-meetup-berlin/",
+    "logo": "https://pbs.twimg.com/profile_images/1729219640901951488/c4JxFpbx_400x400.jpg",
+    "twitter": "https://twitter.com/angular_berlin"
+  },
+  {
+    "title": "Angular Meetup Graz",
+    "type": "meetup",
+    "location": "Graz, Austria",
+    "url": "https://www.meetup.com/fr-FR/angular-meetup-graz/",
+    "logo": "assets/logos/official-logo.webp",
+    "twitter": ""
+  },
+  {
+    "title": "Angular Meetup Hamburg",
+    "type": "meetup",
+    "location": "Hamburg, Germany",
+    "url": "https://www.meetup.com/hamburg-angularjs-meetup/",
+    "logo": "https://pbs.twimg.com/profile_images/779215302324285440/ZW-a6Rkd_400x400.jpg",
+    "twitter": "https://twitter.com/angular_hamburg"
+  },
+  {
+    "title": "Angular Melbourne",
+    "type": "meetup",
+    "location": "Melbourne, Australia",
+    "url": "https://www.meetup.com/angular-melbourne/",
+    "logo": "assets/logos/official-logo.webp",
+    "twitter": "https://twitter.com/angularMelb"
+  },
+  {
+    "title": "Angular NYC",
+    "type": "meetup",
+    "location": "New York, USA",
+    "url": "https://angular.nyc/",
+    "logo": "https://pbs.twimg.com/profile_images/869774200604688384/8mRWQji-_400x400.jpg",
+    "twitter": "https://twitter.com/AngularNYC"
+  },
+  {
+    "title": "Angular Ruhr",
+    "type": "meetup",
+    "location": "Ruhrgebiet, Germany",
+    "url": "https://www.meetup.com/angular-ruhr/",
+    "logo": "assets/logos/official-logo.webp"
+  },
+  {
+    "title": "Angular Singapore",
+    "type": "meetup",
+    "location": "Singapore",
+    "url": "https://slides.com/trungvose/angularsg",
+    "logo": "https://pbs.twimg.com/profile_images/1392680645852209152/0adFuWWd_400x400.jpg",
+    "twitter": "https://twitter.com/angularsg"
+  },
+  {
+    "title": "Angular Vienna",
+    "type": "meetup",
+    "location": "Vienna, Austria",
+    "url": "https://www.meetup.com/fr-FR/angular-vienna/",
+    "logo": "https://pbs.twimg.com/profile_images/1007998057718394880/BHFVi3HW_400x400.jpg",
+    "twitter": "https://twitter.com/AngularVienna"
+  },
+  {
+    "title": "Angular Warsaw",
+    "type": "meetup",
+    "location": "Warsaw, Poland",
+    "url": "https://www.meetup.com/Angular-Warsaw/",
+    "logo": "https://pbs.twimg.com/profile_images/913024944933625857/TJV45SWW_400x400.jpg",
+    "twitter": "https://twitter.com/AngularWarsaw"
+  },
+  {
+    "title": "Angular Wrocław",
+    "type": "meetup",
+    "location": "Wrocław, Poland",
+    "url": "https://www.angularwroclaw.pl/",
+    "logo": "https://pbs.twimg.com/profile_images/1004807532970500096/ACJf4KS7_400x400.jpg",
+    "twitter": "https://twitter.com/AngularWroclaw"
+  },
+  {
+    "title": "Angular Zurich",
+    "type": "meetup",
+    "location": "Zurich, Switzerland",
+    "url": "https://angularzurich.dev/",
+    "logo": "https://pbs.twimg.com/profile_images/1087264580831715328/jABSCpDF_400x400.jpg",
+    "twitter": "https://twitter.com/AngularZurich"
+  },
+  {
+    "title": "NG-BE",
+    "type": "conference",
+    "location": "Ghent, Belgium",
+    "url": "https://ng-be.org/",
+    "logo": "https://pbs.twimg.com/profile_images/1751914584305205248/iqTMArsp_400x400.jpg",
+    "twitter": "https://twitter.com/ngbeconf"
+  },
+  {
+    "title": "NG Conf",
+    "type": "conference",
+    "location": "Salt Lake City, UT, USA",
+    "url": "https://ng-conf.org/",
+    "logo": "https://pbs.twimg.com/profile_images/1714328350041444353/wxDLFJbQ_400x400.jpg",
+    "twitter": "https://twitter.com/ngconf"
+  },
+  {
+    "title": "NG Poland",
+    "type": "conference",
+    "location": "Warsaw, Poland",
+    "url": "https://ng-poland.pl/",
+    "logo": "https://pbs.twimg.com/profile_images/904812819941650432/ZDOemvtt_400x400.jpg",
+    "twitter": "https://twitter.com/ngPolandConf"
+  },
+  {
+    "title": "NG Rome",
+    "type": "conference",
+    "location": "Rome, Italy",
+    "url": "https://ngrome.io/",
+    "logo": "https://pbs.twimg.com/profile_images/1090957096101822467/k6tT0dzE_400x400.jpg",
+    "twitter": "https://twitter.com/ngromeconf"
+  },
+  {
+    "title": "ngLodz",
+    "type": "meetup",
+    "location": "Łódź, Pologne",
+    "url": "https://www.meetup.com/fr-FR/ng-lodz/",
+    "logo": "https://pbs.twimg.com/profile_images/1747266292191789056/6eDCWDd9_400x400.jpg",
+    "twitter": "https://twitter.com/NgLodz"
+  }
+]
