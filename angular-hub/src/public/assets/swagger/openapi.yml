@@ -1,0 +1,102 @@
+openapi: 3.0.0
+info:
+  title: Angular Communities API
+  version: 1.0.0
+  description: Find Angular Event and Communities
+  contact:
+    name: Angular HUB
+    url: https://angular-hub.com
+tags:
+  - name: Communities
+  - name: Podcasts
+servers:
+  - url: https://angular-hub.com/api/v1
+paths:
+  /communities:
+    get:
+      summary: Get a list of Angular events and communities
+      tags:
+        - Communities
+      parameters:
+        - name: type
+          in: query
+          description: The type of community (meetup, conference, or workshop)
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of Angular events and communities
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type:
+                      type: string
+                    location:
+                      type: string
+                    url:
+                      type: string
+                    logo:
+                      type: string
+                    twitter:
+                      type: string
+                    linkedin:
+                      type: string
+                    callForPapers:
+                      type: string
+                    events:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          type:
+                            type: string
+                          location:
+                            type: string
+                          date:
+                            type: string
+                          language:
+                            type: string
+                          isFree:
+                            type: boolean
+                          isRemote:
+                            type: boolean
+                          isOnsite:
+                            type: boolean
+                          callForPapers:
+                            type: string
+                          callForPapersEndDate:
+                            type: string
+                          url:
+                            type: string
+  /podcasts:
+    get:
+      summary: Get a list of Angular podcasts
+      tags:
+        - Podcasts
+      responses:
+        '200':
+          description: A list of Angular podcasts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    url:
+                      type: string
+                    logo:
+                      type: string
+                    language:
+                      type: string
