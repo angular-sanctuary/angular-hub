@@ -1,10 +1,17 @@
 import { defineEventHandler, getQuery } from 'h3';
 import communities from '../../../public/assets/data/community.json';
+import { BackCommunity } from '../../../models/back-community.model';
 
 export default defineEventHandler((event) => {
-  const { type } = getQuery(event);
+  const { type }: { type: string } = getQuery(event);
 
-  const filteredCommunities = communities.filter((community) => {
+  if (type && !['meetup', 'conference', 'workshop'].includes(type)) {
+    throw new Error(
+      `This endpoint only accepts "meetup", "conference" or "workshop" as type query parameter, not "${type}"`,
+    );
+  }
+
+  return communities.filter((community: BackCommunity) => {
     if (!type) {
       return community.callForPapers;
     }
@@ -20,6 +27,4 @@ export default defineEventHandler((event) => {
       return community.type === type && openCFP;
     }
   });
-
-  return filteredCommunities;
 });
