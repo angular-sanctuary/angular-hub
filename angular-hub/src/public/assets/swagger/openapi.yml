@@ -70,6 +70,43 @@ paths:
                             type: string
                           url:
                             type: string
+  /communities/upcoming:
+    get:
+      summary: Get a list of upcoming Angular events
+      tags:
+        - Communities
+      responses:
+        '200':
+          description: A list of upcoming Angular events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type:
+                      type: string
+                    location:
+                      type: string
+                    date:
+                      type: string
+                    language:
+                      type: string
+                    isFree:
+                      type: boolean
+                    isRemote:
+                      type: boolean
+                    isOnsite:
+                      type: boolean
+                    callForPapers:
+                      type: string
+                    callForPapersEndDate:
+                      type: string
+                    url:
+                      type: string
   /podcasts:
     get:
       summary: Get a list of Angular podcasts
