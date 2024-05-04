@@ -14,16 +14,9 @@ servers:
 paths:
   /communities:
     get:
-      summary: Get a list of Angular events and communities
+      summary: Get a list of Angular communities
       tags:
         - Communities
-      parameters:
-        - name: type
-          in: query
-          description: The type of community (meetup, conference, or workshop)
-          required: false
-          schema:
-            type: string
       responses:
         '200':
           description: A list of Angular events and communities
@@ -100,3 +93,68 @@ paths:
                       type: string
                     language:
                       type: string
+  /callforpapers:
+    get:
+      summary: Get a list of Angular communities with open call for papers
+      tags:
+        - Communities
+      parameters:
+        - name: type
+          in: query
+          description: Event type (meetup, conference, workshop)
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of Angular events with open call for papers
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    type:
+                      type: string
+                    location:
+                      type: string
+                    url:
+                      type: string
+                    logo:
+                      type: string
+                    twitter:
+                      type: string
+                    linkedin:
+                      type: string
+                    callForPapers:
+                      type: string
+                    events:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          type:
+                            type: string
+                          location:
+                            type: string
+                          date:
+                            type: string
+                          language:
+                            type: string
+                          isFree:
+                            type: boolean
+                          isRemote:
+                            type: boolean
+                          isOnsite:
+                            type: boolean
+                          callForPapers:
+                            type: string
+                          callForPapersEndDate:
+                            type: string
+                          url:
+                            type: string
