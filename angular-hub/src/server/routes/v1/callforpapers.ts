@@ -1,10 +1,8 @@
-import { defineEventHandler } from 'h3';
+import { defineEventHandler, getQuery } from 'h3';
 import communities from '../../../public/assets/data/community.json';
 
 export default defineEventHandler((event) => {
-  const searchParams = event.path.split('?')[1];
-  const urlParams = new URLSearchParams(searchParams);
-  const type = urlParams.get('type');
+  const { type } = getQuery(event);
 
   const filteredCommunities = communities.filter((community) => {
     if (!type) {
@@ -15,11 +13,11 @@ export default defineEventHandler((event) => {
       return community.callForPapers && community.type === 'meetup';
     }
 
-    if (type === 'conference') {
+    if (type === 'conference' || type === 'workshop') {
       const openCFP = community.events.find(
         (event) => new Date(event.callForPapersEndDate) > new Date(),
       );
-      return community.type === 'conference' && openCFP;
+      return community.type === type && openCFP;
     }
   });
 
