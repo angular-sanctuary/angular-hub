@@ -1,13 +1,14 @@
-import { defineEventHandler } from 'h3';
+import { defineEventHandler, getQuery } from 'h3';
 import communities from '../../../../public/assets/data/community.json';
+import { BackEvent } from '../../../../models/back-event.model';
+import { BackCommunity } from '../../../../models/back-community.model';
 
-export default defineEventHandler(() => {
-  // return all events
-  const events = communities
-    .map((community) => {
+export default defineEventHandler((evt) => {
+  return communities
+    .map((community: BackCommunity) => {
       const { events, ...communityMeta } = community;
       return community.events
-        .map((event) => {
+        .map((event: BackEvent) => {
           return {
             ...event,
             community: communityMeta,
@@ -16,7 +17,19 @@ export default defineEventHandler(() => {
         .flat();
     })
     .flat()
-    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-
-  return events;
+    .filter((event: BackEvent) => applyQueryFilter(event, getQuery(evt)))
+    .sort(
+      (a: BackEvent, b: BackEvent) =>
+        new Date(a.date).getTime() - new Date(b.date).getTime(),
+    );
 });
+
+function applyQueryFilter(event: BackEvent, query): boolean {
+  for (const key in query) {
+    if (event[key] !== Boolean(query[key])) {
+      return false;
+    }
+  }
+
+  return true;
+}
