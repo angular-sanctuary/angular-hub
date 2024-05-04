@@ -5,7 +5,7 @@ export default defineEventHandler(() => {
   // return all events
   const events = communities
     .map((community) => {
-      const { _, ...communityMeta } = community;
+      const { events, ...communityMeta } = community;
       return community.events
         .map((event) => {
           return {

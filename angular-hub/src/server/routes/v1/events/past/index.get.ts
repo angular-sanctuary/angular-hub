@@ -16,7 +16,7 @@ export default defineEventHandler(() => {
         .flat();
     })
     .flat()
-    .filter((event) => new Date(event.date).getTime() > Date.now())
+    .filter((event) => new Date(event.date).getTime() < Date.now())
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   return events;
