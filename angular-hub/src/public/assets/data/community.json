@@ -8,7 +8,60 @@
     "twitter": "https://twitter.com/AngularLovePL",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "Angular Meetup #12",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2023-12-05",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/angular-love-meetup/events/297374077/"
+      },
+      {
+        "name": "Angular Love Spring Camp",
+        "type": "meetup",
+        "location": null,
+        "date": "2024-04-16",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://meetup.angular.love/spring-camp/?utm_source=angularhub&utm_medium=event&utm_campaign=angularspringcamp"
+      },
+      {
+        "name": "Angular Love Spring Camp",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2024-05-21",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://meetup.angular.love/spring-camp/?utm_source=angularhub&utm_medium=event&utm_campaign=angularspringcamp"
+      },
+      {
+        "name": "Angular Love Spring Camp",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2024-06-18",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://meetup.angular.love/spring-camp/?utm_source=angularhub&utm_medium=event&utm_campaign=angularspringcamp"
+      }
+    ]
   },
   {
     "name": "Angular Athens",
@@ -19,7 +72,73 @@
     "twitter": "https://twitter.com/athensangular",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "Angular Athens 20th Meetup",
+        "type": "meetup",
+        "location": "Athens, Greece",
+        "date": "2023-11-28",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/angular-athens/events/297342102/"
+      },
+      {
+        "name": "Angular Athens 21st Meetup",
+        "type": "meetup",
+        "location": "Athens, Greece",
+        "date": "2024-03-05",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-athens/events/298801875/"
+      },
+      {
+        "name": "Angular Athens 22nd Meetup",
+        "type": "meetup",
+        "location": "Athens, Greece",
+        "date": "2024-05-14",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-athens/events/298801911/"
+      },
+      {
+        "name": "Angular Athens 23rd Meetup",
+        "type": "meetup",
+        "location": "Athens, Greece",
+        "date": "2024-09-24",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-athens/events/298801935/"
+      },
+      {
+        "name": "Angular Athens 24th Meetup",
+        "type": "meetup",
+        "location": "Athens, Greece",
+        "date": "2024-11-12",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-athens/events/298801969/"
+      }
+    ]
   },
   {
     "name": "Angular Belgium",
@@ -30,10 +149,24 @@
     "twitter": null,
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "End of year meetup @ Showpad",
+        "type": "meetup",
+        "location": "Gent, Belgium",
+        "date": "2023-12-14",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/angular-belgium/events/297098829/"
+      }
+    ]
   },
   {
-    "name": "Angular Belgrade",
+    "name": "NG Belgrade",
     "type": "conference",
     "location": "Belgrade, Serbia",
     "url": "https://angularbelgrade.org/",
@@ -41,7 +174,21 @@
     "twitter": "https://twitter.com/angularbelgrade",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "NG Belgrade Conf 2024",
+        "type": "conference",
+        "date": "2024-03-01",
+        "url": "https://angularbelgrade.org/",
+        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSfhmPXzmXCsPvy-j9gN6m1fd3mJglOWfS63LYJA8a7I8WkaYQ/viewform",
+        "callForPapersEndDate": "2024-02-01",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Belgrade, Serbia"
+      }
+    ]
   },
   {
     "name": "Angular Birmingham",
@@ -52,7 +199,21 @@
     "twitter": "https://twitter.com/ngbrum",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Birmingham, United Kingdom",
+        "date": "2023-12-06",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-birmingham/events/297538112/"
+      }
+    ]
   },
   {
     "name": "Angular Boston",
@@ -74,7 +235,34 @@
     "twitter": "https://twitter.com/angular_meetup",
     "linkedin": null,
     "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSf9FOzaJiqM9xnWY-Zq5ZeRmsNVIhjD9zwuf3xzmEZ5Modg4w/viewform",
-    "events": []
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2023-11-28",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/AngularCommunity/events/296951753"
+      },
+      {
+        "name": "Angular Community Meetup - Espanol",
+        "type": "meetup",
+        "location": null,
+        "date": "2024-01-09",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/297978778/"
+      }
+    ]
   },
   {
     "name": "Angular Costa Rica",
@@ -85,7 +273,21 @@
     "twitter": "https://twitter.com/AngularCR",
     "linkedin": null,
     "callForPapers": "https://bit.ly/CR-Ang-CFP",
-    "events": []
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Heredia, Costa Rica",
+        "date": "2023-11-24",
+        "language": "Spanish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.eventbrite.com/e/comunidad-angular-costa-rica-en-vivo-tickets-755480040137?aff=oddtdtcreator&fbclid=IwAR25M42wy5s-uGnURY-xB5gdBA3b-i4GSlhFneOo4OnA-K9ULrrt3tWtlP0"
+      }
+    ]
   },
   {
     "name": "Angular Devs France",
@@ -96,7 +298,47 @@
     "twitter": null,
     "linkedin": null,
     "callForPapers": "https://conference-hall.io/public/event/xXhZVEbtz1mMoWZYhsoE",
-    "events": []
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2023-12-04",
+        "language": "French",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://youtube.com/live/yYGk058Q4fU"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2024-01-09",
+        "language": "French",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://youtube.com/live/gJZpreOyqMA?feature=share"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2024-05-06",
+        "language": "French",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.youtube.com/watch?v=51tncS0DPJE"
+      }
+    ]
   },
   {
     "name": "Angular Kenya",
@@ -107,7 +349,21 @@
     "twitter": "https://twitter.com/angular_kenya",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "NG Kenya 2024",
+        "type": "conference",
+        "location": "Nairobi, Kenya",
+        "date": "2024-07-06",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://ng-festival.com/"
+      }
+    ]
   },
   {
     "name": "Angular Leipzig",
@@ -118,7 +374,47 @@
     "twitter": "https://twitter.com/ngleipzig",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Leipzig, Germany",
+        "date": "2024-01-09",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-meetup-leipzig/events/297507291/?_xtd=gqFyqTI1MjAxMTkyOaFwo2FwaQ%253D%253D&from=ref/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Leipzig, Germany",
+        "date": "2024-03-12",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-meetup-leipzig/events/299357850/"
+      },
+      {
+        "name": "ngLeipzig #45",
+        "type": "meetup",
+        "location": "Leipzig, Germany",
+        "date": "2024-05-14",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-meetup-leipzig/events/300612475/"
+      }
+    ]
   },
   {
     "name": "Angular London",
@@ -151,7 +447,47 @@
     "twitter": "https://twitter.com/angular_berlin",
     "linkedin": null,
     "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSf-_RihpWISuyoKt9PZW-TNNcYDFTZGZ5DPtca9i3tZLNN3CA/viewform",
-    "events": []
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Berlin, Germany",
+        "date": "2024-01-16",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/angular-meetup-berlin/events/292747713"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Berlin, Germany",
+        "date": "2024-03-19",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-meetup-berlin/events/298730458/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Berlin, Germany",
+        "date": "2024-05-13",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-meetup-berlin/events/300424452/"
+      }
+    ]
   },
   {
     "name": "Angular Meetup Graz",
@@ -162,7 +498,34 @@
     "twitter": null,
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "Angular Renaissance & More",
+        "type": "meetup",
+        "location": "Graz, Austria",
+        "date": "2023-12-19",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/angular-meetup-graz/events/297479092/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Graz, Austria",
+        "date": "2024-04-30",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/de-DE/angular-meetup-graz/events/300061069/"
+      }
+    ]
   },
   {
     "name": "Angular Meetup Hamburg",
@@ -173,7 +536,21 @@
     "twitter": "https://twitter.com/angular_hamburg",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Hamburg, Germany",
+        "date": "2024-03-14",
+        "language": "German",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/hamburg-angularjs-meetup/events/299480791/"
+      }
+    ]
   },
   {
     "name": "Angular Melbourne",
@@ -184,7 +561,34 @@
     "twitter": "https://twitter.com/angularMelb",
     "linkedin": null,
     "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSexTnnXT51Tf1QDhEZJA2tGM803yUFUaplYjTqmsc6CmTMaFg/viewform",
-    "events": []
+    "events": [
+      {
+        "name": "Angular 17, View Transitions API, NGRX Component Store0",
+        "type": "meetup",
+        "location": "Melbourne, Australia",
+        "date": "2023-12-07",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/angular-melbourne/events/297244000"
+      },
+      {
+        "name": "Angular Renaissance, AnalogJS, Immutability, CSS libs with SCSS",
+        "type": "meetup",
+        "location": "Melbourne, Australia",
+        "date": "2024-02-22",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-melbourne/events/298576991/"
+      }
+    ]
   },
   {
     "name": "Angular NYC",
@@ -206,7 +610,34 @@
     "twitter": null,
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "Angular Ruhr #16",
+        "type": "meetup",
+        "location": "Ruhrgebiet, Germany",
+        "date": "2023-12-06",
+        "language": "German",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/angular-ruhr/events/297260399/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Ruhrgebiet, Germany",
+        "date": "2024-05-16",
+        "language": "German",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-ruhr/events/300782226/"
+      }
+    ]
   },
   {
     "name": "Angular Singapore",
@@ -217,7 +648,34 @@
     "twitter": "https://twitter.com/angularsg",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "Performant Angular Applications",
+        "type": "meetup",
+        "location": "Singapore",
+        "date": "2024-01-18",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfGyxjOgYiiJavTMLh4pmj_jfp-t6orn6lxAo8SEGPoiHiq0A/viewfor"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Singapore",
+        "date": "2024-03-11",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSf1rp6TvXiVhhZozPbRmng6GP-80UGc0SfOT7CAI5tqOQWSsQ/viewform"
+      }
+    ]
   },
   {
     "name": "Angular Vienna",
@@ -228,7 +686,34 @@
     "twitter": "https://twitter.com/AngularVienna",
     "linkedin": null,
     "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSdAiM1tDDBTzUfo1R8wWc0gEDH05iOuS3bhF3uT_8KvC_G_uA/viewform",
-    "events": []
+    "events": [
+      {
+        "name": "ngGlühwein 2023",
+        "type": "meetup",
+        "location": "Vienna, Austria",
+        "date": "2023-12-02",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/angular-vienna/events/297518543/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Vienna, Austria",
+        "date": "2024-03-06",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-vienna/events/298861231/"
+      }
+    ]
   },
   {
     "name": "Angular Warsaw",
@@ -239,7 +724,21 @@
     "twitter": "https://twitter.com/AngularWarsaw",
     "linkedin": null,
     "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSd4wIfoMbhjXfb4keOLOLvBvx9dCz5-AseW4AzcKf6A18xC3A/viewform",
-    "events": []
+    "events": [
+      {
+        "name": "The New NGRX Signal Store: Modern State Management for Your Angular Architecture",
+        "type": "meetup",
+        "location": null,
+        "date": "2024-02-20",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-warsaw/events/298542428/"
+      }
+    ]
   },
   {
     "name": "Angular Wrocław",
@@ -250,7 +749,34 @@
     "twitter": "https://twitter.com/AngularWroclaw",
     "linkedin": null,
     "callForPapers": "https://www.angularwroclaw.pl/",
-    "events": []
+    "events": [
+      {
+        "name": "Angular Wrocław #36",
+        "type": "meetup",
+        "location": "Wrocław, Poland",
+        "date": "2023-11-30",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/angularwroclaw/events/297066922/"
+      },
+      {
+        "name": "Angular Wrocław #37",
+        "type": "meetup",
+        "location": "Wrocław, Poland",
+        "date": "2024-02-29",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angularwroclaw/events/298927294/"
+      }
+    ]
   },
   {
     "name": "Angular Zurich",
@@ -262,6 +788,44 @@
     "linkedin": null,
     "callForPapers": null,
     "events": []
+  },
+  {
+    "name": "ngGirls",
+    "type": "workshop",
+    "location": null,
+    "url": "https://www.ng-girls.org/",
+    "logo": "https://pbs.twimg.com/profile_images/1757125339090653184/5wgfX_ZD_400x400.jpg",
+    "twitter": "https://twitter.com/AngularGirls",
+    "linkedin": null,
+    "callForPapers": null,
+    "events": [
+      {
+        "name": null,
+        "type": "workshop",
+        "location": "Verona, Italy",
+        "date": "2023-11-23",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": null
+      },
+      {
+        "name": null,
+        "type": "workshop",
+        "location": "Rome, Italy",
+        "date": "2023-11-30",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": null
+      }
+    ]
   },
   {
     "name": "NG-BE",
@@ -301,7 +865,12 @@
         "date": "2024-11-06",
         "url": "https://ng-poland.pl/",
         "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform",
-        "callForPapersEndDate": "2024-10-01"
+        "callForPapersEndDate": "2024-10-01",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Warsaw, Poland"
       }
     ]
   },
@@ -314,7 +883,34 @@
     "twitter": "https://twitter.com/ngromeconf",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "NG Rome 2023",
+        "type": "conference",
+        "date": "2023-12-01",
+        "url": "https://ngrome.io/",
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Rome, Italy"
+      },
+      {
+        "name": "NG Rome MMXXIV",
+        "type": "conference",
+        "date": "2024-06-27",
+        "url": "https://ngrome.io/",
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Rome, Italy"
+      }
+    ]
   },
   {
     "name": "ngLodz",
@@ -325,6 +921,33 @@
     "twitter": "https://twitter.com/NgLodz",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "ngLodz #9",
+        "type": "meetup",
+        "location": "Łódź, Poland",
+        "date": "2024-04-18",
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/ng-lodz/events/300186734/"
+      },
+      {
+        "name": "ngLodz #10",
+        "type": "meetup",
+        "location": "Łódź, Poland",
+        "date": "2024-05-15",
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/ng-lodz/events/300736330/"
+      }
+    ]
   }
 ]
