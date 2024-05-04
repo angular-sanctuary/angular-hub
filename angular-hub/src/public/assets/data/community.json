@@ -524,6 +524,19 @@
         "callForPapers": null,
         "callForPapersEndDate": null,
         "url": "https://www.meetup.com/de-DE/angular-meetup-graz/events/300061069/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Graz, Austria",
+        "date": "2024-06-24",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-meetup-graz/events/300824699/"
       }
     ]
   },
