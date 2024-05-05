@@ -9,13 +9,7 @@ import { DatePipe, NgOptimizedImage } from '@angular/common';
   imports: [NgOptimizedImage, DatePipe],
   template: `
     <article class="flex w-full items-center gap-4">
-      <img
-        class="rounded-xl"
-        [ngSrc]="cfp.logo"
-        height="80"
-        width="80"
-        alt=""
-      />
+      <img class="rounded-xl" [src]="cfp.logo" height="80" width="80" alt="" />
       <div class="text-start">
         @if (cfp.deadline) {
           <span class="font-bold text-primary" itemprop="date"

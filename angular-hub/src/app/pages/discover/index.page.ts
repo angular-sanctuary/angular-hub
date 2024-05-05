@@ -1,6 +1,6 @@
 import { Component, inject, Input } from '@angular/core';
 import { HeaderService } from '../../services/header.service';
-import { RouteMeta } from '@analogjs/router';
+import { injectLoad, RouteMeta } from '@analogjs/router';
 import { injectContentFiles } from '@analogjs/content';
 import { NgOptimizedImage } from '@angular/common';
 import { Event } from '../../models/event.model';
@@ -10,6 +10,9 @@ import { CallForPapers } from '../../models/call-for-papers.model';
 import { CfpCardComponent } from '../../components/cards/call-for-paper-card.component';
 import { isFuture, isThisISOWeek, isToday } from 'date-fns';
 import { RouterLink } from '@angular/router';
+
+import { load } from './index.server';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 export const routeMeta: RouteMeta = {
   title: 'ANGULAR HUB - Latest Angular community activities',
@@ -38,14 +41,14 @@ export const routeMeta: RouteMeta = {
           Upcoming events this week
         </h2>
         <mat-nav-list>
-          @for (event of currentWeekEvents; track event.attributes.title) {
+          @for (event of events(); track event.name) {
             <a
               mat-list-item
-              [attr.aria-labelledby]="event.attributes.title"
-              [href]="event.attributes.url"
+              [attr.aria-labelledby]="event.name"
+              [href]="event.url"
               target="_blank"
             >
-              <app-event-card [event]="event.attributes"></app-event-card>
+              <app-event-card [event]="event"></app-event-card>
             </a>
           } @empty {
             <p class="mb-4">There are no more events planned this week!</p>
@@ -100,6 +103,8 @@ export const routeMeta: RouteMeta = {
 })
 export default class DiscoverComponent {
   #headerService = inject(HeaderService);
+
+  events = toSignal(injectLoad<typeof load>(), { requireSync: true });
 
   currentWeekEvents = injectContentFiles<Event>(({ filename }) =>
     filename.startsWith('/src/content/events/'),

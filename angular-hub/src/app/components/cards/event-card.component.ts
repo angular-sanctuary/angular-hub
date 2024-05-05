@@ -11,17 +11,17 @@ import { EventTagComponent } from '../event-tag.component';
     <article class="flex w-full items-center gap-4">
       <img
         class="rounded-xl"
-        [ngSrc]="event.logo"
+        [src]="event.community.logo"
         height="80"
         width="80"
         alt=""
       />
       <div class="text-start">
         <span class="font-bold text-primary" itemprop="date">{{
-          event.date | date
+          event.date
         }}</span>
-        <h3 [attr.id]="event.title" class="text-xl font-bold" itemprop="title">
-          {{ event.title }}
+        <h3 [attr.id]="event.name" class="text-xl font-bold" itemprop="title">
+          {{ event.name || event.community.name }}
         </h3>
         <span class="text-gray-500 dark:text-gray-400" itemprop="location">{{
           event.location

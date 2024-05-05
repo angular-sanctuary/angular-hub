@@ -11,7 +11,7 @@ import { Community } from '../../models/community.model';
     <article class="flex w-full items-center gap-4">
       <img
         class="rounded-xl"
-        [ngSrc]="community.logo"
+        [src]="community.logo"
         height="80"
         width="80"
         alt=""

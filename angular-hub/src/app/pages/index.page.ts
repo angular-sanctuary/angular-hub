@@ -11,7 +11,7 @@ import { HeaderService } from '../services/header.service';
       <img
         alt="Angular Hub Logo"
         class="logo"
-        ngSrc="/assets/images/logo.webp"
+        src="/assets/images/logo.webp"
         height="500"
         width="500"
         priority

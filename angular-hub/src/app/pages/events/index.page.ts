@@ -117,7 +117,7 @@ export default class EvenementsComponent {
               new Date(b.attributes.date).getTime() -
               new Date(a.attributes.date).getTime();
             return dayDiff === 0
-              ? a.attributes.title.localeCompare(b.attributes.title)
+              ? a.attributes.name.localeCompare(b.attributes.name)
               : dayDiff;
           });
       }
@@ -129,7 +129,7 @@ export default class EvenementsComponent {
             new Date(a.attributes.date).getTime() -
             new Date(b.attributes.date).getTime();
           return dayDiff === 0
-            ? a.attributes.title.localeCompare(b.attributes.title)
+            ? a.attributes.name.localeCompare(b.attributes.name)
             : dayDiff;
         });
     }),
@@ -160,7 +160,7 @@ export default class EvenementsComponent {
       return true;
     }
 
-    const isTitleMatching = event.title
+    const isTitleMatching = event.name
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
     const isLocationMatching = event.location

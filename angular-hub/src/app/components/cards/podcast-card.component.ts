@@ -11,18 +11,14 @@ import { Podcast } from '../../models/podcast.model';
     <article class="flex w-full items-center gap-4">
       <img
         class="rounded-xl"
-        [ngSrc]="podcast.logo"
+        [src]="podcast.logo"
         height="80"
         width="80"
         alt=""
       />
       <div class="text-start">
-        <h3
-          [attr.id]="podcast.title"
-          class="text-xl font-bold"
-          itemprop="title"
-        >
-          {{ podcast.title }}
+        <h3 [attr.id]="podcast.name" class="text-xl font-bold" itemprop="title">
+          {{ podcast.name }}
         </h3>
         <app-event-tag [name]="podcast.language" />
       </div>

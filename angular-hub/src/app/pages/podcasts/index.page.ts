@@ -43,12 +43,14 @@ export const routeMeta: RouteMeta = {
     PodcastCardComponent,
   ],
   template: `
+    <!--
     <app-search-bar [formControl]="searchControl"></app-search-bar>
+    -->
     <mat-nav-list>
-      @for (podcast of podcasts$ | async; track podcast.title) {
+      @for (podcast of podcasts$ | async; track podcast.name) {
         <a
           mat-list-item
-          [attr.aria-labelledby]="podcast.title"
+          [attr.aria-labelledby]="podcast.name"
           [href]="podcast.url"
           target="_blank"
         >
@@ -108,6 +110,6 @@ export default class PodcastsComponent {
       return true;
     }
 
-    return podcast.title.toLowerCase().includes(searchTerm.toLowerCase());
+    return podcast.name.toLowerCase().includes(searchTerm.toLowerCase());
   }
 }

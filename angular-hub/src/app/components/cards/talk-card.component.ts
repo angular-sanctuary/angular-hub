@@ -13,7 +13,7 @@ import { Talk } from '../../models/talk.model';
     >
       <img
         class="rounded-xl"
-        [ngSrc]="'/org/angular-wroclaw.jpeg'"
+        [src]="'/org/angular-wroclaw.jpeg'"
         height="80"
         width="80"
         alt=""

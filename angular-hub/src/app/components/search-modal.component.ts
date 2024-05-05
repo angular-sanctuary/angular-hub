@@ -54,10 +54,10 @@ type SearchResults = {
         @if (results.events.length) {
           <div class="mt-2">Events</div>
           <mat-nav-list>
-            @for (event of results.events; track event.title) {
+            @for (event of results.events; track event.name) {
               <a
                 mat-list-item
-                [attr.aria-labelledby]="event.title"
+                [attr.aria-labelledby]="event.name"
                 [href]="event.url"
                 target="_blank"
               >
@@ -101,10 +101,10 @@ type SearchResults = {
         @if (results.podcasts.length) {
           <div class="mt-2">Podcasts</div>
           <mat-nav-list>
-            @for (podcast of results.podcasts; track podcast.title) {
+            @for (podcast of results.podcasts; track podcast.name) {
               <a
                 mat-list-item
-                [attr.aria-labelledby]="podcast.title"
+                [attr.aria-labelledby]="podcast.name"
                 [href]="podcast.url"
                 target="_blank"
               >

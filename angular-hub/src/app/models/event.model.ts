@@ -3,7 +3,7 @@ import { LanguageTag } from './language.model';
 export type EventTag = 'On-Site' | 'Online' | 'Free';
 
 export interface Event {
-  title: string;
+  name: string;
   description: string;
   date: string;
   url: string;
@@ -11,4 +11,8 @@ export interface Event {
   location: string;
   tags: EventTag[];
   language: LanguageTag;
+  community: {
+    name: string;
+    logo: string;
+  };
 }

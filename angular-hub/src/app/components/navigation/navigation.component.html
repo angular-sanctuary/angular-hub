@@ -20,6 +20,7 @@
           [routerLinkActiveOptions]="myMatchOptions"
           >Discover</a
         >
+        <!--
         <a
           mat-list-item
           routerLink="/events"
@@ -28,6 +29,7 @@
           [queryParams]="{ state: 'upcoming' }"
           >Agenda</a
         >
+        -->
         <a
           class="!text-white"
           mat-list-item
@@ -48,7 +50,9 @@
         <a mat-list-item routerLink="/podcasts" routerLinkActive="active"
           >Podcasts</a
         >
+        <!--
         <a mat-list-item routerLink="/talks" routerLinkActive="active">Talks</a>
+        -->
       </mat-nav-list>
       @if (!isHandset) {
         <app-footer [isHandset]="false"></app-footer>
