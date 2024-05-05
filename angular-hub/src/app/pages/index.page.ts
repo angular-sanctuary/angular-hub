@@ -16,23 +16,28 @@ import { DropdownModule } from 'primeng/dropdown';
   standalone: true,
   template: `
     <aside
-      class="h-36 w-full flex flex-col justify-center items-center mb-8"
+      class="h-36 w-full flex flex-col justify-center items-center mb-8 px-4"
       style="background-image: url(/assets/images/img.png); background-repeat: no-repeat; background-size: cover;"
     >
       <h1 class="title text-5xl">ANGULAR HUB</h1>
-      <h2 class="text-2xl">Curated list of Angular Communities and Events</h2>
+      <h2 class="text-2xl text-center">
+        Curated list of Angular Communities and Events
+      </h2>
     </aside>
-    <form class="w-full flex justify-center gap-2 mb-8">
+    <form
+      class="w-full flex flex-col sm:flex-row justify-center items-center gap-2 mb-8"
+    >
       <p-calendar
         name="date"
+        [style]="{ width: '230px' }"
         [ngModel]="date"
         (ngModelChange)="date.set($event)"
         placeholder="Select a date"
         [showClear]="true"
       />
       <p-dropdown
-        [style]="{ width: '230px' }"
         name="language"
+        [style]="{ width: '230px' }"
         [options]="languages()"
         [showClear]="true"
         [ngModel]="selectedLanguage()"
