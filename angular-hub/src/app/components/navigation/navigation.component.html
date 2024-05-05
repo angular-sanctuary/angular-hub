@@ -45,6 +45,35 @@
 </main>
 
 <p-sidebar [(visible)]="sidebarVisible">
-  <h3>Sidebar</h3>
-  <p>Lorem ipsum dolor sit amet...</p>
+  <ul class="flex flex-col gap-1">
+    <!-- Navbar menu content here -->
+    <li>
+      <a
+        class="hover:text-primary"
+        routerLinkActive="sidebarActive"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/"
+        (click)="sidebarVisible = false"
+        >Events</a
+      >
+    </li>
+    <li>
+      <a
+        class="hover:text-primary"
+        routerLinkActive="sidebarActive"
+        routerLink="/communities"
+        (click)="sidebarVisible = false"
+        >Communities</a
+      >
+    </li>
+    <li>
+      <a
+        class="hover:text-primary"
+        routerLinkActive="sidebarActive"
+        routerLink="/podcasts"
+        (click)="sidebarVisible = false"
+        >Podcasts</a
+      >
+    </li>
+  </ul>
 </p-sidebar>
