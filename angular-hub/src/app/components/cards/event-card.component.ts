@@ -12,10 +12,11 @@ import { EventTagComponent } from '../event-tag.component';
       <img
         class="rounded-xl"
         [src]="event.community.logo"
-        height="80"
-        width="80"
+        height="100"
+        width="100"
         alt=""
       />
+
       <div class="text-start">
         <span class="font-bold text-primary" itemprop="date">{{
           event.date

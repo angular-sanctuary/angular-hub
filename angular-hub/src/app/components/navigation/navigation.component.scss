@@ -1,11 +1,3 @@
-@media (prefers-color-scheme: light) {
-  .active {
-    background-color: #00bee0;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .active {
-    background-color: #bf25b9;
-  }
+.routerLinkActive {
+  @apply bg-gray-500 text-black;
 }

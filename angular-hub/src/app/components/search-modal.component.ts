@@ -1,21 +1,15 @@
 import { Component } from '@angular/core';
 import { injectContentFiles } from '@analogjs/content';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { AsyncPipe } from '@angular/common';
 import { Podcast } from '../models/podcast.model';
 import { Event } from '../models/event.model';
 import { CallForPapers } from '../models/call-for-papers.model';
 import { Community } from '../models/community.model';
 import { FILTER_CRITERIAS } from '../consts/filter-criterias.const';
-import { MatListModule } from '@angular/material/list';
-import { MatIconModule } from '@angular/material/icon';
-import { MatDialogContainer, MatDialogContent } from '@angular/material/dialog';
 import { EventLiteCardComponent } from './cards/event-lite-card.component';
 import { CommunityLiteCardComponent } from './cards/community-lite-card.component';
 import { CfpLiteCardComponent } from './cards/call-for-paper-lite-card.component';
 import { PodcastLiteCardComponent } from './cards/podcast-lite-card.component';
-import { MatButtonModule } from '@angular/material/button';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { shareReplay, startWith } from 'rxjs/operators';
 import { map, Observable } from 'rxjs';
@@ -30,6 +24,7 @@ type SearchResults = {
 @Component({
   selector: 'app-search-modal',
   template: `
+    <!--
     @if (results$ | async; as results) {
       <mat-dialog-content class="!pt-0">
         <mat-form-field
@@ -117,21 +112,15 @@ type SearchResults = {
         }
       </mat-dialog-content>
     }
+    -->
   `,
   standalone: true,
   imports: [
-    MatFormFieldModule,
-    MatInputModule,
     AsyncPipe,
-    MatListModule,
-    MatIconModule,
-    MatDialogContent,
-    MatDialogContainer,
     EventLiteCardComponent,
     CommunityLiteCardComponent,
     CfpLiteCardComponent,
     PodcastLiteCardComponent,
-    MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
   ],
@@ -190,9 +179,12 @@ export class SearchModalComponent {
         }),
         communities: this.communities.filter((community: Community) => {
           for (const key of FILTER_CRITERIAS.community) {
+            /*
             if (community[key]?.toLowerCase().includes(formattedTerm)) {
               return true;
             }
+
+             */
           }
           return false;
         }),

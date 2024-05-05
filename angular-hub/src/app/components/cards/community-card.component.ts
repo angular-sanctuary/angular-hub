@@ -8,12 +8,12 @@ import { Community } from '../../models/community.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgOptimizedImage, TitleCasePipe],
   template: `
-    <article class="flex w-full items-center gap-4">
+    <article class="flex flex-col max-w-36 items-start gap-4">
       <img
         class="rounded-xl"
         [src]="community.logo"
-        height="80"
-        width="80"
+        height="200"
+        width="200"
         alt=""
       />
       <div class="text-start">
@@ -21,11 +21,11 @@ import { Community } from '../../models/community.model';
           community.type | titlecase
         }}</span>
         <h3
-          [attr.aria-labelledby]="community.title"
+          [attr.aria-labelledby]="community.name"
           class="text-xl font-bold"
           itemprop="title"
         >
-          {{ community.title }}
+          {{ community.name }}
         </h3>
         <span class="text-gray-500 dark:text-gray-400" itemprop="location">{{
           community.location

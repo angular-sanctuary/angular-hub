@@ -1,17 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { AsyncPipe } from '@angular/common';
-import {
-  ActivatedRoute,
-  Router,
-  RouterLink,
-  RouterLinkActive,
-} from '@angular/router';
-import { SearchBarComponent } from '../../components/search-bar.component';
-import { debounceTime, distinctUntilChanged, map, tap } from 'rxjs';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { Podcast } from '../../models/podcast.model';
-import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
-import { MatListModule } from '@angular/material/list';
+import { FormsModule } from '@angular/forms';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { PodcastCardComponent } from '../../components/cards/podcast-card.component';
 import { injectLoad, RouteMeta } from '@analogjs/router';
 import { HeaderService } from '../../services/header.service';
@@ -33,33 +22,23 @@ export const routeMeta: RouteMeta = {
 @Component({
   selector: 'app-podcasts',
   standalone: true,
-  imports: [
-    RouterLink,
-    SearchBarComponent,
-    RouterLinkActive,
-    AsyncPipe,
-    ReactiveFormsModule,
-    MatListModule,
-    PodcastCardComponent,
-  ],
+  imports: [PodcastCardComponent, FormsModule],
   template: `
-    <!--
-    <app-search-bar [formControl]="searchControl"></app-search-bar>
-    -->
-    <mat-nav-list>
-      @for (podcast of podcasts$ | async; track podcast.name) {
-        <a
-          mat-list-item
-          [attr.aria-labelledby]="podcast.name"
-          [href]="podcast.url"
-          target="_blank"
-        >
+    <aside
+      class="h-36 w-full flex flex-col justify-center items-center mb-8"
+      style="background-image: url(/assets/images/img.png); background-repeat: no-repeat; background-size: cover;"
+    >
+      <h1 class="title text-5xl">ANGULAR HUB</h1>
+      <h2 class="text-2xl">Curated list of Angular Podcasts</h2>
+    </aside>
+
+    <ul class="flex flex-wrap justify-center gap-x-8 gap-y-4 px-8">
+      @for (podcast of podcasts(); track podcast.name) {
+        <li>
           <app-podcast-card [podcast]="podcast"></app-podcast-card>
-        </a>
-      } @empty {
-        <span>No Podcasts found!</span>
+        </li>
       }
-    </mat-nav-list>
+    </ul>
   `,
   styles: `
     .active {
@@ -70,46 +49,11 @@ export const routeMeta: RouteMeta = {
   `,
 })
 export default class PodcastsComponent {
-  searchControl = new FormControl<string>('', { nonNullable: true });
-
   podcasts = toSignal(injectLoad<typeof load>(), { requireSync: true });
-
-  podcasts$ = this.route.queryParams.pipe(
-    tap(({ search = '' }) =>
-      this.searchControl.setValue(search, { emitEvent: false }),
-    ),
-    map(({ search: searchTerm = '' }) => {
-      return this.podcasts().filter((podcast) =>
-        this.filterPredicate(podcast, searchTerm),
-      );
-    }),
-  );
 
   @Input() set header(header: string) {
     this.headerService.setHeaderTitle(header);
   }
 
-  constructor(
-    private headerService: HeaderService,
-    private router: Router,
-    private route: ActivatedRoute,
-  ) {
-    this.searchControl.valueChanges
-      .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())
-      .subscribe((value) => {
-        void this.router.navigate(['.'], {
-          queryParams: { search: value || null },
-          queryParamsHandling: 'merge',
-          relativeTo: this.route,
-        });
-      });
-  }
-
-  filterPredicate(podcast: Podcast, searchTerm: string): boolean {
-    if (searchTerm === '') {
-      return true;
-    }
-
-    return podcast.name.toLowerCase().includes(searchTerm.toLowerCase());
-  }
+  constructor(private headerService: HeaderService) {}
 }

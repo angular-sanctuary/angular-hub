@@ -1,198 +1,50 @@
-<mat-sidenav-container class="h-full" *rxLet="isHandset$; let isHandset">
-  <mat-sidenav
-    #navigation
-    class="min-w-[200px]"
-    fixedInViewport
-    [attr.role]="isHandset ? 'dialog' : 'navigation'"
-    [mode]="isHandset ? 'over' : 'side'"
-    [opened]="!isHandset && isBrowser"
-    [disableClose]="!isHandset"
-  >
-    <div class="flex flex-col h-full">
-      <mat-toolbar class="flex justify-center !bg-inherit">
-        <a class="title text-2xl" routerLink="/">ANGULAR HUB</a>
-      </mat-toolbar>
-      <mat-nav-list class="flex-1">
+<header class="flex items-center p-4">
+  <p-button
+    class="flex-none lg:hidden"
+    (click)="sidebarVisible = true"
+    [text]="true"
+    icon="pi pi-bars"
+  />
+  <a class="flex items-center px-2 mx-2 gap-2 mr-16" routerLink="/">
+    <img class="h-8" src="/assets/images/logo.webp" alt="" />
+    <span class="title text-2xl">ANGULAR HUB</span>
+  </a>
+  <div class="flex-none hidden lg:block">
+    <ul class="flex gap-1">
+      <!-- Navbar menu content here -->
+      <li>
         <a
-          mat-list-item
-          routerLink="/discover"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="myMatchOptions"
-          >Discover</a
+          class="p-button p-button-secondary p-button-text hover:bg-gray-500 py-1"
+          routerLinkActive="routerLinkActive"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLink="/"
+          >Events</a
         >
-        <!--
+      </li>
+      <li>
         <a
-          mat-list-item
-          routerLink="/events"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="myMatchOptions"
-          [queryParams]="{ state: 'upcoming' }"
-          >Agenda</a
-        >
-        -->
-        <a
-          class="!text-white"
-          mat-list-item
-          routerLink="/cfp"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="myMatchOptions"
-          [queryParams]="{ state: 'all' }"
-          >CFP</a
-        >
-        <a
-          mat-list-item
+          class="p-button p-button-secondary p-button-text hover:bg-gray-500 py-1"
+          routerLinkActive="routerLinkActive"
           routerLink="/communities"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="myMatchOptions"
-          [queryParams]="{ state: 'all' }"
           >Communities</a
         >
-        <a mat-list-item routerLink="/podcasts" routerLinkActive="active"
+      </li>
+      <li>
+        <a
+          class="p-button p-button-secondary p-button-text hover:bg-gray-500 py-1"
+          routerLinkActive="routerLinkActive"
+          routerLink="/podcasts"
           >Podcasts</a
         >
-        <!--
-        <a mat-list-item routerLink="/talks" routerLinkActive="active">Talks</a>
-        -->
-      </mat-nav-list>
-      @if (!isHandset) {
-        <app-footer [isHandset]="false"></app-footer>
-      }
-    </div>
-  </mat-sidenav>
-  <mat-sidenav
-    #settings
-    class="min-w-[300px]"
-    fixedInViewport
-    [attr.role]="'dialog'"
-    mode="over"
-    position="end"
-    [autoFocus]="false"
-  >
-    <mat-toolbar class="flex justify-between items-center !bg-inherit">
-      <span class="font-bold text-lg">Settings</span>
-      @if (isHandset) {
-        <button
-          mat-icon-button
-          type="button"
-          (click)="settings.close()"
-          aria-label="Close settings panel"
-        >
-          <mat-icon svgIcon="close"></mat-icon>
-        </button>
-      }
-    </mat-toolbar>
-    <section class="p-2">
-      <fieldset>
-        <legend class="text-start my-2 pl-2 font-bold">Appearance</legend>
-        <ul class="flex justify-around">
-          <li class="flex flex-col">
-            <button
-              type="button"
-              class="h-10 w-20 border-2 border-gray-400 rounded-lg flex justify-center items-center bg-white"
-              [ngClass]="{ '!border-primary shadow-xl': isLightTheme() }"
-              aria-labelledby="light"
-              (click)="setTheme('light')"
-            >
-              <mat-icon svgIcon="light" aria-hidden="true"></mat-icon>
-            </button>
-            <span
-              class="text-xs mt-1"
-              [ngClass]="{ 'font-bold': isLightTheme() }"
-              id="light"
-              >Light</span
-            >
-          </li>
-          <li class="flex flex-col">
-            <button
-              type="button"
-              class="h-10 w-20 border-2 border-gray-400 rounded-lg flex justify-center items-center bg-[#212121]"
-              [ngClass]="{ '!border-primary] shadow-xl': isDarkTheme() }"
-              aria-labelledby="dark"
-              (click)="setTheme('dark')"
-            >
-              <mat-icon svgIcon="dark" aria-hidden="true"></mat-icon>
-            </button>
-            <span
-              class="text-xs mt-1"
-              [ngClass]="{ 'font-bold': isDarkTheme() }"
-              id="dark"
-              >Dark</span
-            >
-          </li>
-          <li class="flex flex-col">
-            <button
-              type="button"
-              class="h-10 w-20 border-2 border-gray-400 rounded-lg flex justify-center items-center gap-3 bg-gradient-to-r from-white via-50% from-50% via-[#212121] to-[#212121]"
-              [ngClass]="{ '!border-primary shadow-xl': isSystemTheme() }"
-              aria-labelledby="system"
-              (click)="setTheme('system')"
-            >
-              <mat-icon svgIcon="light" aria-hidden="true"></mat-icon>
-              <mat-icon svgIcon="dark" aria-hidden="true"></mat-icon>
-            </button>
-            <span
-              class="text-xs mt-1"
-              [ngClass]="{ 'font-bold': isSystemTheme() }"
-              id="system"
-              >System</span
-            >
-          </li>
-        </ul>
-      </fieldset>
-    </section>
-  </mat-sidenav>
-  <mat-sidenav-content class="!flex flex-col p-4">
-    <header
-      class="flex justify-between"
-      [ngClass]="{
-        'items-center': isHandset,
-        'items-start': !isHandset
-      }"
-    >
-      @if (isHandset) {
-        <button
-          type="button"
-          aria-label="Open navigation menu"
-          mat-icon-button
-          (click)="navigation.toggle()"
-        >
-          <mat-icon svgIcon="menu"></mat-icon>
-        </button>
-        <span class="title text-2xl">ANGULAR HUB</span>
-      } @else {
-        <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
-          {{ headerTitle() }}
-        </h1>
-      }
-      <div>
-        <button
-          type="button"
-          aria-label="Open search"
-          mat-icon-button
-          (click)="openSearch()"
-        >
-          <mat-icon svgIcon="search"></mat-icon>
-        </button>
-        <button
-          type="button"
-          aria-label="Open settings menu"
-          mat-icon-button
-          (click)="settings.toggle()"
-        >
-          <mat-icon svgIcon="settings"></mat-icon>
-        </button>
-      </div>
-    </header>
-    <main class="flex-1">
-      @if (isHandset && headerTitle()) {
-        <h1 class="text-3xl text-start sm:text-5xl font-bold mt-2 mb-6">
-          {{ headerTitle() }}
-        </h1>
-      }
-      <router-outlet></router-outlet>
-    </main>
-    @if (isHandset) {
-      <app-footer></app-footer>
-    }
-  </mat-sidenav-content>
-</mat-sidenav-container>
+      </li>
+    </ul>
+  </div>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<p-sidebar [(visible)]="sidebarVisible">
+  <h3>Sidebar</h3>
+  <p>Lorem ipsum dolor sit amet...</p>
+</p-sidebar>

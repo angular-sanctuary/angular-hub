@@ -1,7 +1,7 @@
 import { EventType } from './event-type.model';
 
 export interface Community {
-  title: string;
+  name: string;
   location: string;
   logo: string;
   url: string;

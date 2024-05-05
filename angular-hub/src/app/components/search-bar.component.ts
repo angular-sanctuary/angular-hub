@@ -10,13 +10,12 @@ import {
   FormsModule,
   NG_VALUE_ACCESSOR,
 } from '@angular/forms';
-import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-search-bar',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage, FormsModule, NgClass, MatIconModule],
+  imports: [NgOptimizedImage, FormsModule, NgClass],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -29,7 +28,9 @@ import { MatIconModule } from '@angular/material/icon';
       class="flex justify-between border-2 border-gray-500 rounded-lg gap-4 p-1 mb-6 max-w-md"
       [ngClass]="{ '!border-primary': isFocused() }"
     >
+      <!--
       <mat-icon svgIcon="search"></mat-icon>
+      -->
       <input
         class="flex-1 outline-none bg-transparent"
         type="text"
@@ -48,7 +49,9 @@ import { MatIconModule } from '@angular/material/icon';
         [attr.aria-hidden]="!searchTerm.length"
         (click)="reset()"
       >
+        <!--
         <mat-icon svgIcon="cancel"></mat-icon>
+        -->
       </button>
     </div>
   `,

@@ -8,7 +8,14 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 export default defineConfig(({ mode }) => {
   return {
     publicDir: 'src/public',
-
+    ssr: {
+      noExternal: ['primeng/**'],
+    },
+    server: {
+      fs: {
+        allow: ['..'],
+      },
+    },
     build: {
       target: ['es2020'],
     },

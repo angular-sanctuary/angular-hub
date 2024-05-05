@@ -8,12 +8,12 @@ import { Podcast } from '../../models/podcast.model';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <article class="flex w-full items-center gap-4">
+    <article class="flex flex-col max-w-36 items-start gap-4">
       <img
         class="rounded-xl"
         [src]="podcast.logo"
-        height="80"
-        width="80"
+        height="200"
+        width="2000"
         alt=""
       />
       <div class="text-start">

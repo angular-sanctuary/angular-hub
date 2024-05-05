@@ -9,8 +9,8 @@ import { Podcast } from '../../models/podcast.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <article class="flex flex-col w-full">
-      <h3 [attr.id]="podcast.title" class="text-xl font-bold" itemprop="title">
-        {{ podcast.title }}
+      <h3 [attr.id]="podcast.name" class="text-xl font-bold" itemprop="title">
+        {{ podcast.name }}
       </h3>
       <app-event-tag [name]="podcast.language" />
     </article>
