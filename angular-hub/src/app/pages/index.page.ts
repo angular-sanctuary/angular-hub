@@ -91,9 +91,6 @@ export default class HomeComponent {
   });
 
   languages = computed(() => {
-    console.log(
-      Array.from(new Set(this.events().map((event) => event.language))),
-    );
     return Array.from(new Set(this.events().map((event) => event.language)));
   });
 
