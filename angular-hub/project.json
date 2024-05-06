@@ -3,6 +3,7 @@
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "./angular-hub/src",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@analogjs/platform:vite",
@@ -58,11 +59,9 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["./angular-hub/**/*.{ts,html}"]
       }
     }
-  },
-  "tags": []
+  }
 }
