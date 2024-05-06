@@ -22,15 +22,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       analog({
         prerender: {
-          routes: [
-            '/',
-            '/discover',
-            '/events',
-            '/cfp',
-            '/communities',
-            '/podcasts',
-            '/tasks',
-          ],
+          routes: ['/', '/communities', '/podcasts'],
         },
       }),
       nxViteTsPaths(),
