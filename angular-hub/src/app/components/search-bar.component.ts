@@ -58,7 +58,7 @@ import {
 })
 export class SearchBarComponent implements ControlValueAccessor {
   isFocused = signal(false);
-  searchTerm: string = '';
+  searchTerm = '';
   onChange: unknown = () => {};
   onTouch: unknown = () => {};
 
