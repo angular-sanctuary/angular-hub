@@ -6,6 +6,7 @@ import { injectLoad, RouteMeta } from '@analogjs/router';
 import { HeaderService } from '../../services/header.service';
 
 import { load } from './index.server';
+import { JsonLdService } from '../../services/json-ld.service';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -53,7 +54,28 @@ export default class PodcastsComponent {
 
   @Input() set header(header: string) {
     this.headerService.setHeaderTitle(header);
+    this.jsonldService.updateJsonLd(this.setJsonLd());
   }
 
-  constructor(private headerService: HeaderService) {}
+  constructor(
+    private headerService: HeaderService,
+    private jsonldService: JsonLdService,
+  ) {}
+
+  setJsonLd() {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      itemListElement: this.podcasts().map((podcast, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: {
+          '@type': 'AudioObject',
+          name: podcast.name,
+          description: podcast.name,
+          url: podcast.url,
+        },
+      })),
+    };
+  }
 }
