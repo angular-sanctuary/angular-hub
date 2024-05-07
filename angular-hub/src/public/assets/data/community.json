@@ -97,7 +97,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-athens/events/298801875/"
+        "url": "https://www.meetup.com/angular-athens/events/298801875/"
       },
       {
         "name": "Angular Athens 22nd Meetup",
@@ -110,7 +110,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-athens/events/298801911/"
+        "url": "https://www.meetup.com/angular-athens/events/298801911/"
       },
       {
         "name": "Angular Athens 23rd Meetup",
@@ -123,7 +123,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-athens/events/298801935/"
+        "url": "https://www.meetup.com/angular-athens/events/298801935/"
       },
       {
         "name": "Angular Athens 24th Meetup",
@@ -136,7 +136,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-athens/events/298801969/"
+        "url": "https://www.meetup.com/angular-athens/events/298801969/"
       }
     ]
   },
@@ -178,7 +178,7 @@
       {
         "name": "NG Belgrade Conf 2024",
         "type": "conference",
-        "date": "2024-03-01",
+        "date": "2024-05-24",
         "url": "https://angularbelgrade.org/",
         "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSfhmPXzmXCsPvy-j9gN6m1fd3mJglOWfS63LYJA8a7I8WkaYQ/viewform",
         "callForPapersEndDate": "2024-02-01",
@@ -194,7 +194,7 @@
     "name": "Angular Birmingham",
     "type": "meetup",
     "location": "Birmingham, United Kingdom",
-    "url": "https://www.meetup.com/fr-FR/angular-birmingham/",
+    "url": "https://www.meetup.com/angular-birmingham/",
     "logo": "https://pbs.twimg.com/profile_images/989263965426470914/NvCmzUH-_400x400.jpg",
     "twitter": "https://twitter.com/ngbrum",
     "linkedin": null,
@@ -211,7 +211,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-birmingham/events/297538112/"
+        "url": "https://www.meetup.com/angular-birmingham/events/297538112/"
       }
     ]
   },
@@ -260,7 +260,7 @@
         "isOnsite": false,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/297978778/"
+        "url": "https://www.meetup.com/angularcommunity/events/297978778/"
       }
     ]
   },
@@ -369,7 +369,7 @@
     "name": "Angular Leipzig",
     "type": "meetup",
     "location": "Leipzig, Germany",
-    "url": "https://www.meetup.com/fr-FR/angular-meetup-leipzig/",
+    "url": "https://www.meetup.com/angular-meetup-leipzig/",
     "logo": "https://pbs.twimg.com/profile_images/1195421264351039488/CcSwDFwj_400x400.jpg",
     "twitter": "https://twitter.com/ngleipzig",
     "linkedin": null,
@@ -386,7 +386,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-meetup-leipzig/events/297507291/?_xtd=gqFyqTI1MjAxMTkyOaFwo2FwaQ%253D%253D&from=ref/"
+        "url": "https://www.meetup.com/angular-meetup-leipzig/events/297507291/?_xtd=gqFyqTI1MjAxMTkyOaFwo2FwaQ%253D%253D&from=ref/"
       },
       {
         "name": null,
@@ -399,7 +399,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-meetup-leipzig/events/299357850/"
+        "url": "https://www.meetup.com/angular-meetup-leipzig/events/299357850/"
       },
       {
         "name": "ngLeipzig #45",
@@ -412,7 +412,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-meetup-leipzig/events/300612475/"
+        "url": "https://www.meetup.com/angular-meetup-leipzig/events/300612475/"
       }
     ]
   },
@@ -420,7 +420,7 @@
     "name": "Angular London",
     "type": "meetup",
     "location": "London, United Kingdom",
-    "url": "https://www.meetup.com/fr-FR/angular-london/",
+    "url": "https://www.meetup.com/angular-london/",
     "logo": "assets/logos/official-logo.webp",
     "twitter": null,
     "linkedin": null,
@@ -431,7 +431,7 @@
     "name": "Angular Macedonia",
     "type": "meetup",
     "location": "Skopje, Macedonia",
-    "url": "https://www.meetup.com/fr-FR/angular-macedonia/",
+    "url": "https://www.meetup.com/angular-macedonia/",
     "logo": "https://www.angularmacedonia.org/logo.webp",
     "twitter": "https://www.linkedin.com/company/angular-macedonia/",
     "linkedin": null,
@@ -472,7 +472,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-meetup-berlin/events/298730458/"
+        "url": "https://www.meetup.com/angular-meetup-berlin/events/298730458/"
       },
       {
         "name": null,
@@ -485,7 +485,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-meetup-berlin/events/300424452/"
+        "url": "https://www.meetup.com/angular-meetup-berlin/events/300424452/"
       }
     ]
   },
@@ -493,7 +493,7 @@
     "name": "Angular Meetup Graz",
     "type": "meetup",
     "location": "Graz, Austria",
-    "url": "https://www.meetup.com/fr-FR/angular-meetup-graz/",
+    "url": "https://www.meetup.com/angular-meetup-graz/",
     "logo": "assets/logos/official-logo.webp",
     "twitter": null,
     "linkedin": null,
@@ -536,7 +536,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-meetup-graz/events/300824699/"
+        "url": "https://www.meetup.com/angular-meetup-graz/events/300824699/"
       }
     ]
   },
@@ -561,7 +561,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/hamburg-angularjs-meetup/events/299480791/"
+        "url": "https://www.meetup.com/hamburg-angularjs-meetup/events/299480791/"
       }
     ]
   },
@@ -599,7 +599,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-melbourne/events/298576991/"
+        "url": "https://www.meetup.com/angular-melbourne/events/298576991/"
       }
     ]
   },
@@ -648,7 +648,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-ruhr/events/300782226/"
+        "url": "https://www.meetup.com/angular-ruhr/events/300782226/"
       }
     ]
   },
@@ -694,7 +694,7 @@
     "name": "Angular Vienna",
     "type": "meetup",
     "location": "Vienna, Austria",
-    "url": "https://www.meetup.com/fr-FR/angular-vienna/",
+    "url": "https://www.meetup.com/angular-vienna/",
     "logo": "https://pbs.twimg.com/profile_images/1007998057718394880/BHFVi3HW_400x400.jpg",
     "twitter": "https://twitter.com/AngularVienna",
     "linkedin": null,
@@ -724,7 +724,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-vienna/events/298861231/"
+        "url": "https://www.meetup.com/angular-vienna/events/298861231/"
       }
     ]
   },
@@ -749,7 +749,7 @@
         "isOnsite": false,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-warsaw/events/298542428/"
+        "url": "https://www.meetup.com/angular-warsaw/events/298542428/"
       }
     ]
   },
@@ -787,7 +787,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/angularwroclaw/events/298927294/"
+        "url": "https://www.meetup.com/angularwroclaw/events/298927294/"
       }
     ]
   },
@@ -929,7 +929,7 @@
     "name": "ngLodz",
     "type": "meetup",
     "location": "Łódź, Pologne",
-    "url": "https://www.meetup.com/fr-FR/ng-lodz/",
+    "url": "https://www.meetup.com/ng-lodz/",
     "logo": "https://pbs.twimg.com/profile_images/1747266292191789056/6eDCWDd9_400x400.jpg",
     "twitter": "https://twitter.com/NgLodz",
     "linkedin": null,
@@ -946,7 +946,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/ng-lodz/events/300186734/"
+        "url": "https://www.meetup.com/ng-lodz/events/300186734/"
       },
       {
         "name": "ngLodz #10",
@@ -959,7 +959,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersEndDate": null,
-        "url": "https://www.meetup.com/fr-FR/ng-lodz/events/300736330/"
+        "url": "https://www.meetup.com/ng-lodz/events/300736330/"
       }
     ]
   },
@@ -998,5 +998,80 @@
     "linkedin": "https://www.linkedin.com/company/angularsp/",
     "callForPapers": null,
     "events": []
+  },
+  {
+    "name": "ng-India",
+    "type": "conference",
+    "location": "Delhi, India",
+    "url": "https://www.ng-ind.com/",
+    "logo": "https://www.ng-ind.com/assets/images/ng-indianewlogo.svg",
+    "twitter": "https://twitter.com/geeknineseven",
+    "linkedin": null,
+    "callForPapers": null,
+    "events": [
+      {
+        "name": "ng-India 2024",
+        "type": "conference",
+        "location": "Delhi, India",
+        "date": "2024-02-10",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.ng-ind.com/"
+      }
+    ]
+  },
+  {
+    "name": "Angular Meetup Hungary",
+    "type": "meetup",
+    "location": "Budapest, Hungary",
+    "url": "https://www.meetup.com/angularhungary/",
+    "logo": "/assets/logos/official-logo.webp",
+    "twitter": null,
+    "linkedin": null,
+    "callForPapers": null,
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Budapest, Hungary",
+        "date": "2024-05-16",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/angularhungary/events/298605139/"
+      }
+    ]
+  },
+  {
+    "name": "angularday",
+    "type": "conference",
+    "location": "Verona, Italy",
+    "url": "https://angularday.it/",
+    "logo": "https://pbs.twimg.com/profile_images/1118451217309609984/DiZ0M3wW_400x400.png",
+    "twitter": "https://twitter.com/angularday",
+    "linkedin": "https://www.linkedin.com/company/grusp/",
+    "callForPapers": null,
+    "events": [
+      {
+        "name": null,
+        "type": "conference",
+        "location": "Verona, Italy",
+        "date": "2024-11-08",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": "https://2024.angularday.it/welcome/cfp.html",
+        "callForPapersEndDate": "2024-06-17",
+        "url": "https://2024.angularday.it/"
+      }
+    ]
   }
 ]
