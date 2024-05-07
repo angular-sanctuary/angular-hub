@@ -8,8 +8,8 @@ import { TagComponent } from '../tag.component';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <article class="flex w-full items-start gap-4">
-      <a [href]="event().url ?? '#'">
+    <article>
+      <a [href]="event().url ?? '#'" class="flex w-full items-start gap-4">
         <img
           class="rounded-xl"
           [src]="event().community?.logo"

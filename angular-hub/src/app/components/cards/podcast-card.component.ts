@@ -8,8 +8,11 @@ import { TagComponent } from '../tag.component';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <article class="flex flex-col max-w-36 items-start gap-1">
-      <a [href]="podcast().url ?? '#'">
+    <article>
+      <a
+        [href]="podcast().url ?? '#'"
+        class="flex flex-col max-w-36 items-start gap-1"
+      >
         <img
           class="rounded-xl"
           [src]="podcast().logo"

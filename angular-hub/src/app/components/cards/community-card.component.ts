@@ -8,8 +8,11 @@ import { Community } from '../../../models/community.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgOptimizedImage, TitleCasePipe],
   template: `
-    <article class="flex flex-col max-w-36 items-start gap-1">
-      <a [href]="community().url ?? '#'">
+    <article>
+      <a
+        [href]="community().url ?? '#'"
+        class="flex flex-col max-w-36 items-start gap-1"
+      >
         <img
           class="rounded-xl"
           [src]="community().logo"
