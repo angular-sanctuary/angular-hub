@@ -16,6 +16,16 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The 
 
 Run `npm run build` to build the client project. The client build artifacts are located in the `dist/angular-hub/analog/public` directory.
 
+---
+
+#### Before running your app
+
+In order for the app to run correctly, you must have an **.env** file at the root of your app folder, with the following content:
+
+```text
+VITE_ANALOG_PUBLIC_BASE_URL="http://localhost:4200"
+```
+
 ## Licenses
 
 This project uses the MIT License for the project code.
