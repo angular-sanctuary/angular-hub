@@ -51,7 +51,7 @@ import { InputSwitchModule } from 'primeng/inputswitch';
         [ngModel]="isRemote()"
         (ngModelChange)="isRemote.set($event)"
       />
-      <label for="remote">remote only</label>
+      <label class="mb-1" for="remote">remote only</label>
     </form>
 
     <ul
