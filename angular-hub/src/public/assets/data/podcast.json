@@ -40,5 +40,11 @@
     "url": "https://www.youtube.com/@ng-news",
     "logo": "assets/logos/ng-news.webp",
     "language": "English"
+  },
+  {
+    "name": "Angular Rocks",
+    "url": "https://angularrocks.com/",
+    "logo": "assets/logos/angular-rocks.png",
+    "language": "English"
   }
 ]
