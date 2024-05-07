@@ -30,7 +30,7 @@ import { DropdownModule } from 'primeng/dropdown';
       <p-calendar
         name="date"
         [style]="{ width: '230px' }"
-        [ngModel]="date"
+        [ngModel]="date()"
         (ngModelChange)="date.set($event)"
         placeholder="Select a date"
         [showClear]="true"
@@ -79,7 +79,7 @@ export default class HomeComponent {
   #headerService = inject(HeaderService);
 
   events = toSignal(injectLoad<typeof load>(), { requireSync: true });
-  date = signal(null);
+  date = signal(undefined);
   selectedLanguage = signal(null);
 
   filteredEvents = computed(() => {
