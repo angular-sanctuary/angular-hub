@@ -8,7 +8,7 @@ import { EventTagComponent } from '../event-tag.component';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <article class="flex w-full items-center gap-4">
+    <article class="flex w-full items-start gap-4">
       <img
         class="rounded-xl"
         [src]="event.community.logo"
