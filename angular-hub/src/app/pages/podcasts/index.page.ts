@@ -30,7 +30,9 @@ export const routeMeta: RouteMeta = {
       <h2 class="text-2xl text-center">Curated list of Angular Podcasts</h2>
     </aside>
 
-    <ul class="flex flex-wrap justify-center gap-x-8 gap-y-4 px-8">
+    <ul
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-x-8 gap-y-4 px-8"
+    >
       @for (podcast of podcasts(); track podcast.name) {
         <li>
           <app-podcast-card [podcast]="podcast"></app-podcast-card>
