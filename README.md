@@ -45,6 +45,9 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
       <td align="center" valign="top" width="14.28%"><a href="http://ngrome.io"><img src="https://avatars.githubusercontent.com/u/281553?v=4?s=100" width="100px;" alt="Luciano"/><br /><sub><b>Luciano</b></sub></a><br /><a href="#code-lucianomurr" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/adrianromanski/"><img src="https://avatars.githubusercontent.com/u/44946000?v=4?s=100" width="100px;" alt="Adrian Romanski"/><br /><sub><b>Adrian Romanski</b></sub></a><br /><a href="#code-AdrianRomanski" title="Code">💻</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://eduardoroth.dev"><img src="https://avatars.githubusercontent.com/u/5419161?v=4?s=100" width="100px;" alt="Eduardo Roth"/><br /><sub><b>Eduardo Roth</b></sub></a><br /><a href="#doc-eduardoRoth" title="Documentation">📖</a></td>
+    </tr>
   </tbody>
 </table>
 
