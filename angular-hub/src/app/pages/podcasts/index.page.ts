@@ -1,12 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { PodcastCardComponent } from '../../components/cards/podcast-card.component';
 import { injectLoad, RouteMeta } from '@analogjs/router';
-import { HeaderService } from '../../services/header.service';
 
 import { load } from './index.server';
 import { JsonLdService } from '../../services/json-ld.service';
+import { Title } from '@angular/platform-browser';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -15,9 +15,6 @@ export const routeMeta: RouteMeta = {
       content: 'Curated list of Angular Talks',
     },
   ],
-  data: {
-    header: 'Podcasts',
-  },
 };
 
 @Component({
@@ -45,15 +42,13 @@ export const routeMeta: RouteMeta = {
 export default class PodcastsComponent {
   podcasts = toSignal(injectLoad<typeof load>(), { requireSync: true });
 
-  @Input() set header(header: string) {
-    this.headerService.setHeaderTitle(header);
+  constructor(
+    private title: Title,
+    private jsonldService: JsonLdService,
+  ) {
+    this.title.setTitle('Angular Hub - Podcasts');
     this.jsonldService.updateJsonLd(this.setJsonLd());
   }
-
-  constructor(
-    private headerService: HeaderService,
-    private jsonldService: JsonLdService,
-  ) {}
 
   setJsonLd() {
     return {
