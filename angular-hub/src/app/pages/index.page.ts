@@ -45,13 +45,15 @@ import { InputSwitchModule } from 'primeng/inputswitch';
         (ngModelChange)="selectedLanguage.set($event)"
         placeholder="Select a language"
       />
-      <p-inputSwitch
-        id="remote"
-        name="remote"
-        [ngModel]="isRemote()"
-        (ngModelChange)="isRemote.set($event)"
-      />
-      <label class="mb-1" for="remote">remote only</label>
+      <div class="flex items-center gap-2">
+        <p-inputSwitch
+          id="remote"
+          name="remote"
+          [ngModel]="isRemote()"
+          (ngModelChange)="isRemote.set($event)"
+        />
+        <label class="mb-2" for="remote">remote only</label>
+      </div>
     </form>
 
     <ul
