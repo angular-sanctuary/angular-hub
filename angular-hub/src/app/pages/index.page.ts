@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { isSameDay } from 'date-fns';
 import { ButtonModule } from 'primeng/button';
 import { DropdownModule } from 'primeng/dropdown';
+import { InputSwitchModule } from 'primeng/inputswitch';
 
 @Component({
   selector: 'app-home',
@@ -44,10 +45,17 @@ import { DropdownModule } from 'primeng/dropdown';
         (ngModelChange)="selectedLanguage.set($event)"
         placeholder="Select a language"
       />
+      <p-inputSwitch
+        id="remote"
+        name="remote"
+        [ngModel]="isRemote()"
+        (ngModelChange)="isRemote.set($event)"
+      />
+      <label for="remote">remote only</label>
     </form>
 
     <ul
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-start items-start px-8"
+      class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 justify-start items-start px-8"
     >
       @for (event of filteredEvents(); track event.name) {
         <li>
@@ -73,6 +81,7 @@ import { DropdownModule } from 'primeng/dropdown';
     ButtonModule,
     RouterLinkActive,
     DropdownModule,
+    InputSwitchModule,
   ],
 })
 export default class HomeComponent {
@@ -81,6 +90,7 @@ export default class HomeComponent {
   events = toSignal(injectLoad<typeof load>(), { requireSync: true });
   date = signal(undefined);
   selectedLanguage = signal(null);
+  isRemote = signal(false);
 
   filteredEvents = computed(() => {
     return this.events().filter((event) => {
@@ -90,7 +100,8 @@ export default class HomeComponent {
           : true) &&
         (this.selectedLanguage()
           ? event.language === this.selectedLanguage()
-          : true)
+          : true) &&
+        (this.isRemote() ? event.isRemote : true)
       );
     });
   });

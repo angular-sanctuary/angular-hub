@@ -1,6 +1,6 @@
 import { defineEventHandler, getQuery } from 'h3';
 import communities from '../../../public/assets/data/community.json';
-import { BackCommunity } from '../../../models/back-community.model';
+import { Community } from '../../../models/community.model';
 import { CommunityListSchema } from '../../schemas/community.schema';
 import { parse } from 'valibot';
 
@@ -15,7 +15,7 @@ export default defineEventHandler((event) => {
 
   try {
     parse(CommunityListSchema, communities);
-    return communities.filter((community: BackCommunity) => {
+    return communities.filter((community: Community) => {
       if (!type) {
         return community.callForPapers;
       }
