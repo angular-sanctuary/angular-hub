@@ -987,5 +987,16 @@
         "url": "https://www.youtube.com/@NgAsiaAngular/streams"
       }
     ]
+  },
+  {
+    "name": "AngularSP",
+    "type": "meetup",
+    "location": "São Paulo, Brazil",
+    "url": "https://www.youtube.com/@angularsp3351/streams",
+    "logo": "assets/logos/angular-sp.png",
+    "twitter": "https://twitter.com/AngularSP",
+    "linkedin": "https://www.linkedin.com/company/angularsp/",
+    "callForPapers": null,
+    "events": []
   }
 ]
