@@ -1,13 +1,13 @@
-import { Event } from '../app/models/event.model';
+import { Event } from './event.model';
 
 export interface Community {
-  title: string;
-  type: Array<'meetup' | 'conference' | 'workshop' | 'other'>;
-  location: string;
-  url: string;
-  logo: string;
-  twitter?: string;
-  linkedin?: string;
-  event: Event[];
-  cfp?: string;
+  name: string;
+  type: 'workshop' | 'conference' | 'meetup' | 'other';
+  location: string | null;
+  url: string | null;
+  logo: string | null;
+  twitter: string | null;
+  linkedin: string | null;
+  callForPapers: string | null;
+  events: Event[];
 }

@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Event } from '../../models/event.model';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { Event } from '../../../models/event.model';
 import { DatePipe, NgOptimizedImage } from '@angular/common';
-import { EventTagComponent } from '../event-tag.component';
+import { TagComponent } from '../tag.component';
 
 @Component({
   selector: 'app-event-card',
@@ -11,7 +11,7 @@ import { EventTagComponent } from '../event-tag.component';
     <article class="flex w-full items-start gap-4">
       <img
         class="rounded-xl"
-        [src]="event.community.logo"
+        [src]="event().community?.logo"
         height="100"
         width="100"
         alt=""
@@ -19,28 +19,38 @@ import { EventTagComponent } from '../event-tag.component';
 
       <div class="text-start">
         <span class="font-bold text-primary" itemprop="date">{{
-          event.date
+          event().date
         }}</span>
-        <h3 [attr.id]="event.name" class="text-xl font-bold" itemprop="title">
-          {{ event.name || event.community.name }}
+        <h3 [attr.id]="event().name" class="text-xl font-bold" itemprop="title">
+          {{ event().name || event().community?.name }}
         </h3>
         <span class="text-gray-500 dark:text-gray-400" itemprop="location">{{
-          event.location
+          event().location
         }}</span>
         <ul class="flex gap-2">
           <li class="inline">
-            <app-event-tag [name]="event.language" />
+            <app-tag [title]="event().language" />
           </li>
-          @for (tag of event.tags; track tag) {
+          @if (event().isFree) {
             <li class="inline">
-              <app-event-tag [name]="tag" />
+              <app-tag [title]="'Free'" color="#629632" />
+            </li>
+          }
+          @if (event().isRemote) {
+            <li class="inline">
+              <app-tag [title]="'Remote'" color="#328496" />
+            </li>
+          }
+          @if (event().isOnsite) {
+            <li class="inline">
+              <app-tag [title]="'Onsite'" color="#963232" />
             </li>
           }
         </ul>
       </div>
     </article>
   `,
-  imports: [DatePipe, NgOptimizedImage, EventTagComponent],
+  imports: [DatePipe, NgOptimizedImage, TagComponent],
   styles: [
     `
       :host {
@@ -51,5 +61,5 @@ import { EventTagComponent } from '../event-tag.component';
   ],
 })
 export class EventCardComponent {
-  @Input({ required: true }) event!: Event;
+  event = input.required<Event>();
 }

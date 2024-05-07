@@ -1,7 +1,7 @@
 import { defineEventHandler, getQuery } from 'h3';
 import communities from '../../../../public/assets/data/community.json';
-import { BackEvent } from '../../../../models/back-event.model';
-import { BackCommunity } from '../../../../models/back-community.model';
+import { Event } from '../../../../models/event.model';
+import { Community } from '../../../../models/community.model';
 import { CommunityListSchema } from '../../../schemas/community.schema';
 import { parse } from 'valibot';
 
@@ -9,10 +9,10 @@ export default defineEventHandler((evt) => {
   try {
     parse(CommunityListSchema, communities);
     return communities
-      .map((community: BackCommunity) => {
+      .map((community: Community) => {
         const { events, ...communityMeta } = community;
         return community.events
-          .map((event: BackEvent) => {
+          .map((event: Event) => {
             return {
               ...event,
               community: communityMeta,
@@ -21,9 +21,9 @@ export default defineEventHandler((evt) => {
           .flat();
       })
       .flat()
-      .filter((event: BackEvent) => applyQueryFilter(event, getQuery(evt)))
+      .filter((event: Event) => applyQueryFilter(event, getQuery(evt)))
       .sort(
-        (a: BackEvent, b: BackEvent) =>
+        (a: Event, b: Event) =>
           new Date(a.date).getTime() - new Date(b.date).getTime(),
       );
   } catch (error) {
@@ -31,7 +31,7 @@ export default defineEventHandler((evt) => {
   }
 });
 
-function applyQueryFilter(event: BackEvent, query): boolean {
+function applyQueryFilter(event: Event, query): boolean {
   for (const key in query) {
     if (event[key] !== Boolean(query[key])) {
       return false;

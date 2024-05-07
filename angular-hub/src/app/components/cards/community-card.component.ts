@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { NgOptimizedImage, TitleCasePipe } from '@angular/common';
-import { Community } from '../../models/community.model';
+import { Community } from '../../../models/community.model';
 
 @Component({
   selector: 'app-community-card',
@@ -11,24 +11,24 @@ import { Community } from '../../models/community.model';
     <article class="flex flex-col max-w-36 items-start gap-1">
       <img
         class="rounded-xl"
-        [src]="community.logo"
+        [src]="community().logo"
         height="200"
         width="200"
         alt=""
       />
       <div class="text-start">
         <span class="font-bold text-primary" itemprop="type">{{
-          community.type | titlecase
+          community().type | titlecase
         }}</span>
         <h3
-          [attr.aria-labelledby]="community.name"
+          [attr.aria-labelledby]="community().name"
           class="text-xl font-bold"
           itemprop="title"
         >
-          {{ community.name }}
+          {{ community().name }}
         </h3>
         <span class="text-gray-500 dark:text-gray-400" itemprop="location">{{
-          community.location
+          community().location
         }}</span>
       </div>
     </article>
@@ -43,5 +43,5 @@ import { Community } from '../../models/community.model';
   ],
 })
 export class CommunityCardComponent {
-  @Input({ required: true }) community!: Community;
+  community = input.required<Community>();
 }

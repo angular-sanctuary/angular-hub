@@ -1,10 +1,16 @@
-export interface Community {
-  title: string;
-  type: 'meetup' | 'conference' | 'workshop' | 'other';
-  location: string;
+import { Community } from './community.model';
+
+export interface Event {
+  name: string | null;
+  type: 'workshop' | 'conference' | 'meetup' | 'other';
+  location: string | null;
+  url: string | null;
   date: string;
-  url: string;
-  tags: string[];
   language: string;
-  cfpDeadline?: string;
+  isFree: boolean;
+  isRemote: boolean;
+  isOnsite: boolean;
+  callForPapers: string | null;
+  callForPapersEndDate: string | null;
+  community?: Community;
 }

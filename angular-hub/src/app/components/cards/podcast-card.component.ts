@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { EventTagComponent } from '../event-tag.component';
-import { Podcast } from '../../models/podcast.model';
+import { Podcast } from '../../../models/podcast.model';
+import { TagComponent } from '../tag.component';
 
 @Component({
   selector: 'app-podcast-card',
@@ -11,20 +11,24 @@ import { Podcast } from '../../models/podcast.model';
     <article class="flex flex-col max-w-36 items-start gap-1">
       <img
         class="rounded-xl"
-        [src]="podcast.logo"
+        [src]="podcast().logo"
         height="200"
         width="2000"
         alt=""
       />
       <div class="text-start">
-        <h3 [attr.id]="podcast.name" class="text-xl font-bold" itemprop="title">
-          {{ podcast.name }}
+        <h3
+          [attr.id]="podcast().name"
+          class="text-xl font-bold"
+          itemprop="title"
+        >
+          {{ podcast().name }}
         </h3>
-        <app-event-tag [name]="podcast.language" />
+        <app-tag [title]="podcast().language" />
       </div>
     </article>
   `,
-  imports: [NgOptimizedImage, EventTagComponent],
+  imports: [NgOptimizedImage, TagComponent],
   styles: [
     `
       :host {
@@ -35,5 +39,5 @@ import { Podcast } from '../../models/podcast.model';
   ],
 })
 export class PodcastCardComponent {
-  @Input({ required: true }) podcast!: Podcast;
+  podcast = input.required<Podcast>();
 }
