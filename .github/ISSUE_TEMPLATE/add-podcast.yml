@@ -1,0 +1,32 @@
+name: New podcast
+description: submit a new podcast for angular-hub.com/podcasts
+title: '[New podcast]: '
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Podcast name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Podcast URL
+      description: Choose the preferred platform to share the podcast content
+    validations:
+      required: true
+  - type: input
+    id: logo
+    attributes:
+      label: Podcast logo
+  - type: input
+    id: language
+    attributes:
+      label: Language
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://issue-forms-creator.netlify.app)
