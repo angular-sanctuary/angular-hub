@@ -57,7 +57,7 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     </form>
 
     <ul
-      class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 justify-start items-start px-8"
+      class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 justify-start items-start px-8"
     >
       @for (event of filteredEvents(); track event.name) {
         <li>
