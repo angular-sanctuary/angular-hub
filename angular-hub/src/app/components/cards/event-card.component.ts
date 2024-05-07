@@ -67,7 +67,6 @@ import { TagComponent } from '../tag.component';
         &:hover {
           h3 {
             color: theme('colors.secondary');
-            font-weight: 800;
           }
         }
       }

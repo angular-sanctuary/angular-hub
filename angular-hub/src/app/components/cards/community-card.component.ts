@@ -45,7 +45,6 @@ import { Community } from '../../../models/community.model';
         &:hover {
           h3 {
             color: theme('colors.secondary');
-            font-weight: 800;
           }
         }
       }
