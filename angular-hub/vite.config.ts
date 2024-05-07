@@ -7,20 +7,16 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    root: __dirname,
     publicDir: 'src/public',
-    cacheDir: `../node_modules/.vite`,
     ssr: {
       noExternal: ['primeng/**'],
     },
     server: {
       fs: {
-        allow: ['.'],
+        allow: ['..'],
       },
     },
     build: {
-      outDir: '../dist/./angular-hub/client',
-      reportCompressedSize: true,
       target: ['es2020'],
     },
     plugins: [
