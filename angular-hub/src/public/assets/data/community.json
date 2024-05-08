@@ -19,7 +19,7 @@
         "isRemote": true,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-love-meetup/events/297374077/"
       },
       {
@@ -32,7 +32,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://meetup.angular.love/spring-camp/?utm_source=angularhub&utm_medium=event&utm_campaign=angularspringcamp"
       },
       {
@@ -45,7 +45,7 @@
         "isRemote": true,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://meetup.angular.love/spring-camp/?utm_source=angularhub&utm_medium=event&utm_campaign=angularspringcamp"
       },
       {
@@ -58,7 +58,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://meetup.angular.love/spring-camp/?utm_source=angularhub&utm_medium=event&utm_campaign=angularspringcamp"
       }
     ]
@@ -83,7 +83,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/297342102/"
       },
       {
@@ -96,7 +96,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/298801875/"
       },
       {
@@ -109,7 +109,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/298801911/"
       },
       {
@@ -122,7 +122,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/298801935/"
       },
       {
@@ -135,7 +135,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/298801969/"
       }
     ]
@@ -160,7 +160,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-belgium/events/297098829/"
       }
     ]
@@ -181,7 +181,7 @@
         "date": "2024-05-24",
         "url": "https://angularbelgrade.org/",
         "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSfhmPXzmXCsPvy-j9gN6m1fd3mJglOWfS63LYJA8a7I8WkaYQ/viewform",
-        "callForPapersEndDate": "2024-02-01",
+        "callForPapersDueDate": "2024-02-01",
         "language": "English",
         "isFree": false,
         "isRemote": false,
@@ -210,7 +210,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-birmingham/events/297538112/"
       }
     ]
@@ -246,7 +246,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/AngularCommunity/events/296951753"
       },
       {
@@ -259,7 +259,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/297978778/"
       },
       {
@@ -272,7 +272,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/fr-FR/angularcommunity/events/298421675/"
       },
       {
@@ -285,7 +285,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/fr-FR/angularcommunity/events/300766126/"
       }
     ]
@@ -310,7 +310,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.eventbrite.com/e/comunidad-angular-costa-rica-en-vivo-tickets-755480040137?aff=oddtdtcreator&fbclid=IwAR25M42wy5s-uGnURY-xB5gdBA3b-i4GSlhFneOo4OnA-K9ULrrt3tWtlP0"
       }
     ]
@@ -335,7 +335,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://youtube.com/live/yYGk058Q4fU"
       },
       {
@@ -348,7 +348,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://youtube.com/live/gJZpreOyqMA?feature=share"
       },
       {
@@ -361,7 +361,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.youtube.com/watch?v=51tncS0DPJE"
       }
     ]
@@ -386,7 +386,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://ng-festival.com/"
       }
     ]
@@ -411,7 +411,7 @@
         "isRemote": true,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-leipzig/events/297507291/?_xtd=gqFyqTI1MjAxMTkyOaFwo2FwaQ%253D%253D&from=ref/"
       },
       {
@@ -424,7 +424,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-leipzig/events/299357850/"
       },
       {
@@ -437,7 +437,7 @@
         "isRemote": true,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-leipzig/events/300612475/"
       }
     ]
@@ -484,7 +484,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-berlin/events/292747713"
       },
       {
@@ -497,7 +497,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-berlin/events/298730458/"
       },
       {
@@ -510,7 +510,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-berlin/events/300424452/"
       }
     ]
@@ -535,7 +535,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-graz/events/297479092/"
       },
       {
@@ -548,7 +548,7 @@
         "isRemote": true,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/de-DE/angular-meetup-graz/events/300061069/"
       },
       {
@@ -561,7 +561,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-graz/events/300824699/"
       }
     ]
@@ -586,7 +586,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/hamburg-angularjs-meetup/events/299480791/"
       }
     ]
@@ -611,7 +611,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-melbourne/events/297244000"
       },
       {
@@ -624,7 +624,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-melbourne/events/298576991/"
       }
     ]
@@ -660,7 +660,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-ruhr/events/297260399/"
       },
       {
@@ -673,7 +673,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-ruhr/events/300782226/"
       }
     ]
@@ -698,7 +698,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSfGyxjOgYiiJavTMLh4pmj_jfp-t6orn6lxAo8SEGPoiHiq0A/viewfor"
       },
       {
@@ -711,7 +711,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSf1rp6TvXiVhhZozPbRmng6GP-80UGc0SfOT7CAI5tqOQWSsQ/viewform"
       }
     ]
@@ -736,7 +736,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-vienna/events/297518543/"
       },
       {
@@ -749,7 +749,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-vienna/events/298861231/"
       }
     ]
@@ -774,7 +774,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-warsaw/events/298542428/"
       }
     ]
@@ -799,7 +799,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularwroclaw/events/297066922/"
       },
       {
@@ -812,7 +812,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularwroclaw/events/298927294/"
       }
     ]
@@ -848,7 +848,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": null
       },
       {
@@ -861,7 +861,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": null
       }
     ]
@@ -904,7 +904,7 @@
         "date": "2024-11-06",
         "url": "https://ng-poland.pl/",
         "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform",
-        "callForPapersEndDate": "2024-10-01",
+        "callForPapersDueDate": "2024-10-01",
         "language": "English",
         "isFree": false,
         "isRemote": false,
@@ -929,7 +929,7 @@
         "date": "2023-12-01",
         "url": "https://ngrome.io/",
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "language": "English",
         "isFree": true,
         "isRemote": false,
@@ -942,7 +942,7 @@
         "date": "2024-06-27",
         "url": "https://ngrome.io/",
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "language": "English",
         "isFree": false,
         "isRemote": false,
@@ -971,7 +971,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/300186734/"
       },
       {
@@ -984,7 +984,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/300736330/"
       }
     ]
@@ -1009,7 +1009,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.youtube.com/@NgAsiaAngular/streams"
       }
     ]
@@ -1045,7 +1045,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.ng-ind.com/"
       }
     ]
@@ -1070,7 +1070,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
-        "callForPapersEndDate": null,
+        "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularhungary/events/298605139/"
       }
     ]
@@ -1095,7 +1095,7 @@
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": "https://2024.angularday.it/welcome/cfp.html",
-        "callForPapersEndDate": "2024-06-17",
+        "callForPapersDueDate": "2024-06-17",
         "url": "https://2024.angularday.it/"
       }
     ]
@@ -1120,7 +1120,7 @@
         "isRemote": true,
         "isOnsite": false,
         "callForPapers": "https://sessionize.com/angular-tiny-conf-shemu-2024/",
-        "callForPapersEndDate": "2024-06-14",
+        "callForPapersDueDate": "2024-06-14",
         "url": null
       }
     ]

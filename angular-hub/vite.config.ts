@@ -44,7 +44,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       analog({
         prerender: {
-          routes: ['/', '/communities', '/podcasts'],
+          routes: ['/', '/communities', '/podcasts', '/callforpapers'],
           sitemap: {
             host: 'https://analogjs.org/',
           },

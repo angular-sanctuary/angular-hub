@@ -40,6 +40,14 @@
           >Podcasts</a
         >
       </li>
+      <li>
+        <a
+          class="p-button p-button-secondary p-button-text hover:bg-gray-500 py-1"
+          routerLinkActive="routerLinkActive"
+          routerLink="/callforpapers"
+          >Call for papers</a
+        >
+      </li>
     </ul>
   </div>
   @if (isInstallButtonVisible()) {
@@ -92,6 +100,15 @@
         routerLink="/podcasts"
         (click)="sidebarVisible = false"
         >Podcasts</a
+      >
+    </li>
+    <li>
+      <a
+        class="hover:text-primary"
+        routerLinkActive="sidebarActive"
+        routerLink="/callforpapers"
+        (click)="sidebarVisible = false"
+        >Call for papers</a
       >
     </li>
     <p-divider />
