@@ -1,8 +1,7 @@
-import { Component, computed, inject, Input, signal } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { HeaderService } from '../services/header.service';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { injectLoad } from '@analogjs/router';
+import { injectLoad, RouteMeta } from '@analogjs/router';
 import { load } from './index.server';
 import { EventCardComponent } from '../components/cards/event-card.component';
 import { CalendarModule } from 'primeng/calendar';
@@ -11,9 +10,20 @@ import { isSameDay } from 'date-fns';
 import { ButtonModule } from 'primeng/button';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputSwitchModule } from 'primeng/inputswitch';
+import { Title } from '@angular/platform-browser';
+import { JsonLdService } from '../services/json-ld.service';
+
+export const routeMeta: RouteMeta = {
+  meta: [
+    {
+      name: 'description',
+      content: 'Curated list of Angular Events',
+    },
+  ],
+};
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-events',
   standalone: true,
   template: `
     <aside
@@ -86,9 +96,7 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     InputSwitchModule,
   ],
 })
-export default class HomeComponent {
-  #headerService = inject(HeaderService);
-
+export default class EventsComponent {
   events = toSignal(injectLoad<typeof load>(), { requireSync: true });
   date = signal(undefined);
   selectedLanguage = signal(null);
@@ -112,7 +120,52 @@ export default class HomeComponent {
     return Array.from(new Set(this.events().map((event) => event.language)));
   });
 
-  @Input() set header(header: string) {
-    this.#headerService.setHeaderTitle(header);
+  constructor(
+    private title: Title,
+    private jsonldService: JsonLdService,
+  ) {
+    this.title.setTitle('Angular HUB - Events');
+    this.jsonldService.updateJsonLd(this.setJsonLd());
+  }
+
+  setJsonLd() {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      itemListElement: this.events().map((event, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: {
+          '@type': 'Event',
+          name: event.name,
+          url: event.url,
+          startDate: event.date,
+          ...(event.location
+            ? {
+                location: {
+                  '@type': 'Place',
+                  name: event.location,
+                },
+              }
+            : {}),
+          ...(event.isRemote
+            ? {
+                location: {
+                  '@type': 'VirtualLocation',
+                  name: 'Online',
+                },
+              }
+            : {}),
+          ...(event.language
+            ? {
+                inLanguage: {
+                  '@type': 'Language',
+                  name: event.language,
+                },
+              }
+            : {}),
+        },
+      })),
+    };
   }
 }

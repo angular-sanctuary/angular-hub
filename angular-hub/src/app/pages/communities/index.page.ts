@@ -1,21 +1,18 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommunityCardComponent } from '../../components/cards/community-card.component';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { injectLoad, RouteMeta } from '@analogjs/router';
-import { HeaderService } from '../../services/header.service';
 import { load } from './index.server';
+import { Title } from '@angular/platform-browser';
+import { JsonLdService } from '../../services/json-ld.service';
 
 export const routeMeta: RouteMeta = {
-  title: 'ANGULAR HUB - Curated list of Angular communities',
   meta: [
     {
       name: 'description',
       content: 'Curated list of Angular communities',
     },
   ],
-  data: {
-    header: 'Communities',
-  },
 };
 
 @Component({
@@ -39,14 +36,40 @@ export const routeMeta: RouteMeta = {
       }
     </ul>
   `,
-  styles: ``,
 })
-export default class EvenementsComponent {
+export default class CommunitiesComponent {
   communities = toSignal(injectLoad<typeof load>(), { requireSync: true });
 
-  @Input() set header(header: string) {
-    this.headerService.setHeaderTitle(header);
+  constructor(
+    private title: Title,
+    private jsonldService: JsonLdService,
+  ) {
+    this.title.setTitle('Angular HUB - Communities');
+    this.jsonldService.updateJsonLd(this.setJsonLd());
   }
 
-  constructor(private readonly headerService: HeaderService) {}
+  setJsonLd() {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      itemListElement: this.communities().map((community, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: {
+          '@type': 'Organization',
+          name: community.name,
+          url: community.url,
+          ...(community.location
+            ? {
+                address: {
+                  '@type': 'PostalAddress',
+                  addressLocality: community.location,
+                },
+              }
+            : {}),
+          knowsAbout: 'Angular',
+        },
+      })),
+    };
+  }
 }

@@ -48,7 +48,7 @@ export default class PodcastsComponent {
     private title: Title,
     private jsonldService: JsonLdService,
   ) {
-    this.title.setTitle('Angular Hub - Podcasts');
+    this.title.setTitle('Angular HUB - Podcasts');
     this.jsonldService.updateJsonLd(this.setJsonLd());
   }
 
