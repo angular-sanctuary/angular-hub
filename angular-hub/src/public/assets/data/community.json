@@ -1073,5 +1073,30 @@
         "url": "https://2024.angularday.it/"
       }
     ]
+  },
+  {
+    "name": "angulartinyconf",
+    "type": "conference",
+    "location": null,
+    "url": "https://www.angulartinyconf.com/",
+    "logo": "https://pbs.twimg.com/profile_images/1585105346590285824/mfLP8eq-_400x400.jpg",
+    "twitter": "https://twitter.com/angulartinyconf",
+    "linkedin": "https://www.linkedin.com/company/grusp/",
+    "callForPapers": null,
+    "events": [
+      {
+        "name": null,
+        "type": "conference",
+        "location": null,
+        "date": "2024-06-28",
+        "language": "English",
+        "isFree": false,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": "https://sessionize.com/angular-tiny-conf-shemu-2024/",
+        "callForPapersEndDate": "2024-06-14",
+        "url": null
+      }
+    ]
   }
 ]
