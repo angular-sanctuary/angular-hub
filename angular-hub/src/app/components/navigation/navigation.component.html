@@ -42,8 +42,16 @@
       </li>
     </ul>
   </div>
+  @if (isInstallButtonVisible()) {
+    <p-button
+      class="mr-2 sm:mr-4"
+      (click)="installPwa()"
+      label="Install"
+      [outlined]="true"
+    />
+  }
   <a
-    class="p-button p-button-outlined mr-2 sm:mr-4"
+    class="p-button p-button-outlined mr-2 sm:mr-4 hidden sm:block"
     href="https://github.com/angular-sanctuary/angular-hub"
     target="_blank"
     aria-label="Link to GitHub repository"
