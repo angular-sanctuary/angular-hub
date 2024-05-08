@@ -9,7 +9,11 @@ import { TagComponent } from '../tag.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <article>
-      <a [href]="podcast().url ?? '#'" class="flex items-start gap-4">
+      <a
+        [href]="podcast().url ?? '#'"
+        target="_blank"
+        class="flex items-start gap-4"
+      >
         <img
           class="rounded-xl"
           [src]="podcast().logo"

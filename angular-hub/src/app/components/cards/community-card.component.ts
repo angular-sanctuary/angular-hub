@@ -11,6 +11,7 @@ import { Community } from '../../../models/community.model';
     <article>
       <a
         [href]="community().url ?? '#'"
+        target="_blank"
         class="flex flex-col max-w-36 items-start gap-1"
       >
         <img
