@@ -19,12 +19,7 @@
         "outputPath": "dist/angular-hub/client",
         "tsConfig": "angular-hub/tsconfig.app.json",
         "serviceWorker": true,
-        "ngswConfigPath": "angular-hub/ngsw-config.json",
-        "assets": [
-          "angular-hub/src/favicon.ico",
-          "angular-hub/src/assets",
-          "angular-hub/src/manifest.webmanifest"
-        ]
+        "ngswConfigPath": "angular-hub/ngsw-config.json"
       },
       "defaultConfiguration": "production",
       "configurations": {
