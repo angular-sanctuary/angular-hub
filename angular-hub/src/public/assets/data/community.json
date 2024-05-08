@@ -261,6 +261,32 @@
         "callForPapers": null,
         "callForPapersEndDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/297978778/"
+      },
+      {
+        "name": "Angular Community Meetup - Espanol",
+        "type": "meetup",
+        "location": null,
+        "date": "2024-05-15",
+        "language": "Spanish",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/298421675/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2024-05-29",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersEndDate": null,
+        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/300766126/"
       }
     ]
   },
