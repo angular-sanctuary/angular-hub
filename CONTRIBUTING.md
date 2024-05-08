@@ -35,83 +35,58 @@ It excludes the `angular-hub/src/content` folder, which includes trademarks and 
 
 ## Content
 
-### CFP
-
-To add a new CFP, create a new markdown file in the `angular-hub/src/content/cfp` folder.
-
-File name format depends on the CFP type:
-
-- For a CFP that is open all year round like a meetup, the file name should be `cfp-name.md`.
-- For a CFP that is open for a specific period of time, the file name should be `YYYY-MM-DD-cfp-name.md`.
-
-```md
----
-name: Angular Day
-type: 'meetup'
-location: Verona, Italy
-deadline: 2023-09-30
-url: https://2023.angularday.it/
-logo: https://pbs.twimg.com/profile_images/1118451217309609984/DiZ0M3wW_400x400.png
-tags:
-  - Online
----
-```
-
 ### Communities
 
-To add a new community, create a new markdown file in the `angular-hub/src/content/communities` folder. The file name should be the name of the community in the format `community-name.md`. The file should contain the following front matter:
+To add a new community, update the `angular-hub/src/public/assets/data/community.json` by adding a new item to the array.  
+The item should match this format:
 
-```md
----
-name: Angular Athens
-type: 'meetup'
-location: Athens, Greece
-url: https://www.meetup.com/angular-athens/
-logo: https://pbs.twimg.com/profile_images/1702641363437719553/xxXXoN41_400x400.jpg
-twitter: https://twitter.com/AngularAthens
-tags:
-  - Online
----
+```typescript
+export interface Community {
+  name: string;
+  type: 'workshop' | 'conference' | 'meetup' | 'other';
+  location: string | null;
+  url: string | null;
+  logo: string | null;
+  twitter: string | null;
+  linkedin: string | null;
+  callForPapers: string | null;
+  events: Event[]; // default to []
+}
 ```
 
 ### Events
 
 > If you add a conference event, mind listing it on [developers-conferences-agenda](https://github.com/scraly/developers-conferences-agenda) too for a broader audience!
 
-To add a new event, create a new markdown file in the `angular-hub/src/content/events` folder.
-The file name should be the date of the event in the format `YYYY-MM-DD-event-name.md`.
+To add a new event, update the `angular-hub/src/public/assets/data/community.json` by adding a new item to the related community item (firstly add a community with previous section instructions if needed).  
+The item should match this format:
 
-Make sure to add at least one of the following tags:
-
-- On-Site
-- Online
-- Free
-
-The file should contain the following front matter:
-
-```md
----
-title: 'Angular Athens 20th Meetup'
-location: Athens, Greece
-date: 2023-11-30
-url: https://www.meetup.com/angular-athens/events/297342102/
-logo: https://pbs.twimg.com/profile_images/1702641363437719553/xxXXoN41_400x400.jpg
-tags:
-  - Online
----
+```typescript
+export interface Event {
+  name: string | null;
+  type: 'workshop' | 'conference' | 'meetup' | 'other';
+  location: string | null;
+  url: string | null;
+  date: string;
+  language: string;
+  isFree: boolean;
+  isRemote: boolean;
+  isOnsite: boolean;
+  callForPapers: string | null;
+  callForPapersEndDate: string | null;
+}
 ```
 
 ### Podcasts
 
-To add a new podcast, create a new markdown file in the `angular-hub/src/content/podcasts` folder. The file name should be the name of the podcast in the format `podcast-name.md`.
+To add a new podcast, update the `angular-hub/src/public/assets/data/podcast.json` by adding a new item to the array.  
+The item should match this format:
 
-The file should contain the following front matter:
-
-```md
----
-title: Ng-News
-url: https://www.youtube.com/@ng-news
-logo: assets/logos/ng-news.png
-language: English
----
+```typescript
+export interface Podcast {
+  name: string;
+  url: string;
+  logo: string;
+  language: string;
+}
 ```
