@@ -229,7 +229,7 @@
   {
     "name": "Angular Community Meetup",
     "type": "meetup",
-    "location": "Earth",
+    "location": "Worldwide Onsite",
     "url": "https://angularcommunity.net/home",
     "logo": "https://pbs.twimg.com/profile_images/1547959576015749120/96f233Pr_400x400.jpg",
     "twitter": "https://twitter.com/angular_meetup",
@@ -831,7 +831,7 @@
   {
     "name": "ngGirls",
     "type": "workshop",
-    "location": "Earth",
+    "location": "Worldwide Onsite",
     "url": "https://www.ng-girls.org/",
     "logo": "https://pbs.twimg.com/profile_images/1757125339090653184/5wgfX_ZD_400x400.jpg",
     "twitter": "https://twitter.com/AngularGirls",
@@ -992,7 +992,7 @@
   {
     "name": "Ng Asia",
     "type": "meetup",
-    "location": "Earth",
+    "location": "Worldwide Online",
     "url": "https://www.youtube.com/@NgAsiaAngular/streams",
     "logo": "https://pbs.twimg.com/profile_images/1748238047056191488/QArIjHBp_400x400.jpg",
     "twitter": "https://twitter.com/angular_asia",
