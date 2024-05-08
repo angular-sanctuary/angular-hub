@@ -25,7 +25,7 @@ export class AppComponent {
 
   constructor() {
     afterNextRender(() => {
-      this.#pwaService.initPwaPrompt();
+      // this.#pwaService.initPwaPrompt();
       this.#router.events
         .pipe(
           filter((event) => event instanceof NavigationEnd),
