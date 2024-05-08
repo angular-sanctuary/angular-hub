@@ -36,6 +36,7 @@ export default defineConfig(({ mode }) => {
       fs: {
         allow: ['..'],
       },
+      cors: true,
     },
     build: {
       target: ['es2020'],
@@ -44,6 +45,13 @@ export default defineConfig(({ mode }) => {
       analog({
         prerender: {
           routes: ['/', '/communities', '/podcasts'],
+        },
+        nitro: {
+          routeRules: {
+            '/api/v1/**': {
+              cors: true,
+            },
+          },
         },
       }),
       nxViteTsPaths(),
