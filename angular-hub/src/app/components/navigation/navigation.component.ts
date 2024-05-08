@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { DividerModule } from 'primeng/divider';
+import { PwaService } from '../../services/pwa.service';
 
 @Component({
   selector: 'app-navigation',
@@ -19,5 +20,11 @@ import { DividerModule } from 'primeng/divider';
   ],
 })
 export class NavigationComponent {
+  readonly #pwaService = inject(PwaService);
   sidebarVisible = false;
+  isInstallButtonVisible = this.#pwaService.isInstallButtonVisible;
+
+  installPwa(): void {
+    void this.#pwaService.installPwa();
+  }
 }
