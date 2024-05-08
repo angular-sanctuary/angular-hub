@@ -45,6 +45,9 @@ export default defineConfig(({ mode }) => {
       analog({
         prerender: {
           routes: ['/', '/communities', '/podcasts'],
+          sitemap: {
+            host: 'https://analogjs.org/',
+          },
         },
         nitro: {
           routeRules: {
