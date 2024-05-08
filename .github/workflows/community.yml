@@ -1,0 +1,43 @@
+name: Add community
+on:
+  issues:
+    types:
+      - labeled
+permissions:
+  contents: write
+  issues: write
+concurrency: 'main'
+jobs:
+  add_community:
+    if: github.event.label.name == 'community-approved'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - uses: stefanbuck/github-issue-praser@v3
+        id: issue-parser
+        with:
+          template-path: .github/ISSUE_TEMPLATE/add-community.yml
+
+      - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > add-community.json
+
+      - run: cat add-community.json
+
+      - run: node ./scripts/add-community.js
+
+      - name: Commit changes
+        shell: bash
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
+          git config --global user.name "github-actions[bot]" && \
+          git add angular-hub/src/public/assets/data/community.json && \
+          git commit -m 'Add community' && \
+          git push
+
+      - uses: peter-evans/close-issue@v1
+        with:
+          comment: 'Community added: thanks for your contribution!'

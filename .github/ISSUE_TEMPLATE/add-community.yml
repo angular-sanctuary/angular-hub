@@ -1,0 +1,53 @@
+name: New community
+description: Submit a community non listed yet for angular-hub.com/communities
+title: '[New Community]: '
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Community name
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Community main activity
+      options:
+        - conference
+        - meetup
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: <City>, <Country> format expected if any
+  - type: input
+    id: url
+    attributes:
+      label: Community preferred website
+  - type: input
+    id: logo
+    attributes:
+      label: Logo URL
+      description: >-
+        optional, can be provided as an image on a pull request for better
+        quality
+  - type: input
+    id: twitter
+    attributes:
+      label: Twitter
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn
+  - type: input
+    id: callforpapers
+    attributes:
+      label: Call For Papers URL
+      description: encouraged as a way to get more speakers
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://issue-forms-creator.netlify.app)
