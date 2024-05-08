@@ -1,12 +1,13 @@
 <header class="flex items-center p-4">
   <p-button
-    class="flex-none lg:hidden"
+    class="flex-1 sm:flex-none lg:hidden"
     (click)="sidebarVisible = true"
     [text]="true"
     icon="pi pi-bars"
   />
   <a
-    class="flex lg:flex-none flex-1 items-center px-2 mx-2 gap-2 sm:mr-16"
+    class="hidden sm:flex lg:flex-none flex-1 items-center px-2 mx-2 gap-2 sm:mr-16"
+    [ngClass]="{ flex: !isInstallButtonVisible() }"
     routerLink="/"
   >
     <img class="h-8" src="/assets/images/logo.webp" alt="" />

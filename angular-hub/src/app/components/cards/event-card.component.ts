@@ -36,7 +36,7 @@ import { TagComponent } from '../tag.component';
           <span class="text-gray-500 dark:text-gray-400" itemprop="location">{{
             event().location
           }}</span>
-          <ul class="flex gap-2">
+          <ul class="flex flex-wrap gap-2">
             <li class="inline">
               <app-tag [title]="event().language" />
             </li>

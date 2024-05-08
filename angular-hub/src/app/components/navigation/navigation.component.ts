@@ -4,6 +4,7 @@ import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { DividerModule } from 'primeng/divider';
 import { PwaService } from '../../services/pwa.service';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-navigation',
@@ -17,6 +18,7 @@ import { PwaService } from '../../services/pwa.service';
     SidebarModule,
     RouterLinkActive,
     DividerModule,
+    NgClass,
   ],
 })
 export class NavigationComponent {

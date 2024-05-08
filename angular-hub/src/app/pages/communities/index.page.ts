@@ -27,7 +27,7 @@ export const routeMeta: RouteMeta = {
       class="h-36 w-full flex flex-col justify-center items-center mb-8 bg-no-repeat bg-auto md:bg-cover px-4"
       style="background-image: url(/assets/images/img.png);"
     >
-      <h1 class="title text-5xl">ANGULAR HUB</h1>
+      <h1 class="title text-4xl sm:text-5xl">ANGULAR HUB</h1>
       <h2 class="text-2xl text-center">Curated list of Angular Communities</h2>
     </aside>
 
