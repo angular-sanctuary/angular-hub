@@ -11,5 +11,5 @@ export const EventSchema = object({
   isRemote: boolean(),
   isOnsite: boolean(),
   callForPapers: nullable(string()),
-  callForPapersEndDate: nullable(string()),
+  callForPapersDueDate: nullable(string()),
 });

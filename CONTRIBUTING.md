@@ -73,7 +73,7 @@ export interface Event {
   isRemote: boolean;
   isOnsite: boolean;
   callForPapers: string | null;
-  callForPapersEndDate: string | null;
+  callForPapersDueDate: string | null;
 }
 ```
 
