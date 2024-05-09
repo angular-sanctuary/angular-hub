@@ -40,10 +40,12 @@ import { DividerModule } from 'primeng/divider';
               />
               <div>
                 <dl>
-                  <dt><i class="pi pi-calendar-clock"></i> Start date</dt>
+                  <dt><i class="pi pi-calendar-clock"></i> Date</dt>
                   <dd class="ml-5 opacity-65">{{ event.date }}</dd>
+                  <!--
                   <dt><i class="pi pi-calendar-clock"></i> End date</dt>
                   <dd class="ml-5 opacity-65">{{ event.date }}</dd>
+                  -->
                   <dt><i class="pi pi-map-marker"></i> Location</dt>
                   <dd class="ml-5 opacity-65">
                     {{ event.location ?? 'Online' }}
