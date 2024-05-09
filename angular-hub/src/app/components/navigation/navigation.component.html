@@ -1,17 +1,16 @@
 <header class="flex items-center p-4">
   <p-button
-    class="flex-1 sm:flex-none lg:hidden"
+    class="flex-none lg:hidden"
     (click)="sidebarVisible = true"
     [text]="true"
     icon="pi pi-bars"
   />
   <a
-    class="hidden sm:flex lg:flex-none flex-1 items-center px-2 mx-2 gap-2 sm:mr-16"
-    [ngClass]="{ flex: !isInstallButtonVisible() }"
+    class="lg:flex-none flex flex-1 items-center px-2 gap-2 sm:mr-16"
     routerLink="/"
   >
     <img class="h-8" src="/assets/images/logo.webp" alt="" />
-    <span class="title text-2xl">ANGULAR HUB</span>
+    <span class="title text-xl sm:text-2xl">ANGULAR HUB</span>
   </a>
   <div class="flex-1 hidden lg:block">
     <ul class="flex gap-1">
@@ -49,10 +48,11 @@
       (click)="installPwa()"
       label="Install"
       [outlined]="true"
+      size="small"
     />
   }
   <a
-    class="p-button p-button-outlined mr-2 sm:mr-4 hidden sm:block"
+    class="p-button p-button-outlined p-button-sm mr-2 sm:mr-4 hidden lg:block"
     href="https://github.com/angular-sanctuary/angular-hub"
     target="_blank"
     aria-label="Link to GitHub repository"
