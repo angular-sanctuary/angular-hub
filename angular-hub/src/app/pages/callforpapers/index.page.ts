@@ -1,8 +1,19 @@
 import { Component } from '@angular/core';
 import { load } from './index.server';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { injectLoad } from '@analogjs/router';
+import { injectLoad, RouteMeta } from '@analogjs/router';
 import { DividerModule } from 'primeng/divider';
+import { Title } from '@angular/platform-browser';
+import { JsonLdService } from '../../services/json-ld.service';
+
+export const routeMeta: RouteMeta = {
+  meta: [
+    {
+      name: 'description',
+      content: 'Curated list of Angular Call for papers',
+    },
+  ],
+};
 
 @Component({
   selector: 'app-callforpapers',
@@ -116,4 +127,44 @@ import { DividerModule } from 'primeng/divider';
 })
 export default class CallForPapersComponent {
   callForPapers = toSignal(injectLoad<typeof load>(), { requireSync: true });
+
+  constructor(
+    private title: Title,
+    private jsonldService: JsonLdService,
+  ) {
+    this.title.setTitle('Angular HUB - Call for papers');
+    this.jsonldService.updateJsonLd(this.setJsonLd());
+  }
+
+  setJsonLd() {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      itemListElement: [
+        ...this.callForPapers().events.map((event, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: {
+            '@type': 'Event',
+            name: event.name,
+            description: event.name,
+            startDate: event.date,
+            location: event.location,
+            url: event.callForPapersUrl,
+          },
+        })),
+        ...this.callForPapers().communities.map((community, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: {
+            '@type': 'Organization',
+            name: community.name,
+            description: community.name,
+            location: community.location,
+            url: community.callForPapersUrl,
+          },
+        })),
+      ],
+    };
+  }
 }
