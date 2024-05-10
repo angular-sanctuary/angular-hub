@@ -19,7 +19,8 @@
         "outputPath": "dist/angular-hub/client",
         "tsConfig": "angular-hub/tsconfig.app.json",
         "serviceWorker": true,
-        "ngswConfigPath": "angular-hub/ngsw-config.json"
+        "ngswConfigPath": "angular-hub/ngsw-config.json",
+        "assets": ["src/robots.txt"]
       },
       "defaultConfiguration": "production",
       "configurations": {
