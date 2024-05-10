@@ -1,5 +1,6 @@
 <header class="flex items-center p-4">
   <p-button
+    aria-label="Open sidebar menu"
     class="flex-none lg:hidden"
     (click)="sidebarVisible = true"
     [text]="true"
@@ -17,7 +18,7 @@
       <!-- Navbar menu content here -->
       <li>
         <a
-          class="p-button p-button-secondary p-button-text hover:bg-gray-500 py-1"
+          class="p-button p-button-secondary p-button-text outline-none hover:text-secondary hover:underline underline-offset-8"
           routerLinkActive="routerLinkActive"
           [routerLinkActiveOptions]="{ exact: true }"
           routerLink="/"
@@ -26,7 +27,7 @@
       </li>
       <li>
         <a
-          class="p-button p-button-secondary p-button-text hover:bg-gray-500 py-1"
+          class="p-button p-button-secondary p-button-text outline-none hover:text-secondary hover:underline underline-offset-8"
           routerLinkActive="routerLinkActive"
           routerLink="/communities"
           >Communities</a
@@ -34,7 +35,7 @@
       </li>
       <li>
         <a
-          class="p-button p-button-secondary p-button-text hover:bg-gray-500 py-1"
+          class="p-button p-button-secondary p-button-text outline-none hover:text-secondary hover:underline underline-offset-8"
           routerLinkActive="routerLinkActive"
           routerLink="/podcasts"
           >Podcasts</a
@@ -42,7 +43,7 @@
       </li>
       <li>
         <a
-          class="p-button p-button-secondary p-button-text hover:bg-gray-500 py-1"
+          class="p-button p-button-secondary p-button-text outline-none hover:text-secondary hover:underline underline-offset-8"
           routerLinkActive="routerLinkActive"
           routerLink="/callforpapers"
           >Call for papers</a

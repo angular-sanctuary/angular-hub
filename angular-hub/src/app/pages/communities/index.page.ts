@@ -34,6 +34,7 @@ export const routeMeta: RouteMeta = {
       class="w-full flex flex-col sm:flex-row justify-center items-center gap-2 mb-8"
     >
       <p-dropdown
+        ariaLabel="Select a country"
         name="language"
         [options]="countries()"
         [style]="{ width: '230px' }"

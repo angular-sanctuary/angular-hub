@@ -48,7 +48,7 @@ import { Community } from '../../../models/community.model';
 
         &:hover {
           h3 {
-            color: theme('colors.secondary');
+            @apply text-secondary underline;
           }
         }
       }

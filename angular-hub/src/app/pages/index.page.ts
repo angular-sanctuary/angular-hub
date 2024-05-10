@@ -39,6 +39,7 @@ export const routeMeta: RouteMeta = {
       class="w-full flex flex-col sm:flex-row justify-center items-center gap-2 mb-8"
     >
       <p-calendar
+        ariaLabel="Select a date"
         name="date"
         [style]="{ width: '230px' }"
         [ngModel]="date()"
@@ -47,6 +48,7 @@ export const routeMeta: RouteMeta = {
         [showClear]="true"
       />
       <p-dropdown
+        ariaLabel="Select a language"
         name="language"
         [style]="{ width: '230px' }"
         [options]="languages()"
@@ -57,6 +59,7 @@ export const routeMeta: RouteMeta = {
       />
       <div class="flex items-center gap-2">
         <p-inputSwitch
+          ariaLabel="Display remote events only"
           id="remote"
           name="remote"
           [ngModel]="isRemote()"

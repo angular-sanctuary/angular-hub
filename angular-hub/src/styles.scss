@@ -16,15 +16,23 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Luciole';
+  src: local('Trebutchet MS'), url('/assets/fonts/Luciole-Regular.ttf');
+  font-display: swap;
+}
+
 /* You can add global styles to this file, and also import other style files */
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Luciole, sans-serif;
 }
 
 body {
   margin: 0;
   display: flex;
   min-height: 100vh;
+  font-family: Luciole, sans-serif;
+  line-height: 1.5;
 }
 
 .logo {
@@ -32,7 +40,7 @@ body {
 }
 
 .title {
-  font-family: 'Pixelify', 'sans-serif';
+  font-family: Pixelify, 'sans-serif';
   background-image: linear-gradient(
     to right,
     #bf25b9,
@@ -45,6 +53,10 @@ body {
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.p-button {
+  font-family: Luciole, 'sans-serif';
 }
 
 @media (prefers-reduced-motion) {

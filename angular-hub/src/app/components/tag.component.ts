@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div
-      class="inline-block px-2 text-sm font-semibold rounded-md text-white"
+      class="inline-block px-2 text-sm leading-6 font-semibold rounded-md text-black"
       [style.background]="color()"
     >
       {{ title() }}
@@ -15,5 +15,5 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 })
 export class TagComponent {
   title = input.required<string>();
-  color = input<string>('#963296');
+  color = input<string>('#9051ff');
 }

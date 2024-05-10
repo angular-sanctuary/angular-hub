@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  input,
+} from '@angular/core';
 import { Event } from '../../../models/event.model';
 import { DatePipe, NgOptimizedImage } from '@angular/common';
 import { TagComponent } from '../tag.component';
@@ -11,12 +16,14 @@ import { TagComponent } from '../tag.component';
     <article>
       <a
         [href]="event().url ?? '#'"
+        [title]="eventLinkTitle()"
         target="_blank"
         class="flex w-full items-start gap-4"
       >
         <img
           class="rounded-xl"
           [src]="event().community?.logo"
+          aria-hidden="true"
           height="100"
           width="100"
           alt=""
@@ -26,16 +33,15 @@ import { TagComponent } from '../tag.component';
           <span class="font-bold text-primary" itemprop="date">{{
             event().date
           }}</span>
-          <h3
-            [attr.id]="event().name"
-            class="text-xl font-bold"
-            itemprop="title"
-          >
+          <h3 class="text-xl font-bold">
             {{ event().name || event().community?.name }}
           </h3>
-          <span class="text-gray-500 dark:text-gray-400" itemprop="location">{{
-            event().location
-          }}</span>
+          <div
+            class="text-gray-500 dark:text-gray-400 min-h-4"
+            itemprop="location"
+          >
+            {{ event().location }}
+          </div>
           <ul class="flex flex-wrap gap-2">
             <li class="inline">
               <app-tag [title]="event().language" />
@@ -52,7 +58,7 @@ import { TagComponent } from '../tag.component';
             }
             @if (event().isOnsite) {
               <li class="inline">
-                <app-tag [title]="'Onsite'" color="#963232" />
+                <app-tag [title]="'Onsite'" color="#ae6b09" />
               </li>
             }
           </ul>
@@ -70,7 +76,7 @@ import { TagComponent } from '../tag.component';
 
         &:hover {
           h3 {
-            color: theme('colors.secondary');
+            @apply text-secondary underline;
           }
         }
       }
@@ -79,4 +85,8 @@ import { TagComponent } from '../tag.component';
 })
 export class EventCardComponent {
   event = input.required<Event>();
+
+  eventLinkTitle = computed(() => {
+    return (this.event().name || this.event().community?.name) + 'event link';
+  });
 }

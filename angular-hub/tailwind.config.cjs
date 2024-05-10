@@ -10,15 +10,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#BF25B9',
+        primary: '#ff56f8',
         secondary: '#00bee0',
       },
       backgroundColor: {
-        primary: '#BF25B9',
+        primary: '#ff56f8',
         secondary: '#00bee0',
       },
       borderColor: {
-        primary: '#BF25B9',
+        primary: '#ff56f8',
         secondary: '#00bee0',
       },
     },

@@ -44,7 +44,7 @@ import { TagComponent } from '../tag.component';
 
         &:hover {
           h3 {
-            color: theme('colors.secondary');
+            @apply text-secondary underline;
           }
         }
       }
