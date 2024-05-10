@@ -504,14 +504,14 @@
         "name": null,
         "type": "meetup",
         "location": "Berlin, Germany",
-        "date": "2024-05-13",
+        "date": "2024-07-17",
         "language": "English",
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/angular-meetup-berlin/events/300424452/"
+        "url": "https://www.meetup.com/de-DE/angular-meetup-berlin/events/300939373/?isFirstPublish=true"
       }
     ]
   },
