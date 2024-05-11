@@ -18,6 +18,7 @@ import { MessagesModule } from 'primeng/messages';
 import { EventSectionComponent } from '../components/event-section.component';
 import { MessageComponent } from '../components/message.component';
 import { BannerComponent } from '../components/banner.component';
+import { DatePipe } from '@angular/common';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -145,8 +146,7 @@ export const routeMeta: RouteMeta = {
       <p-calendar
         class="max-w-full"
         name="date"
-        [ngModel]="date()"
-        (ngModelChange)="date.set($event)"
+        [(ngModel)]="date"
         [inline]="true"
         [showWeek]="true"
       >
@@ -163,8 +163,7 @@ export const routeMeta: RouteMeta = {
         [style]="{ width: '100%' }"
         [options]="languages()"
         [showClear]="true"
-        [ngModel]="selectedLanguage()"
-        (ngModelChange)="selectedLanguage.set($event)"
+        [(ngModel)]="selectedLanguage"
         placeholder="Select a language"
       />
       <!-- hide if remote events only -->
@@ -173,8 +172,7 @@ export const routeMeta: RouteMeta = {
           ariaLabel="Display remote events only"
           id="remote"
           name="remote"
-          [ngModel]="isRemote()"
-          (ngModelChange)="isRemote.set($event)"
+          [(ngModel)]="isRemote"
         />
         <label class="mb-2" for="remote">remote only</label>
       </div>
@@ -221,6 +219,7 @@ export const routeMeta: RouteMeta = {
     EventSectionComponent,
     MessageComponent,
     BannerComponent,
+    DatePipe,
   ],
 })
 export default class EventsComponent {
