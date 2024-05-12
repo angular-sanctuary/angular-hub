@@ -75,15 +75,26 @@ export const routeMeta: RouteMeta = {
           <app-event-card [event]="event"></app-event-card>
         </li>
       } @empty {
-        <p class="col-span-2">
-          No event matching the filter
-          @if (date()) {
-            {{ date() | date: 'MM/DD/YYYY' }}
-          }
+        <p class="col-span-full">
+          No event matching filter(s):
 
-          @if (selectedLanguage()) {
-            {{ selectedLanguage() }}
-          }
+          <span>
+            @if (date()) {
+              {{ date() | date: 'dd MMM YYYY' }}
+            }
+
+            @if (selectedLanguage()) {
+              @if (isRemote()) {
+                , {{ selectedLanguage() }}
+              } @else {
+                and {{ selectedLanguage() }}
+              }
+            }
+
+            @if (isRemote()) {
+              and Remote Only
+            }
+          </span>
         </p>
       }
     </ul>
