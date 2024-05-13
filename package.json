@@ -57,7 +57,7 @@
     "@nx/js": "18.3.0",
     "@nx/vite": "18.3.0",
     "@nx/workspace": "18.3.0",
-    "@schematics/angular": "17.3.6",
+    "@schematics/angular": "17.3.7",
     "@swc-node/register": "1.8.0",
     "@swc/core": "~1.3.85",
     "@types/node": "^18.16.9",
