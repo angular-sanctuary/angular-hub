@@ -38,6 +38,6 @@ jobs:
           git commit -m 'Add podcast' && \
           git push
 
-      - uses: peter-evans/close-issue@v1
+      - uses: peter-evans/close-issue@v3
         with:
           comment: 'Podcast added: thanks for your contribution!'
