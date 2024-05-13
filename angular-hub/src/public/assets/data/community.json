@@ -1124,5 +1124,16 @@
         "url": null
       }
     ]
+  },
+  {
+    "name": "Code Dimension",
+    "type": "other",
+    "location": "Florianópolis, Brazil",
+    "url": "https://www.codedimension.com.br",
+    "logo": "https://www.codedimension.com.br/images/logomark/logo-cd-symbol.svg",
+    "twitter": null,
+    "linkedin": "https://www.linkedin.com/company/code-dimension/",
+    "callForPapers": null,
+    "events": []
   }
 ]
