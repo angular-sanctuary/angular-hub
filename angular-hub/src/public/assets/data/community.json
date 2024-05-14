@@ -776,6 +776,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-warsaw/events/298542428/"
+      },
+      {
+        "name": "Angular Warsaw #43",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2024-05-27",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-warsaw/events/301012827/"
       }
     ]
   },
