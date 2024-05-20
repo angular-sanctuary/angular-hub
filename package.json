@@ -56,7 +56,7 @@
     "@nx/eslint-plugin": "18.3.0",
     "@nx/js": "18.3.0",
     "@nx/vite": "18.3.0",
-    "@nx/workspace": "18.3.0",
+    "@nx/workspace": "19.0.4",
     "@schematics/angular": "17.3.6",
     "@swc-node/register": "1.8.0",
     "@swc/core": "~1.3.85",
