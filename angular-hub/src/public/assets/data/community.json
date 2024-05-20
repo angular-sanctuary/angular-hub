@@ -1,5 +1,30 @@
 [
   {
+    "name": "Angular Training",
+    "type": "workshop",
+    "location": "Sacramento, California (online)",
+    "url": "https://courses.angulartraining.com/course/monthly-online-workshops",
+    "logo": "https://lwfiles.mycourse.app/63d427fc109e10acef4f15d8-public/bcbb45ca6ab44745de9f04e1473d1e26.png",
+    "twitter": "https://twitter.com/AngularTraining",
+    "linkedin": "https://www.linkedin.com/company/angular-training-i21",
+    "callForPapers": null,
+    "events": [
+      {
+        "name": "What's new in Angular 18? - May 2024",
+        "type": "meetup",
+        "location": "Online",
+        "date": "2024-05-30",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://courses.angulartraining.com/course/monthly-online-workshops"
+      }
+    ]
+  },
+  {
     "name": "Angular.love",
     "type": "meetup",
     "location": "Warsaw, Poland",
