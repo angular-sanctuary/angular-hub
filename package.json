@@ -50,7 +50,7 @@
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@nx/angular": "18.3.0",
-    "@nx/cypress": "18.3.0",
+    "@nx/cypress": "19.0.4",
     "@nx/devkit": "18.3.0",
     "@nx/eslint": "18.3.0",
     "@nx/eslint-plugin": "18.3.0",
