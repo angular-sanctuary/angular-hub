@@ -72,7 +72,7 @@ export const routeMeta: RouteMeta = {
     <ul
       class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 justify-start items-start px-8"
     >
-      @for (event of filteredEvents(); track event.name) {
+      @for (event of filteredEvents(); track event.url) {
         <li>
           <app-event-card [event]="event"></app-event-card>
         </li>

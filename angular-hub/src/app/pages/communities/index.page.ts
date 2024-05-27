@@ -46,7 +46,7 @@ export const routeMeta: RouteMeta = {
     </form>
 
     <ul class="flex flex-wrap justify-center gap-x-8 gap-y-4 px-8">
-      @for (community of filteredCommunities(); track community.name) {
+      @for (community of filteredCommunities(); track community) {
         <li>
           <app-community-card [community]="community"></app-community-card>
         </li>
