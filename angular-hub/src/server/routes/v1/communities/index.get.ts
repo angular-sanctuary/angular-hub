@@ -6,7 +6,7 @@ import { CommunityListSchema } from '../../../schemas/community.schema';
 export default defineEventHandler(() => {
   try {
     parse(CommunityListSchema, communities);
-    return communities;
+    return communities.filter((community) => community.type !== 'workshop');
   } catch (error) {
     throw new Error('Invalid community data format');
   }
