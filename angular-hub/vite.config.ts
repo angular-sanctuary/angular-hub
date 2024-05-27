@@ -3,7 +3,8 @@
 import analog from '@analogjs/platform';
 import { defineConfig, splitVendorChunkPlugin, Plugin, UserConfig } from 'vite';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
-import { augmentAppWithServiceWorker } from '@angular-devkit/build-angular/src/utils/service-worker';
+// @ts-expect-error private API
+import { augmentAppWithServiceWorker } from '@angular/build/private';
 import * as path from 'path';
 
 function swBuildPlugin(): Plugin {
