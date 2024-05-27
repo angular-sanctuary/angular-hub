@@ -1162,5 +1162,43 @@
         "url": null
       }
     ]
+  },
+  {
+    "name": "Angular TLV",
+    "type": "meetup",
+    "location": "Tel Aviv, Israel",
+    "url": "https://www.meetup.com/fr-FR/angular-tlv/",
+    "logo": "https://angular-tlv.com/assets/tlv-header-logo.png",
+    "twitter": null,
+    "linkedin": null,
+    "callForPapers": null,
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Tel Aviv, Israel",
+        "date": "2024-06-19",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-tlv/events/301175952/"
+      },
+      {
+        "name": "Angular TLV Conference",
+        "type": "conference",
+        "location": "Tel Aviv, Israel",
+        "date": "2024-08-27",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSdtSyB8ECpWFhGtMY-UDNuJeiMm7SExBwn-BiJEHT-QwDEW7Q/viewform",
+        "callForPapersDueDate": "2024-07-20",
+        "url": "https://angular-tlv.com/"
+      }
+    ]
   }
 ]
