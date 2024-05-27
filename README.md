@@ -9,6 +9,26 @@
 - Angular CFPs
 - Angular Podcasts
 
+## Scope
+
+The project aims to promote Angular driven community content in the most simplest way by providing minimalistic information to redirect users to the original source.
+
+The promoted content is limited to community driven events as in:
+
+- meetups
+- free and paid community driven conferences
+- free workshops
+- workshops aiming to support open source projects
+- podcasts inviting community members
+
+In its current state the project does not aim to promote:
+
+- commercial workshops
+- commercial conferences
+- direct learning content like articles or youtube videos
+
+Feel free to contact me if you have any questions or suggestions.
+
 ## Contributing
 
 Please read the [contribution guidelines](CONTRIBUTING.md) to learn how to contribute to this project.
