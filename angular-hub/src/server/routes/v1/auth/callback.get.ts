@@ -1,38 +1,13 @@
-import {
-  defineEventHandler,
-  getQuery,
-  sendRedirect,
-  setCookie,
-  parseCookies,
-  deleteCookie,
-} from 'h3';
-import { createServerClient } from '@supabase/ssr';
+import { defineEventHandler, getQuery, sendRedirect } from 'h3';
+import { nitroServerClient } from '../../../auth';
 
 export default defineEventHandler(async (event) => {
   try {
     const { code, next }: { code: string; next: string } = getQuery(event);
-    const cookies = parseCookies(event);
 
     if (code) {
-      const supabase = createServerClient(
-        process.env['SUPABASE_URL'] as string,
-        process.env['SUPABASE_KEY'] as string,
-        {
-          cookies: {
-            get: (name) => {
-              return cookies[name];
-            },
-            set: async (name, value, options) => {
-              setCookie(event, name, value, options);
-            },
-            remove: (name) => {
-              deleteCookie(event, name);
-            },
-          },
-        },
-      );
-
-      await supabase.auth.exchangeCodeForSession(code);
+      const serverClient = nitroServerClient(event);
+      await serverClient.auth.exchangeCodeForSession(code);
     }
 
     return sendRedirect(event, next || '/', 302);

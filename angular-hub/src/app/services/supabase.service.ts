@@ -7,8 +7,8 @@ import { createBrowserClient } from '@supabase/ssr';
 })
 export class SupabaseService {
   public supabase: SupabaseClient = createBrowserClient(
-    import.meta.env['SUPABASE_URL'],
-    import.meta.env['SUPABASE_KEY'],
+    import.meta.env['VITE_SUPABASE_URL'],
+    import.meta.env['VITE_SUPABASE_KEY'],
   );
   _session: AuthSession | null = null;
 
