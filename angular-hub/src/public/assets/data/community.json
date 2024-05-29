@@ -784,7 +784,7 @@
     "type": "meetup",
     "location": "Warsaw, Poland",
     "url": "https://www.meetup.com/Angular-Warsaw/",
-    "logo": "https://pbs.twimg.com/profile_images/913024944933625857/TJV45SWW_400x400.jpg",
+    "logo": "/assets/logos/angular-warsaw.jpeg",
     "twitter": "https://twitter.com/AngularWarsaw",
     "linkedin": null,
     "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSd4wIfoMbhjXfb4keOLOLvBvx9dCz5-AseW4AzcKf6A18xC3A/viewform",
