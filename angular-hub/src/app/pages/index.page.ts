@@ -134,41 +134,70 @@ export default class EventsComponent {
   setJsonLd() {
     return {
       '@context': 'https://schema.org',
-      '@type': 'ItemList',
-      itemListElement: this.events().map((event, index) => ({
-        '@type': 'ListItem',
-        position: index + 1,
-        item: {
-          '@type': 'Event',
-          name: event.name,
-          url: event.url,
-          startDate: event.date,
-          ...(event.location
-            ? {
-                location: {
-                  '@type': 'Place',
-                  name: event.location,
-                },
-              }
-            : {}),
-          ...(event.isRemote
-            ? {
-                location: {
-                  '@type': 'VirtualLocation',
-                  name: 'Online',
-                },
-              }
-            : {}),
-          ...(event.language
-            ? {
-                inLanguage: {
-                  '@type': 'Language',
-                  name: event.language,
-                },
-              }
-            : {}),
-        },
-      })),
+      "@type": "WebSite",
+      "url": "https://angular-hub.com/",
+      "name": "Angular Hub",
+      "description": "Curated list of Angular Communities, Events, Podcasts, and Call for Papers.",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Developers",
+        "description": "Developers interested in Angular and related technologies."
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Gerome Grignon",
+        "url": "https://www.gerome.dev/",
+        "sameAs": [
+          "https://twitter.com/GeromeDEV",
+          "https://www.linkedin.com/in/gerome-grignon/",
+          "https://github.com/geromegrignon"
+        ]
+      },
+      "mainEntity": [
+        {
+          "@type": "ItemList",
+          "name": "Angular Events",
+          itemListElement: this.events().map((event, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            item: {
+              '@type': 'Event',
+              name: event.name,
+              url: event.url,
+              "audience": {
+                "@type": "Audience",
+                "audienceType": "Developers",
+                "description": "Developers interested in Angular and related technologies."
+              },
+              startDate: event.date,
+              ...(event.location
+                ? {
+                    location: {
+                      '@type': 'Place',
+                      name: event.location,
+                    },
+                  }
+                : {}),
+              ...(event.isRemote
+                ? {
+                    location: {
+                      '@type': 'VirtualLocation',
+                      name: 'Online',
+                    },
+                  }
+                : {}),
+              ...(event.language
+                ? {
+                    inLanguage: {
+                      '@type': 'Language',
+                      name: event.language,
+                    },
+                  }
+                : {}),
+            },
+          })),
+        }
+      ]
     };
   }
 }
