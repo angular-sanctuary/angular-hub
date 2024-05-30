@@ -3,10 +3,10 @@
   import { Sidebar } from 'primeng/sidebar';
   import { PwaService } from '../../services/pwa.service';
 
-  import Logo from './Logo.analog' with { analog: 'imports' };
-  import NavigationItem from './NavigationItem.analog' with { analog: 'imports' };
-  import InstallPwaButton from './InstallPwaButton.analog' with { analog: 'imports' };
-  import SwaggerIcon from './SwaggerIcon.analog' with { analog: 'imports' };
+  import Logo from './logo.analog' with { analog: 'imports' };
+  import NavigationItem from './navigation-item.analog' with { analog: 'imports' };
+  import InstallPwaButton from './install-pwa-button.analog' with { analog: 'imports' };
+  import SwaggerIcon from './swagger-icon.analog' with { analog: 'imports' };
 
   import {
     RouterLink,

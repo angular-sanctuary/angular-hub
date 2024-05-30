@@ -5,7 +5,7 @@
   import { filter, switchMap } from 'rxjs';
   import { PwaService } from './services/pwa.service';
 
-  import Navigation from './components/navigation/Navigation.analog' with { analog: 'imports' };
+  import Navigation from './components/navigation/navigation.analog' with { analog: 'imports' };
 
   const router = inject(Router);
   const swUpdate = inject(SwUpdate);
