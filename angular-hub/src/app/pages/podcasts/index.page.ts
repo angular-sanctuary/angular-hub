@@ -23,15 +23,15 @@ export const routeMeta: RouteMeta = {
   imports: [PodcastCardComponent, FormsModule],
   template: `
     <aside
-      class="h-36 w-full flex flex-col justify-center items-center mb-8 bg-no-repeat bg-auto md:bg-cover px-4"
+      class="h-20 sm:h-36 flex flex-col justify-center items-center mb-4 m-6 rounded-2xl bg-no-repeat bg-auto md:bg-cover px-4"
       style="background-image: url(/assets/images/hero.webp);"
     >
-      <h1 class="title text-4xl sm:text-5xl">ANGULAR HUB</h1>
+      <h1 class="title text-5xl hidden sm:block">ANGULAR HUB</h1>
       <h2 class="text-2xl text-center">Curated list of Angular Podcasts</h2>
     </aside>
 
     <ul
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-x-8 gap-y-4 px-8"
+      class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-x-8 gap-y-4 px-8"
     >
       @for (podcast of podcasts(); track podcast.name) {
         <li>

@@ -3,7 +3,7 @@
 // Please take note of the order in which these are imported
 @import 'tailwindcss/base.css' layer(tw-base);
 @import 'primeng/resources/primeng.min.css';
-@import 'primeng/resources/themes/lara-dark-purple/theme.css';
+@import 'primeng/resources/themes/aura-dark-purple/theme.css';
 @import 'primeicons/primeicons';
 @import 'tailwindcss/components.css' layer(tw-components);
 @import 'tailwindcss/utilities.css' layer(tw-utilities);
@@ -31,7 +31,7 @@ body {
   margin: 0;
   display: flex;
   min-height: 100vh;
-  font-family: Luciole, sans-serif;
+  font-family: Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 .p-button {
-  font-family: Luciole, 'sans-serif';
+  font-family: Verdana, 'sans-serif';
 }
 
 @media (prefers-reduced-motion) {

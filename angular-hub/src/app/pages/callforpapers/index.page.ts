@@ -10,7 +10,7 @@ export const routeMeta: RouteMeta = {
   meta: [
     {
       name: 'description',
-      content: 'Curated list of Angular Call for papers',
+      content: 'Curated list of Angular Calls for papers',
     },
   ],
 };
@@ -20,16 +20,18 @@ export const routeMeta: RouteMeta = {
   standalone: true,
   template: `
     <aside
-      class="h-36 w-full flex flex-col justify-center items-center mb-4 md:mb-8 bg-no-repeat bg-auto md:bg-cover px-4"
+      class="h-20 sm:h-36 flex flex-col justify-center items-center mb-4 m-6 rounded-2xl bg-no-repeat bg-auto md:bg-cover px-4"
       style="background-image: url(/assets/images/hero.webp);"
     >
-      <h1 class="title text-4xl sm:text-5xl">ANGULAR HUB</h1>
-      <h2 class="text-2xl text-center">Curated list of Call for Papers</h2>
+      <h1 class="title text-5xl hidden sm:block">ANGULAR HUB</h1>
+      <h2 class="text-2xl text-center">
+        Curated list of Angular Calls for Papers
+      </h2>
     </aside>
 
     <h3 class="text-2xl font-bold mb-6">Events</h3>
     <ul
-      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-8"
+      class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-8"
     >
       @for (event of callForPapers().events; track event.name) {
         <li class="group min-w-80">

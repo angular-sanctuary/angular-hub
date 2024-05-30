@@ -23,10 +23,10 @@ export const routeMeta: RouteMeta = {
   imports: [CommunityCardComponent, DropdownModule, FormsModule],
   template: `
     <aside
-      class="h-36 w-full flex flex-col justify-center items-center mb-8 bg-no-repeat bg-auto md:bg-cover px-4"
+      class="h-20 sm:h-36 flex flex-col justify-center items-center mb-4 m-6 rounded-2xl bg-no-repeat bg-auto md:bg-cover px-4"
       style="background-image: url(/assets/images/hero.webp);"
     >
-      <h1 class="title text-4xl sm:text-5xl">ANGULAR HUB</h1>
+      <h1 class="title text-5xl hidden sm:block">ANGULAR HUB</h1>
       <h2 class="text-2xl text-center">Curated list of Angular Communities</h2>
     </aside>
 
