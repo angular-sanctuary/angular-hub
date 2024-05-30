@@ -1,0 +1,181 @@
+<script lang="ts">
+  import { inject, signal, viewChild } from '@angular/core';
+  import { Sidebar } from 'primeng/sidebar';
+  import { PwaService } from '../../services/pwa.service';
+
+  import Logo from './Logo.analog' with { analog: 'imports' };
+  import NavigationItem from './NavigationItem.analog' with { analog: 'imports' };
+  import InstallPwaButton from './InstallPwaButton.analog' with { analog: 'imports' };
+  import SwaggerIcon from './SwaggerIcon.analog' with { analog: 'imports' };
+
+  import {
+    RouterLink,
+    RouterLinkActive,
+    RouterOutlet,
+  } from '@angular/router' with { analog: 'imports' };
+  import { ButtonModule } from 'primeng/button' with { analog: 'imports' };
+  import { SidebarModule } from 'primeng/sidebar' with { analog: 'imports' };
+  import { DividerModule } from 'primeng/divider' with { analog: 'imports' };
+
+  const pwaService = inject(PwaService);
+
+  const sidebarVisible = signal(false);
+  const isInstallButtonVisible = pwaService.isInstallButtonVisible;
+
+  const sidebarRef = viewChild.required(Sidebar);
+
+  function closeCallback(e: Event) {
+    sidebarRef().close(e);
+  }
+</script>
+
+<template class="flex">
+  <nav
+    class="hidden min-w-72 px-8 pt-4 lg:flex flex-col items-center bg-[#20212C] drop-shadow-r-2xl"
+  >
+    <Logo logoClass="h-12">HUB</Logo>
+    <ul class="flex flex-col gap-2 mt-12">
+      <!-- Navbar menu content here -->
+      <NavigationItem to="/" (clicked)="sidebarVisible.set(false)">
+        <i class="pi pi-calendar text-2xl"></i>
+        Events
+      </NavigationItem>
+      <NavigationItem to="/communities" (clicked)="sidebarVisible.set(false)">
+        <i class="pi pi-users text-2xl"></i>
+        Communities
+      </NavigationItem>
+      <NavigationItem to="/podcasts" (clicked)="sidebarVisible.set(false)">
+        <i class="pi pi-microphone text-2xl"></i>
+        Podcasts
+      </NavigationItem>
+      <NavigationItem to="/callforpapers" (clicked)="sidebarVisible.set(false)">
+        <i class="pi pi-megaphone text-2xl"></i>
+        Call for papers
+      </NavigationItem>
+      <p-divider />
+      <NavigationItem
+        [external]="true"
+        to="https://angular-hub.com/api/v1/swagger"
+      >
+        <SwaggerIcon />
+        Community API
+      </NavigationItem>
+      <NavigationItem
+        [external]="true"
+        to="https://github.com/angular-sanctuary/angular-hub"
+      >
+        <i class="pi pi-github text-2xl"></i>
+        Contribute
+      </NavigationItem>
+      @if (isInstallButtonVisible()) {
+        <li>
+          <InstallPwaButton (initInstall)="pwaService.installPwa()" />
+        </li>
+      }
+    </ul>
+  </nav>
+  <div class="flex-1">
+    <header
+      class="flex justify-start items-center gap-4 lg:hidden p-4 bg-[#20212C]"
+    >
+      <p-button
+        aria-label="Open sidebar menu"
+        class="flex-none lg:hidden"
+        (click)="sidebarVisible.set(true)"
+        [text]="true"
+        icon="pi pi-bars"
+      />
+      <Logo logoClass="h-8">ANGULAR HUB</Logo>
+      <!-- TODO
+      <p-iconField iconPosition="left">
+        <p-inputIcon styleClass="pi pi-search" />
+        <input type="text" pInputText placeholder="Search" />
+      </p-iconField>
+      <p-button label="Login" size="small" />
+      -->
+    </header>
+
+    <main class="pb-4 flex-1">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+
+  <p-sidebar
+    [visible]="sidebarVisible()"
+    (visibleChange)="sidebarVisible.set($event)"
+  >
+    <ng-template pTemplate="headless">
+      <nav
+        class="min-w-72 px-8 pt-4 flex flex-col items-center bg-[#20212C] drop-shadow-r-2xl h-full"
+      >
+        <p-button
+          class="close-button"
+          type="button"
+          (click)="closeCallback($event)"
+          icon="pi pi-times"
+          rounded="true"
+          outlined="true"
+          styleClass="h-2rem w-2rem"
+        />
+        <ul class="flex flex-col gap-2 mt-12">
+          <!-- Navbar menu content here -->
+
+          <NavigationItem to="/" (clicked)="sidebarVisible.set(false)">
+            <i class="pi pi-calendar text-2xl"></i>
+            Events
+          </NavigationItem>
+          <NavigationItem
+            to="/communities"
+            (clicked)="sidebarVisible.set(false)"
+          >
+            <i class="pi pi-users text-2xl"></i>
+            Communities
+          </NavigationItem>
+          <NavigationItem to="/podcasts" (clicked)="sidebarVisible.set(false)">
+            <i class="pi pi-microphone text-2xl"></i>
+            Podcasts
+          </NavigationItem>
+          <NavigationItem
+            to="/callforpapers"
+            (clicked)="sidebarVisible.set(false)"
+          >
+            <i class="pi pi-megaphone text-2xl"></i>
+            Call for papers
+          </NavigationItem>
+          <p-divider />
+          <NavigationItem
+            [external]="true"
+            to="https://angular-hub.com/api/v1/swagger"
+          >
+            <SwaggerIcon />
+            Community API
+          </NavigationItem>
+          <NavigationItem
+            [external]="true"
+            to="https://github.com/angular-sanctuary/angular-hub"
+          >
+            <i class="pi pi-github text-2xl"></i>
+            Contribute
+          </NavigationItem>
+          @if (isInstallButtonVisible()) {
+            <li>
+              <InstallPwaButton (initInstall)="pwaService.installPwa()" />
+            </li>
+          }
+        </ul>
+      </nav>
+    </ng-template>
+  </p-sidebar>
+</template>
+
+<style>
+  nav {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+    clip-path: inset(0px -15px 0px 0px);
+  }
+
+  .close-button {
+    position: absolute;
+    right: 20px;
+  }
+</style>
