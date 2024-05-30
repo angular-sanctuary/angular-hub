@@ -1,0 +1,33 @@
+<script lang="ts">
+  import { output } from '@angular/core';
+
+  const initInstall = output();
+</script>
+
+<template>
+  <button
+    class="pwa-install px-[2px] py-[2px] rounded font-bold w-full"
+    (click)="initInstall.emit()"
+  >
+    <span class="flex gap-4 items-center bg-[#1F212D] px-[14px] py-[10px]">
+      <i class="pi pi-download text-2xl"></i>
+      Install
+    </span>
+  </button>
+</template>
+
+<style>
+  .pwa-install,
+  .pwa-install:hover span {
+    background: rgb(191, 37, 185);
+    background: linear-gradient(
+      148deg,
+      rgba(191, 37, 185, 1) 23%,
+      rgba(146, 73, 194, 1) 48%,
+      rgba(119, 94, 200, 1) 76%,
+      rgba(86, 120, 207, 1) 86%,
+      rgba(38, 159, 216, 1) 96%,
+      rgba(0, 190, 224, 1) 100%
+    );
+  }
+</style>

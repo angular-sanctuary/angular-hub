@@ -1,0 +1,55 @@
+<script lang="ts">
+  import { input, output } from '@angular/core';
+
+  import {
+    RouterLink,
+    RouterLinkActive,
+  } from '@angular/router' with { analog: 'imports' };
+  import { NgTemplateOutlet } from '@angular/common' with { analog: 'imports' };
+
+  const clicked = output();
+  const to = input.required<string>();
+  const external = input(false);
+</script>
+
+<template class="contents">
+  <ng-template #content><ng-content /></ng-template>
+
+  <li>
+    @if (external()) {
+      <a
+        class="flex gap-4 items-center px-4 py-3 rounded-xl font-bold"
+        [href]="to()"
+        target="_blank"
+      >
+        <ng-container [ngTemplateOutlet]="content" />
+      </a>
+    } @else {
+      <a
+        class="flex gap-4 items-center px-4 py-3 rounded-xl font-bold"
+        routerLinkActive="sidebarActive"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLink]="[to()]"
+        (click)="clicked.emit()"
+      >
+        <ng-container [ngTemplateOutlet]="content" />
+      </a>
+    }
+  </li>
+</template>
+
+<style>
+  a:hover,
+  .sidebarActive {
+    background: rgb(191, 37, 185);
+    background: linear-gradient(
+      148deg,
+      rgba(191, 37, 185, 1) 23%,
+      rgba(146, 73, 194, 1) 48%,
+      rgba(119, 94, 200, 1) 76%,
+      rgba(86, 120, 207, 1) 86%,
+      rgba(38, 159, 216, 1) 96%,
+      rgba(0, 190, 224, 1) 100%
+    );
+  }
+</style>

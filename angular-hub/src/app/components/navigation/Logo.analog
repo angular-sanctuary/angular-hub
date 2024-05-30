@@ -1,0 +1,13 @@
+<script lang="ts">
+  import { input } from '@angular/core';
+  import { RouterLink } from '@angular/router' with { analog: 'imports' };
+
+  const logoClass = input.required<string>();
+</script>
+
+<template class="contents">
+  <a class="flex items-center gap-2" routerLink="/">
+    <img [class]="logoClass()" src="/assets/images/logo.webp" alt="" />
+    <span class="title text-3xl"><ng-content /></span>
+  </a>
+</template>
