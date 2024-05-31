@@ -1213,5 +1213,57 @@
         "url": "https://angular-tlv.com/"
       }
     ]
+  },
+  {
+    "name": "NG-DE",
+    "type": "conference",
+    "location": "Bonn, Germany",
+    "url": "https://ng-de.org/",
+    "logo": "assets/logos/ng-de.svg",
+    "twitter": "https://x.com/ngdeconf",
+    "linkedin": null,
+    "callForPapers": null,
+    "events": [
+      {
+        "name": "NG-DE Conference",
+        "type": "conference",
+        "date": "2024-10-09",
+        "endDate": "2024-10-11",
+        "url": "https://ng-de.org/",
+        "callForPapers": "null",
+        "callForPapersDueDate": "null",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Bonn, Germany"
+      }
+    ]
+  },
+  {
+    "name": "NG-BE",
+    "type": "conference",
+    "location": "Ghent, Belgium",
+    "url": "https://ng-be.org/",
+    "logo": "assets/logos/ng-be.png",
+    "twitter": "https://x.com/ngbeconf",
+    "linkedin": "https://www.linkedin.com/company/ng-be/",
+    "callForPapers": null,
+    "events": [
+      {
+        "name": "NG-BE 2024",
+        "type": "conference",
+        "date": "2024-12-05",
+        "endDate": "2024-12-06",
+        "url": "https://ng-be.org/",
+        "callForPapers": "null",
+        "callForPapersDueDate": "null",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Ghent, Belgium"
+      }
+    ]
   }
 ]
