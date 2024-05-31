@@ -21,7 +21,7 @@ jobs:
           node-version: 20
           cache: 'npm'
       - run: yarn install --frozen-lockfile
-      - uses: nrwl/nx-set-shas@v3
+      - uses: nrwl/nx-set-shas@v4
 
       - run: npx nx format:check
       - run: npx nx run angular-hub:lint
