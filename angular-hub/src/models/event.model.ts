@@ -6,6 +6,7 @@ export interface Event {
   location: string | null;
   url: string | null;
   date: string;
+  endDate?: string;
   language: string;
   isFree: boolean;
   isRemote: boolean;
