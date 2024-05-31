@@ -30,9 +30,10 @@ import { TagComponent } from '../tag.component';
         />
 
         <div class="text-start">
-          <span class="font-bold text-primary" itemprop="date">{{
-            event().date
-          }}</span>
+          <span class="font-bold text-primary" itemprop="date">
+            {{ event().date }}
+            {{ event().endDate ? '- ' + event().endDate : '' }}
+          </span>
           <h3 class="text-xl font-bold">
             {{ event().name || event().community?.name }}
           </h3>
