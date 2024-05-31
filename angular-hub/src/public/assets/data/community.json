@@ -388,6 +388,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.youtube.com/watch?v=51tncS0DPJE"
+      },
+      {
+        "name": "Table ronde Angular 18",
+        "type": "meetup",
+        "location": null,
+        "date": "2024-06-04",
+        "language": "French",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://youtube.com/live/5tEClsjSEGo?feature=share"
       }
     ]
   },
