@@ -46,5 +46,11 @@
     "url": "https://angularrocks.com/",
     "logo": "assets/logos/angular-rocks.webp",
     "language": "English"
+  }, 
+  {
+    "name": "Angular Experts",
+    "url": "https://angularexperts.io/podcasts",
+    "logo": "assets/logos/angular-experts.webp",
+    "language": "English"
   }
 ]
