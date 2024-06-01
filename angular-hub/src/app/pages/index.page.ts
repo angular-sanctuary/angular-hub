@@ -12,6 +12,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { Title } from '@angular/platform-browser';
 import { JsonLdService } from '../services/json-ld.service';
+import { DatePipe } from '@angular/common';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -42,8 +43,7 @@ export const routeMeta: RouteMeta = {
         ariaLabel="Select a date"
         name="date"
         [style]="{ width: '230px' }"
-        [ngModel]="date()"
-        (ngModelChange)="date.set($event)"
+        [(ngModel)]="date"
         placeholder="Select a date"
         [showClear]="true"
       />
@@ -53,8 +53,7 @@ export const routeMeta: RouteMeta = {
         [style]="{ width: '230px' }"
         [options]="languages()"
         [showClear]="true"
-        [ngModel]="selectedLanguage()"
-        (ngModelChange)="selectedLanguage.set($event)"
+        [(ngModel)]="selectedLanguage"
         placeholder="Select a language"
       />
       <div class="flex items-center gap-2">
@@ -62,8 +61,7 @@ export const routeMeta: RouteMeta = {
           ariaLabel="Display remote events only"
           id="remote"
           name="remote"
-          [ngModel]="isRemote()"
-          (ngModelChange)="isRemote.set($event)"
+          [(ngModel)]="isRemote"
         />
         <label class="mb-2" for="remote">remote only</label>
       </div>
@@ -76,6 +74,28 @@ export const routeMeta: RouteMeta = {
         <li>
           <app-event-card [event]="event"></app-event-card>
         </li>
+      } @empty {
+        <p class="col-span-full">
+          No event matching filter(s):
+
+          <span>
+            @if (date()) {
+              {{ date() | date: 'dd MMM YYYY' }}
+            }
+
+            @if (selectedLanguage()) {
+              @if (isRemote()) {
+                , {{ selectedLanguage() }}
+              } @else {
+                and {{ selectedLanguage() }}
+              }
+            }
+
+            @if (isRemote()) {
+              and Remote Only
+            }
+          </span>
+        </p>
       }
     </ul>
   `,
@@ -97,6 +117,7 @@ export const routeMeta: RouteMeta = {
     RouterLinkActive,
     DropdownModule,
     InputSwitchModule,
+    DatePipe,
   ],
 })
 export default class EventsComponent {

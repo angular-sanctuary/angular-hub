@@ -40,8 +40,7 @@ export const routeMeta: RouteMeta = {
         [style]="{ width: '230px' }"
         [showClear]="true"
         placeholder="Select a country"
-        [ngModel]="selectedCountry()"
-        (ngModelChange)="selectedCountry.set($event)"
+        [(ngModel)]="selectedCountry"
       />
     </form>
 
@@ -50,6 +49,14 @@ export const routeMeta: RouteMeta = {
         <li>
           <app-community-card [community]="community"></app-community-card>
         </li>
+      } @empty {
+        <p class="col-span-full">
+          No event matching the filter:
+
+          @if (selectedCountry()) {
+            <span>{{ selectedCountry() }}</span>
+          }
+        </p>
       }
     </ul>
   `,
