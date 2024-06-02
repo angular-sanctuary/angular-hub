@@ -68,6 +68,7 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://eduardoroth.dev"><img src="https://avatars.githubusercontent.com/u/5419161?v=4?s=100" width="100px;" alt="Eduardo Roth"/><br /><sub><b>Eduardo Roth</b></sub></a><br /><a href="#doc-eduardoRoth" title="Documentation">📖</a> <a href="#code-eduardoRoth" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/danilolmc"><img src="https://avatars.githubusercontent.com/u/31545128?v=4?s=100" width="100px;" alt="Danilo Lima"/><br /><sub><b>Danilo Lima</b></sub></a><br /><a href="#code-danilolmc" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jdegand"><img src="https://avatars.githubusercontent.com/u/70610011?v=4?s=100" width="100px;" alt="J. Degand"/><br /><sub><b>J. Degand</b></sub></a><br /><a href="#code-jdegand" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
