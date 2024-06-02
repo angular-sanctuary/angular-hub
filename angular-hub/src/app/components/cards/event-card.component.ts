@@ -37,7 +37,7 @@ import { TagComponent } from '../tag.component';
           itemprop="location"
         >
           {{ event().location ?? 'Online' }}
-          @if (isRemoteFriendly()) {
+          @if (isRemoteFriendly() && event().location) {
             <span>- Online</span>
           }
         </div>
