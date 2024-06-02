@@ -7,6 +7,7 @@ import { Title } from '@angular/platform-browser';
 import { JsonLdService } from '../../services/json-ld.service';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
+import { BannerComponent } from '../../components/banner.component';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -20,16 +21,14 @@ export const routeMeta: RouteMeta = {
 @Component({
   selector: 'app-communities',
   standalone: true,
-  imports: [CommunityCardComponent, DropdownModule, FormsModule],
+  imports: [
+    CommunityCardComponent,
+    DropdownModule,
+    FormsModule,
+    BannerComponent,
+  ],
   template: `
-    <aside
-      class="h-20 sm:h-36 flex flex-col justify-center items-center mb-4 m-6 rounded-2xl bg-no-repeat bg-auto md:bg-cover px-4"
-      style="background-image: url(/assets/images/hero.webp);"
-    >
-      <h1 class="title text-5xl hidden sm:block">ANGULAR HUB</h1>
-      <h2 class="text-2xl text-center">Curated list of Angular Communities</h2>
-    </aside>
-
+    <app-banner description="Curated list of Angular Communities" />
     <form
       class="w-full flex flex-col sm:flex-row justify-center items-center gap-2 mb-8"
     >
