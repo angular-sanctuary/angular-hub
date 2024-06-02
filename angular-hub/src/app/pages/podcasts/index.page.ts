@@ -7,6 +7,7 @@ import { injectLoad, RouteMeta } from '@analogjs/router';
 import { load } from './index.server';
 import { JsonLdService } from '../../services/json-ld.service';
 import { Title } from '@angular/platform-browser';
+import { BannerComponent } from '../../components/banner.component';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -20,16 +21,9 @@ export const routeMeta: RouteMeta = {
 @Component({
   selector: 'app-podcasts',
   standalone: true,
-  imports: [PodcastCardComponent, FormsModule],
+  imports: [PodcastCardComponent, FormsModule, BannerComponent],
   template: `
-    <aside
-      class="h-20 sm:h-36 flex flex-col justify-center items-center mb-4 m-6 rounded-2xl bg-no-repeat bg-auto md:bg-cover px-4"
-      style="background-image: url(/assets/images/hero.webp);"
-    >
-      <h1 class="title text-5xl hidden sm:block">ANGULAR HUB</h1>
-      <h2 class="text-2xl text-center">Curated list of Angular Podcasts</h2>
-    </aside>
-
+    <app-banner description="Curated list of Angular Podcasts" />
     <ul
       class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-x-8 gap-y-4 px-8"
     >

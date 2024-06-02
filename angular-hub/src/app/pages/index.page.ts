@@ -17,6 +17,7 @@ import { NgTemplateOutlet } from '@angular/common';
 import { MessagesModule } from 'primeng/messages';
 import { EventSectionComponent } from '../components/event-section.component';
 import { MessageComponent } from '../components/message.component';
+import { BannerComponent } from '../components/banner.component';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -31,16 +32,7 @@ export const routeMeta: RouteMeta = {
   selector: 'app-events',
   standalone: true,
   template: `
-    <!-- TODO create a shared component out of this aside -->
-    <aside
-      class="h-20 sm:h-36 flex flex-col justify-center items-center mb-4 m-6 rounded-2xl bg-no-repeat bg-auto md:bg-cover"
-      style="background-image: url(/assets/images/hero.webp);"
-    >
-      <h1 class="title text-5xl hidden sm:block">ANGULAR HUB</h1>
-      <h2 class="text-2xl text-center">
-        Curated list of Angular Communities and Events
-      </h2>
-    </aside>
+    <app-banner description="Curated list of Angular Communities and Events" />
     <!-- TODO add scrollbar-gutter stable for md + -->
     <div class="flex flex-col md:flex-row px-6 gap-6">
       <!-- TODO add sticky -->
@@ -228,6 +220,7 @@ export const routeMeta: RouteMeta = {
     MessagesModule,
     EventSectionComponent,
     MessageComponent,
+    BannerComponent,
   ],
 })
 export default class EventsComponent {
