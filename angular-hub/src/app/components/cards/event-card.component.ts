@@ -13,81 +13,65 @@ import { TagComponent } from '../tag.component';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <article>
-      <a
-        [href]="event().url ?? '#'"
-        [title]="eventLinkTitle()"
-        target="_blank"
-        class="flex w-full items-start gap-4"
-      >
+    <h4 class="text-xl font-bold my-1">
+      {{ event().name || event().community?.name }}
+    </h4>
+    <div class="flex gap-4 mb-2">
+      <div class="flex justify-center items-center w-20 h-20">
         <img
           class="rounded-xl"
           [src]="event().community?.logo"
           aria-hidden="true"
-          height="100"
-          width="100"
+          height="70"
+          width="70"
           alt=""
         />
-
-        <div class="text-start">
-          <span class="font-bold text-primary" itemprop="date">
-            {{ event().date }}
-            {{ event().endDate ? '- ' + event().endDate : '' }}
-          </span>
-          <h3 class="text-xl font-bold">
-            {{ event().name || event().community?.name }}
-          </h3>
-          <div
-            class="text-gray-500 dark:text-gray-400 min-h-4"
-            itemprop="location"
-          >
-            {{ event().location }}
-          </div>
-          <ul class="flex flex-wrap gap-2">
-            <li class="inline">
-              <app-tag [title]="event().language" />
-            </li>
-            @if (event().isFree) {
-              <li class="inline">
-                <app-tag [title]="'Free'" color="#629632" />
-              </li>
-            }
-            @if (event().isRemote) {
-              <li class="inline">
-                <app-tag [title]="'Remote'" color="#328496" />
-              </li>
-            }
-            @if (event().isOnsite) {
-              <li class="inline">
-                <app-tag [title]="'Onsite'" color="#ae6b09" />
-              </li>
-            }
-          </ul>
+      </div>
+      <div class="flex-1">
+        <span class="font-bold text-primary" itemprop="date">
+          {{ event().date }}
+          {{ event().endDate ? '- ' + event().endDate : '' }}
+        </span>
+        <div
+          class="flex-1 text-gray-500 dark:text-gray-400 min-h-4"
+          itemprop="location"
+        >
+          {{ event().location ?? 'Online' }}
+          @if (isRemoteFriendly()) {
+            <span>- Online</span>
+          }
         </div>
-      </a>
-    </article>
+        <ul class="flex tags">
+          @if (!event().isFree) {
+            <li
+              class="flex items-center justify-center gap-1 bg-[#20212C] border-[#3e4056] border-2 rounded px-2 py-1 text-sm"
+            >
+              <i class="pi pi-dollar text-sm" aria-hidden="true"></i>
+              admission fee
+            </li>
+          }
+          @if (event().language !== 'English') {
+            <li
+              class="flex items-center justify-center gap-1 bg-[#20212C] border-[#3e4056] border-2 rounded px-2 py-1 text-sm"
+            >
+              <i class="pi pi-language text-sm" aria-hidden="true"></i>
+              {{ event().language }}
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
   `,
   imports: [DatePipe, NgOptimizedImage, TagComponent],
-  styles: [
-    `
-      :host {
-        display: block;
-        padding-block: 0.5rem;
-        cursor: pointer;
-
-        &:hover {
-          h3 {
-            @apply text-secondary underline;
-          }
-        }
-      }
-    `,
-  ],
 })
 export class EventCardComponent {
   event = input.required<Event>();
 
   eventLinkTitle = computed(() => {
     return (this.event().name || this.event().community?.name) + 'event link';
+  });
+
+  isRemoteFriendly = computed(() => {
+    return this.event().isRemote && this.event().isRemote;
   });
 }

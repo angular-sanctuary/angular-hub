@@ -59,6 +59,15 @@ body {
   font-family: Verdana, 'sans-serif';
 }
 
+.p-message {
+  margin: unset;
+}
+
+.p-calendar .p-highlight {
+  border-width: 2px;
+  box-shadow: 0 0 5px 5px #00b8e6;
+}
+
 @media (prefers-reduced-motion) {
   ::view-transition-group(*),
   ::view-transition-old(*),
