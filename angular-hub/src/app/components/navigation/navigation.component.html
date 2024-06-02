@@ -15,7 +15,7 @@
         routerLink="/"
         (click)="sidebarVisible = false"
       >
-        <i class="pi pi-calendar text-2xl"></i>
+        <i aria-hidden="true" class="pi pi-calendar text-2xl"></i>
         Events
       </a>
     </li>
@@ -26,7 +26,7 @@
         routerLink="/communities"
         (click)="sidebarVisible = false"
       >
-        <i class="pi pi-users text-2xl"></i>
+        <i aria-hidden="true" class="pi pi-users text-2xl"></i>
         Communities
       </a>
     </li>
@@ -37,7 +37,7 @@
         routerLink="/podcasts"
         (click)="sidebarVisible = false"
       >
-        <i class="pi pi-microphone text-2xl"></i>
+        <i aria-hidden="true" class="pi pi-microphone text-2xl"></i>
         Podcasts
       </a>
     </li>
@@ -48,7 +48,7 @@
         routerLink="/callforpapers"
         (click)="sidebarVisible = false"
       >
-        <i class="pi pi-megaphone text-2xl"></i>
+        <i aria-hidden="true" class="pi pi-megaphone text-2xl"></i>
         Call for papers
       </a>
     </li>
@@ -82,7 +82,7 @@
         href="https://github.com/angular-sanctuary/angular-hub"
         target="_blank"
       >
-        <i class="pi pi-github text-2xl"></i>
+        <i aria-hidden="true" class="pi pi-github text-2xl"></i>
         Contribute
       </a>
     </li>
@@ -95,7 +95,7 @@
           <span
             class="flex gap-4 items-center bg-[#1F212D] px-[14px] py-[10px]"
           >
-            <i class="pi pi-download text-2xl"></i>
+            <i aria-hidden="true" class="pi pi-download text-2xl"></i>
             Install
           </span>
         </button>
@@ -145,6 +145,7 @@
         rounded="true"
         outlined="true"
         styleClass="h-2rem w-2rem"
+        title="Close navigation"
       ></p-button>
       <ul class="flex flex-col gap-2 mt-12">
         <!-- Navbar menu content here -->
@@ -167,7 +168,7 @@
             routerLink="/communities"
             (click)="sidebarVisible = false"
           >
-            <i class="pi pi-users text-2xl"></i>
+            <i aria-hidden="true" class="pi pi-users text-2xl"></i>
             Communities
           </a>
         </li>
@@ -178,7 +179,7 @@
             routerLink="/podcasts"
             (click)="sidebarVisible = false"
           >
-            <i class="pi pi-microphone text-2xl"></i>
+            <i aria-hidden="true" class="pi pi-microphone text-2xl"></i>
             Podcasts
           </a>
         </li>
@@ -189,7 +190,7 @@
             routerLink="/callforpapers"
             (click)="sidebarVisible = false"
           >
-            <i class="pi pi-megaphone text-2xl"></i>
+            <i aria-hidden="true" class="pi pi-megaphone text-2xl"></i>
             Call for papers
           </a>
         </li>
@@ -223,7 +224,7 @@
             href="https://github.com/angular-sanctuary/angular-hub"
             target="_blank"
           >
-            <i class="pi pi-github text-2xl"></i>
+            <i aria-hidden="true" class="pi pi-github text-2xl"></i>
             Contribute
           </a>
         </li>
@@ -236,7 +237,7 @@
               <span
                 class="flex gap-4 items-center bg-[#1F212D] px-[14px] py-[10px]"
               >
-                <i class="pi pi-download text-2xl"></i>
+                <i aria-hidden="true" class="pi pi-download text-2xl"></i>
                 Install
               </span>
             </button>
