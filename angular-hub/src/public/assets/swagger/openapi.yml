@@ -10,7 +10,7 @@ tags:
   - name: Communities
   - name: Podcasts
 servers:
-  - url: https://angular-hub.com/api/v1
+  - url: https://angular-hub.com/api/v1/swagger
 paths:
   /communities:
     get:
