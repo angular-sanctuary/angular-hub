@@ -9,6 +9,7 @@
 @import 'tailwindcss/utilities.css' layer(tw-utilities);
 @import 'tailwindcss/variants.css' layer(tw-variants);
 @import 'primeicons/primeicons';
+@import '@angular/cdk/overlay-prebuilt.css';
 
 @font-face {
   font-family: 'Pixelify';
@@ -66,6 +67,10 @@ body {
 .p-calendar .p-highlight {
   border-width: 2px;
   box-shadow: 0 0 5px 5px #00b8e6;
+}
+
+.custom-backdrop {
+  background-color: black !important;
 }
 
 @media (prefers-reduced-motion) {

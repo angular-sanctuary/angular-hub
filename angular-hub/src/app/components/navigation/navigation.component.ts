@@ -4,10 +4,11 @@ import { ButtonModule } from 'primeng/button';
 import { Sidebar, SidebarModule } from 'primeng/sidebar';
 import { DividerModule } from 'primeng/divider';
 import { PwaService } from '../../services/pwa.service';
-import { NgClass } from '@angular/common';
+import { AsyncPipe, NgClass } from '@angular/common';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
+import { SupabaseService } from '../../services/supabase.service';
 
 @Component({
   selector: 'app-navigation',
@@ -25,10 +26,12 @@ import { InputTextModule } from 'primeng/inputtext';
     IconFieldModule,
     InputIconModule,
     InputTextModule,
+    AsyncPipe,
   ],
 })
 export class NavigationComponent {
   readonly #pwaService = inject(PwaService);
+  readonly supabaseService = inject(SupabaseService);
 
   sidebarVisible = false;
   isInstallButtonVisible = this.#pwaService.isInstallButtonVisible;

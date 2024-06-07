@@ -4,11 +4,12 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { filter, switchMap } from 'rxjs';
 import { SwUpdate, VersionReadyEvent } from '@angular/service-worker';
 import { PwaService } from './services/pwa.service';
+import { DialogModule } from '@angular/cdk/dialog';
 
 @Component({
   selector: 'angular-hub-root',
   standalone: true,
-  imports: [RouterOutlet, NavigationComponent],
+  imports: [RouterOutlet, NavigationComponent, DialogModule],
   template: ` <app-navigation class="h-full"></app-navigation> `,
   styles: [
     `

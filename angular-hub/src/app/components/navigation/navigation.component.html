@@ -5,6 +5,14 @@
     <img class="h-12" src="/assets/images/logo.webp" alt="" />
     <span class="title text-3xl">HUB</span>
   </a>
+  @if (supabaseService.session | async) {
+    <p-button
+      class="py-4"
+      label="Logout"
+      size="small"
+      (click)="supabaseService.logout()"
+    />
+  }
   <ul class="flex flex-col gap-2 mt-12">
     <!-- Navbar menu content here -->
     <li>
@@ -17,6 +25,18 @@
       >
         <i aria-hidden="true" class="pi pi-calendar text-2xl"></i>
         Events
+      </a>
+    </li>
+    <li>
+      <a
+        class="flex gap-4 items-center px-4 py-3 rounded-xl font-bold"
+        routerLinkActive="sidebarActive"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/admin"
+        (click)="sidebarVisible = false"
+      >
+        <i aria-hidden="true" class="pi pi-calendar text-2xl"></i>
+        Admin
       </a>
     </li>
     <li>
@@ -114,17 +134,10 @@
       [text]="true"
       icon="pi pi-bars"
     />
-    <a class="flex items-center gap-2" routerLink="/">
+    <a class="flex flex-1 items-center gap-2" routerLink="/">
       <img class="h-8" src="/assets/images/logo.webp" alt="" />
       <span class="title text-3xl">ANGULAR HUB</span>
     </a>
-    <!-- TODO
-    <p-iconField iconPosition="left">
-      <p-inputIcon styleClass="pi pi-search" />
-      <input type="text" pInputText placeholder="Search" />
-    </p-iconField>
-    <p-button label="Login" size="small" />
-    -->
   </header>
 
   <main class="pb-4 flex-1">
@@ -159,6 +172,18 @@
           >
             <i class="pi pi-calendar text-2xl"></i>
             Events
+          </a>
+        </li>
+        <li>
+          <a
+            class="flex gap-4 items-center px-4 py-3 rounded-xl font-bold"
+            routerLinkActive="sidebarActive"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLink="/admin"
+            (click)="sidebarVisible = false"
+          >
+            <i aria-hidden="true" class="pi pi-calendar text-2xl"></i>
+            Admin
           </a>
         </li>
         <li>
