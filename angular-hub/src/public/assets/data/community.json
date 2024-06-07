@@ -1330,5 +1330,30 @@
         "location": "Ghent, Belgium"
       }
     ]
+  },
+  {
+    "name": "Angular Rome",
+    "type": "meetup",
+    "location": "Rome, Italy",
+    "url": "https://t.me/angular_roma",
+    "logo": "https://raw.githubusercontent.com/ngrome/.github/main/assets/angular_rome_logo.png",
+    "twitter": "https://x.com/AngularRome",
+    "linkedin": "https://www.linkedin.com/company/angular-rome/",
+    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSdnVyf40UpcUkAaxeayCksnWUOHXyDn8qi1m6Z2OedzRTfubw/viewform",
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Rome, Italy",
+        "date": "2024-06-25",
+        "language": "Italian",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.eventbrite.com/o/28520702115"
+      }
+    ]
   }
 ]
