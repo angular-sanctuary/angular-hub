@@ -29,22 +29,24 @@
       as="font"
       crossorigin
     />
+    <link rel="preconnect" href="https://region1.google-analytics.com" />
+    <link rel="preload" href="/assets/images/hero.webp" as="image" />
     <script type="application/ld+json"></script>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-JTPQVQWC1M"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-JTPQVQWC1M');
-    </script>
   </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JTPQVQWC1M"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JTPQVQWC1M');
+  </script>
   <body>
     <angular-hub-root></angular-hub-root>
     <script type="module" src="/src/main.ts"></script>
