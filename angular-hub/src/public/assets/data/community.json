@@ -803,6 +803,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSf1rp6TvXiVhhZozPbRmng6GP-80UGc0SfOT7CAI5tqOQWSsQ/viewform"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Singapore",
+        "date": "2024-06-25",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfZzpxmr_Z0MhV0STZRb95lM7DRSwl79nYbY-GCnDKKtXczlg/viewform"
       }
     ]
   },
