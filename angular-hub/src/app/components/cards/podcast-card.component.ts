@@ -29,7 +29,14 @@ import { TagComponent } from '../tag.component';
           >
             {{ podcast().name }}
           </h3>
-          <app-tag [title]="podcast().language" />
+          @if (podcast().language !== 'English') {
+            <span
+              class="inline-flex items-center justify-center gap-1 bg-[#20212C] border-[#3e4056] border-2 rounded px-2 py-1 mt-1 text-sm"
+            >
+              <i class="pi pi-language text-sm" aria-hidden="true"></i>
+              {{ podcast().language }}
+            </span>
+          }
         </div>
       </a>
     </article>
