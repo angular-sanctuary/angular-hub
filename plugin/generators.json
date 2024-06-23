@@ -1,0 +1,19 @@
+{
+  "generators": {
+    "create-community": {
+      "factory": "./src/generators/create-community/generator",
+      "schema": "./src/generators/create-community/schema.json",
+      "description": "Create a new community"
+    },
+    "create-podcast": {
+      "factory": "./src/generators/create-podcast/generator",
+      "schema": "./src/generators/create-podcast/schema.json",
+      "description": "Create a new podcast"
+    },
+    "create-event": {
+      "factory": "./src/generators/create-event/generator",
+      "schema": "./src/generators/create-event/schema.json",
+      "description": "Create a new event"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "CreateEvent",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Provide the event name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What is the name of event?"
+    },
+    "communityName": {
+      "type": "string",
+      "description": "Provide the community organizer name",
+      "x-prompt": "Provide the community organizer name"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["workshop", "conference", "meetup", "other"],
+      "description": "Provide the event type",
+      "x-prompt": {
+        "message": "What is the type of event?",
+        "type": "list",
+        "items": [
+          {
+            "value": "workshop",
+            "label": "Workshop"
+          },
+          {
+            "value": "conference",
+            "label": "Conference"
+          },
+          {
+            "value": "meetup",
+            "label": "Meetup"
+          },
+          {
+            "value": "other",
+            "label": "Other"
+          }
+        ]
+      }
+    },
+    "location": {
+      "type": "string",
+      "description": "Provide the location where community takes place",
+      "x-prompt": "Provide the community location"
+    },
+    "date": {
+      "type": "string",
+      "description": "Provide the event date",
+      "x-prompt": "Provide the event date (ex: 2024-05-30)"
+    },
+    "language": {
+      "type": "string",
+      "description": "Provide the event language",
+      "x-prompt": "Provide the event language (ex: English)"
+    },
+    "isFree": {
+      "type": "boolean",
+      "description": "if it's a paid event or not",
+      "x-prompt": "Is event free of charge?"
+    },
+    "isRemote": {
+      "type": "boolean",
+      "description": "if it's a remote event or not",
+      "x-prompt": "Is it a remote event?"
+    },
+    "callForPapers": {
+      "type": "string",
+      "description": "Provide the Call-For-Paper (CFP) form url",
+      "x-prompt": "Provide the CFP form url"
+    },
+    "callForPapersDueDate": {
+      "type": "string",
+      "description": "Call-For-Paper (CFP) due date",
+      "x-prompt": "Provide the Call-For-Paper (CFP) due date"
+    },
+    "url": {
+      "type": "string",
+      "description": "Provide the event url",
+      "x-prompt": "Provide the event url"
+    }
+  },
+  "required": [
+    "communityName",
+    "type",
+    "date",
+    "language",
+    "isFree",
+    "isRemote"
+  ]
+}
