@@ -58,5 +58,17 @@
     "url": "https://angular-catch-up.podbean.com/",
     "logo": "assets/logos/angular-catch-up.jpg",
     "language": "English"
+  },
+  {
+    "name": "Angular Japan User Group | Angular 日本ユーザー会",
+    "url": "https://www.youtube.com/@ng_japan",
+    "logo": "assets/logos/ng-jp.svg",
+    "language": "Japanese"
+  },
+  {
+    "name": "Startup Angular",
+    "url": "https://www.youtube.com/@StartupAngular",
+    "logo": "assets/logos/startup-angular.png",
+    "language": "Japanese"
   }
 ]

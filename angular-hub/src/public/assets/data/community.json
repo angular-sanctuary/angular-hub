@@ -1368,5 +1368,93 @@
         "url": "https://www.eventbrite.com/o/28520702115"
       }
     ]
+  },
+  {
+    "name": "Angular Japan UserGroup",
+    "type": "other",
+    "location": "Japan",
+    "url": "https://community.angular.jp/",
+    "logo": "assets/logos/ng-jp.svg",
+    "twitter": "https://twitter.com/ng_japan",
+    "linkedin": null,
+    "callForPapers": null,
+    "events": []
+  },
+  {
+    "name": "ng-fukuoka",
+    "type": "meetup",
+    "location": "Fukuoka, Japan",
+    "url": "https://ng-fukuoka.angular.jp/",
+    "logo": "assets/logos/ng-fukuoka.svg",
+    "twitter": "https://twitter.com/ng_fukuoka",
+    "linkedin": null,
+    "callForPapers": null,
+    "events": []
+  },
+  {
+    "name": "ng-gunma",
+    "type": "meetup",
+    "location": "Gunma, Japan",
+    "url": "https://ng-gunma.connpass.com/",
+    "logo": "assets/logos/ng-gunma.png",
+    "twitter": "https://twitter.com/ng_gunma",
+    "linkedin": null,
+    "callForPapers": null,
+    "events": []
+  },
+  {
+    "name": "ng-kobe",
+    "type": "meetup",
+    "location": "Kobe City, Hyogo, Japan",
+    "url": "https://ng-kobe.connpass.com/",
+    "logo": "assets/logos/ng-kobe.png",
+    "twitter": null,
+    "linkedin": null,
+    "callForPapers": null,
+    "events": []
+  },
+  {
+    "name": "ng-kyoto",
+    "type": "meetup",
+    "location": "Kyoto, Japan",
+    "url": "https://ng-kyoto.angular.jp/",
+    "logo": "assets/logos/ng-kyoto.png",
+    "twitter": null,
+    "linkedin": null,
+    "callForPapers": null,
+    "events": []
+  },
+  {
+    "name": "ng-saitama",
+    "type": "meetup",
+    "location": "Saitama, Japan",
+    "url": "https://ng-saitama.connpass.com/",
+    "logo": "assets/logos/official-logo.webp",
+    "twitter": null,
+    "linkedin": null,
+    "callForPapers": null,
+    "events": []
+  },
+  {
+    "name": "ng-sake",
+    "type": "meetup",
+    "location": "Tokyo, Japan",
+    "url": "https://ng-sake.connpass.com/",
+    "logo": "assets/logos/ng-sake.png",
+    "twitter": null,
+    "linkedin": null,
+    "callForPapers": null,
+    "events": []
+  },
+  {
+    "name": "StarutupAngular",
+    "type": "meetup",
+    "location": "Tokyo, Japan",
+    "url": "https://github.com/StartupAngular",
+    "logo": "assets/logos/startup-angular.png",
+    "twitter": "https://twitter.com/hashtag/ng_startup",
+    "linkedin": null,
+    "callForPapers": null,
+    "events": []
   }
 ]
