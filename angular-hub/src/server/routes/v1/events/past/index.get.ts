@@ -14,6 +14,7 @@ export default defineEventHandler(() => {
           .map((event) => {
             return {
               ...event,
+              name: event.name ?? communityMeta.name,
               community: communityMeta,
             };
           })
