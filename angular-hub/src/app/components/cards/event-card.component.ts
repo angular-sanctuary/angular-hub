@@ -14,7 +14,7 @@ import { TagComponent } from '../tag.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <h4 class="text-xl font-bold my-1">
-      {{ event().name || event().community?.name }}
+      {{ event().name }}
     </h4>
     <div class="flex gap-4 mb-2">
       <div class="flex justify-center items-center w-20 h-20">
