@@ -8,6 +8,7 @@ info:
     url: https://angular-hub.com
 tags:
   - name: Communities
+  - name: Events
   - name: Podcasts
 servers:
   - url: https://angular-hub.com/api/v1
@@ -70,11 +71,11 @@ paths:
                             type: string
                           url:
                             type: string
-  /communities/upcoming:
+  /events/upcoming:
     get:
       summary: Get a list of upcoming Angular events
       tags:
-        - Communities
+        - Events
       responses:
         '200':
           description: A list of upcoming Angular events
@@ -107,34 +108,11 @@ paths:
                       type: string
                     url:
                       type: string
-  /podcasts:
-    get:
-      summary: Get a list of Angular podcasts
-      tags:
-        - Podcasts
-      responses:
-        '200':
-          description: A list of Angular podcasts
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    name:
-                      type: string
-                    url:
-                      type: string
-                    logo:
-                      type: string
-                    language:
-                      type: string
-  /callforpapers:
+  /events/callforpapers:
     get:
       summary: Get a list of Angular communities with open call for papers
       tags:
-        - Communities
+        - Events
       parameters:
         - name: type
           in: query
@@ -195,3 +173,26 @@ paths:
                             type: string
                           url:
                             type: string
+  /podcasts:
+    get:
+      summary: Get a list of Angular podcasts
+      tags:
+        - Podcasts
+      responses:
+        '200':
+          description: A list of Angular podcasts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    url:
+                      type: string
+                    logo:
+                      type: string
+                    language:
+                      type: string
