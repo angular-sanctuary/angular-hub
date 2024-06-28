@@ -9,14 +9,6 @@ export async function createEventGenerator(
   tree: Tree,
   options: CreateEventGeneratorSchema,
 ) {
-  const packageJson = readJson(tree, 'package.json');
-  const angularCorePackage = packageJson['dependencies']['@angular/core'];
-
-  if (!angularCorePackage) {
-    logger.error(`[angular-hub] No @angular/core detected`);
-    return exit(1);
-  }
-
   if (!options.communityName) {
     logger.error('[angular-hub] Community name is missing');
     return exit(1);

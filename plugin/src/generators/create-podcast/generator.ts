@@ -2,6 +2,7 @@ import { logger, readJson, Tree, updateJson } from '@nx/devkit';
 import { CreatePodcastGeneratorSchema } from './schema';
 import { exit } from 'node:process';
 import { Podcast } from '../models/podcast';
+import { isPublicAsset } from '../utils/isPublicAsset';
 
 const PODCASTS_PATH = 'angular-hub/src/public/assets/data/podcast.json';
 
@@ -10,14 +11,6 @@ export async function createPodcastGenerator(
   options: CreatePodcastGeneratorSchema,
 ) {
   const { name, logo, language, url } = options;
-
-  const packageJson = readJson(tree, 'package.json');
-  const angularCorePackage = packageJson['dependencies']['@angular/core'];
-
-  if (!angularCorePackage) {
-    logger.error(`[angular-hub] No @angular/core detected`);
-    return exit(1);
-  }
 
   if (!name) {
     logger.error('[angular-hub] Name is missing');
@@ -37,6 +30,19 @@ export async function createPodcastGenerator(
   if (!language) {
     logger.error('[angular-hub] Language is missing');
     return exit(1);
+  }
+
+  if (!isPublicAsset(url)) {
+    logger.error(
+      '[angular-hub] Url is not valid (should start with https or http). ',
+    );
+    return exit(1);
+  }
+
+  if (!isPublicAsset(logo)) {
+    logger.info(
+      '[angular-hub] Make sure you upload the logo file at logos folder in the assets directory',
+    );
   }
 
   const existingPodcasts: Podcast[] = readJson(tree, PODCASTS_PATH);
