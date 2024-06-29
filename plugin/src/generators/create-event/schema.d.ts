@@ -6,7 +6,7 @@ export interface CreateEventGeneratorSchema {
   language: string;
   isFree: boolean;
   isRemote: boolean;
-  // isOnsite: boolean; detected through isRemote flag
+  isOnsite: boolean;
   callForPapers?: string | null;
   callForPapersDueDate?: string | null;
   url?: string;

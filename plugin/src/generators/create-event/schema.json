@@ -70,6 +70,11 @@
       "description": "if it's a remote event or not",
       "x-prompt": "Is it a remote event?"
     },
+    "isOnsite": {
+      "type": "boolean",
+      "description": "if it's an on-site event or not",
+      "x-prompt": "Is it on-site event?"
+    },
     "callForPapers": {
       "type": "string",
       "description": "Provide the Call-For-Paper (CFP) form url",
@@ -92,6 +97,7 @@
     "date",
     "language",
     "isFree",
-    "isRemote"
+    "isRemote",
+    "isOnsite"
   ]
 }

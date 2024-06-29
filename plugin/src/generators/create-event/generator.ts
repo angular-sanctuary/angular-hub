@@ -39,6 +39,11 @@ export async function createEventGenerator(
     return exit(1);
   }
 
+  if (options.isOnsite === null || options.isOnsite === undefined) {
+    logger.error('[angular-hub] isOnsite is missing');
+    return exit(1);
+  }
+
   const communities: Community[] = readJson(tree, COMMUNITIES_PATH);
   const selectedCommunity = communities.find(
     (community) =>
@@ -71,7 +76,7 @@ export async function createEventGenerator(
         language: options.language,
         isFree: options.isFree,
         isRemote: options.isRemote,
-        isOnsite: !options.isRemote,
+        isOnsite: options.isOnsite,
         callForPapers: options.callForPapers ?? '',
         callForPapersDueDate: options.callForPapersDueDate ?? '',
         url: options.url ?? '',

@@ -16,7 +16,7 @@
     "url": {
       "type": "string",
       "description": "Provide the site url",
-      "x-prompt": "Provide the site url"
+      "x-prompt": "Provide the preferred podcast platform link"
     },
     "logo": {
       "type": "string",
