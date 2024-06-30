@@ -23,7 +23,7 @@ export async function createPodcastGenerator(
   }
 
   if (!url) {
-    logger.error('[angular-hub] Url is missing');
+    logger.error('[angular-hub] Platform link is missing');
     return exit(1);
   }
 
@@ -34,7 +34,7 @@ export async function createPodcastGenerator(
 
   if (!isPublicAsset(url)) {
     logger.error(
-      '[angular-hub] Url is not valid (should start with https or http). ',
+      '[angular-hub] Platform link is not valid (should start with https or http). ',
     );
     return exit(1);
   }

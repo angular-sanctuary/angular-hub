@@ -16,7 +16,7 @@
     "type": {
       "type": "string",
       "enum": ["workshop", "conference", "meetup", "other"],
-      "description": "Provide the community type",
+      "description": "Provide the community type:",
       "x-prompt": {
         "message": "What is the type of community?",
         "type": "list",
@@ -43,32 +43,32 @@
     "location": {
       "type": "string",
       "description": "Provide the location where community takes place",
-      "x-prompt": "Provide the community location"
+      "x-prompt": "Provide the community location:"
     },
     "url": {
       "type": "string",
       "description": "Provide the site url",
-      "x-prompt": "Provide the site url"
+      "x-prompt": "Provide the site url:"
     },
     "logo": {
       "type": "string",
       "description": "Provide the brand logo",
-      "x-prompt": "Provide the brand logo url"
+      "x-prompt": "Provide the brand logo url:"
     },
     "twitter": {
       "type": "string",
       "description": "Provide the twitter account link",
-      "x-prompt": "Provide the twitter profile"
+      "x-prompt": "Provide the twitter profile:"
     },
     "linkedin": {
       "type": "string",
       "description": "Provide the linkedin account link",
-      "x-prompt": "Provide the linkedin profile"
+      "x-prompt": "Provide the linkedin profile:"
     },
     "callForPapers": {
       "type": "string",
       "description": "Provide the Call-For-Paper (CFP) form url",
-      "x-prompt": "Provide the CFP form url"
+      "x-prompt": "Provide the CFP form url:"
     }
   },
   "required": ["name", "type"]

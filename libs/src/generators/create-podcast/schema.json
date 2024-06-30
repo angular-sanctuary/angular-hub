@@ -16,17 +16,17 @@
     "url": {
       "type": "string",
       "description": "Provide the site url",
-      "x-prompt": "Provide the preferred podcast platform link"
+      "x-prompt": "Provide the preferred podcast platform link:"
     },
     "logo": {
       "type": "string",
       "description": "Provide the brand logo",
-      "x-prompt": "Provide the brand logo url"
+      "x-prompt": "Provide the brand logo url:"
     },
     "language": {
       "type": "string",
       "description": "Provide the language",
-      "x-prompt": "Provide the language (ex: English)"
+      "x-prompt": "Provide the language (ex: English):"
     }
   },
   "required": ["name", "url", "logo", "language"]

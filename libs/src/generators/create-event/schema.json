@@ -16,7 +16,7 @@
     "communityName": {
       "type": "string",
       "description": "Provide the community organizer name",
-      "x-prompt": "Provide the community organizer name"
+      "x-prompt": "Provide the community organizer name:"
     },
     "type": {
       "type": "string",
@@ -48,17 +48,17 @@
     "location": {
       "type": "string",
       "description": "Provide the location where community takes place",
-      "x-prompt": "Provide the community location"
+      "x-prompt": "Provide the community location:"
     },
     "date": {
       "type": "string",
       "description": "Provide the event date",
-      "x-prompt": "Provide the event date (ex: 2024-05-30)"
+      "x-prompt": "Provide the event date (ex: 2024-05-30):"
     },
     "language": {
       "type": "string",
       "description": "Provide the event language",
-      "x-prompt": "Provide the event language (ex: English)"
+      "x-prompt": "Provide the event language (ex: English):"
     },
     "isFree": {
       "type": "boolean",
@@ -78,17 +78,17 @@
     "callForPapers": {
       "type": "string",
       "description": "Provide the Call-For-Paper (CFP) form url",
-      "x-prompt": "Provide the CFP form url"
+      "x-prompt": "Provide the CFP form url:"
     },
     "callForPapersDueDate": {
       "type": "string",
       "description": "Call-For-Paper (CFP) due date",
-      "x-prompt": "Provide the Call-For-Paper (CFP) due date"
+      "x-prompt": "Provide the Call-For-Paper (CFP) due date:"
     },
     "url": {
       "type": "string",
       "description": "Provide the event url",
-      "x-prompt": "Provide the event url"
+      "x-prompt": "Provide the event url:"
     }
   },
   "required": [
