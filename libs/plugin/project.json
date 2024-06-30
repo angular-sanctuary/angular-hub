@@ -1,7 +1,7 @@
 {
   "name": "plugin",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/src",
+  "sourceRoot": "libs/plugin/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -9,28 +9,28 @@
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs",
-        "main": "libs/src/index.ts",
-        "tsConfig": "libs/tsconfig.lib.json",
+        "outputPath": "dist/libs/plugin",
+        "main": "libs/plugin/src/index.ts",
+        "tsConfig": "libs/plugin/tsconfig.lib.json",
         "assets": [
-          "libs/*.md",
+          "libs/plugin/*.md",
           {
-            "input": "./libs/src",
+            "input": "./libs/plugin/src",
             "glob": "**/!(*.ts)",
             "output": "./src"
           },
           {
-            "input": "./libs/src",
+            "input": "./libs/plugin/src",
             "glob": "**/*.d.ts",
             "output": "./src"
           },
           {
-            "input": "./libs",
+            "input": "./libs/plugin",
             "glob": "generators.json",
             "output": "."
           },
           {
-            "input": "./libs",
+            "input": "./libs/plugin",
             "glob": "executors.json",
             "output": "."
           }
@@ -44,7 +44,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/jest.config.ts"
+        "jestConfig": "libs/plugin/jest.config.ts"
       }
     }
   }

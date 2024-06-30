@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-hub/plugin": ["libs/src/index.ts"]
+      "@angular-hub/plugin": ["libs/plugin/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
