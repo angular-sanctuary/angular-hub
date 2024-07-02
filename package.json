@@ -61,7 +61,7 @@
     "@nx/eslint": "19.1.0",
     "@nx/eslint-plugin": "19.1.0",
     "@nx/jest": "19.3.1",
-    "@nx/js": "19.3.1",
+    "@nx/js": "19.3.2",
     "@nx/vite": "19.1.0",
     "@nx/workspace": "19.1.0",
     "@schematics/angular": "18.0.1",
