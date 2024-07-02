@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "CreatePodcast",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Provide the podcast name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What is the name of podcast?"
+    },
+    "url": {
+      "type": "string",
+      "description": "Provide the site url",
+      "x-prompt": "Provide the preferred podcast platform link:"
+    },
+    "logo": {
+      "type": "string",
+      "description": "Provide the brand logo",
+      "x-prompt": "Provide the brand logo url:"
+    },
+    "language": {
+      "type": "string",
+      "description": "Provide the language",
+      "x-prompt": "Provide the language (ex: English):"
+    }
+  },
+  "required": ["name", "url", "logo", "language"]
+}
