@@ -37,6 +37,10 @@ It excludes the `angular-hub/src/content` folder, which includes trademarks and 
 
 ### Communities
 
+> The goal of this feature is to help people be part of communities.
+> For this reason, only active communities are accepted.
+> Removal of communities might be considered if not active for the last 2 years.
+
 To add a new community, update the `angular-hub/src/public/assets/data/community.json` by adding a new item to the array.  
 The item should match this format:
 
