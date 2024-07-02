@@ -36,6 +36,13 @@ paths:
                       type: string
                     url:
                       type: string
+                    mediaChannel:
+                      type: object
+                      properties:
+                        url:
+                          type: string
+                        language:
+                          type: string
                     logo:
                       type: string
                     twitter:
