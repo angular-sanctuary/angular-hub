@@ -70,6 +70,7 @@ It excludes the `src/content` folder, which includes trademarks and logos from t
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/danilolmc"><img src="https://avatars.githubusercontent.com/u/31545128?v=4?s=100" width="100px;" alt="Danilo Lima"/><br /><sub><b>Danilo Lima</b></sub></a><br /><a href="#code-danilolmc" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jdegand"><img src="https://avatars.githubusercontent.com/u/70610011?v=4?s=100" width="100px;" alt="J. Degand"/><br /><sub><b>J. Degand</b></sub></a><br /><a href="#code-jdegand" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/davide-passafaro/"><img src="https://avatars.githubusercontent.com/u/29404081?v=4?s=100" width="100px;" alt="Davide Passafaro"/><br /><sub><b>Davide Passafaro</b></sub></a><br /><a href="#code-DavidePassafaro" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://ver1000000.com/"><img src="https://avatars.githubusercontent.com/u/6778957?v=4?s=100" width="100px;" alt="Shota Sasaki -- AKAI"/><br /><sub><b>Shota Sasaki -- AKAI</b></sub></a><br /><a href="#code-ver-1000000" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
