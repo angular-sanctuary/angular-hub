@@ -1,4 +1,4 @@
 export interface MediaChannel {
   url: string;
-  language: string;
+  platform: string;
 }
