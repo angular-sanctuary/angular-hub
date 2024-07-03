@@ -6,17 +6,20 @@ export const CommunitySchema = object({
   type: picklist(['workshop', 'conference', 'meetup', 'other']),
   location: nullable(string()),
   url: nullable(string()),
-  mediaChannel: nullable(
-    object({
-      url: string(),
-      language: string(),
-    }),
-  ),
   logo: nullable(string()),
   twitter: nullable(string()),
   linkedin: nullable(string()),
   callForPapers: nullable(string()),
   events: array(EventSchema),
+  language: string(),
+  mediaChannels: nullable(
+    array(
+      object({
+        platform: string(),
+        url: string(),
+      }),
+    ),
+  ),
 });
 
 export const CommunityListSchema = array(CommunitySchema);

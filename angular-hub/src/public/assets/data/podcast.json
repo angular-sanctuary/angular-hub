@@ -1,74 +1,101 @@
 [
   {
     "name": "Adventures in Angular",
-    "url": "https://topenddevs.com/podcasts/adventures-in-angular",
     "logo": "assets/logos/adventures-in-angular.webp",
-    "language": "English"
+    "language": "English",
+    "mediaChannels": [
+      {
+        "platform": "Spotify",
+        "url": "https://open.spotify.com/show/6ghYCZ2j6Wqz7O0QBRFqZd"
+      }
+    ]
   },
   {
     "name": "Angular Air",
-    "url": "https://www.youtube.com/@AngularAirPodcast",
     "logo": "assets/logos/angular-air.webp",
-    "language": "English"
+    "language": "English",
+    "mediaChannels": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/@AngularAirPodcast"
+      }
+    ]
   },
   {
     "name": "Angular Master Podcast",
-    "url": "https://www.youtube.com/playlist?list=PLYJFRoKhU5SNcu5GBjIn4X3oVpy4fP1wV",
     "logo": "assets/logos/angular-master-podcast.webp",
-    "language": "English"
+    "language": "English",
+    "mediaChannels": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLYJFRoKhU5SNcu5GBjIn4X3oVpy4fP1wV"
+      }
+    ]
   },
   {
     "name": "The Angular Plus Show",
-    "url": "https://open.spotify.com/show/1PrLErQHBqBhZsRV1KHhGM",
     "logo": "assets/logos/angular-plus-show.webp",
-    "language": "English"
-  },
-  {
-    "name": "Angular Space",
-    "url": "https://twitter.com/i/communities/1726237719762714636",
-    "logo": "assets/logos/angular-space.webp",
-    "language": "English"
+    "language": "English",
+    "mediaChannels": [
+      {
+        "platform": "Spotify",
+        "url": "https://open.spotify.com/show/1PrLErQHBqBhZsRV1KHhGM"
+      }
+    ]
   },
   {
     "name": "Angularidades",
-    "url": "https://www.youtube.com/@angularidades",
     "logo": "assets/logos/angularidades.webp",
-    "language": "Spanish"
+    "language": "Spanish",
+    "mediaChannels": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/@angularidades"
+      }
+    ]
   },
   {
     "name": "Ng-News",
-    "url": "https://www.youtube.com/@ng-news",
     "logo": "assets/logos/ng-news.webp",
-    "language": "English"
+    "language": "English",
+    "mediaChannels": [
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/@ng-news"
+      }
+    ]
   },
   {
     "name": "Angular Rocks",
-    "url": "https://angularrocks.com/",
     "logo": "assets/logos/angular-rocks.webp",
-    "language": "English"
+    "language": "English",
+    "mediaChannels": [
+      {
+        "platform": "Spotify",
+        "url": "https://open.spotify.com/show/1jVoAClYEkQHacZW9cdRbk"
+      }
+    ]
   },
   {
     "name": "Angular Experts",
-    "url": "https://angularexperts.io/podcasts",
     "logo": "assets/logos/angular-experts.webp",
-    "language": "English"
+    "language": "English",
+    "mediaChannels": [
+      {
+        "platform": "Spotify",
+        "url": "https://open.spotify.com/show/0J7i4MTnCymx7bTdEDVyCg"
+      }
+    ]
   },
   {
     "name": "Angular Catch-Up",
-    "url": "https://angular-catch-up.podbean.com/",
     "logo": "assets/logos/angular-catch-up.jpg",
-    "language": "English"
-  },
-  {
-    "name": "Angular Japan User Group | Angular 日本ユーザー会",
-    "url": "https://www.youtube.com/@ng_japan",
-    "logo": "assets/logos/ng-jp.svg",
-    "language": "Japanese"
-  },
-  {
-    "name": "Startup Angular",
-    "url": "https://www.youtube.com/@StartupAngular",
-    "logo": "assets/logos/startup-angular.png",
-    "language": "Japanese"
+    "language": "English",
+    "mediaChannels": [
+      {
+        "platform": "PodBean",
+        "url": "https://angular-catch-up.podbean.com/"
+      }
+    ]
   }
 ]

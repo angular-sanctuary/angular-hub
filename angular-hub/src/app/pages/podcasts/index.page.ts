@@ -57,7 +57,7 @@ export default class PodcastsComponent {
           '@type': 'AudioObject',
           name: podcast.name,
           description: podcast.name,
-          url: podcast.url,
+          url: podcast.mediaChannels[0].url,
         },
       })),
     };

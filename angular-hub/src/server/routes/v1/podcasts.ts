@@ -12,12 +12,12 @@ export default defineEventHandler((evt) => {
     parse(CommunityListSchema, communities);
 
     const communitiesMedia = communities
-      .filter((community) => community.mediaChannel)
+      .filter((community) => community.mediaChannels)
       .map((community) => ({
         name: community.name,
-        url: community.mediaChannel.url,
         logo: community.logo,
-        language: community.mediaChannel.language,
+        mediaChannels: community.mediaChannels,
+        language: community.language,
       }));
 
     return [...podcasts, ...communitiesMedia].sort((a, b) =>
