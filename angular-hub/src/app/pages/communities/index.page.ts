@@ -48,14 +48,6 @@ export const routeMeta: RouteMeta = {
         <li>
           <app-community-card [community]="community"></app-community-card>
         </li>
-      } @empty {
-        <p class="col-span-full">
-          No event matching the filter:
-
-          @if (selectedCountry()) {
-            <span>{{ selectedCountry() }}</span>
-          }
-        </p>
       }
     </ul>
   `,
