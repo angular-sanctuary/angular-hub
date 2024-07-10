@@ -707,6 +707,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/hamburg-angularjs-meetup/events/299480791/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Hamburg, Germany",
+        "date": "2024-07-18",
+        "language": "German",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/fr-FR/hamburg-angularjs-meetup/events/302041863/"
       }
     ]
   },
