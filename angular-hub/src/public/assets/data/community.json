@@ -381,6 +381,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/fr-FR/angularcommunity/events/300737514/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2024-07-24",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/300737514/"
       }
     ]
   },
@@ -488,21 +501,7 @@
     "twitter": "https://twitter.com/angular_kenya",
     "linkedin": null,
     "callForPapers": null,
-    "events": [
-      {
-        "name": "NG Kenya 2024",
-        "type": "conference",
-        "location": "Nairobi, Kenya",
-        "date": "2024-07-06",
-        "language": "English",
-        "isFree": false,
-        "isRemote": false,
-        "isOnsite": true,
-        "callForPapers": null,
-        "callForPapersDueDate": null,
-        "url": "https://ng-festival.com/"
-      }
-    ]
+    "events": []
   },
   {
     "name": "Angular Leipzig",
@@ -566,7 +565,21 @@
     "twitter": null,
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "London, United Kingdom",
+        "date": "2024-07-18",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-london/events/301995271/"
+      }
+    ]
   },
   {
     "name": "Angular Macedonia",
@@ -709,7 +722,7 @@
         "url": "https://www.meetup.com/hamburg-angularjs-meetup/events/299480791/"
       },
       {
-        "name": null,
+        "name": "Angular 18 im Focus",
         "type": "meetup",
         "location": "Hamburg, Germany",
         "date": "2024-07-18",
@@ -901,6 +914,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-vienna/events/298861231/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Vienna, Austria",
+        "date": "2024-08-07",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/fr-FR/angular-vienna/events/302173485/"
       }
     ]
   },
@@ -1457,7 +1483,21 @@
     "twitter": "https://twitter.com/ng_gunma",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Gunma, Japon",
+        "date": "2024-08-03",
+        "language": "Japanese",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://ng-gunma.connpass.com/event/324606/"
+      }
+    ]
   },
   {
     "name": "StartupAngular",
