@@ -149,6 +149,7 @@ export const routeMeta: RouteMeta = {
         (ngModelChange)="date.set($event)"
         [inline]="true"
         [showWeek]="true"
+        [selectOtherMonths]="true"
       >
         <ng-template pTemplate="date" let-date>
           <span [class.activeDate]="hasActiveEvent(date)">
