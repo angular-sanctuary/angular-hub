@@ -1510,5 +1510,31 @@
     "linkedin": null,
     "callForPapers": null,
     "events": []
+  },
+  {
+    "name": "GDG Warszawa",
+    "type": "other",
+    "location": "Warsaw, Poland",
+    "url": "https://www.linkedin.com/company/gdg-warszawa/",
+    "mediaChannel": null,
+    "logo": "assets/logos/official-logo.webp",
+    "twitter": null,
+    "linkedin": null,
+    "callForPapers": null,
+    "events": [
+      {
+        "name": "Angular Warsaw Jam #1",
+        "type": "conference",
+        "location": "Warsaw, Poland",
+        "date": "2024-09-06",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeGYwxyEmE2j82ntJXkPQpUBHWOu3Lf_vndLilP6Y0ofxNwUA/viewform",
+        "callForPapersDueDate": "2024-08-20",
+        "url": "https://www.linkedin.com/company/gdg-warszawa/"
+      }
+    ]
   }
 ]
