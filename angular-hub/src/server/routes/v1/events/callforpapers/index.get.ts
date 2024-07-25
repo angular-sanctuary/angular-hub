@@ -1,4 +1,4 @@
-import { defineEventHandler, getQuery } from 'h3';
+import { defineEventHandler } from 'h3';
 import communities from '../../../../../public/assets/data/community.json';
 import { Community } from '../../../../../models/community.model';
 import { CommunityListSchema } from '../../../../schemas/community.schema';
