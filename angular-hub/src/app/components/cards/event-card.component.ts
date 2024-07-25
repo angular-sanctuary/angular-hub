@@ -72,6 +72,6 @@ export class EventCardComponent {
   });
 
   isRemoteFriendly = computed(() => {
-    return this.event().isRemote && this.event().isRemote;
+    return this.event().isRemote;
   });
 }
