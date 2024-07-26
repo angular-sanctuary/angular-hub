@@ -50,11 +50,12 @@ export interface Community {
   type: 'workshop' | 'conference' | 'meetup' | 'other';
   location: string | null;
   url: string | null;
+  mediaChannel: MediaChannel | null;
   logo: string | null;
   twitter: string | null;
   linkedin: string | null;
   callForPapers: string | null;
-  events: Event[]; // default to []
+  events: Event[];
 }
 ```
 
@@ -67,17 +68,17 @@ The item should match this format:
 
 ```typescript
 export interface Event {
-  name: string | null;
+  name?: string;
   type: 'workshop' | 'conference' | 'meetup' | 'other';
-  location: string | null;
-  url: string | null;
+  location?: string | null;
   date: string;
   language: string;
   isFree: boolean;
   isRemote: boolean;
   isOnsite: boolean;
-  callForPapers: string | null;
-  callForPapersDueDate: string | null;
+  callForPapers?: string | null;
+  callForPapersDueDate?: string | null;
+  url?: string;
 }
 ```
 
