@@ -63,7 +63,7 @@
     "@nx/eslint-plugin": "19.3.2",
     "@nx/jest": "19.3.2",
     "@nx/js": "19.3.2",
-    "@nx/vite": "19.3.2",
+    "@nx/vite": "19.5.5",
     "@nx/workspace": "19.3.2",
     "@schematics/angular": "18.0.1",
     "@swc-node/register": "~1.9.1",
