@@ -68,6 +68,10 @@ body {
   box-shadow: 0 0 5px 5px #00b8e6;
 }
 
+.p-datepicker-other-month {
+  color: grey;
+}
+
 @media (prefers-reduced-motion) {
   ::view-transition-group(*),
   ::view-transition-old(*),
