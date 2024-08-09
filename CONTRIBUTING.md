@@ -6,15 +6,15 @@
 
 ### Setup
 
-Run `npm ci` to install the application dependencies.
+Run `yarn install --frozen-lockfile` to install the application dependencies.
 
 ### Development
 
-Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The application automatically reloads if you change any of the source files.
+Run `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The application automatically reloads if you change any of the source files.
 
 ### Build
 
-Run `npm run build` to build the client project. The client build artifacts are located in the `dist/angular-hub/analog/public` directory.
+Run `yarn build` to build the client project. The client build artifacts are located in the `dist/angular-hub/analog/public` directory.
 
 ---
 
