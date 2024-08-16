@@ -315,7 +315,7 @@
         "isOnsite": false,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/298421675/"
+        "url": "https://www.meetup.com/angularcommunity/events/298421675/"
       },
       {
         "name": null,
@@ -328,7 +328,7 @@
         "isOnsite": false,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/300766126/"
+        "url": "https://www.meetup.com/angularcommunity/events/300766126/"
       },
       {
         "name": "Mission: Quality - Testing",
@@ -341,7 +341,7 @@
         "isOnsite": false,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/300736764/"
+        "url": "https://www.meetup.com/angularcommunity/events/300736764/"
       },
       {
         "name": "Mission: Quality - Code Craftsmanship",
@@ -354,7 +354,7 @@
         "isOnsite": false,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/300737178/"
+        "url": "https://www.meetup.com/angularcommunity/events/300737178/"
       },
       {
         "name": "Mission: Quality - Pragmatic Practices",
@@ -367,7 +367,7 @@
         "isOnsite": false,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/300737354/"
+        "url": "https://www.meetup.com/angularcommunity/events/300737354/"
       },
       {
         "name": "Mission: Quality - Testing 2.0",
@@ -380,7 +380,7 @@
         "isOnsite": false,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/300737514/"
+        "url": "https://www.meetup.com/angularcommunity/events/300737514/"
       },
       {
         "name": null,
@@ -393,7 +393,7 @@
         "isOnsite": false,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angularcommunity/events/300737514/"
+        "url": "https://www.meetup.com/angularcommunity/events/300737514/"
       }
     ]
   },
@@ -501,7 +501,21 @@
     "twitter": "https://twitter.com/angular_kenya",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": "NG Kenya",
+        "type": "conference",
+        "location": null,
+        "date": "2024-09-07",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://ng-kenya.com/home"
+      }
+    ]
   },
   {
     "name": "Angular Leipzig",
@@ -577,7 +591,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-london/events/301995271/"
+        "url": "https://www.meetup.com/angular-london/events/301995271/"
       }
     ]
   },
@@ -732,7 +746,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/hamburg-angularjs-meetup/events/302041863/"
+        "url": "https://www.meetup.com/hamburg-angularjs-meetup/events/302041863/"
       }
     ]
   },
@@ -926,7 +940,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-vienna/events/302173485/"
+        "url": "https://www.meetup.com/angular-vienna/events/302173485/"
       }
     ]
   },
@@ -965,7 +979,20 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-warsaw/events/301012827/"
+        "url": "https://www.meetup.com/angular-warsaw/events/301012827/"
+      },
+      {
+        "name": "Angular Warsaw #44",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2024-08-21",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-warsaw/events/302647291"
       }
     ]
   },
@@ -1196,7 +1223,7 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/ng-lodz/events/301271851/"
+        "url": "https://www.meetup.com/ng-lodz/events/301271851/"
       }
     ]
   },
@@ -1346,7 +1373,7 @@
     "name": "Angular TLV",
     "type": "meetup",
     "location": "Tel Aviv, Israel",
-    "url": "https://www.meetup.com/fr-FR/angular-tlv/",
+    "url": "https://www.meetup.com/angular-tlv/",
     "mediaChannel": null,
     "logo": "https://angular-tlv.com/assets/tlv-header-logo.png",
     "twitter": null,
@@ -1364,13 +1391,13 @@
         "isOnsite": true,
         "callForPapers": null,
         "callForPapersDueDate": null,
-        "url": "https://www.meetup.com/fr-FR/angular-tlv/events/301175952/"
+        "url": "https://www.meetup.com/angular-tlv/events/301175952/"
       },
       {
         "name": "Angular TLV Conference",
         "type": "conference",
         "location": "Tel Aviv, Israel",
-        "date": "2024-08-27",
+        "date": "2024-11-27",
         "language": "English",
         "isFree": false,
         "isRemote": false,
