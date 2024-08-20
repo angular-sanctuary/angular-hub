@@ -236,7 +236,12 @@ export default class EventsComponent {
     return this.events().filter((event) => {
       return (
         (this.date()
-          ? isSameDay(new Date(event.date), new Date(this.date()!))
+          ? event.endDate
+            ? isWithinInterval(new Date(this.date()!), {
+                start: new Date(event.date),
+                end: new Date(event.endDate),
+              })
+            : isSameDay(new Date(event.date), new Date(this.date()!))
           : true) &&
         (this.selectedLanguage()
           ? event.language === this.selectedLanguage()
@@ -282,6 +287,8 @@ export default class EventsComponent {
     month: number;
     day: number;
   }): boolean {
+    console.log(date);
+    console.log(this.events());
     return this.events().some((event) => {
       if (!event.endDate) {
         return isSameDay(
