@@ -287,8 +287,6 @@ export default class EventsComponent {
     month: number;
     day: number;
   }): boolean {
-    console.log(date);
-    console.log(this.events());
     return this.events().some((event) => {
       if (!event.endDate) {
         return isSameDay(
