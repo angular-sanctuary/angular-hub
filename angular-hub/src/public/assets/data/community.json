@@ -1422,7 +1422,7 @@
       {
         "name": "NG-DE Conference",
         "type": "conference",
-        "date": "2024-10-09",
+        "date": "2024-10-9",
         "endDate": "2024-10-11",
         "url": "https://ng-de.org/",
         "callForPapers": "null",
@@ -1449,8 +1449,8 @@
       {
         "name": "NG-BE 2024",
         "type": "conference",
-        "date": "2024-12-05",
-        "endDate": "2024-12-06",
+        "date": "2024-12-5",
+        "endDate": "2024-12-6",
         "url": "https://ng-be.org/",
         "callForPapers": "null",
         "callForPapersDueDate": "null",
