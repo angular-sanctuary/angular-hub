@@ -46,7 +46,7 @@ export default defineConfig(({ mode }) => {
       analog({
         prerender: {
           sitemap: {
-            host: 'https://analogjs.org/',
+            host: 'https://angular-hub.com/',
           },
         },
         nitro: {
