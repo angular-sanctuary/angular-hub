@@ -488,6 +488,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://youtube.com/live/5tEClsjSEGo?feature=share"
+      },
+      {
+        "name": "Maintenir un design system avec Storybook et Angular",
+        "type": "meetup",
+        "location": null,
+        "date": "2024-09-3",
+        "language": "French",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.youtube.com/live/QSs9D0bTRVA"
       }
     ]
   },
