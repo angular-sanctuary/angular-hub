@@ -1576,5 +1576,31 @@
         "url": "https://www.linkedin.com/company/gdg-warszawa/"
       }
     ]
+  },
+  {
+    "name": "NG Kato",
+    "type": "meetup",
+    "location": "Katowice, Poland",
+    "url": "https://www.meetup.com/ngkato/?eventOrigin=event_home_page",
+    "mediaChannel": null,
+    "logo": "assets/logos/ng-kato.svg",
+    "twitter": null,
+    "linkedin": null,
+    "callForPapers": null,
+    "events": [
+      {
+        "name": "NG KATO #1",
+        "type": "meetup",
+        "location": "Katowice, Poland",
+        "date": "2024-09-19",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/ngkato/events/302935523/?eventOrigin=group_upcoming_events"
+      }
+    ]
   }
 ]
