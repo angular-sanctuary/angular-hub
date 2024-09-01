@@ -27,7 +27,7 @@
     "@angular/pwa": "18.2.0",
     "@angular/router": "18.2.0",
     "@angular/service-worker": "18.2.0",
-    "@nx/plugin": "19.6.1",
+    "@nx/plugin": "19.6.4",
     "@supabase/ssr": "^0.4.0",
     "@supabase/supabase-js": "^2.44.2",
     "date-fns": "^2.30.0",
