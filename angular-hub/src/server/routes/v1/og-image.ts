@@ -2,7 +2,7 @@ import { ImageResponse } from '@analogjs/content/og';
 import { Event } from '../../../models/event.model';
 
 export default defineEventHandler(async (event) => {
-  const data = await fetch('http://localhost:4200/api/v1/events/upcoming');
+  const data = await fetch('https://angular-hub.com/api/v1/events/upcoming');
   const events: Event[] = await data.json();
   const eventLength = events.length;
   const topEvents = events.slice(0, 3);
