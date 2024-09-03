@@ -29,6 +29,7 @@ import { TagComponent } from '../tag.component';
       </div>
       <div class="flex-1">
         <span class="font-bold text-primary" itemprop="date">
+          <!-- todo add date pipe to avoid 2024-09-3 -->
           {{ event().date }}
           {{ event().endDate ? '- ' + event().endDate : '' }}
         </span>
