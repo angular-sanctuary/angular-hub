@@ -14,9 +14,12 @@ export default defineEventHandler(async (event) => {
   const query = getQuery(event); // query params
 
   const template = `
-    <div tw="bg-gray-50 flex flex-col w-full h-full items-center justify-center">
-        <h2 class="text-5xl">${eventLength} upcoming events</h2>
-     ${topEvents.map((event) => `${event.name}`)}
+    <div tw="bg-[#303030] text-slate-200 flex flex-col w-full h-full items-center justify-center">
+        <div class="flex justify-center items-center gap-4">
+            <img src="https://angular-hub.com/assets/images/logo.png" width="200" height="200" alt="OG Playground" />
+            <h1 class="text-8xl text-[#00B8E6]">ANGULAR HUB</h1>
+        </div>
+        <h2 class="text-6xl text-center">Discover ${eventLength} upcoming community events</h2>
       </div>
   `;
 

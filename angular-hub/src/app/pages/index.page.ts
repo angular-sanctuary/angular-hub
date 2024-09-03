@@ -31,7 +31,11 @@ export const routeMeta: RouteMeta = {
     },
     {
       property: 'og:image',
-      content: '/api/v1/og-image?title=Developer',
+      content: '/api/v1/og-image',
+    },
+    {
+      name: 'twitter:image',
+      content: '/api/v1/og-image',
     },
   ],
 };
