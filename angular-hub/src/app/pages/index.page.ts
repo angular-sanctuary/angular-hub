@@ -27,7 +27,7 @@ export const routeMeta: RouteMeta = {
     },
     {
       property: 'og:title',
-      content: 'Title of the page',
+      content: 'Curated list of Angular Events',
     },
     {
       property: 'og:image',
