@@ -45,7 +45,7 @@
     "satori-html": "^0.3.2",
     "sharp": "^0.33.5",
     "tslib": "^2.6.3",
-    "valibot": "^0.35.0",
+    "valibot": "^0.42.1",
     "zone.js": "0.14.7"
   },
   "devDependencies": {
