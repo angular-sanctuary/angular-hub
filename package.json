@@ -30,7 +30,7 @@
     "@nx/plugin": "19.6.4",
     "@supabase/ssr": "^0.4.0",
     "@supabase/supabase-js": "^2.44.2",
-    "date-fns": "^2.30.0",
+    "date-fns": "^4.1.0",
     "front-matter": "^4.0.2",
     "marked": "^5.0.2",
     "marked-gfm-heading-id": "^3.1.0",
