@@ -57,7 +57,7 @@
     "@angular/cli": "~18.2.0",
     "@angular/compiler-cli": "18.2.0",
     "@angular/language-service": "18.2.0",
-    "@commitlint/cli": "^19.3.0",
+    "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@nx/angular": "19.6.4",
     "@nx/cypress": "19.6.4",
