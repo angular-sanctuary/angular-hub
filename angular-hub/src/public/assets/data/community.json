@@ -210,6 +210,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-belgium/events/303041957"
+      },
+      {
+        "name": "Angular Meetup @ PeopleWare",
+        "type": "meetup",
+        "location": "Lierre, Belgium",
+        "date": "2024-10-24",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-belgium/events/303551195"
       }
     ]
   },
@@ -682,6 +695,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/de-DE/angular-meetup-berlin/events/300939373/?isFirstPublish=true"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Berlin, Germany",
+        "date": "2024-11-28",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-meetup-berlin/events/303480735"
       }
     ]
   },
@@ -1019,6 +1045,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-warsaw/events/302647291"
+      },
+      {
+        "name": "Angular Warsaw #45",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2024-10-10",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-warsaw/events/303487465"
       }
     ]
   },
@@ -1250,6 +1289,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/301271851/"
+      },
+      {
+        "name": "ngLodz #13",
+        "type": "meetup",
+        "location": "Łódź, Poland",
+        "date": "2024-10-15",
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/ng-lodz/events/303802413"
       }
     ]
   },
@@ -1613,6 +1665,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ngkato/events/302935523/?eventOrigin=group_upcoming_events"
+      },
+      {
+        "name": "NG KATO #2",
+        "type": "meetup",
+        "location": "Katowice, Poland",
+        "date": "2024-10-23",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/ngkato/events/303788459"
       }
     ]
   }
