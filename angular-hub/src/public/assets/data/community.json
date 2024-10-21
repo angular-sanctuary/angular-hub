@@ -700,7 +700,7 @@
       {
         "name": null,
         "type": "meetup",
-        "location": "Online",
+        "location": null,
         "date": "2024-10-30",
         "language": "English",
         "isFree": true,
