@@ -90,6 +90,32 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://meetup.angular.love/spring-camp/?utm_source=angularhub&utm_medium=event&utm_campaign=angularspringcamp"
+      },
+      {
+        "name": "Angular Love Autumn Camp",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2024-11-14",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://meetup.angular.love/autumn-camp/"
+      },
+      {
+        "name": "Angular Love Autumn Camp",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2024-12-03",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://meetup.angular.love/autumn-camp/"
       }
     ]
   },
@@ -163,7 +189,7 @@
         "name": "Angular Athens 24th Meetup",
         "type": "meetup",
         "location": "Athens, Greece",
-        "date": "2024-11-12",
+        "date": "2024-11-20",
         "language": "English",
         "isFree": true,
         "isRemote": false,
@@ -420,6 +446,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/300737514/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2024-11-13",
+        "language": "Spanish",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularcommunity/events/303963877/"
       }
     ]
   },
@@ -605,6 +644,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-leipzig/events/300612475/"
+      },
+      {
+        "name": "ngLeipzig #46",
+        "type": "meetup",
+        "location": "Leipzig, Germany",
+        "date": "2024-11-12",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-meetup-leipzig/events/304010655"
       }
     ]
   },
@@ -644,7 +696,21 @@
     "twitter": "https://www.linkedin.com/company/angular-macedonia/",
     "linkedin": null,
     "callForPapers": null,
-    "events": []
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Online",
+        "date": "2024-10-30",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-macedonia/events/304020930"
+      }
+    ]
   },
   {
     "name": "Angular Meetup Berlin",
@@ -993,6 +1059,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-vienna/events/302173485/"
+      },
+      {
+        "name": "NgGlühwein 2024",
+        "type": "meetup",
+        "location": "Vienna, Austria",
+        "date": "2024-08-07",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": "http://bit.ly/angular-vienna-cfp",
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-vienna/events/304004182/"
       }
     ]
   },
@@ -1470,6 +1549,19 @@
         "callForPapers": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-tlv/events/301175952/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Tel Aviv, Israel",
+        "date": "2024-11-29",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-tlv/events/304007311/"
       },
       {
         "name": "Angular TLV Conference",
