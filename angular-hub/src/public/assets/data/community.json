@@ -1731,6 +1731,19 @@
         "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeGYwxyEmE2j82ntJXkPQpUBHWOu3Lf_vndLilP6Y0ofxNwUA/viewform",
         "callForPapersDueDate": "2024-08-20",
         "url": "https://www.linkedin.com/company/gdg-warszawa/"
+      },
+      {
+        "name": "Angular Warsaw Jam #1",
+        "type": "conference",
+        "location": "Warsaw, Poland",
+        "date": "2024-11-15",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeCouhgeuBsYAwBQpIQfRCrDY5M_W2OpTYMnV413knaFiju7A/viewform",
+        "callForPapersDueDate": "2024-08-20",
+        "url": "https://gdg.community.dev/events/details/google-gdg-warszawa-presents-angular-jam-2/"
       }
     ]
   },
