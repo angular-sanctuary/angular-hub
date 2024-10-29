@@ -11,7 +11,7 @@ export default defineEventHandler((event) => {
     parse(CommunityListSchema, communities);
 
     return communities
-      .reduce((acc: any[], community: Community) => {
+      .reduce((acc: unknown[], community: Community) => {
         const events = community.events.reduce(
           (acc: EventCallForPapers[], event: Event) => {
             if (

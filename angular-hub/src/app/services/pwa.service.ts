@@ -4,7 +4,7 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root',
 })
 export class PwaService {
-  private promptEvent: any;
+  private promptEvent: unknown;
   isInstallButtonVisible = signal(false);
 
   constructor() {}
