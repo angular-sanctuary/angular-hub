@@ -5,8 +5,22 @@
     <img class="h-12" src="/assets/images/logo.webp" alt="" />
     <span class="title text-3xl">HUB</span>
   </a>
+
   <ul class="flex flex-col gap-2 mt-12">
     <!-- Navbar menu content here -->
+    <!-- TODO test
+    <li>
+      <a
+        class="flex gap-4 items-center px-4 py-3 rounded-xl font-bold"
+        routerLinkActive="sidebarActive"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/watch-party"
+        (click)="sidebarVisible = false"
+      >
+        11111101000 1011 10011
+      </a>
+    </li>
+    -->
     <li>
       <a
         class="flex gap-4 items-center px-4 py-3 rounded-xl font-bold"
@@ -86,6 +100,7 @@
         Contribute
       </a>
     </li>
+    <!--
     @if (isInstallButtonVisible()) {
       <li>
         <button
@@ -101,6 +116,7 @@
         </button>
       </li>
     }
+    -->
   </ul>
 </nav>
 <div class="flex-1">
