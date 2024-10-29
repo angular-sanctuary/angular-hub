@@ -11,7 +11,8 @@ export default defineEventHandler((event) => {
     parse(CommunityListSchema, communities);
 
     return communities
-      .reduce((acc: unknown[], community: Community) => {
+      .reduce((acc: any[], community: Community) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const events = community.events.reduce(
           (acc: EventCallForPapers[], event: Event) => {
             if (

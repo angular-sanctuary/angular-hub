@@ -4,7 +4,8 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root',
 })
 export class PwaService {
-  private promptEvent: unknown;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  private promptEvent: any;
   isInstallButtonVisible = signal(false);
 
   constructor() {}
