@@ -63,9 +63,9 @@ export const routeMeta: RouteMeta = {
           </ng-template>
           <ng-template pTemplate="body" let-product>
             <tr>
-              <td>{{ product.code }}</td>
-              <td>{{ product.name }}</td>
-              <td>{{ product.category }}</td>
+              <td>Warsaw, Poland</td>
+              <td>House of Angular</td>
+              <td>angular.love</td>
               <td>
                 <button
                   type="button"
