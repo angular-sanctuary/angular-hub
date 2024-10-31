@@ -39,8 +39,7 @@ export const routeMeta: RouteMeta = {
         [style]="{ width: '230px' }"
         [showClear]="true"
         placeholder="Select a country"
-        [ngModel]="selectedCountry()"
-        (ngModelChange)="selectedCountry.set($event)"
+        [(ngModel)]="selectedCountry"
       />
     </form>
 
