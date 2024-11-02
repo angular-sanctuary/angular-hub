@@ -10,6 +10,6 @@ export const EventSchema = object({
   isFree: boolean(),
   isRemote: boolean(),
   isOnsite: boolean(),
-  callForPapers: nullable(string()),
+  callForPapersUrl: nullable(string()),
   callForPapersDueDate: nullable(string()),
 });

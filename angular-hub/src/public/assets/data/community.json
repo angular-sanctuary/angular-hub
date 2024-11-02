@@ -3,12 +3,15 @@
     "name": "Angular Training",
     "type": "workshop",
     "location": "Sacramento, California (online)",
-    "url": "https://courses.angulartraining.com/course/monthly-online-workshops",
-    "mediaChannel": null,
     "logo": "https://interstate21.com/images/monthly-workshops.png",
-    "twitter": "https://twitter.com/AngularTraining",
-    "linkedin": "https://www.linkedin.com/company/angular-training-i21",
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": null,
+    "organizersUrl": null,
+    "twitterUrl": "https://twitter.com/AngularTraining",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-training-i21",
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "What's new in Angular 18? - May 2024",
@@ -19,7 +22,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://courses.angulartraining.com/course/monthly-online-workshops"
       }
@@ -29,15 +32,15 @@
     "name": "Angular.love",
     "type": "meetup",
     "location": "Warsaw, Poland",
-    "url": "https://meetup.angular.love/",
-    "mediaChannel": {
-      "url": "https://www.youtube.com/@angularlove",
-      "language": "English"
-    },
     "logo": "/assets/logos/angular-love.png",
-    "twitter": "https://twitter.com/AngularLovePL",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://meetup.angular.love/",
+    "websiteUrl": "https://angular.love/",
+    "organizersUrl": "https://angular.love/about-us",
+    "twitterUrl": "https://twitter.com/AngularLovePL",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-love/",
+    "youtubeUrl": "https://www.youtube.com/@angularlove",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "Angular Meetup #12",
@@ -48,7 +51,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-love-meetup/events/297374077/"
       },
@@ -61,7 +64,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://meetup.angular.love/spring-camp/?utm_source=angularhub&utm_medium=event&utm_campaign=angularspringcamp"
       },
@@ -74,7 +77,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://meetup.angular.love/spring-camp/?utm_source=angularhub&utm_medium=event&utm_campaign=angularspringcamp"
       },
@@ -87,7 +90,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://meetup.angular.love/spring-camp/?utm_source=angularhub&utm_medium=event&utm_campaign=angularspringcamp"
       },
@@ -100,7 +103,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://meetup.angular.love/autumn-camp/"
       },
@@ -113,7 +116,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://meetup.angular.love/autumn-camp/"
       }
@@ -123,15 +126,15 @@
     "name": "Angular Athens",
     "type": "meetup",
     "location": "Athens, Greece",
-    "url": "https://www.meetup.com/angular-athens/",
-    "mediaChannel": {
-      "url": "https://www.youtube.com/@angularathens4076",
-      "language": "English"
-    },
     "logo": "https://pbs.twimg.com/profile_images/1755173401780486144/f1qf_cxl_400x400.jpg",
-    "twitter": "https://twitter.com/athensangular",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/angular-athens/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-athens/members/?op=leaders",
+    "twitterUrl": "https://x.com/AthensAngular",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-athens",
+    "youtubeUrl": "https://www.youtube.com/@angularathens4076",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "Angular Athens 20th Meetup",
@@ -142,7 +145,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/297342102/"
       },
@@ -155,7 +158,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/298801875/"
       },
@@ -168,7 +171,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/298801911/"
       },
@@ -181,7 +184,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/298801935/"
       },
@@ -194,7 +197,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/298801969/"
       }
@@ -204,12 +207,15 @@
     "name": "Angular Belgium",
     "type": "meetup",
     "location": "Brussels, Belgium",
-    "url": "https://www.meetup.com/angular-belgium/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1751914584305205248/iqTMArsp_400x400.jpg",
-    "twitter": null,
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/angular-belgium/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-belgium/members/?op=leaders",
+    "twitterUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "End of year meetup @ Showpad",
@@ -220,7 +226,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-belgium/events/297098829/"
       },
@@ -233,7 +239,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-belgium/events/303041957"
       },
@@ -246,7 +252,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-belgium/events/303551195"
       }
@@ -256,22 +262,22 @@
     "name": "NG Belgrade",
     "type": "conference",
     "location": "Belgrade, Serbia",
-    "url": "https://angularbelgrade.org/",
-    "mediaChannel": {
-      "url": "https://www.youtube.com/@AngularBelgrade",
-      "language": "English"
-    },
     "logo": "assets/logos/angular-belgrade.webp",
-    "twitter": "https://twitter.com/angularbelgrade",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": "https://angularbelgrade.org/",
+    "organizersUrl": "https://angularbelgrade.org/team",
+    "twitterUrl": "https://x.com/angularbelgrade/",
+    "linkedinUrl": "https://www.linkedin.com/company/angularbelgrade",
+    "youtubeUrl": "https://www.youtube.com/angularbelgrade",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "NG Belgrade Conf 2024",
         "type": "conference",
         "date": "2024-05-24",
         "url": "https://angularbelgrade.org/",
-        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSfhmPXzmXCsPvy-j9gN6m1fd3mJglOWfS63LYJA8a7I8WkaYQ/viewform",
+        "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfhmPXzmXCsPvy-j9gN6m1fd3mJglOWfS63LYJA8a7I8WkaYQ/viewform",
         "callForPapersDueDate": "2024-02-01",
         "language": "English",
         "isFree": false,
@@ -285,12 +291,15 @@
     "name": "Angular Birmingham",
     "type": "meetup",
     "location": "Birmingham, United Kingdom",
-    "url": "https://www.meetup.com/angular-birmingham/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/989263965426470914/NvCmzUH-_400x400.jpg",
-    "twitter": "https://twitter.com/ngbrum",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/angular-birmingham/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-birmingham/members/?op=leaders",
+    "twitterUrl": "https://x.com/ngbrum",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@angularbirmingham389",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -301,7 +310,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-birmingham/events/297538112/"
       }
@@ -311,24 +320,44 @@
     "name": "Angular Boston",
     "type": "meetup",
     "location": "Boston, USA",
-    "url": "https://www.meetup.com/Angular-Boston/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/901109285660368897/o3SysHna_400x400.jpg",
-    "twitter": "https://twitter.com/NgBoston",
-    "linkedin": null,
-    "callForPapers": null,
-    "events": []
+    "eventsUrl": "https://www.meetup.com/angular-boston/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-boston/members/?op=leaders",
+    "twitterUrl": "https://x.com/ngboston",
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Boston, USA",
+        "date": "2024-01-25",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-boston/events/298611285"
+      }
+    ]
   },
   {
     "name": "Angular Community Meetup",
     "type": "meetup",
     "location": "Worldwide Online",
-    "url": "https://angularcommunity.net/home",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1547959576015749120/96f233Pr_400x400.jpg",
-    "twitter": "https://twitter.com/angular_meetup",
-    "linkedin": null,
-    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSf9FOzaJiqM9xnWY-Zq5ZeRmsNVIhjD9zwuf3xzmEZ5Modg4w/viewform",
+    "eventsUrl": "https://www.meetup.com/angularcommunity/events/",
+    "websiteUrl": "https://angularcommunity.net/home",
+    "organizersUrl": "https://angularcommunity.net/home",
+    "twitterUrl": "https://x.com/angular_meetup",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-community-meetup",
+    "youtubeUrl": "https://www.youtube.com/@ngconfonline",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf9FOzaJiqM9xnWY-Zq5ZeRmsNVIhjD9zwuf3xzmEZ5Modg4w/viewform",
     "events": [
       {
         "name": null,
@@ -339,7 +368,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/AngularCommunity/events/296951753"
       },
@@ -352,7 +381,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/297978778/"
       },
@@ -365,7 +394,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/298421675/"
       },
@@ -378,7 +407,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/300766126/"
       },
@@ -391,7 +420,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/300736764/"
       },
@@ -404,7 +433,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/300737178/"
       },
@@ -417,7 +446,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/300737354/"
       },
@@ -430,7 +459,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/300737514/"
       },
@@ -443,7 +472,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/300737514/"
       },
@@ -456,7 +485,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/303963877/"
       }
@@ -466,12 +495,15 @@
     "name": "Angular Costa Rica",
     "type": "meetup",
     "location": "San Jose, Costa Rica",
-    "url": "https://www.facebook.com/angularcostarica",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1275887771048083459/SldZRi5t_400x400.jpg",
-    "twitter": "https://twitter.com/AngularCR",
-    "linkedin": null,
-    "callForPapers": "https://bit.ly/CR-Ang-CFP",
+    "eventsUrl": "https://www.facebook.com/angularcostarica/events",
+    "websiteUrl": "https://www.facebook.com/angularcostarica",
+    "organizersUrl": null,
+    "twitterUrl": "https://x.com/AngularCR",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/c/AngularCostaRica",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://bit.ly/CR-Ang-CFP",
     "events": [
       {
         "name": null,
@@ -482,7 +514,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.eventbrite.com/e/comunidad-angular-costa-rica-en-vivo-tickets-755480040137?aff=oddtdtcreator&fbclid=IwAR25M42wy5s-uGnURY-xB5gdBA3b-i4GSlhFneOo4OnA-K9ULrrt3tWtlP0"
       }
@@ -492,15 +524,15 @@
     "name": "Angular Devs France",
     "type": "meetup",
     "location": "France",
-    "url": "https://angulardevs.fr/",
-    "mediaChannel": {
-      "url": "https://www.youtube.com/@AngularDevsFrance/streams",
-      "language": "French"
-    },
     "logo": "assets/logos/angular-devs-france.webp",
-    "twitter": null,
-    "linkedin": null,
-    "callForPapers": "https://conference-hall.io/public/event/xXhZVEbtz1mMoWZYhsoE",
+    "eventsUrl": "https://angulardevs.fr/",
+    "websiteUrl": "https://angulardevs.fr/",
+    "organizersUrl": "https://angulardevs.fr/a-propos/",
+    "twitterUrl": "https://x.com/AngularDevsFr",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-devs-france",
+    "youtubeUrl": "https://www.youtube.com/@AngularDevsFrance/streams",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://conference-hall.io/public/event/xXhZVEbtz1mMoWZYhsoE",
     "events": [
       {
         "name": null,
@@ -511,7 +543,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://youtube.com/live/yYGk058Q4fU"
       },
@@ -524,7 +556,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://youtube.com/live/gJZpreOyqMA?feature=share"
       },
@@ -537,7 +569,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.youtube.com/watch?v=51tncS0DPJE"
       },
@@ -550,7 +582,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://youtube.com/live/5tEClsjSEGo?feature=share"
       },
@@ -563,7 +595,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.youtube.com/live/QSs9D0bTRVA"
       }
@@ -573,12 +605,15 @@
     "name": "Angular Kenya",
     "type": "meetup",
     "location": "Nairobi, Kenya",
-    "url": "https://www.linkedin.com/company/angular-kenya",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1793887126494318594/b-0w7moy_400x400.jpg",
-    "twitter": "https://twitter.com/angular_kenya",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": null,
+    "organizersUrl": "https://www.linkedin.com/company/angular-kenya/people/",
+    "twitterUrl": "https://x.com/angular_kenya",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-kenya",
+    "youtubeUrl": "https://www.youtube.com/c/AngularKenya",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "NG Kenya",
@@ -589,7 +624,7 @@
         "isFree": false,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://ng-kenya.com/home"
       }
@@ -599,12 +634,15 @@
     "name": "Angular Leipzig",
     "type": "meetup",
     "location": "Leipzig, Germany",
-    "url": "https://www.meetup.com/angular-meetup-leipzig/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1195421264351039488/CcSwDFwj_400x400.jpg",
-    "twitter": "https://twitter.com/ngleipzig",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/angular-meetup-leipzig/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-meetup-leipzig/members/?op=leaders",
+    "twitterUrl": "https://x.com/ngleipzig",
+    "linkedinUrl": "https://www.linkedin.com/groups/13005263/",
+    "youtubeUrl": "https://www.youtube.com/@angularleipzigmeetup4992",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -615,7 +653,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-leipzig/events/297507291/?_xtd=gqFyqTI1MjAxMTkyOaFwo2FwaQ%253D%253D&from=ref/"
       },
@@ -628,7 +666,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-leipzig/events/299357850/"
       },
@@ -641,7 +679,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-leipzig/events/300612475/"
       },
@@ -654,7 +692,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-leipzig/events/304010655"
       }
@@ -664,12 +702,15 @@
     "name": "Angular London",
     "type": "meetup",
     "location": "London, United Kingdom",
-    "url": "https://www.meetup.com/angular-london/",
-    "mediaChannel": null,
     "logo": "assets/logos/official-logo.webp",
-    "twitter": null,
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/angular-london/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-london/members/?op=leaders",
+    "twitterUrl": "https://x.com/AngularLONDON",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@AngularLondonMeetup",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -680,7 +721,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-london/events/301995271/"
       }
@@ -690,12 +731,15 @@
     "name": "Angular Macedonia",
     "type": "meetup",
     "location": "Skopje, Macedonia",
-    "url": "https://www.meetup.com/angular-macedonia/",
-    "mediaChannel": null,
     "logo": "https://www.angularmacedonia.org/logo.webp",
-    "twitter": "https://www.linkedin.com/company/angular-macedonia/",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/angular-macedonia/events/",
+    "websiteUrl": "https://www.angularmacedonia.org/",
+    "organizersUrl": "https://www.angularmacedonia.org/team#team",
+    "twitterUrl": null,
+    "linkedinUrl": "https://www.linkedin.com/company/angular-macedonia/",
+    "youtubeUrl": "https://www.youtube.com/@AngularMacedonia",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -706,7 +750,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-macedonia/events/304020930"
       }
@@ -716,12 +760,15 @@
     "name": "Angular Meetup Berlin",
     "type": "meetup",
     "location": "Berlin, Germany",
-    "url": "https://www.meetup.com/angular-meetup-berlin/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1729219640901951488/c4JxFpbx_400x400.jpg",
-    "twitter": "https://twitter.com/angular_berlin",
-    "linkedin": null,
-    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSf-_RihpWISuyoKt9PZW-TNNcYDFTZGZ5DPtca9i3tZLNN3CA/viewform",
+    "eventsUrl": "https://www.meetup.com/angular-meetup-berlin/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-meetup-berlin/members/?op=leaders",
+    "twitterUrl": "https://x.com/angular_berlin",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@WorkshopsDE",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf-_RihpWISuyoKt9PZW-TNNcYDFTZGZ5DPtca9i3tZLNN3CA/viewform",
     "events": [
       {
         "name": null,
@@ -732,7 +779,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-berlin/events/292747713"
       },
@@ -745,7 +792,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-berlin/events/298730458/"
       },
@@ -758,7 +805,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/de-DE/angular-meetup-berlin/events/300939373/?isFirstPublish=true"
       },
@@ -771,7 +818,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-berlin/events/303480735"
       }
@@ -781,12 +828,15 @@
     "name": "Angular Meetup Graz",
     "type": "meetup",
     "location": "Graz, Austria",
-    "url": "https://www.meetup.com/angular-meetup-graz/",
-    "mediaChannel": null,
     "logo": "assets/logos/official-logo.webp",
-    "twitter": null,
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/angular-meetup-graz/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-meetup-graz/members/?op=leaders",
+    "twitterUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "Angular Renaissance & More",
@@ -797,7 +847,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-graz/events/297479092/"
       },
@@ -810,7 +860,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/de-DE/angular-meetup-graz/events/300061069/"
       },
@@ -823,7 +873,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-graz/events/300824699/"
       }
@@ -833,12 +883,15 @@
     "name": "Angular Meetup Hamburg",
     "type": "meetup",
     "location": "Hamburg, Germany",
-    "url": "https://www.meetup.com/hamburg-angularjs-meetup/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/779215302324285440/ZW-a6Rkd_400x400.jpg",
-    "twitter": "https://twitter.com/angular_hamburg",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/hamburg-angularjs-meetup/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/hamburg-angularjs-meetup/members/?op=leaders",
+    "twitterUrl": "https://x.com/angular_hamburg",
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -849,7 +902,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/hamburg-angularjs-meetup/events/299480791/"
       },
@@ -862,7 +915,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/hamburg-angularjs-meetup/events/302041863/"
       }
@@ -872,12 +925,15 @@
     "name": "Angular Melbourne",
     "type": "meetup",
     "location": "Melbourne, Australia",
-    "url": "https://www.meetup.com/angular-melbourne/",
-    "mediaChannel": null,
     "logo": "assets/logos/official-logo.webp",
-    "twitter": "https://twitter.com/angularMelb",
-    "linkedin": null,
-    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSexTnnXT51Tf1QDhEZJA2tGM803yUFUaplYjTqmsc6CmTMaFg/viewform",
+    "eventsUrl": "https://www.meetup.com/angular-melbourne/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-melbourne/members/?op=leaders",
+    "twitterUrl": "https://x.com/angularmelb",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@AngularAustralia",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSexTnnXT51Tf1QDhEZJA2tGM803yUFUaplYjTqmsc6CmTMaFg/viewform",
     "events": [
       {
         "name": "Angular 17, View Transitions API, NGRX Component Store0",
@@ -888,7 +944,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-melbourne/events/297244000"
       },
@@ -901,7 +957,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-melbourne/events/298576991/"
       }
@@ -911,24 +967,44 @@
     "name": "Angular NYC",
     "type": "meetup",
     "location": "New York, USA",
-    "url": "https://angular.nyc/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/869774200604688384/8mRWQji-_400x400.jpg",
-    "twitter": "https://twitter.com/AngularNYC",
-    "linkedin": null,
-    "callForPapers": "https://angular.nyc/speak",
-    "events": []
+    "eventsUrl": "https://www.meetup.com/angularnyc/events/",
+    "websiteUrl": "https://angular.nyc/",
+    "organizersUrl": "https://www.meetup.com/angularnyc/members/?op=leaders",
+    "twitterUrl": "https://x.com/AngularNYC",
+    "linkedinUrl": "https://www.linkedin.com/groups/12337455/",
+    "youtubeUrl": "https://www.youtube.com/AngularNYC",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://angular.nyc/speak",
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2023-09-28",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularnyc/events/296188739"
+      }
+    ]
   },
   {
     "name": "Angular Ruhr",
     "type": "meetup",
     "location": "Ruhrgebiet, Germany",
-    "url": "https://www.meetup.com/angular-ruhr/",
-    "mediaChannel": null,
     "logo": "assets/logos/official-logo.webp",
-    "twitter": null,
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/angular-ruhr/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-ruhr/members/?op=leaders",
+    "twitterUrl": "https://x.com/AngularRuhr",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@angularruhr2001",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "Angular Ruhr #16",
@@ -939,7 +1015,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-ruhr/events/297260399/"
       },
@@ -952,7 +1028,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-ruhr/events/300782226/"
       }
@@ -962,12 +1038,15 @@
     "name": "Angular Singapore",
     "type": "meetup",
     "location": "Singapore",
-    "url": "https://slides.com/trungvose/angularsg",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1392680645852209152/0adFuWWd_400x400.jpg",
-    "twitter": "https://twitter.com/angularsg",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": null,
+    "organizersUrl": null,
+    "twitterUrl": "https://x.com/angularsg",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@AngularSingapore",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "Performant Angular Applications",
@@ -978,7 +1057,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSfGyxjOgYiiJavTMLh4pmj_jfp-t6orn6lxAo8SEGPoiHiq0A/viewfor"
       },
@@ -991,7 +1070,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSf1rp6TvXiVhhZozPbRmng6GP-80UGc0SfOT7CAI5tqOQWSsQ/viewform"
       },
@@ -1004,7 +1083,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSfZzpxmr_Z0MhV0STZRb95lM7DRSwl79nYbY-GCnDKKtXczlg/viewform"
       }
@@ -1014,12 +1093,15 @@
     "name": "Angular Vienna",
     "type": "meetup",
     "location": "Vienna, Austria",
-    "url": "https://www.meetup.com/angular-vienna/",
-    "mediaChannel": null,
-    "logo": "https://pbs.twimg.com/profile_images/1007998057718394880/BHFVi3HW_400x400.jpg",
-    "twitter": "https://twitter.com/AngularVienna",
-    "linkedin": null,
-    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSdAiM1tDDBTzUfo1R8wWc0gEDH05iOuS3bhF3uT_8KvC_G_uA/viewform",
+    "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQHVBAzC4-DKFA/company-logo_200_200/company-logo_200_200/0/1714120314791?e=1738800000&v=beta&t=hj6OI2laMnKisYEOps_eW26COQkLygkbUkeNGY6Yp8k",
+    "eventsUrl": "https://www.meetup.com/angular-vienna/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-vienna/members/?op=leaders",
+    "twitterUrl": "https://x.com/angularvienna",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-vienna/",
+    "youtubeUrl": "https://www.youtube.com/@push-based",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdAiM1tDDBTzUfo1R8wWc0gEDH05iOuS3bhF3uT_8KvC_G_uA/viewform",
     "events": [
       {
         "name": "ngGlühwein 2023",
@@ -1030,7 +1112,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-vienna/events/297518543/"
       },
@@ -1043,7 +1125,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-vienna/events/298861231/"
       },
@@ -1056,7 +1138,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-vienna/events/302173485/"
       },
@@ -1069,7 +1151,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": "http://bit.ly/angular-vienna-cfp",
+        "callForPapersUrl": "http://bit.ly/angular-vienna-cfp",
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-vienna/events/304004182/"
       }
@@ -1079,12 +1161,15 @@
     "name": "Angular Warsaw",
     "type": "meetup",
     "location": "Warsaw, Poland",
-    "url": "https://www.meetup.com/Angular-Warsaw/",
-    "mediaChannel": null,
     "logo": "/assets/logos/angular-warsaw.jpeg",
-    "twitter": "https://twitter.com/AngularWarsaw",
-    "linkedin": null,
-    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSd4wIfoMbhjXfb4keOLOLvBvx9dCz5-AseW4AzcKf6A18xC3A/viewform",
+    "eventsUrl": "https://www.meetup.com/angular-warsaw/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angular-warsaw/members/?op=leaders",
+    "twitterUrl": "https://x.com/AngularWarsaw",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@angularwarsaw3685",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd4wIfoMbhjXfb4keOLOLvBvx9dCz5-AseW4AzcKf6A18xC3A/viewform",
     "events": [
       {
         "name": "The New NGRX Signal Store: Modern State Management for Your Angular Architecture",
@@ -1095,7 +1180,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-warsaw/events/298542428/"
       },
@@ -1108,7 +1193,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-warsaw/events/301012827/"
       },
@@ -1121,7 +1206,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-warsaw/events/302647291"
       },
@@ -1134,7 +1219,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-warsaw/events/303487465"
       }
@@ -1144,12 +1229,15 @@
     "name": "Angular Wrocław",
     "type": "meetup",
     "location": "Wrocław, Poland",
-    "url": "https://www.angularwroclaw.pl/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1004807532970500096/ACJf4KS7_400x400.jpg",
-    "twitter": "https://twitter.com/AngularWroclaw",
-    "linkedin": null,
-    "callForPapers": "https://www.angularwroclaw.pl/",
+    "eventsUrl": "https://www.meetup.com/angularwroclaw/events/",
+    "websiteUrl": "https://www.angularwroclaw.pl/",
+    "organizersUrl": "https://www.meetup.com/angularwroclaw/members/?op=leaders",
+    "twitterUrl": "https://x.com/AngularWroclaw",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-wroclaw-meetup/",
+    "youtubeUrl": "https://www.youtube.com/@angularwroclaw7776",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://www.angularwroclaw.pl/",
     "events": [
       {
         "name": "Angular Wrocław #36",
@@ -1160,7 +1248,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularwroclaw/events/297066922/"
       },
@@ -1173,7 +1261,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularwroclaw/events/298927294/"
       }
@@ -1183,24 +1271,44 @@
     "name": "Angular Zurich",
     "type": "meetup",
     "location": "Zurich, Switzerland",
-    "url": "https://angularzurich.dev/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1087264580831715328/jABSCpDF_400x400.jpg",
-    "twitter": "https://twitter.com/AngularZurich",
-    "linkedin": null,
-    "callForPapers": null,
-    "events": []
+    "eventsUrl": "https://www.meetup.com/angularzrh/events/",
+    "websiteUrl": "https://angularzurich.dev/",
+    "organizersUrl": "https://www.meetup.com/angularzrh/members/?op=leaders",
+    "twitterUrl": "https://x.com/AngularZurich",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@angularzurichmeetup",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2023-11-23",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularzrh/events/297043503"
+      }
+    ]
   },
   {
     "name": "ngGirls",
     "type": "workshop",
     "location": "Worldwide Onsite",
-    "url": "https://www.ng-girls.org/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1757125339090653184/5wgfX_ZD_400x400.jpg",
-    "twitter": "https://twitter.com/AngularGirls",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.ng-girls.org/",
+    "websiteUrl": "https://www.ng-girls.org/",
+    "organizersUrl": "https://www.ng-girls.org/",
+    "twitterUrl": "https://x.com/angulargirls",
+    "linkedinUrl": "https://www.linkedin.com/company/angulargirls",
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -1211,7 +1319,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": null
       },
@@ -1224,53 +1332,62 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": null
       }
     ]
   },
   {
-    "name": "NG-BE",
-    "type": "conference",
-    "location": "Ghent, Belgium",
-    "url": "https://ng-be.org/",
-    "mediaChannel": null,
-    "logo": "https://pbs.twimg.com/profile_images/1751914584305205248/iqTMArsp_400x400.jpg",
-    "twitter": "https://twitter.com/ngbeconf",
-    "linkedin": null,
-    "callForPapers": null,
-    "events": []
-  },
-  {
     "name": "NG Conf",
     "type": "conference",
     "location": "Salt Lake City, UT, USA",
-    "url": "https://ng-conf.org/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1714328350041444353/wxDLFJbQ_400x400.jpg",
-    "twitter": "https://twitter.com/ngconf",
-    "linkedin": null,
-    "callForPapers": null,
-    "events": []
+    "eventsUrl": null,
+    "websiteUrl": "https://ng-conf.org/",
+    "organizersUrl": "https://ng-conf.org/about/",
+    "twitterUrl": "https://x.com/ngconf",
+    "linkedinUrl": "https://www.linkedin.com/company/ng-conf/",
+    "youtubeUrl": "https://www.youtube.com/@ngconfonline",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": null,
+        "type": "conference",
+        "date": "2024-03-20",
+        "endDate": "2024-03-21",
+        "url": "https://ng-conf.org/",
+        "callForPapersUrl": "null",
+        "callForPapersDueDate": "null",
+        "language": "English",
+        "isFree": false,
+        "isRemote": true,
+        "isOnsite": true,
+        "location": "Salt Lake City, UT, USA"
+      }
+    ]
   },
   {
     "name": "NG Poland",
     "type": "conference",
     "location": "Warsaw, Poland",
-    "url": "https://ng-poland.pl/",
-    "mediaChannel": null,
     "logo": "https://ng-poland.pl/images/logos/logo-small-2024.webp",
-    "twitter": "https://twitter.com/ngPolandConf",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": "https://ng-poland.pl/",
+    "organizersUrl": "https://ng-poland.pl/#contact",
+    "twitterUrl": "https://twitter.com/ngPolandConf",
+    "linkedinUrl": "https://www.linkedin.com/company/ng-poland/",
+    "youtubeUrl": "https://www.youtube.com/NGPoland",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "NG Poland 2024",
         "type": "conference",
         "date": "2024-11-06",
         "url": "https://ng-poland.pl/",
-        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform",
+        "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform",
         "callForPapersDueDate": "2024-10-01",
         "language": "English",
         "isFree": false,
@@ -1284,19 +1401,22 @@
     "name": "NG Rome",
     "type": "conference",
     "location": "Rome, Italy",
-    "url": "https://ngrome.io/",
-    "mediaChannel": null,
     "logo": "assets/logos/ng-rome.svg",
-    "twitter": "https://twitter.com/ngromeconf",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": "https://ngrome.io/",
+    "organizersUrl": "https://ngrome.io/about",
+    "twitterUrl": "https://x.com/ngromeconf",
+    "linkedinUrl": "https://www.linkedin.com/company/ngromeconf/posts/?feedView=all",
+    "youtubeUrl": "https://www.youtube.com/@ngromeconf",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "NG Rome 2023",
         "type": "conference",
         "date": "2023-12-01",
         "url": "https://ngrome.io/",
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "language": "English",
         "isFree": true,
@@ -1309,7 +1429,7 @@
         "type": "conference",
         "date": "2024-06-27",
         "url": "https://ngrome.io/",
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "language": "English",
         "isFree": false,
@@ -1322,13 +1442,16 @@
   {
     "name": "ngLodz",
     "type": "meetup",
-    "location": "Łódź, Pologne",
-    "url": "https://www.meetup.com/ng-lodz/",
-    "mediaChannel": null,
+    "location": "Łódź, Poland",
     "logo": "https://pbs.twimg.com/profile_images/1747266292191789056/6eDCWDd9_400x400.jpg",
-    "twitter": "https://twitter.com/NgLodz",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/ng-lodz/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/ng-lodz/members/?op=leaders",
+    "twitterUrl": "https://x.com/NgLodz",
+    "linkedinUrl": "https://www.linkedin.com/company/nglodz/",
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "ngLodz #9",
@@ -1339,7 +1462,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/300186734/"
       },
@@ -1352,7 +1475,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/300736330/"
       },
@@ -1365,7 +1488,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/301271851/"
       },
@@ -1378,7 +1501,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/303802413"
       }
@@ -1388,12 +1511,15 @@
     "name": "Ng Asia",
     "type": "meetup",
     "location": "Worldwide Online",
-    "url": "https://www.youtube.com/@NgAsiaAngular/streams",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1748238047056191488/QArIjHBp_400x400.jpg",
-    "twitter": "https://twitter.com/angular_asia",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": null,
+    "organizersUrl": null,
+    "twitterUrl": "https://x.com/angular_asia",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@NgAsiaAngular",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -1404,7 +1530,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.youtube.com/@NgAsiaAngular/streams"
       }
@@ -1414,24 +1540,44 @@
     "name": "AngularSP",
     "type": "meetup",
     "location": "São Paulo, Brazil",
-    "url": "https://www.youtube.com/@angularsp3351/streams",
-    "mediaChannel": null,
     "logo": "assets/logos/angular-sp.webp",
-    "twitter": "https://twitter.com/AngularSP",
-    "linkedin": "https://www.linkedin.com/company/angularsp/",
-    "callForPapers": null,
-    "events": []
+    "eventsUrl": "https://www.meetup.com/angularjs-sao-paulo/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angularjs-sao-paulo/members/?op=leaders",
+    "twitterUrl": "https://x.com/AngularSP",
+    "linkedinUrl": "https://www.linkedin.com/company/angularsp/",
+    "youtubeUrl": "https://www.youtube.com/@angularsp3351",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2023-04-05",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularjs-sao-paulo/events/292267375"
+      }
+    ]
   },
   {
     "name": "ng-India",
     "type": "conference",
     "location": "Delhi, India",
-    "url": "https://www.ng-ind.com/",
-    "mediaChannel": null,
     "logo": "https://www.ng-ind.com/assets/images/ng-indianewlogo.svg",
-    "twitter": "https://twitter.com/geeknineseven",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": "https://www.ng-ind.com/",
+    "organizersUrl": null,
+    "twitterUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "ng-India 2024",
@@ -1442,7 +1588,7 @@
         "isFree": false,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.ng-ind.com/"
       }
@@ -1452,12 +1598,15 @@
     "name": "Angular Meetup Hungary",
     "type": "meetup",
     "location": "Budapest, Hungary",
-    "url": "https://www.meetup.com/angularhungary/",
-    "mediaChannel": null,
     "logo": "/assets/logos/official-logo.webp",
-    "twitter": null,
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/angularhungary/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/angularhungary/members/?op=leaders",
+    "twitterUrl": null,
+    "linkedinUrl": "https://www.linkedin.com/company/angular-hungary/",
+    "youtubeUrl": "https://www.youtube.com/@angularhungary9494",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -1468,7 +1617,7 @@
         "isFree": false,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularhungary/events/298605139/"
       }
@@ -1478,12 +1627,15 @@
     "name": "angularday",
     "type": "conference",
     "location": "Verona, Italy",
-    "url": "https://angularday.it/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1118451217309609984/DiZ0M3wW_400x400.png",
-    "twitter": "https://twitter.com/angularday",
-    "linkedin": "https://www.linkedin.com/company/grusp/",
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": "https://angularday.it/",
+    "organizersUrl": "https://2024.angularday.it/welcome/about.html",
+    "twitterUrl": "https://x.com/angularday",
+    "linkedinUrl": "https://www.linkedin.com/company/grusp/",
+    "youtubeUrl": "https://www.youtube.com/grusp",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -1494,7 +1646,7 @@
         "isFree": false,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": "https://2024.angularday.it/welcome/cfp.html",
+        "callForPapersUrl": "https://2024.angularday.it/welcome/cfp.html",
         "callForPapersDueDate": "2024-06-17",
         "url": "https://2024.angularday.it/"
       }
@@ -1504,12 +1656,15 @@
     "name": "angulartinyconf",
     "type": "conference",
     "location": null,
-    "url": "https://www.angulartinyconf.com/",
-    "mediaChannel": null,
     "logo": "https://pbs.twimg.com/profile_images/1585105346590285824/mfLP8eq-_400x400.jpg",
-    "twitter": "https://twitter.com/angulartinyconf",
-    "linkedin": "https://www.linkedin.com/company/grusp/",
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": "https://www.angulartinyconf.com/",
+    "organizersUrl": null,
+    "twitterUrl": "https://x.com/angulartinyconf",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@angulartinyconf",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -1520,7 +1675,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": false,
-        "callForPapers": "https://sessionize.com/angular-tiny-conf-shemu-2024/",
+        "callForPapersUrl": "https://sessionize.com/angular-tiny-conf-shemu-2024/",
         "callForPapersDueDate": "2024-06-14",
         "url": "https://www.angulartinyconf.com/"
       }
@@ -1530,12 +1685,15 @@
     "name": "Angular TLV",
     "type": "meetup",
     "location": "Tel Aviv, Israel",
-    "url": "https://www.meetup.com/angular-tlv/",
-    "mediaChannel": null,
     "logo": "https://angular-tlv.com/assets/tlv-header-logo.png",
-    "twitter": null,
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/angular-tlv/events/",
+    "websiteUrl": "https://angular-tlv.com/",
+    "organizersUrl": "https://www.meetup.com/angular-tlv/members/?op=leaders",
+    "twitterUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -1546,7 +1704,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-tlv/events/301175952/"
       },
@@ -1559,7 +1717,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-tlv/events/304007311/"
       },
@@ -1572,7 +1730,7 @@
         "isFree": false,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSdtSyB8ECpWFhGtMY-UDNuJeiMm7SExBwn-BiJEHT-QwDEW7Q/viewform",
+        "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdtSyB8ECpWFhGtMY-UDNuJeiMm7SExBwn-BiJEHT-QwDEW7Q/viewform",
         "callForPapersDueDate": "2024-07-20",
         "url": "https://angular-tlv.com/"
       }
@@ -1582,12 +1740,15 @@
     "name": "NG-DE",
     "type": "conference",
     "location": "Bonn, Germany",
-    "url": "https://ng-de.org/",
-    "mediaChannel": null,
     "logo": "assets/logos/ng-de.svg",
-    "twitter": "https://x.com/ngdeconf",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": null,
+    "websiteUrl": "https://ng-de.org/",
+    "organizersUrl": "https://ng-de.org/team/",
+    "twitterUrl": "https://x.com/ngdeconf",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@ng-de",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "NG-DE Conference",
@@ -1595,7 +1756,7 @@
         "date": "2024-10-9",
         "endDate": "2024-10-11",
         "url": "https://ng-de.org/",
-        "callForPapers": "null",
+        "callForPapersUrl": "null",
         "callForPapersDueDate": "null",
         "language": "English",
         "isFree": false,
@@ -1609,12 +1770,15 @@
     "name": "NG-BE",
     "type": "conference",
     "location": "Ghent, Belgium",
-    "url": "https://ng-be.org/",
-    "mediaChannel": null,
-    "logo": "assets/logos/ng-be.png",
-    "twitter": "https://x.com/ngbeconf",
-    "linkedin": "https://www.linkedin.com/company/ng-be/",
-    "callForPapers": null,
+    "logo": "https://pbs.twimg.com/profile_images/1751914584305205248/iqTMArsp_400x400.jpg",
+    "eventsUrl": null,
+    "websiteUrl": "https://ng-be.org/",
+    "organizersUrl": "https://ng-be.org/team",
+    "twitterUrl": "https://x.com/ngbeconf",
+    "linkedinUrl": "https://www.linkedin.com/company/ng-be/",
+    "youtubeUrl": "https://www.youtube.com/@NGBECONF",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "NG-BE 2024",
@@ -1622,7 +1786,7 @@
         "date": "2024-12-5",
         "endDate": "2024-12-6",
         "url": "https://ng-be.org/",
-        "callForPapers": "null",
+        "callForPapersUrl": "null",
         "callForPapersDueDate": "null",
         "language": "English",
         "isFree": false,
@@ -1636,12 +1800,15 @@
     "name": "Angular Rome",
     "type": "meetup",
     "location": "Rome, Italy",
-    "url": "https://t.me/angular_roma",
-    "mediaChannel": null,
     "logo": "https://raw.githubusercontent.com/ngrome/.github/main/assets/angular_rome_logo.png",
-    "twitter": "https://x.com/AngularRome",
-    "linkedin": "https://www.linkedin.com/company/angular-rome/",
-    "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSdnVyf40UpcUkAaxeayCksnWUOHXyDn8qi1m6Z2OedzRTfubw/viewform",
+    "eventsUrl": null,
+    "websiteUrl": null,
+    "organizersUrl": null,
+    "twitterUrl": "https://x.com/AngularRome",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-rome/",
+    "youtubeUrl": "https://www.youtube.com/@angularrome6049",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdnVyf40UpcUkAaxeayCksnWUOHXyDn8qi1m6Z2OedzRTfubw/viewform",
     "events": [
       {
         "name": null,
@@ -1652,7 +1819,7 @@
         "isFree": true,
         "isRemote": true,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.eventbrite.com/o/28520702115"
       }
@@ -1660,26 +1827,46 @@
   },
   {
     "name": "Angular Japan UserGroup",
-    "type": "other",
+    "type": "meetup",
     "location": "Japan",
-    "url": "https://ngjapan.connpass.com/",
-    "mediaChannel": null,
     "logo": "assets/logos/ng-jp.svg",
-    "twitter": "https://twitter.com/ng_japan",
-    "linkedin": null,
-    "callForPapers": null,
-    "events": []
+    "eventsUrl": "https://ngjapan.connpass.com/event/",
+    "websiteUrl": "https://ngjapan.connpass.com/",
+    "organizersUrl": "https://ngjapan.connpass.com/participation/",
+    "twitterUrl": "https://x.com/ng_japan",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@ng_japan",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": null,
+        "type": "meetup",
+        "location": null,
+        "date": "2024-09-04",
+        "language": "Japanese",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://ngjapan.connpass.com/event/329444/"
+      }
+    ]
   },
   {
     "name": "ng-gunma",
     "type": "meetup",
     "location": "Gunma, Japan",
-    "url": "https://ng-gunma.connpass.com/",
-    "mediaChannel": null,
     "logo": "assets/logos/ng-gunma.png",
-    "twitter": "https://twitter.com/ng_gunma",
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://ng-gunma.connpass.com/event/",
+    "websiteUrl": "https://ng-gunma.connpass.com/",
+    "organizersUrl": "https://ng-gunma.connpass.com/participation/",
+    "twitterUrl": "https://x.com/ng_gunma",
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": null,
@@ -1690,60 +1877,9 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://ng-gunma.connpass.com/event/324606/"
-      }
-    ]
-  },
-  {
-    "name": "StartupAngular",
-    "type": "meetup",
-    "location": "Tokyo, Japan",
-    "url": "https://github.com/StartupAngular",
-    "mediaChannel": null,
-    "logo": "assets/logos/startup-angular.png",
-    "twitter": "https://twitter.com/hashtag/ng_startup",
-    "linkedin": null,
-    "callForPapers": null,
-    "events": []
-  },
-  {
-    "name": "GDG Warszawa",
-    "type": "other",
-    "location": "Warsaw, Poland",
-    "url": "https://www.linkedin.com/company/gdg-warszawa/",
-    "mediaChannel": null,
-    "logo": "assets/logos/official-logo.webp",
-    "twitter": null,
-    "linkedin": null,
-    "callForPapers": null,
-    "events": [
-      {
-        "name": "Angular Warsaw Jam #1",
-        "type": "conference",
-        "location": "Warsaw, Poland",
-        "date": "2024-09-06",
-        "language": "English",
-        "isFree": true,
-        "isRemote": false,
-        "isOnsite": true,
-        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeGYwxyEmE2j82ntJXkPQpUBHWOu3Lf_vndLilP6Y0ofxNwUA/viewform",
-        "callForPapersDueDate": "2024-08-20",
-        "url": "https://www.linkedin.com/company/gdg-warszawa/"
-      },
-      {
-        "name": "Angular Warsaw Jam #1",
-        "type": "conference",
-        "location": "Warsaw, Poland",
-        "date": "2024-11-15",
-        "language": "English",
-        "isFree": true,
-        "isRemote": false,
-        "isOnsite": true,
-        "callForPapers": "https://docs.google.com/forms/d/e/1FAIpQLSeCouhgeuBsYAwBQpIQfRCrDY5M_W2OpTYMnV413knaFiju7A/viewform",
-        "callForPapersDueDate": "2024-08-20",
-        "url": "https://gdg.community.dev/events/details/google-gdg-warszawa-presents-angular-jam-2/"
       }
     ]
   },
@@ -1751,12 +1887,15 @@
     "name": "NG Kato",
     "type": "meetup",
     "location": "Katowice, Poland",
-    "url": "https://www.meetup.com/ngkato/?eventOrigin=event_home_page",
-    "mediaChannel": null,
     "logo": "assets/logos/ng-kato.svg",
-    "twitter": null,
-    "linkedin": null,
-    "callForPapers": null,
+    "eventsUrl": "https://www.meetup.com/ngkato/events",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/ngkato/members/?op=leaders",
+    "twitterUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
     "events": [
       {
         "name": "NG KATO #1",
@@ -1767,7 +1906,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ngkato/events/302935523/?eventOrigin=group_upcoming_events"
       },
@@ -1780,7 +1919,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ngkato/events/303788459"
       }
@@ -1790,12 +1929,15 @@
     "name": "Angular Community Perú",
     "type": "meetup",
     "location": "Lima, Peru",
-    "url": "https://www.angular-peru.com/",
-    "mediaChannel": null,
     "logo": "https://ngconf.angular-peru.com/icons/logo_AngularPeru.svg",
-    "twitter": "https://x.com/AngularPeruNG",
-    "linkedin": "https://www.linkedin.com/company/angular-community-peru",
-    "callForPapers": "https://calendly.com/angularcommunityperu",
+    "eventsUrl": null,
+    "websiteUrl": "https://www.angular-peru.com/",
+    "organizersUrl": "https://www.angular-peru.com/",
+    "twitterUrl": "https://x.com/AngularPeruNG",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-community-peru",
+    "youtubeUrl": "https://www.youtube.com/@AngularCommunityPeru",
+    "twitchUrl": null,
+    "callForPapersUrl": "https://calendly.com/angularcommunityperu",
     "events": [
       {
         "name": "Ng Conf Perú",
@@ -1806,7 +1948,7 @@
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
-        "callForPapers": null,
+        "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://ngconf.angular-peru.com/"
       }

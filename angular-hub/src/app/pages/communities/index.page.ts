@@ -8,6 +8,7 @@ import { JsonLdService } from '../../services/json-ld.service';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import { BannerComponent } from '../../components/banner.component';
+import { CheckboxModule } from 'primeng/checkbox';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -26,31 +27,42 @@ export const routeMeta: RouteMeta = {
     DropdownModule,
     FormsModule,
     BannerComponent,
+    CheckboxModule,
   ],
   template: `
     <app-banner description="Curated list of Angular Communities" />
-    <form
-      class="w-full flex flex-col sm:flex-row justify-center items-center gap-2 mb-8"
-    >
-      <p-dropdown
-        ariaLabel="Select a country"
-        name="language"
-        [options]="countries()"
-        [style]="{ width: '230px' }"
-        [showClear]="true"
-        placeholder="Select a country"
-        [ngModel]="selectedCountry()"
-        (ngModelChange)="selectedCountry.set($event)"
-      />
-    </form>
+    <section class="flex flex-col md:flex-row gap-6 px-6 mt-6">
+      <form class="flex justify-center mt-2">
+        <p-dropdown
+          ariaLabel="Select a country"
+          name="language"
+          [options]="countries()"
+          [style]="{ width: '230px' }"
+          [showClear]="true"
+          placeholder="Select a country"
+          [ngModel]="selectedCountry()"
+          (ngModelChange)="selectedCountry.set($event)"
+        />
+      </form>
 
-    <ul class="flex flex-wrap justify-center gap-x-8 gap-y-4 px-8">
-      @for (community of filteredCommunities(); track community) {
-        <li>
-          <app-community-card [community]="community"></app-community-card>
-        </li>
-      }
-    </ul>
+      <ul class="flex flex-col justify-center gap-4">
+        @for (community of communitiesWithUpcomingEvents(); track community) {
+          <li>
+            <app-community-card [community]="community"></app-community-card>
+          </li>
+        }
+        @for (community of activeCommunities(); track community) {
+          <li>
+            <app-community-card [community]="community"></app-community-card>
+          </li>
+        }
+        @for (community of inactiveCommunities(); track community) {
+          <li>
+            <app-community-card [community]="community"></app-community-card>
+          </li>
+        }
+      </ul>
+    </section>
   `,
 })
 export default class CommunitiesComponent {
@@ -73,6 +85,70 @@ export default class CommunitiesComponent {
       .sort((a, b) =>
         a.toLocaleUpperCase().localeCompare(b.toLocaleUpperCase()),
       ),
+  );
+
+  communitiesWithUpcomingEvents = computed(() =>
+    this.filteredCommunities().filter((community) =>
+      community.events?.some((event) => {
+        const eventDate = new Date(event.date);
+        return eventDate.getTime() > new Date().getTime();
+      }),
+    ),
+  );
+
+  activeCommunities = computed(() => {
+    return this.filteredCommunities()
+      .filter((community) => {
+        const inactivityLimit = new Date();
+        inactivityLimit.setMonth(inactivityLimit.getMonth() - 6);
+
+        const newestEvent = community.events?.sort(
+          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+        )[0];
+
+        return newestEvent
+          ? new Date(newestEvent.date).getTime() > inactivityLimit.getTime() &&
+              community.type === 'meetup'
+          : true;
+      })
+      .filter((community) => {
+        return (
+          !community.events?.some((event) => {
+            const eventDate = new Date(event.date);
+            return eventDate.getTime() > new Date().getTime();
+          }) || community.type !== 'meetup'
+        );
+      });
+  });
+
+  inactiveCommunities = computed(() =>
+    this.filteredCommunities()
+      .filter((community) => {
+        const inactivityLimit = new Date();
+        inactivityLimit.setMonth(inactivityLimit.getMonth() - 6);
+
+        const newestEvent = community.events?.sort(
+          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+        )[0];
+
+        return newestEvent
+          ? new Date(newestEvent.date).getTime() < inactivityLimit.getTime() &&
+              community.type === 'meetup'
+          : true;
+      })
+      .sort((a, b) => {
+        const newestEventA = a.events?.sort(
+          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+        )[0];
+        const newestEventB = b.events?.sort(
+          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+        )[0];
+
+        return (
+          new Date(newestEventB?.date ?? 0).getTime() -
+          new Date(newestEventA?.date ?? 0).getTime()
+        );
+      }),
   );
 
   filteredCommunities = computed(() =>
@@ -101,7 +177,7 @@ export default class CommunitiesComponent {
         item: {
           '@type': 'Organization',
           name: community.name,
-          url: community.url,
+          url: community.websiteUrl,
           ...(community.location
             ? {
                 address: {
