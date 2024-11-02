@@ -11,7 +11,7 @@ export interface Event {
   isFree: boolean;
   isRemote: boolean;
   isOnsite: boolean;
-  callForPapers: string | null;
+  callForPapersUrl: string | null;
   callForPapersDueDate: string | null;
   community?: Community;
 }

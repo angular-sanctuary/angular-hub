@@ -34,22 +34,23 @@ paths:
                       type: string
                     location:
                       type: string
-                    url:
-                      type: string
-                    mediaChannel:
-                      type: object
-                      properties:
-                        url:
-                          type: string
-                        language:
-                          type: string
                     logo:
                       type: string
-                    twitter:
+                    eventsUrl:
                       type: string
-                    linkedin:
+                    websiteUrl:
                       type: string
-                    callForPapers:
+                    organizersUrl:
+                      type: string
+                    twitterUrl:
+                      type: string
+                    linkedinUrl:
+                      type: string
+                    youtubeUrl:
+                      type: string
+                    twitchUrl:
+                      type: string
+                    callForPapersUrl:
                       type: string
                     events:
                       type: array
@@ -72,7 +73,7 @@ paths:
                             type: boolean
                           isOnsite:
                             type: boolean
-                          callForPapers:
+                          callForPapersUrl:
                             type: string
                           callForPapersDueDate:
                             type: string
@@ -109,7 +110,7 @@ paths:
                       type: boolean
                     isOnsite:
                       type: boolean
-                    callForPapers:
+                    callForPapersUrl:
                       type: string
                     callForPapersDueDate:
                       type: string
@@ -143,15 +144,23 @@ paths:
                       type: string
                     location:
                       type: string
-                    url:
-                      type: string
                     logo:
                       type: string
-                    twitter:
+                    eventsUrl:
                       type: string
-                    linkedin:
+                    websiteUrl:
                       type: string
-                    callForPapers:
+                    organizersUrl:
+                      type: string
+                    twitterUrl:
+                      type: string
+                    linkedinUrl:
+                      type: string
+                    youtubeUrl:
+                      type: string
+                    twitchUrl:
+                      type: string
+                    callForPapersUrl:
                       type: string
                     events:
                       type: array
@@ -174,7 +183,7 @@ paths:
                             type: boolean
                           isOnsite:
                             type: boolean
-                          callForPapers:
+                          callForPapersUrl:
                             type: string
                           callForPapersDueDate:
                             type: string

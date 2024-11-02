@@ -8,9 +8,7 @@ import { EventCardComponent } from './cards/event-card.component';
     <h3 class="mb-4">{{ title() }}</h3>
     <ul class="flex flex-col gap-4 justify-start items-stretch w-full">
       @for (event of events(); track event.url) {
-        <li
-          class="flex flex-col gap-2 bg-[#20212C] px-2 rounded-xl md:min-w-[400px]"
-        >
+        <li class="bg-[#20212C] p-6 rounded-xl md:min-w-[400px]">
           <a [attr.href]="event.url" target="_blank">
             <app-event-card [event]="event" />
           </a>

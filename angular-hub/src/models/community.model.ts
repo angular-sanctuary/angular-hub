@@ -1,15 +1,19 @@
 import { Event } from './event.model';
-import { MediaChannel } from './media-channel.model';
+import { EventType } from './event-type.model';
 
 export interface Community {
   name: string;
   type: 'workshop' | 'conference' | 'meetup' | 'other';
+  // change to nested 2 properties (city / country) || Online
   location: string | null;
-  url: string | null;
-  mediaChannel: MediaChannel | null;
   logo: string | null;
-  twitter: string | null;
-  linkedin: string | null;
-  callForPapers: string | null;
+  eventsUrl: string | null;
+  websiteUrl: string | null;
+  organizersUrl: string | null;
+  twitterUrl: string | null;
+  linkedinUrl: string | null;
+  youtubeUrl: string | null;
+  twitchUrl: string | null;
+  callForPapersUrl: string | null;
   events: Event[];
 }

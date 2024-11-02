@@ -6,7 +6,7 @@ import { isFuture, isToday } from 'date-fns';
 
 export default defineEventHandler(() => {
   try {
-    parse(CommunityListSchema, communities);
+    const parsed = parse(CommunityListSchema, communities);
     const events = communities
       .map((community) => {
         const { events, ...communityMeta } = community;
@@ -29,6 +29,6 @@ export default defineEventHandler(() => {
 
     return events;
   } catch (error) {
-    throw new Error('Invalid community data format');
+    throw new Error(error);
   }
 });
