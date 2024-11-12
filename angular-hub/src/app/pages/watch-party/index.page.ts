@@ -40,11 +40,13 @@ export const routeMeta: RouteMeta = {
   template: `
     <app-banner
       title="Watch parties"
-      description="Find Angular release watch parties near you and join the community for the latest updates!"
+      description="Angular release watch parties around the world"
     />
     <!-- TODO add scrollbar-gutter stable for md + -->
     <div class="flex flex-col px-6 gap-6">
-      <aside class="rounded-md bg-[#20212C] p-4 flex items-center gap-6 w-full">
+      <aside
+        class="rounded-md bg-[#20212C] p-4 flex flex-col-reverse md:flex-row items-center gap-6 w-full"
+      >
         <a
           target="_blank"
           href="https://github.com/angular-sanctuary/angular-hub/issues/384"
@@ -59,8 +61,22 @@ export const routeMeta: RouteMeta = {
         </span>
       </aside>
 
+      <ul class="md:hidden flex flex-col gap-2">
+        @for (party of parties; track party.link) {
+          <li class="bg-[#20212C] px-6 pt-8 pb-4 rounded-xl">
+            <a [href]="party.link">
+              <h3 class="text-xl font-bold mb-2">{{ party.location }}</h3>
+              @if (party.host) {
+                <p class="pl-2">hosted by {{ party.host }}</p>
+              }
+              <p class="pl-2">organized by {{ party.organizer }}</p>
+            </a>
+          </li>
+        }
+      </ul>
+
       @if (show()) {
-        <div class="card">
+        <div class="card hidden md:block">
           <p-table [value]="parties" [tableStyle]="{ 'min-width': '50rem' }">
             <ng-template pTemplate="header">
               <tr>
