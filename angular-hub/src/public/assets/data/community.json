@@ -1264,6 +1264,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularwroclaw/events/298927294/"
+      },
+      {
+        "name": "Angular Wrocław #41",
+        "type": "meetup",
+        "location": "Wrocław, Poland",
+        "date": "2024-12-04",
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularwroclaw/events/304432351"
       }
     ]
   },
