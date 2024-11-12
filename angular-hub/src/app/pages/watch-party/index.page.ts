@@ -6,6 +6,13 @@ import { DialogModule } from 'primeng/dialog';
 import { Button } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 
+type WatchParty = {
+  location: string;
+  host: string;
+  organizer: string;
+  link: string;
+};
+
 export const routeMeta: RouteMeta = {
   meta: [
     {
@@ -38,12 +45,13 @@ export const routeMeta: RouteMeta = {
     <!-- TODO add scrollbar-gutter stable for md + -->
     <div class="flex flex-col px-6 gap-6">
       <aside class="rounded-md bg-[#20212C] p-4 flex items-center gap-6 w-full">
-        <button
+        <a
+          target="_blank"
+          href="https://github.com/angular-sanctuary/angular-hub/issues/384"
           class="highlighted-btn rounded py-2 px-4 text-slate-100 w-48"
-          (click)="showDialog()"
         >
           Share your party!
-        </button>
+        </a>
         <span>
           Hosting a watch party for the Angular release? Share it with the
           community! Announce your event here and connect with fellow Angular
@@ -52,7 +60,7 @@ export const routeMeta: RouteMeta = {
       </aside>
 
       <div class="card">
-        <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+        <p-table [value]="parties" [tableStyle]="{ 'min-width': '50rem' }">
           <ng-template pTemplate="header">
             <tr>
               <th>Location</th>
@@ -61,65 +69,26 @@ export const routeMeta: RouteMeta = {
               <th></th>
             </tr>
           </ng-template>
-          <ng-template pTemplate="body" let-product>
+          <ng-template pTemplate="body" let-party>
             <tr>
-              <td>Warsaw, Poland</td>
-              <td>House of Angular</td>
-              <td>angular.love</td>
+              <td>{{ party.location }}</td>
+              <td>{{ party.host }}</td>
+              <td>{{ party.organizer }}</td>
               <td>
-                <button
+                <a
                   type="button"
+                  target="_blank"
+                  [href]="party.link"
                   class="rounded py-2 px-4 bg-slate-500 w-48"
                 >
                   Join
-                </button>
+                </a>
               </td>
             </tr>
           </ng-template>
         </p-table>
       </div>
     </div>
-    <p-dialog
-      header="Edit Profile"
-      [modal]="true"
-      [(visible)]="visible"
-      [style]="{ width: '25rem' }"
-    >
-      <form name="watch-party-event" method="POST" netlify>
-        <span class="p-text-secondary block mb-5"
-          >Update your information.</span
-        >
-        <div class="flex align-items-center gap-3 mb-3">
-          <label for="username" class="font-semibold w-6rem">Organizer</label>
-          <input
-            pInputText
-            id="username"
-            class="flex-auto"
-            name="organizer"
-            autocomplete="off"
-          />
-        </div>
-        <div class="flex align-items-center gap-3 mb-5">
-          <label for="email" class="font-semibold w-6rem">Host</label>
-          <input
-            pInputText
-            id="email"
-            class="flex-auto"
-            name="host"
-            autocomplete="off"
-          />
-        </div>
-        <div class="flex justify-content-end gap-2">
-          <p-button
-            typeof="button"
-            label="Cancel"
-            severity="secondary"
-            (onClick)="visible = false"
-          />
-          <p-button type="submit" label="Save" (onClick)="visible = false" />
-        </div>
-      </form>
-    </p-dialog>
   `,
   styles: [
     `
@@ -143,24 +112,37 @@ export const routeMeta: RouteMeta = {
   ],
 })
 export default class EventsComponent {
-  visible = false;
-
-  showDialog() {
-    this.visible = true;
-  }
-
-  products = [
+  // TODO: Replace with proper json file
+  parties: WatchParty[] = [
     {
-      id: '1000',
-      code: 'f230fh0g3',
-      name: 'Bamboo Watch',
-      description: 'Product Description',
-      image: 'bamboo-watch.jpg',
-      price: 65,
-      category: 'Accessories',
-      quantity: 24,
-      inventoryStatus: 'INSTOCK',
-      rating: 5,
+      location: 'Nantes, France',
+      host: 'SFEIR',
+      organizer: 'Angular Devs France',
+      link: 'https://www.eventbrite.fr/e/watch-party-release-angular-19-nantes-tickets-1077228512479',
+    },
+    {
+      location: 'Tours, France',
+      host: 'APSIDE',
+      organizer: 'Angular Devs France',
+      link: 'https://www.eventbrite.com/e/watch-party-release-angular-19-tours-tickets-1077229665929',
+    },
+    {
+      location: 'Paris, France',
+      host: 'Akur8',
+      organizer: 'William Marques',
+      link: 'https://www.eventbrite.fr/e/billets-watch-party-release-angular-19-paris-1076981654119',
+    },
+    {
+      location: 'Online',
+      host: '',
+      organizer: 'Buenos Aires GDG',
+      link: 'https://gdg.community.dev/events/details/google-gdg-buenos-aires-presents-watch-party-angular-v19/',
+    },
+    {
+      location: 'Singapore',
+      host: 'Ascenda',
+      organizer: 'Angular Singapore',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSd8FH1RvB-f9NuxCb8JADgg2Fpd22kaQvtsGCIC8UVfiQJxoQ/viewform',
     },
   ];
 }
