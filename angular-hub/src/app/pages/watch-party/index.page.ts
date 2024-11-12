@@ -17,19 +17,19 @@ export const routeMeta: RouteMeta = {
   meta: [
     {
       name: 'description',
-      content: 'Curated list of Angular Events',
+      content: 'Angular release watch parties',
     },
     {
       property: 'og:title',
-      content: 'Curated list of Angular Events',
+      content: 'Angular release watch parties',
     },
     {
       property: 'og:image',
-      content: '/api/v1/og-image',
+      content: '/assets/images/og-image.webp',
     },
     {
       name: 'twitter:image',
-      content: '/api/v1/og-image',
+      content: '/assets/images/og-image.webp',
     },
   ],
 };
