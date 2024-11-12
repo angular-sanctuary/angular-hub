@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { afterNextRender, Component, signal } from '@angular/core';
 import { RouteMeta } from '@analogjs/router';
 import { BannerComponent } from '../../components/banner.component';
 import { TableModule } from 'primeng/table';
@@ -59,35 +59,37 @@ export const routeMeta: RouteMeta = {
         </span>
       </aside>
 
-      <div class="card">
-        <p-table [value]="parties" [tableStyle]="{ 'min-width': '50rem' }">
-          <ng-template pTemplate="header">
-            <tr>
-              <th>Location</th>
-              <th>Host</th>
-              <th>Organizer</th>
-              <th></th>
-            </tr>
-          </ng-template>
-          <ng-template pTemplate="body" let-party>
-            <tr>
-              <td>{{ party.location }}</td>
-              <td>{{ party.host }}</td>
-              <td>{{ party.organizer }}</td>
-              <td>
-                <a
-                  type="button"
-                  target="_blank"
-                  [href]="party.link"
-                  class="rounded py-2 px-4 bg-slate-500 w-48"
-                >
-                  Join
-                </a>
-              </td>
-            </tr>
-          </ng-template>
-        </p-table>
-      </div>
+      @if (show()) {
+        <div class="card">
+          <p-table [value]="parties" [tableStyle]="{ 'min-width': '50rem' }">
+            <ng-template pTemplate="header">
+              <tr>
+                <th>Location</th>
+                <th>Host</th>
+                <th>Organizer</th>
+                <th></th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-party>
+              <tr>
+                <td>{{ party.location }}</td>
+                <td>{{ party.host }}</td>
+                <td>{{ party.organizer }}</td>
+                <td>
+                  <a
+                    type="button"
+                    target="_blank"
+                    [href]="party.link"
+                    class="rounded py-2 px-4 bg-slate-500 w-48"
+                  >
+                    Join
+                  </a>
+                </td>
+              </tr>
+            </ng-template>
+          </p-table>
+        </div>
+      }
     </div>
   `,
   styles: [
@@ -112,6 +114,7 @@ export const routeMeta: RouteMeta = {
   ],
 })
 export default class EventsComponent {
+  show = signal(false);
   // TODO: Replace with proper json file
   parties: WatchParty[] = [
     {
@@ -145,4 +148,10 @@ export default class EventsComponent {
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSd8FH1RvB-f9NuxCb8JADgg2Fpd22kaQvtsGCIC8UVfiQJxoQ/viewform',
     },
   ];
+
+  constructor() {
+    afterNextRender(() => {
+      this.show.set(true);
+    });
+  }
 }
