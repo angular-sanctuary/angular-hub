@@ -163,6 +163,18 @@ export default class EventsComponent {
       organizer: 'Angular Singapore',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSd8FH1RvB-f9NuxCb8JADgg2Fpd22kaQvtsGCIC8UVfiQJxoQ/viewform',
     },
+    {
+      location: 'Online',
+      host: '',
+      organizer: 'Angular Athens',
+      link: 'https://discord.gg/BEUTyDXg',
+    },
+    {
+      location: 'Leipzig, Germany',
+      host: 'Pamyra GmbH',
+      organizer: 'Angular Meetup Leipzig',
+      link: 'https://www.meetup.com/angular-meetup-leipzig/events/304565673',
+    },
   ];
 
   constructor() {
