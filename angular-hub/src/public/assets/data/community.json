@@ -1966,5 +1966,35 @@
         "url": "https://ngconf.angular-peru.com/"
       }
     ]
+  },
+  {
+    "name": "NG Venice",
+    "type": "conference",
+    "location": "Ghent, Belgium",
+    "logo": "https://ng-venice.org/wp-content/uploads/2024/11/solo-scudo.svg",
+    "eventsUrl": null,
+    "websiteUrl": "https://ng-venice.org/",
+    "organizersUrl": "https://ng-venice.org/team/",
+    "twitterUrl": "https://x.com/NGVeniceConf",
+    "linkedinUrl": "https://www.linkedin.com/in/ng-venice-7b615a33a/",
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": "NG Venice 2025",
+        "type": "conference",
+        "date": "2025-03-13",
+        "endDate": "2025-03-14",
+        "url": "https://ng-venice.org/",
+        "callForPapersUrl": "null",
+        "callForPapersDueDate": "null",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Venice, Italy"
+      }
+    ]
   }
 ]
