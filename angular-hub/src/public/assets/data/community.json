@@ -724,6 +724,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-london/events/301995271/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "London, United Kingdom",
+        "date": "2025-01-21",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-london/events/305184905"
       }
     ]
   },
@@ -821,6 +834,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-berlin/events/303480735"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Berlin, Germany",
+        "date": "2025-02-05",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-meetup-berlin/events/305129347"
       }
     ]
   },
@@ -1746,6 +1772,19 @@
         "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdtSyB8ECpWFhGtMY-UDNuJeiMm7SExBwn-BiJEHT-QwDEW7Q/viewform",
         "callForPapersDueDate": "2024-07-20",
         "url": "https://angular-tlv.com/"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "Tel Aviv, Israel",
+        "date": "2025-02-10",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-tlv/events/305697184"
       }
     ]
   },
@@ -1935,6 +1974,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ngkato/events/303788459"
+      },
+      {
+        "name": "NG KATO #4",
+        "type": "meetup",
+        "location": "Katowice, Poland",
+        "date": "2025-01-23",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/ngkato/events/305379595"
       }
     ]
   },
