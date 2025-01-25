@@ -48,7 +48,7 @@ export const routeMeta: RouteMeta = {
                 <div>
                   <dl>
                     <dt><i class="pi pi-calendar-clock"></i> Date</dt>
-                    <dd class="ml-5 opacity-65">{{ event.date }}</dd>
+                    <dd class="ml-5 opacity-65">{{ event.date ?? 'TBD' }}</dd>
                     <!--
                     <dt><i class="pi pi-calendar-clock"></i> End date</dt>
                     <dd class="ml-5 opacity-65">{{ event.date }}</dd>
