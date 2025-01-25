@@ -5,7 +5,7 @@ export const EventSchema = object({
   type: picklist(['workshop', 'conference', 'meetup', 'other']),
   location: nullable(string()),
   url: nullable(string()),
-  date: string(),
+  date: nullable(string()),
   language: string(),
   isFree: boolean(),
   isRemote: boolean(),

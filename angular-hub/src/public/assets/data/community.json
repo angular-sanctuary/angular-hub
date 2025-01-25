@@ -1475,6 +1475,19 @@
         "isRemote": false,
         "isOnsite": true,
         "location": "Rome, Italy"
+      },
+      {
+        "name": "NG Rome MMXXV",
+        "type": "conference",
+        "date": null,
+        "url": "https://ngrome.io/",
+        "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeUNynP54dcZSAiKljfYtB5DTA8iBgJ9w8dqTU4nqaU7k6N6w/viewform",
+        "callForPapersDueDate": "2025-03-04",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Rome, Italy"
       }
     ]
   },
