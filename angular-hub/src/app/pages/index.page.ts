@@ -44,9 +44,8 @@ export const routeMeta: RouteMeta = {
   selector: 'app-events',
   standalone: true,
   template: `
-    <app-banner description="Curated list of Angular Communities and Events" />
     <!-- TODO add scrollbar-gutter stable for md + -->
-    <div class="flex flex-col md:flex-row px-6 gap-6">
+    <div class="flex flex-col md:flex-row-reverse gap-6 sm:gap-12 p-4 sm:p-8">
       <!-- TODO add sticky -->
       <div role="search" class="flex flex-col gap-4">
         <div class="flex items-center justify-between h-10">
@@ -76,17 +75,24 @@ export const routeMeta: RouteMeta = {
           <ng-container *ngTemplateOutlet="filters" />
         </div>
       </div>
-      <section class="flex flex-col gap-4">
+      <section class="flex flex-col flex-1 gap-4">
         @if (isTodayEvents().length) {
           <app-event-section [events]="isTodayEvents()" [title]="'Today'" />
         }
         @if (isWeekEvents().length) {
-          <app-event-section [events]="isWeekEvents()" [title]="'This week'" />
+          <app-event-section
+            [events]="isWeekEvents()"
+            [title]="'This week'"
+            [isTitleVisible]="!!isTodayEvents().length"
+          />
         }
         @if (isNotWeekEvents().length) {
           <app-event-section
             [events]="isNotWeekEvents()"
             [title]="'Upcoming'"
+            [isTitleVisible]="
+              !!isTodayEvents().length || !!isWeekEvents().length
+            "
           />
         }
 

@@ -5,43 +5,49 @@ import {
   input,
 } from '@angular/core';
 import { Event } from '../../../models/event.model';
-import { DatePipe, NgOptimizedImage } from '@angular/common';
-import { TagComponent } from '../tag.component';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-event-card',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <h4 class="text-xl font-bold my-1">
-      {{ event().name }}
-    </h4>
-    <div class="flex gap-4 mb-2">
-      <div class="flex justify-center items-center w-20 h-20">
-        <img
-          class="rounded-xl"
-          [src]="event().community?.logo"
-          aria-hidden="true"
-          height="70"
-          width="70"
-          alt=""
-        />
+    <div class="flex flex-col sm:flex-row items-start sm:items-center">
+      <div
+        class="flex sm:flex-col font-bold text-primary sm:mr-20 gap-4 sm:gap-0"
+        itemprop="date"
+      >
+        <span>{{ event().date | date: 'dd MMM' : 'en-US' }}</span>
+        @if (event().endDate) {
+          <span>{{ event().endDate | date: 'dd MMM' : 'en-US' }}</span>
+        }
       </div>
-      <div class="flex-1">
-        <span class="font-bold text-primary" itemprop="date">
-          <!-- todo add date pipe to avoid 2024-09-3 -->
-          {{ event().date }}
-          {{ event().endDate ? '- ' + event().endDate : '' }}
-        </span>
-        <div
-          class="flex-1 text-gray-500 dark:text-gray-400 min-h-4"
-          itemprop="location"
-        >
-          {{ event().location ?? 'Online' }}
-          @if (isRemoteFriendly() && event().location) {
-            <span>- Online</span>
-          }
+      <div class="flex-1 flex items-center">
+        <div class="flex items-center w-20 h-20">
+          <img
+            class="rounded-xl"
+            [src]="event().community?.logo"
+            aria-hidden="true"
+            height="50"
+            width="50"
+            alt=""
+          />
         </div>
+        <div class="flex-1">
+          <h4 class="sm:text-xl font-bold my-1">
+            {{ event().name }}
+          </h4>
+
+          <div
+            class="flex-1 text-gray-500 dark:text-gray-400 min-h-4"
+            itemprop="location"
+          >
+            {{ event().location ?? 'Online' }}
+            @if (isRemoteFriendly() && event().location) {
+              <span>- Online</span>
+            }
+          </div>
+          <!--
         <ul class="flex tags">
           @if (!event().isFree) {
             <li
@@ -60,10 +66,12 @@ import { TagComponent } from '../tag.component';
             </li>
           }
         </ul>
+        -->
+        </div>
       </div>
     </div>
   `,
-  imports: [DatePipe, NgOptimizedImage, TagComponent],
+  imports: [DatePipe],
 })
 export class EventCardComponent {
   event = input.required<Event>();
