@@ -6,6 +6,7 @@ import { DividerModule } from 'primeng/divider';
 import { Title } from '@angular/platform-browser';
 import { JsonLdService } from '../../services/json-ld.service';
 import { BannerComponent } from '../../components/banner.component';
+import { DatePipe } from '@angular/common';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -63,7 +64,7 @@ export const routeMeta: RouteMeta = {
               <div class="text-center">
                 <div class="opacity-65">CFP due date</div>
                 <div class="text-2xl font-bold">
-                  {{ event.callForPapersDueDate }}
+                  {{ event.callForPapersDueDate | date: 'dd MMM' : 'en-US' }}
                 </div>
               </div>
             </a>
@@ -110,7 +111,7 @@ export const routeMeta: RouteMeta = {
       </ul>
     </div>
   `,
-  imports: [DividerModule, BannerComponent],
+  imports: [DividerModule, BannerComponent, DatePipe],
 })
 export default class CallForPapersComponent {
   callForPapers = toSignal(injectLoad<typeof load>(), { requireSync: true });
