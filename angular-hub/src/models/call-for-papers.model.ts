@@ -3,7 +3,6 @@ export interface CallForPapers {
   type: 'workshop' | 'conference' | 'meetup' | 'other';
   logo: string | null;
   location: string | null;
-  url: string;
   callForPapersUrl: string;
 }
 

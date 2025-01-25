@@ -15,17 +15,24 @@ export default defineEventHandler((event) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const events = community.events.reduce(
           (acc: EventCallForPapers[], event: Event) => {
-            if (
-              event.callForPapers &&
-              new Date(event.callForPapersDueDate) > new Date()
-            ) {
+            if (event.callForPapersUrl) {
+              if (
+                event.callForPapersDueDate &&
+                new Date(event.callForPapersDueDate) < new Date()
+              ) {
+                return acc;
+              }
+
+              if (event.date && new Date(event.date) < new Date()) {
+                return acc;
+              }
+
               acc.push({
                 name: event.name ?? community.name,
                 type: event.type,
                 location: event.location,
                 logo: community.logo,
-                url: event.url,
-                callForPapersUrl: event.callForPapers,
+                callForPapersUrl: event.callForPapersUrl,
                 date: event.date,
                 callForPapersDueDate: event.callForPapersDueDate,
                 isRemote: event.isRemote,

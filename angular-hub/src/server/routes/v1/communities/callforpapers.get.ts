@@ -11,7 +11,7 @@ export default defineEventHandler((event) => {
     return communities
       .filter(
         (community: Community) =>
-          community.callForPapers && community.type === 'meetup',
+          community.callForPapersUrl && community.type === 'meetup',
       )
       .map(({ events, ...community }) => ({ ...community }));
   } catch (error) {
