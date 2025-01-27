@@ -49,7 +49,6 @@ export const routeMeta: RouteMeta = {
       <!-- TODO add sticky -->
       <div role="search" class="flex flex-col gap-4">
         <div class="flex items-center justify-between h-10">
-          <span>{{ filteredEvents().length }} upcoming events</span>
           @if (hasFilters()) {
             <p-button
               class="hidden sm:block"
