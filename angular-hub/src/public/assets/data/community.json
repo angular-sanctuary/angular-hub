@@ -1303,6 +1303,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularwroclaw/events/304432351"
+      },
+      {
+        "name": "Angular Wrocław #42",
+        "type": "meetup",
+        "location": "Wrocław, Poland",
+        "date": "2025-03-12",
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularwroclaw/events/305940428"
       }
     ]
   },
@@ -1556,6 +1569,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/303802413"
+      },
+      {
+        "name": "ngLodz #15",
+        "type": "meetup",
+        "location": "Łódź, Poland",
+        "date": "2025-02-19",
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/ng-lodz/events/305841543"
       }
     ]
   },
