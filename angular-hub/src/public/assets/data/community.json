@@ -598,6 +598,32 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.youtube.com/live/QSs9D0bTRVA"
+      },
+      {
+        "name": "Etat de l'art Angular en 202",
+        "type": "meetup",
+        "location": null,
+        "date": "2025-02-06",
+        "language": "French",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.youtube.com/live/NcHS5TjfRJg?si=4CQgBVf_Y4y8YnMj"
+      },
+      {
+        "name": "NG Baguette Conf 2025",
+        "type": "conference",
+        "location": "Nantes, France",
+        "date": "2025-05-24",
+        "language": "French",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": "https://conference-hall.io/ng-baguette-conf-2025",
+        "callForPapersDueDate": "2025-02-28",
+        "url": "https://www.youtube.com/live/QSs9D0bTRVA"
       }
     ]
   },
