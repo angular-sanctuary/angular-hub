@@ -2061,5 +2061,34 @@
         "location": "Venice, Italy"
       }
     ]
+  },
+  {
+    "name": "Paris Angular",
+    "type": "meetup",
+    "location": "Paris, France",
+    "logo": "assets/logos/paris-angular.png",
+    "eventsUrl": "https://www.meetup.com/paris-angular/events",
+    "websiteUrl": "https://www.meetup.com/paris-angular",
+    "organizersUrl": "https://www.meetup.com/paris-angular/members/?op=leaders",
+    "twitterUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": "Paris Angular #1",
+        "type": "meetup",
+        "date": "2025-02-13",
+        "url": "https://www.meetup.com/paris-angular/events/305655014",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "French",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Paris, France"
+      }
+    ]
   }
 ]
