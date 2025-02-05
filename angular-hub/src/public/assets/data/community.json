@@ -600,7 +600,7 @@
         "url": "https://www.youtube.com/live/QSs9D0bTRVA"
       },
       {
-        "name": "Etat de l'art Angular en 202",
+        "name": "Etat de l'art Angular en 2025",
         "type": "meetup",
         "location": null,
         "date": "2025-02-06",
@@ -1518,7 +1518,7 @@
       {
         "name": "NG Rome MMXXV",
         "type": "conference",
-        "date": null,
+        "date": "2025-06",
         "url": "https://ngrome.io/",
         "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeUNynP54dcZSAiKljfYtB5DTA8iBgJ9w8dqTU4nqaU7k6N6w/viewform",
         "callForPapersDueDate": "2025-03-04",

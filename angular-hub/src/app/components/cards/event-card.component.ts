@@ -14,12 +14,13 @@ import { DatePipe } from '@angular/common';
   template: `
     <div class="flex flex-col sm:flex-row items-start sm:items-center">
       <div
-        class="flex sm:flex-col font-bold text-primary sm:mr-20 gap-4 sm:gap-0"
+        class="flex sm:flex-col font-bold text-primary sm:min-w-28 gap-4 sm:gap-0"
         itemprop="date"
       >
-        <span>{{ event().date | date: 'dd MMM' : 'en-US' }}</span>
-        @if (event().endDate) {
-          <span>{{ event().endDate | date: 'dd MMM' : 'en-US' }}</span>
+        <span>{{ formatDate(event().date) }}</span>
+        @let endDate = event().endDate;
+        @if (endDate) {
+          <span>{{ formatDate(endDate) }}</span>
         }
       </div>
       <div class="flex-1 flex items-center">
@@ -83,4 +84,14 @@ export class EventCardComponent {
   isRemoteFriendly = computed(() => {
     return this.event().isRemote;
   });
+
+  formatDate(date: string): string | null {
+    if (!date) return '';
+    // Check if the date includes a day component (YYYY-MM-DD)
+    if (date.length > 7) {
+      return new DatePipe('en-US').transform(date, 'dd MMM');
+    }
+    // For YYYY-MM format, show only month
+    return new DatePipe('en-US').transform(date + '-01', 'MMM');
+  }
 }
