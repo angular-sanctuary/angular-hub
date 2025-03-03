@@ -119,6 +119,45 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://meetup.angular.love/autumn-camp/"
+      },
+      {
+        "name": "Angular Love Spring Camp",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2025-04-15",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://meetup.angular.love/spring-camp-2025/"
+      },
+      {
+        "name": "Angular Love Spring Camp",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2025-05-22",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://meetup.angular.love/spring-camp-2025/"
+      },
+      {
+        "name": "Angular Love Spring Camp",
+        "type": "meetup",
+        "location": "Warsaw, Poland",
+        "date": "2025-06-12",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://meetup.angular.love/spring-camp-2025/"
       }
     ]
   },
@@ -200,6 +239,58 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-athens/events/298801969/"
+      },
+      {
+        "name": "Angular Athens 25th Meetup",
+        "type": "meetup",
+        "location": "Athens, Greece",
+        "date": "2025-03-11",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-athens/events/305917322"
+      },
+      {
+        "name": "Angular Athens 26th Meetup",
+        "type": "meetup",
+        "location": "Athens, Greece",
+        "date": "2025-05-06",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-athens/events/305917328"
+      },
+      {
+        "name": "Angular Athens 27th Meetup",
+        "type": "meetup",
+        "location": "Athens, Greece",
+        "date": "2025-09-30",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-athens/events/305917340"
+      },
+      {
+        "name": "Angular Athens 28th Meetup",
+        "type": "meetup",
+        "location": "Athens, Greece",
+        "date": "2025-11-18",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-athens/events/306173162"
       }
     ]
   },
@@ -721,6 +812,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-leipzig/events/304010655"
+      },
+      {
+        "name": "ngLeipzig #49",
+        "type": "meetup",
+        "location": "Leipzig, Germany",
+        "date": "2025-03-11",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-meetup-leipzig/events/306376275"
       }
     ]
   },
@@ -763,6 +867,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-london/events/305184905"
+      },
+      {
+        "name": null,
+        "type": "meetup",
+        "location": "London, United Kingdom",
+        "date": "2025-03-04",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-london/events/305877332"
       }
     ]
   },

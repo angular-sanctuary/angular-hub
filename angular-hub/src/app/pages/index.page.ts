@@ -82,7 +82,7 @@ export const routeMeta: RouteMeta = {
           <app-event-section
             [events]="isWeekEvents()"
             [title]="'This week'"
-            [isTitleVisible]="!!isTodayEvents().length"
+            [isTitleVisible]="!!isWeekEvents().length"
           />
         }
         @if (isNotWeekEvents().length) {
