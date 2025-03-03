@@ -2183,6 +2183,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ngkato/events/305379595"
+      },
+      {
+        "name": "NG KATO #5",
+        "type": "meetup",
+        "location": "Katowice, Poland",
+        "date": "2025-03-27",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/ngkato/events/306244433"
       }
     ]
   },
