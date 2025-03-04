@@ -2286,5 +2286,20 @@
         "location": "Paris, France"
       }
     ]
+  },
+  {
+    "name": "Angular Toronto",
+    "type": "meetup",
+    "location": "Toronto, Canada",
+    "logo": "/assets/logos/angular-toronto.png",
+    "eventsUrl": "https://guild.host/angular-toronto/events",
+    "websiteUrl": null,
+    "organizersUrl": "https://guild.host/angular-toronto/members",
+    "twitterUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": []
   }
 ]

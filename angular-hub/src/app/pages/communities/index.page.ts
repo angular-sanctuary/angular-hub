@@ -123,30 +123,31 @@ export default class CommunitiesComponent {
 
   inactiveCommunities = computed(() =>
     this.filteredCommunities()
+      .filter((community) => community.events && community.events.length > 0)
       .filter((community) => {
         const inactivityLimit = new Date();
         inactivityLimit.setMonth(inactivityLimit.getMonth() - 6);
 
-        const newestEvent = community.events?.sort(
-          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-        )[0];
-
-        return newestEvent
-          ? new Date(newestEvent.date).getTime() < inactivityLimit.getTime() &&
-              community.type === 'meetup'
-          : true;
-      })
-      .sort((a, b) => {
-        const newestEventA = a.events?.sort(
-          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-        )[0];
-        const newestEventB = b.events?.sort(
+        const newestEvent = community.events.sort(
           (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
         )[0];
 
         return (
-          new Date(newestEventB?.date ?? 0).getTime() -
-          new Date(newestEventA?.date ?? 0).getTime()
+          new Date(newestEvent.date).getTime() < inactivityLimit.getTime() &&
+          community.type === 'meetup'
+        );
+      })
+      .sort((a, b) => {
+        const newestEventA = a.events.sort(
+          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+        )[0];
+        const newestEventB = b.events.sort(
+          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+        )[0];
+
+        return (
+          new Date(newestEventB.date).getTime() -
+          new Date(newestEventA.date).getTime()
         );
       }),
   );
