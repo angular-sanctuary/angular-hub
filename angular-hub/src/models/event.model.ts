@@ -14,4 +14,5 @@ export interface Event {
   callForPapersUrl: string | null;
   callForPapersDueDate: string | null;
   community?: Community;
+  toBeAnnounced?: boolean;
 }

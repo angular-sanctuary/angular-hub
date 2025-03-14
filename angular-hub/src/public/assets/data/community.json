@@ -1635,7 +1635,8 @@
       {
         "name": "NG Rome MMXXV",
         "type": "conference",
-        "date": "2025-06",
+        "date": "2025-06-19",
+        "endDate": "2025-06-20",
         "url": "https://ngrome.io/",
         "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeUNynP54dcZSAiKljfYtB5DTA8iBgJ9w8dqTU4nqaU7k6N6w/viewform",
         "callForPapersDueDate": "2025-03-04",
@@ -1883,6 +1884,19 @@
         "isOnsite": true,
         "callForPapersUrl": "https://2024.angularday.it/welcome/cfp.html",
         "callForPapersDueDate": "2024-06-17",
+        "url": "https://2024.angularday.it/"
+      },
+      {
+        "name": null,
+        "type": "conference",
+        "location": "Verona, Italy",
+        "date": "2025-11-21",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": "https://2024.angularday.it/welcome/cfp.html",
+        "callForPapersDueDate": "2025-06-15",
         "url": "https://2024.angularday.it/"
       }
     ]
@@ -2301,5 +2315,36 @@
     "twitchUrl": null,
     "callForPapersUrl": null,
     "events": []
+  },
+  {
+    "name": "AngularConnect",
+    "type": "conference",
+    "location": "London, UK",
+    "logo": "/assets/logos/angular-connect.png",
+    "eventsUrl": "https://angularconnect.com",
+    "websiteUrl": null,
+    "organizersUrl": null,
+    "twitterUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": "AngularConnect 2025",
+        "type": "conference",
+        "date": null,
+        "endDate": null,
+        "url": "https://angularconnect.com",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "London, UK",
+        "toBeAnnounced": true
+      }
+    ]
   }
 ]

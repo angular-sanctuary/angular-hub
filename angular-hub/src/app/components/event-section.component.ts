@@ -9,9 +9,10 @@ import { EventCardComponent } from './cards/event-card.component';
       <h3 class="mb-4">{{ title() }}</h3>
     }
     <ul class="flex flex-col gap-4 justify-start items-stretch w-full">
-      @for (event of events(); track event.url) {
+      @for (event of events(); track $index) {
         <li
           class="bg-[#20212C] border-2 border-transparent hover:border-2 hover:border-white px-6 py-2 rounded-xl md:min-w-[400px] cursor-pointer"
+          [class.border-pink-500]="event.toBeAnnounced"
         >
           <a [attr.href]="event.url" target="_blank">
             <app-event-card [event]="event" />

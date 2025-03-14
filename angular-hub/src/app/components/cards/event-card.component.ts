@@ -17,10 +17,14 @@ import { DatePipe } from '@angular/common';
         class="flex sm:flex-col font-bold text-primary sm:min-w-28 gap-4 sm:gap-0"
         itemprop="date"
       >
-        <span>{{ formatDate(event().date) }}</span>
-        @let endDate = event().endDate;
-        @if (endDate) {
-          <span>{{ formatDate(endDate) }}</span>
+        @if (!event().toBeAnnounced) {
+          <span>{{ formatDate(event().date) }}</span>
+          @let endDate = event().endDate;
+          @if (endDate) {
+            <span>{{ formatDate(endDate) }}</span>
+          }
+        } @else {
+          <span>TBA</span>
         }
       </div>
       <div class="flex-1 flex items-center">
@@ -48,31 +52,10 @@ import { DatePipe } from '@angular/common';
               <span>- Online</span>
             }
           </div>
-          <!--
-        <ul class="flex tags">
-          @if (!event().isFree) {
-            <li
-              class="flex items-center justify-center gap-1 bg-[#20212C] border-[#3e4056] border-2 rounded px-2 py-1 text-sm"
-            >
-              <i class="pi pi-dollar text-sm" aria-hidden="true"></i>
-              admission fee
-            </li>
-          }
-          @if (event().language !== 'English') {
-            <li
-              class="flex items-center justify-center gap-1 bg-[#20212C] border-[#3e4056] border-2 rounded px-2 py-1 text-sm"
-            >
-              <i class="pi pi-language text-sm" aria-hidden="true"></i>
-              {{ event().language }}
-            </li>
-          }
-        </ul>
-        -->
         </div>
       </div>
     </div>
   `,
-  imports: [DatePipe],
 })
 export class EventCardComponent {
   event = input.required<Event>();

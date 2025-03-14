@@ -1,4 +1,4 @@
-import { boolean, nullable, object, picklist, string } from 'valibot';
+import { boolean, nullable, object, picklist, string, optional } from 'valibot';
 
 export const EventSchema = object({
   name: nullable(string()),
@@ -12,4 +12,5 @@ export const EventSchema = object({
   isOnsite: boolean(),
   callForPapersUrl: nullable(string()),
   callForPapersDueDate: nullable(string()),
+  toBeAnnounced: optional(boolean()),
 });

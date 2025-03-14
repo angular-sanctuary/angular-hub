@@ -23,7 +23,7 @@ export default defineEventHandler(() => {
       .flat()
       .filter((event) => {
         const date = new Date(event.date);
-        return isToday(date) || isFuture(date);
+        return isToday(date) || isFuture(date) || event.toBeAnnounced;
       })
       .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
