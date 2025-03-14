@@ -1262,7 +1262,7 @@
     "name": "Angular Vienna",
     "type": "meetup",
     "location": "Vienna, Austria",
-    "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQHVBAzC4-DKFA/company-logo_200_200/company-logo_200_200/0/1714120314791?e=1738800000&v=beta&t=hj6OI2laMnKisYEOps_eW26COQkLygkbUkeNGY6Yp8k",
+    "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQHVBAzC4-DKFA/company-logo_200_200/company-logo_200_200/0/1714120314791?e=1750291200&v=beta&t=DZ0t1KAjv9FfQfJCrjL29KEzdBxnUBDrrDpczwYkm6A",
     "eventsUrl": "https://www.meetup.com/angular-vienna/events/",
     "websiteUrl": null,
     "organizersUrl": "https://www.meetup.com/angular-vienna/members/?op=leaders",
@@ -1323,6 +1323,20 @@
         "callForPapersUrl": "http://bit.ly/angular-vienna-cfp",
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-vienna/events/304004182/"
+      },
+      {
+        "name": "NgGlühwein 2025",
+        "type": "meetup",
+        "location": "Vienna, Austria",
+        "date": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": "http://bit.ly/angular-vienna-cfp",
+        "callForPapersDueDate": null,
+        "url": null,
+        "toBeAnnounced": true
       }
     ]
   },
@@ -1560,6 +1574,21 @@
         "isRemote": true,
         "isOnsite": true,
         "location": "Salt Lake City, UT, USA"
+      },
+      {
+        "name": null,
+        "type": "conference",
+        "date": null,
+        "endDate": null,
+        "url": "https://ng-conf.org/",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": false,
+        "isRemote": true,
+        "isOnsite": true,
+        "location": "Salt Lake City, UT, USA",
+        "toBeAnnounced": true
       }
     ]
   },
