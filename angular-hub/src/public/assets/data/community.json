@@ -1328,15 +1328,14 @@
         "name": "NgGlühwein 2025",
         "type": "meetup",
         "location": "Vienna, Austria",
-        "date": null,
+        "date": "2025-12",
         "language": "English",
         "isFree": true,
         "isRemote": false,
         "isOnsite": true,
         "callForPapersUrl": "http://bit.ly/angular-vienna-cfp",
         "callForPapersDueDate": null,
-        "url": null,
-        "toBeAnnounced": true
+        "url": null
       }
     ]
   },
@@ -1585,9 +1584,9 @@
         "callForPapersDueDate": null,
         "language": "English",
         "isFree": false,
-        "isRemote": true,
+        "isRemote": false,
         "isOnsite": true,
-        "location": "Salt Lake City, UT, USA",
+        "location": "TBA",
         "toBeAnnounced": true
       }
     ]
@@ -1610,6 +1609,19 @@
         "name": "NG Poland 2024",
         "type": "conference",
         "date": "2024-11-06",
+        "url": "https://ng-poland.pl/",
+        "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform",
+        "callForPapersDueDate": "2024-10-01",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Warsaw, Poland"
+      },
+      {
+        "name": "NG Poland 2025",
+        "type": "conference",
+        "date": "2025-11-18",
         "url": "https://ng-poland.pl/",
         "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeVsK-OA9HudBjk7CpkKNCK8M_DD4_DF-AsFLAP8wdHeZ3O-g/viewform",
         "callForPapersDueDate": "2024-10-01",
