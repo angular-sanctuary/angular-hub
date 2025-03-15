@@ -2325,13 +2325,26 @@
     "linkedinUrl": null,
     "youtubeUrl": null,
     "twitchUrl": null,
-    "callForPapersUrl": null,
+    "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfZ0nxM9K4dNvRfO8PDfZ8vrwW8czUlmd7Efpb7CvoSHqM_QA/viewform",
     "events": [
       {
         "name": "Paris Angular #1",
         "type": "meetup",
         "date": "2025-02-13",
         "url": "https://www.meetup.com/paris-angular/events/305655014",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "French",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Paris, France"
+      },
+      {
+        "name": "Paris Angular #2",
+        "type": "meetup",
+        "date": "2025-04-10",
+        "url": "https://www.meetup.com/fr-FR/paris-angular/events/306623718",
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "language": "French",
