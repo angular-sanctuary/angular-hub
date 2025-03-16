@@ -2036,6 +2036,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-tlv/events/305697184"
+      },
+      {
+        "name": "Angular TLV Conference",
+        "type": "conference",
+        "location": "Tel Aviv, Israel",
+        "date": "2025-11-12",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfUAMqFo00towc_wwi93rB4GX8cwxWHONhu-hH6pA_frpY8Sw/viewform",
+        "callForPapersDueDate": "2025-04-15",
+        "url": "https://angular-tlv.com/"
       }
     ]
   },
