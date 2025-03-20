@@ -2412,5 +2412,35 @@
         "location": "London, UK"
       }
     ]
+  },
+  {
+    "name": "FrontendNation",
+    "type": "conference",
+    "location": null,
+    "logo": "/assets/logos/official-logo.webp",
+    "eventsUrl": "https://frontendnation.com",
+    "websiteUrl": null,
+    "organizersUrl": null,
+    "twitterUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": "Angular Day",
+        "type": "conference",
+        "date": "2025-03-27",
+        "endDate": null,
+        "url": "https://frontendnation.com/events/angular-day-2025",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "location": null
+      }
+    ]
   }
 ]
