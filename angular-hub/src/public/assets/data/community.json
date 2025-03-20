@@ -2400,17 +2400,16 @@
       {
         "name": "AngularConnect 2025",
         "type": "conference",
-        "date": null,
+        "date": "2025-09-13",
         "endDate": null,
         "url": "https://angularconnect.com",
-        "callForPapersUrl": null,
-        "callForPapersDueDate": null,
+        "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLScPS1bRSYXhZy_Lg8lPT8dHKZ2m1o2J5Azfl5rkZ4DtlpR7hA/viewform",
+        "callForPapersDueDate": "2025-05-15",
         "language": "English",
         "isFree": false,
         "isRemote": false,
         "isOnsite": true,
-        "location": "London, UK",
-        "toBeAnnounced": true
+        "location": "London, UK"
       }
     ]
   }
