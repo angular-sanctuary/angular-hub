@@ -8,7 +8,7 @@ import { PwaService } from './services/pwa.service';
 @Component({
   selector: 'angular-hub-root',
   standalone: true,
-  imports: [RouterOutlet, NavigationComponent],
+  imports: [NavigationComponent],
   template: ` <app-navigation class="h-full"></app-navigation> `,
   styles: [
     `
