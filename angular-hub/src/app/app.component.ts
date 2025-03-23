@@ -1,5 +1,5 @@
 import { afterNextRender, Component, inject } from '@angular/core';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { filter, switchMap } from 'rxjs';
 import { SwUpdate, VersionReadyEvent } from '@angular/service-worker';
