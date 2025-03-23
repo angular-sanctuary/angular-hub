@@ -4,7 +4,6 @@ import { ButtonModule } from 'primeng/button';
 import { Sidebar, SidebarModule } from 'primeng/sidebar';
 import { DividerModule } from 'primeng/divider';
 import { PwaService } from '../../services/pwa.service';
-import { NgClass } from '@angular/common';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
@@ -21,7 +20,6 @@ import { InputTextModule } from 'primeng/inputtext';
     SidebarModule,
     RouterLinkActive,
     DividerModule,
-    NgClass,
     IconFieldModule,
     InputIconModule,
     InputTextModule,
