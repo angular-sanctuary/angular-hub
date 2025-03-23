@@ -6,7 +6,6 @@ import {
 } from '@angular/core';
 import { DatePipe, NgOptimizedImage, TitleCasePipe } from '@angular/common';
 import { Community } from '../../../models/community.model';
-import community from '../../../server/routes/v1/community';
 
 @Component({
   selector: 'app-community-card',
