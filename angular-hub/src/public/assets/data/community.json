@@ -1767,6 +1767,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/305841543"
+      },
+      {
+        "name": "ngLodz #16",
+        "type": "meetup",
+        "location": "Łódź, Poland",
+        "date": "2025-03-26",
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/ng-lodz/events/306640537"
       }
     ]
   },
