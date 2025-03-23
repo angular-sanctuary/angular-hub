@@ -1,9 +1,7 @@
 import { Component, computed, signal, viewChild } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { injectLoad, RouteMeta } from '@analogjs/router';
 import { load } from './index.server';
-import { EventCardComponent } from '../components/cards/event-card.component';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { isSameDay, isThisISOWeek, isToday, isWithinInterval } from 'date-fns';
@@ -17,7 +15,6 @@ import { NgTemplateOutlet } from '@angular/common';
 import { MessagesModule } from 'primeng/messages';
 import { EventSectionComponent } from '../components/event-section.component';
 import { MessageComponent } from '../components/message.component';
-import { BannerComponent } from '../components/banner.component';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -225,12 +222,9 @@ export const routeMeta: RouteMeta = {
     `,
   ],
   imports: [
-    RouterLink,
-    EventCardComponent,
     CalendarModule,
     FormsModule,
     ButtonModule,
-    RouterLinkActive,
     DropdownModule,
     InputSwitchModule,
     SidebarModule,
@@ -238,7 +232,6 @@ export const routeMeta: RouteMeta = {
     MessagesModule,
     EventSectionComponent,
     MessageComponent,
-    BannerComponent,
   ],
 })
 export default class EventsComponent {
