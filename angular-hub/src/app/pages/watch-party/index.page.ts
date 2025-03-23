@@ -3,7 +3,6 @@ import { RouteMeta } from '@analogjs/router';
 import { BannerComponent } from '../../components/banner.component';
 import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
-import { Button } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 
 type WatchParty = {
@@ -121,13 +120,7 @@ export const routeMeta: RouteMeta = {
       }
     `,
   ],
-  imports: [
-    BannerComponent,
-    TableModule,
-    DialogModule,
-    Button,
-    InputTextModule,
-  ],
+  imports: [BannerComponent, TableModule, DialogModule, InputTextModule],
 })
 export default class EventsComponent {
   show = signal(false);
