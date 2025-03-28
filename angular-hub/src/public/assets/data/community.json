@@ -2092,6 +2092,20 @@
         "isRemote": false,
         "isOnsite": true,
         "location": "Bonn, Germany"
+      },
+      {
+        "name": "NG-DE Conference",
+        "type": "conference",
+        "date": "2025-11-05",
+        "endDate": "2025-11-07",
+        "url": "https://ng-de.org/",
+        "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLScOxB8N3WQsR4OBe2AIVZy3ihzeVqG9fm67IgqhnaPWkjeKsg/viewform",
+        "callForPapersDueDate": "2025-04-30",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Berlin, Germany"
       }
     ]
   },
