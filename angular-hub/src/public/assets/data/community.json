@@ -2469,5 +2469,34 @@
         "location": null
       }
     ]
+  },
+  {
+    "name": "ngPoznan Angular Meetup",
+    "type": "meetup",
+    "location": "Poznan, Poland",
+    "logo": "/assets/logos/ng-poznan.png",
+    "eventsUrl": "https://www.meetup.com/ng-poznan-meetup/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/ng-poznan-meetup/members/?op=leaders",
+    "twitterUrl": "https://x.com/AngularRome",
+    "linkedinUrl": "https://www.linkedin.com/company/angular-rome/",
+    "youtubeUrl": "https://www.youtube.com/@angularrome6049",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": "ngPoznan #34 – wracamy do gry!",
+        "type": "meetup",
+        "date": "2025-04-17",
+        "url": "https://www.meetup.com/ng-poznan-meetup/events/306959439",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Poznan, Poland"
+      }
+    ]
   }
 ]
