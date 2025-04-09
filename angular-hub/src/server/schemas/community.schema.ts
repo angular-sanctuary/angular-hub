@@ -10,7 +10,7 @@ export const CommunitySchema = object({
   websiteUrl: nullable(string()),
   organizersUrl: nullable(string()),
   blueskyUrl: nullable(string()),
-  twitterUrl: nullable(string()),
+  xUrl: nullable(string()),
   linkedinUrl: nullable(string()),
   youtubeUrl: nullable(string()),
   twitchUrl: nullable(string()),

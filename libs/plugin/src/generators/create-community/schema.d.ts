@@ -5,7 +5,7 @@ export interface CreateCommunityGeneratorSchema {
   url?: string;
   logo?: string;
   bluesky?: string;
-  twitter?: string;
+  x?: string;
   linkedin?: string;
   callForPapers?: string;
 }

@@ -129,15 +129,15 @@ import { Community } from '../../../models/community.model';
               />
             </a>
           }
-          @if (community().twitterUrl) {
+          @if (community().xUrl) {
             <a
               class="rounded-xl bg-[#344255] hover:bg-[#4C5765] p-2"
-              [attr.href]="community().twitterUrl"
+              [attr.href]="community().xUrl"
               target="_blank"
-              title="Twitter URL"
+              title="X URL"
             >
               <img
-                ngSrc="/assets/icons/twitter-icon.svg"
+                ngSrc="/assets/icons/x-twitter-icon.svg"
                 alt=""
                 height="30"
                 width="30"
@@ -237,15 +237,15 @@ import { Community } from '../../../models/community.model';
             />
           </a>
         }
-        @if (community().twitterUrl) {
+        @if (community().xUrl) {
           <a
             class="rounded-xl bg-[#344255] p-2"
-            [attr.href]="community().twitterUrl"
+            [attr.href]="community().xUrl"
             target="_blank"
             title="events URL"
           >
             <img
-              ngSrc="/assets/icons/twitter-icon.svg"
+              ngSrc="/assets/icons/x-twitter-icon.svg"
               alt=""
               height="20"
               width="20"

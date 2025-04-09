@@ -7,7 +7,7 @@ export interface Community {
   url?: string;
   logo?: string;
   bluesky?: string;
-  twitter?: string;
+  x?: string;
   linkedin?: string;
   callForPapers?: string;
   events: Event[];

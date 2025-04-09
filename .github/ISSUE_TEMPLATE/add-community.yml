@@ -38,9 +38,9 @@ body:
     attributes:
       label: Bluesky
   - type: input
-    id: twitter
+    id: x
     attributes:
-      label: Twitter
+      label: X
   - type: input
     id: linkedin
     attributes:
