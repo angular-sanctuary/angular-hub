@@ -42,6 +42,8 @@ paths:
                       type: string
                     organizersUrl:
                       type: string
+                    blueskyUrl:
+                      type: string
                     twitterUrl:
                       type: string
                     linkedinUrl:
@@ -151,6 +153,8 @@ paths:
                     websiteUrl:
                       type: string
                     organizersUrl:
+                      type: string
+                    blueskyUrl:
                       type: string
                     twitterUrl:
                       type: string

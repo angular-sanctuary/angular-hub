@@ -1,5 +1,4 @@
 import { Event } from './event.model';
-import { EventType } from './event-type.model';
 
 export interface Community {
   name: string;
@@ -10,6 +9,7 @@ export interface Community {
   eventsUrl: string | null;
   websiteUrl: string | null;
   organizersUrl: string | null;
+  blueskyUrl: string | null;
   twitterUrl: string | null;
   linkedinUrl: string | null;
   youtubeUrl: string | null;

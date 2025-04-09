@@ -34,6 +34,10 @@ body:
         optional, can be provided as an image on a pull request for better
         quality
   - type: input
+    id: bluesky
+    attributes:
+      label: Bluesky
+  - type: input
     id: twitter
     attributes:
       label: Twitter

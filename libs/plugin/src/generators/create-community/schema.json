@@ -55,6 +55,11 @@
       "description": "Provide the brand logo",
       "x-prompt": "Provide the brand logo url:"
     },
+    "bluesky": {
+      "type": "string",
+      "description": "Provide the bluesky account link",
+      "x-prompt": "Provide the bluesky profile:"
+    },
     "twitter": {
       "type": "string",
       "description": "Provide the twitter account link",
