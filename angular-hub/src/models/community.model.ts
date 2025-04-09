@@ -10,7 +10,7 @@ export interface Community {
   websiteUrl: string | null;
   organizersUrl: string | null;
   blueskyUrl: string | null;
-  twitterUrl: string | null;
+  xUrl: string | null;
   linkedinUrl: string | null;
   youtubeUrl: string | null;
   twitchUrl: string | null;

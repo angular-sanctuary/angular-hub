@@ -1,20 +1,20 @@
+import { injectLoad, RouteMeta } from '@analogjs/router';
+import { NgTemplateOutlet } from '@angular/common';
 import { Component, computed, signal, viewChild } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { injectLoad, RouteMeta } from '@analogjs/router';
-import { load } from './index.server';
-import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 import { isSameDay, isThisISOWeek, isToday, isWithinInterval } from 'date-fns';
 import { ButtonModule } from 'primeng/button';
+import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputSwitchModule } from 'primeng/inputswitch';
-import { Title } from '@angular/platform-browser';
-import { JsonLdService } from '../services/json-ld.service';
-import { Sidebar, SidebarModule } from 'primeng/sidebar';
-import { NgTemplateOutlet } from '@angular/common';
 import { MessagesModule } from 'primeng/messages';
+import { Sidebar, SidebarModule } from 'primeng/sidebar';
 import { EventSectionComponent } from '../components/event-section.component';
 import { MessageComponent } from '../components/message.component';
+import { JsonLdService } from '../services/json-ld.service';
+import { load } from './index.server';
 
 export const routeMeta: RouteMeta = {
   meta: [
@@ -31,7 +31,7 @@ export const routeMeta: RouteMeta = {
       content: '/api/v1/og-image',
     },
     {
-      name: 'twitter:image',
+      name: 'x:image',
       content: '/api/v1/og-image',
     },
   ],
@@ -341,7 +341,7 @@ export default class EventsComponent {
         name: 'Gerome Grignon',
         url: 'https://www.gerome.dev/',
         sameAs: [
-          'https://twitter.com/GeromeDEV',
+          'https://x.com/GeromeDEV',
           'https://www.linkedin.com/in/gerome-grignon/',
           'https://github.com/geromegrignon',
         ],
