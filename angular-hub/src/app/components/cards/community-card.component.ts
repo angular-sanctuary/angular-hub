@@ -1,10 +1,10 @@
+import { DatePipe, NgOptimizedImage, TitleCasePipe } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
   computed,
   input,
 } from '@angular/core';
-import { DatePipe, NgOptimizedImage, TitleCasePipe } from '@angular/common';
 import { Community } from '../../../models/community.model';
 
 @Component({
@@ -114,6 +114,21 @@ import { Community } from '../../../models/community.model';
               />
             </a>
           }
+          @if (community().blueskyUrl) {
+            <a
+              class="rounded-xl bg-[#344255] hover:bg-[#4C5765] p-2"
+              [attr.href]="community().blueskyUrl"
+              target="_blank"
+              title="Bluesky URL"
+            >
+              <img
+                ngSrc="/assets/icons/bluesky-icon.svg"
+                alt=""
+                height="30"
+                width="30"
+              />
+            </a>
+          }
           @if (community().twitterUrl) {
             <a
               class="rounded-xl bg-[#344255] hover:bg-[#4C5765] p-2"
@@ -201,6 +216,21 @@ import { Community } from '../../../models/community.model';
           >
             <img
               ngSrc="/assets/icons/youtube-icon.svg"
+              alt=""
+              height="20"
+              width="20"
+            />
+          </a>
+        }
+        @if (community().blueskyUrl) {
+          <a
+            class="rounded-xl bg-[#344255] p-2"
+            [attr.href]="community().blueskyUrl"
+            target="_blank"
+            title="Bluesky URL"
+          >
+            <img
+              ngSrc="/assets/icons/bluesky-icon.svg"
               alt=""
               height="20"
               width="20"

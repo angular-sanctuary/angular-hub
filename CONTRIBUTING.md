@@ -52,6 +52,7 @@ export interface Community {
   url: string | null;
   mediaChannel: MediaChannel | null;
   logo: string | null;
+  bluesky: string | null;
   twitter: string | null;
   linkedin: string | null;
   callForPapers: string | null;

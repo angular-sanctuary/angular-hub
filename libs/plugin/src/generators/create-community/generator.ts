@@ -1,8 +1,8 @@
 import { logger, readJson, Tree, updateJson } from '@nx/devkit';
-import { CreateCommunityGeneratorSchema } from './schema';
 import { exit } from 'node:process';
 import { Community } from '../models/community';
 import { isPublicAsset } from '../utils/isPublicAsset';
+import { CreateCommunityGeneratorSchema } from './schema';
 
 const COMMUNITIES_PATH = 'angular-hub/src/public/assets/data/community.json';
 
@@ -49,6 +49,7 @@ export async function createCommunityGenerator(
       url: options.url ?? '',
       location: options.location ?? '',
       logo: options.logo ?? '',
+      bluesky: options.bluesky ?? '',
       twitter: options.twitter ?? '',
       linkedin: options.linkedin ?? '',
       callForPapers: options.callForPapers ?? '',
