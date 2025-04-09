@@ -1547,7 +1547,7 @@
     ]
   },
   {
-    "name": "NG Conf",
+    "name": "ng-conf",
     "type": "conference",
     "location": "Salt Lake City, UT, USA",
     "logo": "https://pbs.twimg.com/profile_images/1714328350041444353/wxDLFJbQ_400x400.jpg",
@@ -1575,19 +1575,18 @@
         "location": "Salt Lake City, UT, USA"
       },
       {
-        "name": null,
+        "name": "ng-conf 2025",
         "type": "conference",
-        "date": null,
-        "endDate": null,
+        "date": "2025-10-15",
+        "endDate": "2025-10-18",
         "url": "https://ng-conf.org/",
-        "callForPapersUrl": null,
-        "callForPapersDueDate": null,
+        "callForPapersUrl": "https://sessionize.com/ng-conf-2025",
+        "callForPapersDueDate": "2025-06-1",
         "language": "English",
         "isFree": false,
-        "isRemote": false,
+        "isRemote": true,
         "isOnsite": true,
-        "location": "TBA",
-        "toBeAnnounced": true
+        "location": "Baltimore, Maryland, USA"
       }
     ]
   },
