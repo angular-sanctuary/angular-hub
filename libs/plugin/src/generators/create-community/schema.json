@@ -60,10 +60,10 @@
       "description": "Provide the bluesky account link",
       "x-prompt": "Provide the bluesky profile:"
     },
-    "twitter": {
+    "x": {
       "type": "string",
-      "description": "Provide the twitter account link",
-      "x-prompt": "Provide the twitter profile:"
+      "description": "Provide the x account link",
+      "x-prompt": "Provide the x profile:"
     },
     "linkedin": {
       "type": "string",

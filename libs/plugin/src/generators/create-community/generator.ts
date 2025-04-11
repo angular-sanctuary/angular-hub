@@ -50,7 +50,7 @@ export async function createCommunityGenerator(
       location: options.location ?? '',
       logo: options.logo ?? '',
       bluesky: options.bluesky ?? '',
-      twitter: options.twitter ?? '',
+      x: options.x ?? '',
       linkedin: options.linkedin ?? '',
       callForPapers: options.callForPapers ?? '',
       events: [],

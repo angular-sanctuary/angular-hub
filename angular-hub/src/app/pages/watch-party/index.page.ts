@@ -1,9 +1,9 @@
-import { afterNextRender, Component, signal } from '@angular/core';
 import { RouteMeta } from '@analogjs/router';
-import { BannerComponent } from '../../components/banner.component';
-import { TableModule } from 'primeng/table';
+import { afterNextRender, Component, signal } from '@angular/core';
 import { DialogModule } from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
+import { TableModule } from 'primeng/table';
+import { BannerComponent } from '../../components/banner.component';
 
 type WatchParty = {
   location: string;
@@ -27,7 +27,7 @@ export const routeMeta: RouteMeta = {
       content: '/assets/images/og-image.webp',
     },
     {
-      name: 'twitter:image',
+      name: 'x:image',
       content: '/assets/images/og-image.webp',
     },
   ],

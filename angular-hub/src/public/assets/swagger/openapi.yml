@@ -44,7 +44,7 @@ paths:
                       type: string
                     blueskyUrl:
                       type: string
-                    twitterUrl:
+                    xUrl:
                       type: string
                     linkedinUrl:
                       type: string
@@ -156,7 +156,7 @@ paths:
                       type: string
                     blueskyUrl:
                       type: string
-                    twitterUrl:
+                    xUrl:
                       type: string
                     linkedinUrl:
                       type: string
