@@ -27,7 +27,7 @@ export const routeMeta: RouteMeta = {
       content: '/assets/images/og-image.webp',
     },
     {
-      name: 'x:image',
+      name: 'twitter:image',
       content: '/assets/images/og-image.webp',
     },
   ],
