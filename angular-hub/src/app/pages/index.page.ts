@@ -31,7 +31,7 @@ export const routeMeta: RouteMeta = {
       content: '/api/v1/og-image',
     },
     {
-      name: 'x:image',
+      name: 'twitter:image',
       content: '/api/v1/og-image',
     },
   ],
