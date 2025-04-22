@@ -755,6 +755,20 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://ng-kenya.com/home"
+      },
+      {
+        "name": "NG Kenya 2025",
+        "type": "conference",
+        "date": "2025-07-4",
+        "endDate": "2025-07-5",
+        "url": "https://ng-kenya.com/home",
+        "callForPapersUrl": "https://sessionize.com/ng-kenya-2025",
+        "callForPapersDueDate": "2025-04-30",
+        "language": "English",
+        "isFree": false,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Nairobi, Kenya"
       }
     ]
   },
