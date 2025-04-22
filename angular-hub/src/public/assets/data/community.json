@@ -1823,6 +1823,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/306640537"
+      },
+      {
+        "name": "ngLodz #17",
+        "type": "meetup",
+        "location": "Łódź, Poland",
+        "date": "2025-04-30",
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/ng-lodz/events/307300288"
       }
     ]
   },
