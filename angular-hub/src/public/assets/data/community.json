@@ -907,6 +907,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-london/events/305877332"
+      },
+      {
+        "name": "Angular London Meetup 24th April 2025",
+        "type": "meetup",
+        "location": "London, United Kingdom",
+        "date": "2025-04-24",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-london/events/307061522"
       }
     ]
   },
