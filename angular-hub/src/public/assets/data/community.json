@@ -937,6 +937,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-macedonia/events/304020930"
+      },
+      {
+        "name": "NgRx SignalStore & Accessibility in Angular Apps",
+        "type": "meetup",
+        "location": null,
+        "date": "2025-04-29",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-macedonia/events/307435719"
       }
     ]
   },
