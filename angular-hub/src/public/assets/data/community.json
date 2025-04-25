@@ -2481,7 +2481,21 @@
     "youtubeUrl": null,
     "twitchUrl": null,
     "callForPapersUrl": null,
-    "events": []
+    "events": [
+      {
+        "name": "Evolving Architecture",
+        "type": "meetup",
+        "date": "2025-05-1",
+        "url": "https://guild.host/events/evolving-architecture-dlai4u",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "location": null
+      }
+    ]
   },
   {
     "name": "AngularConnect",
