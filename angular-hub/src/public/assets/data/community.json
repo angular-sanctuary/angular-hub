@@ -587,6 +587,45 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/303963877/"
+      },
+      {
+        "name": "Test Fest | Teenage Mutant Ninja Testing (Component Testing) | Rafael Mestre",
+        "type": "meetup",
+        "location": null,
+        "date": "2025-05-01",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/nl-NL/angularcommunity/events/307222774/"
+      },
+      {
+        "name": "Test Fest | Fake It 'til You Mock It | Younes Jaaidi",
+        "type": "meetup",
+        "location": null,
+        "date": "2025-05-05",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/nl-NL/angularcommunity/events/307518382/"
+      },
+      {
+        "name": "Test Fest | Structuring Code to Avoid Shell-Shocked Testing | Jason Warner",
+        "type": "meetup",
+        "location": null,
+        "date": "2025-05-08",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/nl-NL/angularcommunity/events/307550969/"
       }
     ]
   },
