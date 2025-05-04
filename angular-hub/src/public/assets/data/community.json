@@ -2666,5 +2666,113 @@
         "location": "Poznan, Poland"
       }
     ]
+  },
+  {
+    "name": "Dutch Angular Group",
+    "type": "meetup",
+    "location": "Netherlands",
+    "logo": "assets/logos/dutch-angular-group.svg",
+    "eventsUrl": "https://www.meetup.com/dutch-angular-group/events/",
+    "websiteUrl": null,
+    "organizersUrl": "https://www.meetup.com/dutch-angular-group/members/?op=leaders",
+    "blueskyUrl": null,
+    "xUrl": "https://x.com/AngularDutch",
+    "linkedinUrl": null,
+    "youtubeUrl": "https://www.youtube.com/channel/UCExOZEWcSPmvHp8jUGxwe7g",
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": "Angular Lunch Session",
+        "type": "meetup",
+        "date": "2025-05-22",
+        "url": "https://www.meetup.com/dutch-angular-group/events/304743098/",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "location": null
+      },
+      {
+        "name": "Angular Lunch Session",
+        "type": "meetup",
+        "date": "2025-06-26",
+        "url": "https://www.meetup.com/dutch-angular-group/events/306320090/",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "location": null
+      },
+      {
+        "name": "Angular Lunch Session",
+        "type": "meetup",
+        "date": "2025-07-24",
+        "url": "https://www.meetup.com/dutch-angular-group/events/306320089/",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "location": null
+      },
+      {
+        "name": "Angular Lunch Session",
+        "type": "meetup",
+        "date": "2025-08-28",
+        "url": "https://www.meetup.com/dutch-angular-group/events/306756987/",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "location": null
+      },
+      {
+        "name": "Angular Lunch Session",
+        "type": "meetup",
+        "date": "2025-09-25",
+        "url": "https://www.meetup.com/dutch-angular-group/events/jqxbktyhcmbhc/",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "location": null
+      },
+      {
+        "name": "Angular Lunch Session",
+        "type": "meetup",
+        "date": "2025-10-23",
+        "url": "https://www.meetup.com/dutch-angular-group/events/jqxbktyhcnbfc/",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "location": null
+      },
+      {
+        "name": "Sharpen Your Angular Skills: Smarter Development with Mocks and Signals",
+        "type": "meetup",
+        "date": "2025-05-22",
+        "url": "https://www.meetup.com/dutch-angular-group/events/307472541/",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Utrecht, Netherlands"
+      }
+    ]
   }
 ]
