@@ -626,6 +626,32 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/nl-NL/angularcommunity/events/307550969/"
+      },
+      {
+        "name": "Angular 20 Watch Party",
+        "type": "meetup",
+        "location": null,
+        "date": "2025-05-29",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularcommunity/events/307613608/"
+      },
+      {
+        "name": "Angular 20: Fiesta de lanzamiento",
+        "type": "meetup",
+        "location": null,
+        "date": "2025-05-29",
+        "language": "Spanish",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularcommunity/events/307613725/"
       }
     ]
   },
