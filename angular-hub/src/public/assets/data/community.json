@@ -1627,6 +1627,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularwroclaw/events/305940428"
+      },
+      {
+        "name": "Angular Wrocław #43",
+        "type": "meetup",
+        "location": "Wrocław, Poland",
+        "date": "2025-05-29",
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularwroclaw/events/307703717/"
       }
     ]
   },
