@@ -2258,6 +2258,22 @@
       }
     ]
   },
+    {
+    "name": "ngGirls",
+    "type": "meetup",
+    "location": "Tel Aviv-Yafo, Israel",
+    "logo": "https://www.ng-girls.org/assets/logo_big.png",
+    "eventsUrl": "https://www.meetup.com/nggirls/events/",
+    "websiteUrl": "https://www.ng-girls.org/",
+    "organizersUrl": "https://www.meetup.com/nggirls/members/?op=leaders",
+    "blueskyUrl": null,
+    "xUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": []
+  },
   {
     "name": "NG-DE",
     "type": "conference",
