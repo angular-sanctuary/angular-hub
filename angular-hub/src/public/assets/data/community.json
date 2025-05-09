@@ -2659,10 +2659,10 @@
     ]
   },
   {
-    "name": "FrontendNation",
+    "name": "Frontend Nation",
     "type": "conference",
     "location": null,
-    "logo": "/assets/logos/official-logo.webp",
+    "logo": "/assets/logos/frontend-nation.jpg",
     "eventsUrl": "https://frontendnation.com",
     "websiteUrl": null,
     "organizersUrl": null,
@@ -2679,6 +2679,20 @@
         "date": "2025-03-27",
         "endDate": null,
         "url": "https://frontendnation.com/events/angular-day-2025",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "location": null
+      },
+      {
+        "name": "Frontend Nation 2025",
+        "type": "conference",
+        "date": "2025-06-03",
+        "endDate": "2025-06-05",
+        "url": "https://frontendnation.com/2025",
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "language": "English",
