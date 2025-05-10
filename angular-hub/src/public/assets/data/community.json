@@ -1713,6 +1713,32 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": null
+      },
+      {
+        "name": null,
+        "type": "workshop",
+        "location": "Rome, Italy",
+        "date": "2025-07-19",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": null
+      },
+      {
+        "name": null,
+        "type": "workshop",
+        "location": "Warsaw, Poland",
+        "date": "2025-11-16",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": null
       }
     ]
   },
