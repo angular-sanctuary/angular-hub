@@ -1996,6 +1996,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.youtube.com/@NgAsiaAngular/streams"
+      },
+      {
+        "name": "200 Shades of Angular Style Guide",
+        "type": "meetup",
+        "location": null,
+        "date": "2025-06-05",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.youtube.com/@NgAsiaAngular/streams"
       }
     ]
   },
