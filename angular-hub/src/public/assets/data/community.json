@@ -2490,6 +2490,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ngkato/events/306244433"
+      },
+      {
+        "name": "NG KATO #6",
+        "type": "meetup",
+        "location": "Katowice, Poland",
+        "date": "2025-05-22",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/ngkato/events/307420140/"
       }
     ]
   },
