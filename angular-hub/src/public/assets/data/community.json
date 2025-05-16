@@ -2594,6 +2594,19 @@
         "isRemote": false,
         "isOnsite": true,
         "location": "Paris, France"
+      },
+      {
+        "name": "Paris Angular #3",
+        "type": "meetup",
+        "date": "2025-06-03",
+        "url": "https://www.meetup.com/paris-angular/events/307665148/",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "French",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Paris, France"
       }
     ]
   },
