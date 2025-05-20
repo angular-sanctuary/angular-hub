@@ -127,46 +127,34 @@ export default class EventsComponent {
   // TODO: Replace with proper json file
   parties: WatchParty[] = [
     {
-      location: 'Nantes, France',
-      host: 'SFEIR',
-      organizer: 'Angular Devs France',
-      link: 'https://www.eventbrite.fr/e/watch-party-release-angular-19-nantes-tickets-1077228512479',
-    },
-    {
-      location: 'Tours, France',
-      host: 'APSIDE',
-      organizer: 'Angular Devs France',
-      link: 'https://www.eventbrite.com/e/watch-party-release-angular-19-tours-tickets-1077229665929',
-    },
-    {
-      location: 'Paris, France',
-      host: 'Akur8',
-      organizer: 'William Marques',
-      link: 'https://www.eventbrite.fr/e/billets-watch-party-release-angular-19-paris-1076981654119',
+      location: 'Roma, Italy',
+      host: 'David Passafaro',
+      organizer: 'NG Rome',
+      link: 'https://www.eventbrite.it/e/biglietti-angular-v20-release-watch-party-1370987904729',
     },
     {
       location: 'Online',
       host: '',
-      organizer: 'Buenos Aires GDG',
-      link: 'https://gdg.community.dev/events/details/google-gdg-buenos-aires-presents-watch-party-angular-v19/',
+      organizer: 'Angular Community Meetup',
+      link: 'https://www.meetup.com/angularcommunity/events/307613608',
     },
     {
-      location: 'Singapore',
-      host: 'Ascenda',
-      organizer: 'Angular Singapore',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSd8FH1RvB-f9NuxCb8JADgg2Fpd22kaQvtsGCIC8UVfiQJxoQ/viewform',
+      location: 'Online (Spanish)',
+      host: '',
+      organizer: 'Angular Community Meetup',
+      link: 'https://www.meetup.com/angularcommunity/events/307613725',
     },
     {
       location: 'Online',
       host: '',
-      organizer: 'Angular Athens',
-      link: 'https://discord.gg/BEUTyDXg',
+      organizer: 'Santosh Yadav',
+      link: 'https://www.youtube.com/watch?v=WyS6jPyI388',
     },
     {
-      location: 'Leipzig, Germany',
-      host: 'Pamyra GmbH',
-      organizer: 'Angular Meetup Leipzig',
-      link: 'https://www.meetup.com/angular-meetup-leipzig/events/304565673',
+      location: 'Online',
+      host: '',
+      organizer: 'Muhammad Ahsan Ayaz',
+      link: 'https://www.youtube.com/watch?v=zlCGsg7FgIY',
     },
   ];
 
