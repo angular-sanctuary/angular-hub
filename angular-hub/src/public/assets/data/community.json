@@ -1192,6 +1192,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-graz/events/300824699/"
+      },
+      {
+        "name": "Angular Meetup: AI for Design Systems and Performance",
+        "type": "meetup",
+        "location": "Graz, Austria",
+        "date": "2025-06-12",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-meetup-graz/events/307932019/"
       }
     ]
   },
