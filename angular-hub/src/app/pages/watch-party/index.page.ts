@@ -148,7 +148,7 @@ export default class EventsComponent {
       location: 'Online',
       host: '',
       organizer: 'Santosh Yadav',
-      link: 'https://www.youtube.com/watch?v=WyS6jPyI388',
+      link: 'https://www.youtube.com/watch?v=spiuVrYa7v8',
     },
     {
       location: 'Online',
