@@ -1295,7 +1295,7 @@
     ]
   },
   {
-    "name": "Angular NYC",
+    "name": "AngularNYC",
     "type": "meetup",
     "location": "New York, USA",
     "logo": "https://pbs.twimg.com/profile_images/869774200604688384/8mRWQji-_400x400.jpg",
@@ -1321,6 +1321,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularnyc/events/296188739"
+      },
+      {
+        "name": "AngularNYC, June 2025",
+        "type": "meetup",
+        "location": "New York, USA",
+        "date": "2025-06-03",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularnyc/events/307844037/"
       }
     ]
   },
