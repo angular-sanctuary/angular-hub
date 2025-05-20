@@ -2387,6 +2387,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.eventbrite.com/o/28520702115"
+      },
+      {
+        "name": "Angular v20 Release Watch Party",
+        "type": "meetup",
+        "location": "Rome, Italy",
+        "date": "2025-05-29",
+        "language": "Italian",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.eventbrite.it/e/biglietti-angular-v20-release-watch-party-1370987904729"
       }
     ]
   },
