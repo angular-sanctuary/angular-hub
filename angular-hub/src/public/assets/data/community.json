@@ -1992,6 +1992,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/ng-lodz/events/307300288"
+      },
+      {
+        "name": "ngLodz #18",
+        "type": "meetup",
+        "location": "Łódź, Poland",
+        "date": "2025-05-28",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/ng-lodz/events/307818539"
       }
     ]
   },
