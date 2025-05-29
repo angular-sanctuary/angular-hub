@@ -2930,5 +2930,21 @@
         "location": "Utrecht, Netherlands"
       }
     ]
-  }
+  },
+  {
+    "name": "ng-Mumbai",
+    "type": "meetup",
+    "location": "Mumbai, India",
+    "logo": "/assets/logos/official-logo.webp",
+    "eventsUrl": null,
+    "websiteUrl": "https://ng-mumbai.dev/",
+    "organizersUrl": null,
+    "blueskyUrl": null,
+    "xUrl": null,
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": []
+  },
 ]
