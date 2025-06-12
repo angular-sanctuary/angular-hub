@@ -2048,6 +2048,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.youtube.com/@NgAsiaAngular/streams"
+      },
+      {
+        "name": "Structuring Code to Avoid Shell-Shocked Testing",
+        "type": "meetup",
+        "location": null,
+        "date": "2025-07-08",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.youtube.com/@NgAsiaAngular/streams"
       }
     ]
   },
