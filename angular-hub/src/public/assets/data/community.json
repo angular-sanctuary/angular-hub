@@ -652,6 +652,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularcommunity/events/307613725/"
+      },
+      {
+        "name": "Build streaming generative UI with Angular and hashbrown",
+        "type": "workshop",
+        "location": null,
+        "date": "2025-06-24",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularcommunity/events/308469038/"
       }
     ]
   },
