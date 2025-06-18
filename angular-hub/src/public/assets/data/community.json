@@ -1679,6 +1679,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angularwroclaw/events/307703717/"
+      },
+      {
+        "name": "Angular Wrocław #44",
+        "type": "meetup",
+        "location": "Wrocław, Poland",
+        "date": "2025-07-09",
+        "language": "Polish",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angularwroclaw/events/308539473/"
       }
     ]
   },
