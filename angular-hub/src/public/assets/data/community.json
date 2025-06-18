@@ -1218,6 +1218,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-graz/events/307932019/"
+      },
+      {
+        "name": "Special Online Meetup: Multi-Team Projects (with Angular)",
+        "type": "meetup",
+        "location": "Graz, Austria",
+        "date": "2025-07-17",
+        "language": "English",
+        "isFree": true,
+        "isRemote": true,
+        "isOnsite": false,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-meetup-graz/events/308548004/"
       }
     ]
   },
