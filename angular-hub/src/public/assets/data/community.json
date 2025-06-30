@@ -1244,6 +1244,19 @@
         "callForPapersUrl": null,
         "callForPapersDueDate": null,
         "url": "https://www.meetup.com/angular-meetup-graz/events/308548004/"
+      },
+      {
+        "name": "Angular Graz - Big Meetup, Late Summer 2025",
+        "type": "meetup",
+        "location": "Graz, Austria",
+        "date": "2025-09-05",
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "url": "https://www.meetup.com/angular-meetup-graz/events/308751391/"
       }
     ]
   },
