@@ -3024,5 +3024,35 @@
     "twitchUrl": null,
     "callForPapersUrl": null,
     "events": []
+  },
+  {
+    "name": "SwissAngular",
+    "type": "meetup",
+    "location": "Zürich, Switzerland",
+    "logo": "https://pbs.twimg.com/profile_images/1032699295336726528/eC3mUepL_400x400.jpg",
+    "eventsUrl": "https://www.meetup.com/swiss-angular/events/",
+    "websiteUrl": "https://swissangular.com/",
+    "organizersUrl": "https://www.meetup.com/swiss-angular/members/?op=leaders",
+    "blueskyUrl": null,
+    "xUrl": "https://x.com/SwissAngular",
+    "linkedinUrl": null,
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null,
+    "events": [
+      {
+        "name": "SwissAngular Meetup Q2/Q3 2025",
+        "type": "meetup",
+        "date": "2025-07-02",
+        "url": "https://www.meetup.com/swiss-angular/events/307106025/",
+        "callForPapersUrl": null,
+        "callForPapersDueDate": null,
+        "language": "English",
+        "isFree": true,
+        "isRemote": false,
+        "isOnsite": true,
+        "location": "Zürich, Switzerland"
+      }
+    ]
   }
 ]
