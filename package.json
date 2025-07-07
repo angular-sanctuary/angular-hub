@@ -24,7 +24,6 @@
     "@angular/platform-browser": "18.2.0",
     "@angular/platform-browser-dynamic": "18.2.0",
     "@angular/platform-server": "18.2.0",
-    "@angular/pwa": "18.2.0",
     "@angular/router": "18.2.0",
     "@angular/service-worker": "18.2.0",
     "@nx/plugin": "19.6.4",
@@ -54,6 +53,7 @@
     "@angular-devkit/build-angular": "18.2.0",
     "@angular-devkit/core": "18.2.0",
     "@angular-devkit/schematics": "18.2.0",
+    "@angular/build": "18.2.0",
     "@angular/cli": "~18.2.0",
     "@angular/compiler-cli": "18.2.0",
     "@angular/language-service": "18.2.0",
@@ -96,5 +96,6 @@
     "vite": "5.4.1",
     "vite-tsconfig-paths": "^5.0.1",
     "vitest": "2.0.5"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
