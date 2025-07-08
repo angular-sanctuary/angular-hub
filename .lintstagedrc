@@ -1,4 +1,4 @@
 {
-  "*.{ts,html}": ["nx affected -t lint"],
-  "*": ["npx nx format:write --files"]
+  "*.{ts,html}": [""],
+  "*": [""]
 }
