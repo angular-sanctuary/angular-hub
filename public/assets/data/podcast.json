@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Adventures in Angular",
+    "url": "https://topenddevs.com/podcasts/adventures-in-angular",
+    "logo": "assets/logos/adventures-in-angular.webp",
+    "language": "English",
+    "lastActive": "2025-01",
+    "description": "Keep up with the best tools and latest changes in Angular"
+  },
+  {
+    "name": "Angular Air",
+    "url": "https://www.youtube.com/@AngularAirPodcast",
+    "logo": "assets/logos/angular-air.webp",
+    "language": "English",
+    "description": "A live stream podcast all about Angular, the ecosystem, and community."
+  },
+  {
+    "name": "Angular Master Podcast",
+    "url": "https://www.youtube.com/playlist?list=PLYJFRoKhU5SNcu5GBjIn4X3oVpy4fP1wV",
+    "logo": "assets/logos/angular-master-podcast.webp",
+    "language": "English",
+    "description": "This podcast is designed for Angular developers at every level, offering insights into building production-ready applications, architecture, and performance best practices."
+  },
+  {
+    "name": "The Angular Plus Show",
+    "url": "https://open.spotify.com/show/1PrLErQHBqBhZsRV1KHhGM",
+    "logo": "assets/logos/angular-plus-show.webp",
+    "language": "English",
+    "description": "The Angular Plus Show is the home of ng-conf's official all-Angular podcast. Come here to stay up to date on the latest changes in the Angular community."
+  },
+  {
+    "name": "Angularidades",
+    "url": "https://www.youtube.com/@angularidades",
+    "logo": "assets/logos/angularidades.webp",
+    "language": "Spanish",
+    "description": "Podcast con invitados hispanohablantes conversando sobre temas alrededor del framework Angular."
+  },
+  {
+    "name": "Ng-News",
+    "url": "https://www.youtube.com/@ng-news",
+    "logo": "assets/logos/ng-news.webp",
+    "language": "English",
+    "description": "The latest updates from the Angular community within 100 seconds every week."
+  },
+  {
+    "name": "Angular Rocks",
+    "url": "https://angularrocks.com/",
+    "logo": "assets/logos/angular-rocks.webp",
+    "language": "English",
+    "description": "This is Angular Rocks! Podcast for those who want to know more about Angular. Hosted by kuncevic.dev."
+  },
+  {
+    "name": "Angular Experts",
+    "url": "https://angularexperts.io/podcasts",
+    "logo": "assets/logos/angular-experts.webp",
+    "language": "English",
+    "description": "Learn all about Angular, NgRx, RxJs & NX and advance your skills with guides, in-depth content and actionable tips and tricks with Tomas Trajan, Kevin Kreuzer and the guests!"
+  },
+  {
+    "name": "Angular Catch-Up",
+    "url": "https://angular-catch-up.podbean.com/",
+    "logo": "assets/logos/angular-catch-up.jpg",
+    "language": "English",
+    "description": "Welcome to Angular Catch-Up – your ultimate hub for everything Angular! "
+  },
+  {
+    "name": "Angular Japan User Group | Angular 日本ユーザー会",
+    "url": "https://www.youtube.com/@ng_japan",
+    "logo": "assets/logos/ng-jp.svg",
+    "language": "Japanese",
+    "description": "Angular日本ユーザー会は日本のAngular開発者によるユーザーコミュニティです！ ナレッジの共有やイベントの開催、ドキュメントの翻訳などを中心に活動しています。"
+  },
+  {
+    "name": "Startup Angular",
+    "url": "https://www.youtube.com/@StartupAngular",
+    "logo": "assets/logos/startup-angular.png",
+    "language": "Japanese",
+    "description": "Startup Angularとは？ Angularをメインに使っているスタートアップによる、Angular開発の知見などを発信するイベントです。"
+  }
+]
