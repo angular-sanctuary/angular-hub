@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "tailwindcss-primeui";
+@import "primeicons/primeicons.css";
 
 @theme {
   --color-primary: #ff56f8;
@@ -11,14 +12,14 @@
 }
 
 @font-face {
-  font-family: 'Pixelify';
-  src: local('Trebutchet MS'), url('/assets/fonts/PixelifySans-Regular.ttf');
+  font-family: "Pixelify";
+  src: local("Trebutchet MS"), url("/assets/fonts/PixelifySans-Regular.ttf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Luciole';
-  src: local('Trebutchet MS'), url('/assets/fonts/Luciole-Regular.ttf');
+  font-family: "Luciole";
+  src: local("Trebutchet MS"), url("/assets/fonts/Luciole-Regular.ttf");
   font-display: swap;
 }
 
