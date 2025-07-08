@@ -4,7 +4,7 @@ import { Navigation } from './components/navigation/navigation';
 @Component({
   selector: 'app-root',
   imports: [Navigation],
-  template: `<app-navigation class="h-full flex"></app-navigation>`,
+  template: `<app-navigation class="h-full"></app-navigation>`,
   styles: [
     `
       :host {

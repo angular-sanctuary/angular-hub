@@ -43,20 +43,6 @@
     "description": "The latest updates from the Angular community within 100 seconds every week."
   },
   {
-    "name": "Angular Rocks",
-    "url": "https://angularrocks.com/",
-    "logo": "assets/logos/angular-rocks.webp",
-    "language": "English",
-    "description": "This is Angular Rocks! Podcast for those who want to know more about Angular. Hosted by kuncevic.dev."
-  },
-  {
-    "name": "Angular Experts",
-    "url": "https://angularexperts.io/podcasts",
-    "logo": "assets/logos/angular-experts.webp",
-    "language": "English",
-    "description": "Learn all about Angular, NgRx, RxJs & NX and advance your skills with guides, in-depth content and actionable tips and tricks with Tomas Trajan, Kevin Kreuzer and the guests!"
-  },
-  {
     "name": "Angular Catch-Up",
     "url": "https://angular-catch-up.podbean.com/",
     "logo": "assets/logos/angular-catch-up.jpg",
