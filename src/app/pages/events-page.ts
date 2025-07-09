@@ -1,14 +1,20 @@
-import { Component, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  inject,
+  signal,
+} from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ButtonModule } from 'primeng/button';
 import { MessageModule } from 'primeng/message';
 import { Message } from '../components/message';
 import { JsonLdService } from '../services/json-ld.service';
-import { Event } from '../../models/event.model';
-import { HttpClient } from '@angular/common/http';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { HttpClient, httpResource } from '@angular/common/http';
 import { EventCard } from '../components/cards/event-card';
 import { CommunityEvent } from '../../models/community-event.model';
+import { FormsModule } from '@angular/forms';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 export const routeMeta = {
   meta: [
@@ -33,14 +39,15 @@ export const routeMeta = {
 
 @Component({
   template: `
-    <section class="max-w-screen-xl mx-auto">
+    <section class="max-w-screen-xl w-full mx-auto">
       <input
         class="w-full p-2 rounded-lg border-2 border-gray-300"
         type="search"
         placeholder="Search events"
+        [(ngModel)]="search"
       />
       <ul class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-        @for (event of events(); track $index) {
+        @for (event of filteredEvents(); track event) {
           <li>
             <app-event-card [event]="event" />
           </li>
@@ -48,7 +55,7 @@ export const routeMeta = {
       </ul>
 
       <!-- TODO create custom message UI -->
-      @if (events().length && !events().length) {
+      @if (search().length && !filteredEvents()?.length) {
         <app-message
           [title]="
             'No event found with these criteria, update or reset the filters'
@@ -58,14 +65,14 @@ export const routeMeta = {
       }
 
       <!-- TODO create custom message UI -->
-      @if (!events().length) {
+      @if (!filteredEvents()?.length) {
         <app-message
           [title]="'No upcoming event tracked, see you later!'"
           severity="warn"
         />
       }
 
-      @if (events().length) {
+      @if (filteredEvents()?.length) {
         <p class="text-sm text-gray-500 mt-4 ml-4">
           * Prices are updated manually, check the event website for the most
           accurate information.
@@ -82,15 +89,24 @@ export const routeMeta = {
       }
     `,
   ],
-  imports: [ButtonModule, MessageModule, EventCard, Message],
+  imports: [ButtonModule, MessageModule, EventCard, Message, FormsModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class EventsPage {
+  search = signal('');
+
   events = toSignal(
-    inject(HttpClient).get<CommunityEvent[]>('/api/v1/events/upcoming'),
+    inject(HttpClient).get<CommunityEvent[]>(`/api/v1/events/upcoming`),
     {
       initialValue: [],
     },
   );
+
+  filteredEvents = computed(() => {
+    return this.events().filter((event) =>
+      event.name?.toLowerCase().includes(this.search().toLowerCase()),
+    );
+  });
 
   constructor(
     private title: Title,
@@ -128,7 +144,7 @@ export default class EventsPage {
         {
           '@type': 'ItemList',
           name: 'Angular Events',
-          itemListElement: this.events()?.map((event, index) => ({
+          itemListElement: this.filteredEvents()?.map((event, index) => ({
             '@type': 'ListItem',
             position: index + 1,
             item: {
