@@ -8,6 +8,7 @@ import { Event } from '../../models/event.model';
 import { HttpClient } from '@angular/common/http';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { EventCard } from '../components/cards/event-card';
+import { CommunityEvent } from '../../models/community-event.model';
 
 export const routeMeta = {
   meta: [
@@ -63,6 +64,13 @@ export const routeMeta = {
           severity="warn"
         />
       }
+
+      @if (events().length) {
+        <p class="text-sm text-gray-500 mt-4 ml-4">
+          * Prices are updated manually, check the event website for the most
+          accurate information.
+        </p>
+      }
     </section>
   `,
   styles: [
@@ -77,9 +85,8 @@ export const routeMeta = {
   imports: [ButtonModule, MessageModule, EventCard, Message],
 })
 export default class EventsPage {
-  // TODO  /api/v1/events/upcoming
   events = toSignal(
-    inject(HttpClient).get<Event[]>('/api/v1/events/upcoming'),
+    inject(HttpClient).get<CommunityEvent[]>('/api/v1/events/upcoming'),
     {
       initialValue: [],
     },

@@ -1,7 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
 import { Podcast } from '../../../models/podcast.model';
-import { Tag } from '../tag';
 
 @Component({
   selector: 'app-podcast-card',
