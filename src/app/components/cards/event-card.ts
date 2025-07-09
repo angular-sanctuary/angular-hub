@@ -45,9 +45,12 @@ import { CommunityEvent } from '../../../models/community-event.model';
           @if (!event().isFree) {
             <div class="flex flex-col">
               <div class="text-sm text-gray-500">Starting from</div>
-              <div class="font-bold text-2xl text-[#26A0D9]">
+              <div class="font-bold text-[#26A0D9] flex items-end gap-1">
                 @if (event().startingPrice) {
-                  $ {{ event().startingPrice }}*
+                  <span class="text-sm pb-1">
+                    {{ event().currency }}
+                  </span>
+                  <span class="text-2xl"> {{ event().startingPrice }}* </span>
                 } @else {
                   To be announced
                 }
