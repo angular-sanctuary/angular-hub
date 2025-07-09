@@ -1,9 +1,12 @@
 <nav class="px-8 py-2 flex items-center justify-between">
   <a class="flex items-center gap-4" routerLink="/">
-    <img class="h-12" src="/assets/images/logo.webp" alt="" />
+    <img class="h-8 lg:h-12" src="/assets/images/logo.webp" alt="" />
     <div class="flex flex-col">
-      <span class="title text-3xl">ANGULAR HUB</span>
-      <span class="text-sm text-gray-500">
+      <span class="title text-3xl flex items-center gap-2">
+        <span class="hidden md:block">ANGULAR</span>
+        <span>HUB</span>
+      </span>
+      <span class="hidden lg:block text-sm text-gray-500">
         The Angular community hub for events, communities, and podcasts
       </span>
     </div>
@@ -14,32 +17,32 @@
     <li>
       <a
         class="flex gap-4 items-center px-4 py-3 rounded-xl"
-        [routerLinkActive]="['bg-pink-200', 'text-pink-700']"
+        [routerLinkActive]="['bg-purple-200', 'text-purple-700']"
         [routerLinkActiveOptions]="{ exact: true }"
         routerLink="/"
       >
         <i aria-hidden="true" class="pi pi-calendar text-2xl"></i>
-        Events
+        <span class="hidden md:block">Events</span>
       </a>
     </li>
     <li>
       <a
         class="flex gap-4 items-center px-4 py-3 rounded-xl"
-        [routerLinkActive]="['bg-pink-200', 'text-pink-700']"
+        [routerLinkActive]="['bg-purple-200', 'text-purple-700']"
         routerLink="/communities"
       >
         <i aria-hidden="true" class="pi pi-users text-2xl"></i>
-        Communities
+        <span class="hidden md:block"> Communities </span>
       </a>
     </li>
     <li>
       <a
         class="flex gap-4 items-center px-4 py-3 rounded-xl"
-        [routerLinkActive]="['bg-pink-200', 'text-pink-700']"
+        [routerLinkActive]="['bg-purple-200', 'text-purple-700']"
         routerLink="/podcasts"
       >
         <i aria-hidden="true" class="pi pi-microphone text-2xl"></i>
-        Podcasts
+        <span class="hidden md:block"> Podcasts </span>
       </a>
     </li>
   </ul>

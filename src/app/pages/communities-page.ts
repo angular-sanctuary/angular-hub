@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { CommunityCard } from '../components/cards/community-card';
 import { Title } from '@angular/platform-browser';
 import { JsonLdService } from '../services/json-ld.service';
@@ -19,49 +19,42 @@ export const routeMeta = {
 @Component({
   imports: [CommunityCard, FormsModule],
   template: `
-    <section class="max-w-screen-xl mx-auto">
+    <section class="max-w-screen-xl mx-auto px-6 lg:px-0">
       <input
         class="w-full p-2 rounded-lg border-2 border-gray-300"
         type="search"
         placeholder="Search communities"
+        [(ngModel)]="search"
       />
       <ul class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-        @for (community of communities(); track community) {
+        @for (community of filteredCommunities(); track community) {
           <li>
-            <app-community-card
-              class="h-full"
-              [community]="community"
-            ></app-community-card>
+            <app-community-card class="h-full" [community]="community" />
           </li>
         }
-        <!--
-        @for (community of communitiesWithUpcomingEvents(); track community) {
-          <li>
-            <app-community-card [community]="community"></app-community-card>
-          </li>
-        }
-        @for (community of activeCommunities(); track community) {
-          <li>
-            <app-community-card [community]="community"></app-community-card>
-          </li>
-        }
-        @for (community of inactiveCommunities(); track community) {
-          <li>
-            <app-community-card [community]="community"></app-community-card>
-          </li>
-        }
-      -->
       </ul>
     </section>
   `,
 })
 export default class CommunitiesPage {
-  // TODO /api/v1/communities
+  search = signal('');
+
   communities = toSignal(
     inject(HttpClient).get<Community[]>('/api/v1/communities'),
     {
       initialValue: [],
     },
+  );
+
+  filteredCommunities = computed(() =>
+    this.communities().filter(
+      (community) =>
+        community.name?.toLowerCase().includes(this.search().toLowerCase()) ||
+        community.location
+          ?.toLowerCase()
+          .includes(this.search().toLowerCase()) ||
+        community.type?.toLowerCase().includes(this.search().toLowerCase()),
+    ),
   );
 
   /*
