@@ -42,14 +42,18 @@ import { CommunityEvent } from '../../../models/community-event.model';
         <div
           class="flex items-center justify-between bg-gray-50 p-4 rounded-2xl"
         >
-          @if (event().startingPrice) {
+          @if (!event().isFree) {
             <div class="flex flex-col">
               <div class="text-sm text-gray-500">Starting from</div>
               <div class="font-bold text-2xl text-[#26A0D9]">
-                $ {{ event().startingPrice }}*
+                @if (event().startingPrice) {
+                  $ {{ event().startingPrice }}*
+                } @else {
+                  To be announced
+                }
               </div>
             </div>
-          } @else if (event().isFree) {
+          } @else {
             <div class="flex flex-col">
               <div class="text-sm text-gray-500">Registration</div>
               <div class="font-bold text-2xl text-[#26A0D9]">Free</div>
@@ -62,13 +66,21 @@ import { CommunityEvent } from '../../../models/community-event.model';
             </div>
           }
         </div>
-        <a
-          [href]="event().url"
-          target="_blank"
-          class="w-full flex items-center justify-center text-sm bg-[#26A0D9] text-white p-2 rounded-lg"
-        >
-          Register now
-        </a>
+        @if (event().url) {
+          <a
+            [href]="event().url"
+            target="_blank"
+            class="w-full flex items-center justify-center text-sm bg-[#26A0D9] text-white p-2 rounded-lg"
+          >
+            Register now
+          </a>
+        } @else {
+          <div
+            class="w-full flex items-center justify-center text-sm bg-gray-200 p-2 rounded-lg"
+          >
+            No registration available
+          </div>
+        }
         <a
           [href]="event().organizer.url"
           target="_blank"
