@@ -14,10 +14,9 @@
     <li>
       <a
         class="flex gap-4 items-center px-4 py-3 rounded-xl"
-        routerLinkActive="sidebarActive"
+        [routerLinkActive]="['bg-pink-200', 'text-pink-700']"
         [routerLinkActiveOptions]="{ exact: true }"
         routerLink="/"
-        (click)="sidebarVisible.set(false)"
       >
         <i aria-hidden="true" class="pi pi-calendar text-2xl"></i>
         Events
@@ -26,9 +25,8 @@
     <li>
       <a
         class="flex gap-4 items-center px-4 py-3 rounded-xl"
-        routerLinkActive="sidebarActive"
+        [routerLinkActive]="['bg-pink-200', 'text-pink-700']"
         routerLink="/communities"
-        (click)="sidebarVisible.set(false)"
       >
         <i aria-hidden="true" class="pi pi-users text-2xl"></i>
         Communities
@@ -37,9 +35,8 @@
     <li>
       <a
         class="flex gap-4 items-center px-4 py-3 rounded-xl"
-        routerLinkActive="sidebarActive"
+        [routerLinkActive]="['bg-pink-200', 'text-pink-700']"
         routerLink="/podcasts"
-        (click)="sidebarVisible.set(false)"
       >
         <i aria-hidden="true" class="pi pi-microphone text-2xl"></i>
         Podcasts
