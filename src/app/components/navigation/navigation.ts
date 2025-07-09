@@ -23,12 +23,4 @@ import { InputTextModule } from 'primeng/inputtext';
     InputTextModule,
   ],
 })
-export class Navigation {
-  sidebarVisible = signal(false);
-
-  drawerRef = viewChild.required(Drawer);
-
-  closeCallback(e: Event): void {
-    this.drawerRef().close(e);
-  }
-}
+export class Navigation {}
