@@ -3,4 +3,5 @@ export type Podcast = {
   url: string;
   logo: string;
   language: string;
-}
+  description: string;
+};

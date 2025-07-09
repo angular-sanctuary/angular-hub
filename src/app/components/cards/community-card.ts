@@ -20,9 +20,7 @@ import { Community } from '../../../models/community.model';
           </div>
         </div>
       </header>
-      <p class="text-sm">
-        Europe's premier Angular conference with world-class speakers
-      </p>
+      <p class="text-sm"></p>
       <ul class="flex flex-col gap-2 flex-1">
         @if (community().eventsUrl) {
           <li>
