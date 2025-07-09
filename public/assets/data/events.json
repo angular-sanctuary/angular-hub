@@ -1516,6 +1516,7 @@
     "isOnsite": true,
     "location": "Baltimore, Maryland, USA",
     "startingPrice": 999,
+    "currency": "$",
     "description": "ng-conf 2025 is a two-day conference focused on building the Angular community. Come be part of this amazing event! Meet the Angular Team and some of the biggest names in the community. Learn the latest in Angular, build your network, and grow your skills."
   },
   {
@@ -1545,7 +1546,8 @@
     "isRemote": false,
     "isOnsite": true,
     "location": "Warsaw, Poland",
-    "startingPrice": 186,
+    "startingPrice": 677,
+    "currency": "zł",
     "description": "Europe's Largest Angular Conference | Warsaw & Online"
   },
   {
@@ -1814,7 +1816,8 @@
     "isOnsite": true,
     "callForPapersUrl": "https://2024.angularday.it/welcome/cfp.html",
     "callForPapersDueDate": "2024-06-17",
-    "url": "https://2024.angularday.it/"
+    "url": "https://2024.angularday.it/",
+    "startingPrice": 0
   },
   {
     "name": null,
@@ -1946,6 +1949,7 @@
     "isOnsite": true,
     "location": "Berlin, Germany",
     "startingPrice": 799,
+    "currency": "€",
     "description": "Join us for the premier Angular conference in Germany. Secure your spot today!"
   },
   {

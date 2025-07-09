@@ -20,4 +20,5 @@ export type Event = {
   attendeesCount?: number | null;
   isSoldOut?: boolean;
   description?: string | null;
+  currency?: string | null;
 };

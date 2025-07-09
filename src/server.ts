@@ -113,7 +113,7 @@ export function app() {
               name: event.name ?? organizer?.name ?? '',
               organizer: {
                 name: organizer?.name ?? '',
-                url: organizer?.eventsUrl ?? '',
+                url: organizer?.websiteUrl ?? '',
                 logo: organizer?.logo ?? '',
               },
             };
