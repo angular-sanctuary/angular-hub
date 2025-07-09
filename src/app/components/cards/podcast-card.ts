@@ -36,8 +36,7 @@ import { Podcast } from '../../../models/podcast.model';
       </div>
 
       <p class="text-sm leading-relaxed flex-1">
-        A weekly podcast dedicated to the Angular JavaScript framework and
-        related technologies.
+        {{ podcast().description }}
       </p>
 
       <a
