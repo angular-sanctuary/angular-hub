@@ -19,14 +19,14 @@ export const routeMeta = {
 @Component({
   imports: [CommunityCard, FormsModule],
   template: `
-    <section class="max-w-screen-xl mx-auto px-6 lg:px-0">
+    <section class="max-w-screen-xl mx-auto px-6">
       <input
         class="w-full p-2 rounded-lg border-2 border-gray-300"
         type="search"
         placeholder="Search communities"
         [(ngModel)]="search"
       />
-      <ul class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+      <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-6">
         @for (community of filteredCommunities(); track community) {
           <li>
             <app-community-card class="h-full" [community]="community" />

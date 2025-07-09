@@ -43,14 +43,14 @@ export const routeMeta = {
 
 @Component({
   template: `
-    <section class="max-w-screen-xl w-full mx-auto px-6 lg:px-0">
+    <section class="max-w-screen-xl w-full mx-auto px-6">
       <input
         class="w-full p-2 rounded-lg border-2 border-gray-300"
         type="search"
         placeholder="Search events"
         [(ngModel)]="search"
       />
-      <ul class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+      <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-6">
         @for (event of filteredEvents(); track event) {
           <li>
             <app-event-card [event]="event" />
@@ -59,9 +59,7 @@ export const routeMeta = {
       </ul>
 
       <!-- Show message when search has no results -->
-      @if (
-        search().length && !filteredEvents().length && events().length > 0
-      ) {
+      @if (search().length && !filteredEvents().length && events().length > 0) {
         <app-empty-search-message
           [title]="'No events found'"
           [description]="
