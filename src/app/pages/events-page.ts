@@ -8,7 +8,11 @@ import {
 import { Title } from '@angular/platform-browser';
 import { ButtonModule } from 'primeng/button';
 import { MessageModule } from 'primeng/message';
-import { Message } from '../components/message';
+import {
+  Message,
+  EmptySearchMessage,
+  NoEventsMessage,
+} from '../components/message';
 import { JsonLdService } from '../services/json-ld.service';
 import { HttpClient, httpResource } from '@angular/common/http';
 import { EventCard } from '../components/cards/event-card';
@@ -54,29 +58,26 @@ export const routeMeta = {
         }
       </ul>
 
-      <!-- TODO create custom message UI -->
-      @if (search().length && !filteredEvents()?.length) {
-        <app-message
-          [title]="
-            'No event found with these criteria, update or reset the filters'
+      <!-- Show message when search has no results -->
+      @if (
+        search().length && !filteredEvents().length && events().length > 0
+      ) {
+        <app-empty-search-message
+          [title]="'No events found'"
+          [description]="
+            'We could not find any events matching your search criteria. Try different keywords or browse all available events.'
           "
-          severity="warn"
         />
       }
 
-      <!-- TODO create custom message UI -->
-      @if (!filteredEvents()?.length) {
-        <app-message
-          [title]="'No upcoming event tracked, see you later!'"
-          severity="warn"
+      <!-- Show message when there are no events at all -->
+      @if (!events().length) {
+        <app-no-events-message
+          [title]="'No upcoming events'"
+          [description]="
+            'There are currently no upcoming Angular events scheduled. New events are added regularly, so please check back soon!'
+          "
         />
-      }
-
-      @if (filteredEvents()?.length) {
-        <p class="text-sm text-gray-500 mt-4 ml-4">
-          * Prices are updated manually, check the event website for the most
-          accurate information.
-        </p>
       }
     </section>
   `,
@@ -89,7 +90,15 @@ export const routeMeta = {
       }
     `,
   ],
-  imports: [ButtonModule, MessageModule, EventCard, Message, FormsModule],
+  imports: [
+    ButtonModule,
+    MessageModule,
+    EventCard,
+    Message,
+    EmptySearchMessage,
+    NoEventsMessage,
+    FormsModule,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class EventsPage {
