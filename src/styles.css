@@ -55,6 +55,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1.2rem;
 }
 
 .p-button {

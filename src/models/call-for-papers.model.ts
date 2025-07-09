@@ -1,4 +1,4 @@
-export interface CallForPapers {
+export type CallForPapers = {
   name: string;
   type: 'workshop' | 'conference' | 'meetup' | 'other';
   logo: string | null;

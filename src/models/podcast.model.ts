@@ -1,4 +1,4 @@
-export interface Podcast {
+export type Podcast = {
   name: string;
   url: string;
   logo: string;

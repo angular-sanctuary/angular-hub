@@ -1,6 +1,6 @@
 import { Community } from './community.model';
 
-export interface Event {
+export type Event = {
   name: string | null;
   type: 'workshop' | 'conference' | 'meetup' | 'other';
   location: string | null;
@@ -15,4 +15,9 @@ export interface Event {
   callForPapersDueDate: string | null;
   community?: Community;
   toBeAnnounced?: boolean;
-}
+  organizerId: string;
+  startingPrice?: number | null;
+  attendeesCount?: number | null;
+  isSoldOut?: boolean;
+  description?: string | null;
+};

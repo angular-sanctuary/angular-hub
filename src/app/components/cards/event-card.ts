@@ -4,54 +4,8 @@ import {
   computed,
   input,
 } from '@angular/core';
-import { Event } from '../../../models/event.model';
 import { DatePipe } from '@angular/common';
-
-/*
-<div class="flex flex-col sm:flex-row items-start sm:items-center">
-      <div
-        class="flex sm:flex-col font-bold text-primary sm:min-w-28 gap-4 sm:gap-0"
-        itemprop="date"
-      >
-        @if (!event().toBeAnnounced) {
-          <span>{{ formatDate(event().date) }}</span>
-          @let endDate = event().endDate;
-          @if (endDate) {
-            <span>{{ formatDate(endDate) }}</span>
-          }
-        } @else {
-          <span>TBA</span>
-        }
-      </div>
-      <div class="flex-1 flex items-center">
-        <div class="flex items-center w-20 h-20">
-          <img
-            class="rounded-xl"
-            [src]="event().community?.logo"
-            aria-hidden="true"
-            height="50"
-            width="50"
-            alt=""
-          />
-        </div>
-        <div class="flex-1">
-          <h4 class="sm:text-xl font-bold my-1">
-            {{ event().name }}
-          </h4>
-
-          <div
-            class="flex-1 text-gray-500 dark:text-gray-400 min-h-4"
-            itemprop="location"
-          >
-            {{ event().location ?? 'Online' }}
-            @if (isRemoteFriendly() && event().location) {
-              <span>- Online</span>
-            }
-          </div>
-        </div>
-      </div>
-    </div>
-    */
+import { CommunityEvent } from '../../../models/community-event.model';
 
 @Component({
   selector: 'app-event-card',
@@ -62,9 +16,9 @@ import { DatePipe } from '@angular/common';
     >
       <header class="flex items-start justify-between">
         <h2 class="text-lg font-bold">{{ event().name }}</h2>
-        <span class="text-sm bg-[#26A0D9] text-white px-2 py-1 rounded-lg"
-          >Conference</span
-        >
+        <span class="text-sm bg-[#26A0D9] text-white px-2 py-1 rounded-lg">{{
+          event().type
+        }}</span>
       </header>
       <ul class="flex flex-col gap-2">
         <li class="flex items-center gap-2">
@@ -83,18 +37,30 @@ import { DatePipe } from '@angular/common';
           <span class="text-sm">{{ event().location ?? 'Online' }}</span>
         </li>
       </ul>
-      <p class="text-sm flex-1">
-        Europe's premier Angular conference with world-class speakers
-      </p>
+      <p class="text-sm flex-1">{{ event().description }}</p>
       <footer class="flex flex-col gap-2">
         <div
           class="flex items-center justify-between bg-gray-50 p-4 rounded-2xl"
         >
-          <div class="font-bold text-2xl text-[#26A0D9]">$200</div>
-          <div class="flex flex-col items-center">
-            <div class="text-sm text-gray-500">Attendees</div>
-            <div class="text-sm font-bold">100</div>
-          </div>
+          @if (event().startingPrice) {
+            <div class="flex flex-col">
+              <div class="text-sm text-gray-500">Starting from</div>
+              <div class="font-bold text-2xl text-[#26A0D9]">
+                $ {{ event().startingPrice }}*
+              </div>
+            </div>
+          } @else if (event().isFree) {
+            <div class="flex flex-col">
+              <div class="text-sm text-gray-500">Registration</div>
+              <div class="font-bold text-2xl text-[#26A0D9]">Free</div>
+            </div>
+          }
+          @if (event().attendeesCount) {
+            <div class="flex flex-col items-center">
+              <div class="text-sm text-gray-500">Attendees</div>
+              <div class="text-sm font-bold">{{ event().attendeesCount }}</div>
+            </div>
+          }
         </div>
         <a
           [href]="event().url"
@@ -104,7 +70,7 @@ import { DatePipe } from '@angular/common';
           Register now
         </a>
         <a
-          [href]="event().community?.xUrl"
+          [href]="event().organizer.url"
           target="_blank"
           class="flex items-center gap-2 text-xs hover:underline hover:text-[#26A0D9]"
         >
@@ -112,9 +78,9 @@ import { DatePipe } from '@angular/common';
           <div
             class="w-6 h-6 rounded-full p-1 bg-gray-100 flex items-center justify-center"
           >
-            <img [src]="event().community?.logo" class="w-6" alt="" />
+            <img [src]="event().organizer.logo" class="w-6" alt="" />
           </div>
-          <span>{{ event().community?.name }}</span>
+          <span>{{ event().organizer.name }}</span>
         </a>
       </footer>
     </article>
@@ -122,7 +88,7 @@ import { DatePipe } from '@angular/common';
   imports: [DatePipe],
 })
 export class EventCard {
-  event = input.required<Event>();
+  event = input.required<CommunityEvent>();
 
   eventLinkTitle = computed(() => {
     return (this.event().name || this.event().community?.name) + 'event link';

@@ -1,6 +1,6 @@
 import { Event } from './event.model';
 
-export interface Community {
+export type Community = {
   name: string;
   type: 'workshop' | 'conference' | 'meetup' | 'other';
   // change to nested 2 properties (city / country) || Online
@@ -15,5 +15,4 @@ export interface Community {
   youtubeUrl: string | null;
   twitchUrl: string | null;
   callForPapersUrl: string | null;
-  events: Event[];
 }

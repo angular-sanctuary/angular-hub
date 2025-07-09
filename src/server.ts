@@ -8,12 +8,14 @@ import { parse } from 'valibot';
 import podcasts from '../public/assets/data/podcast.json';
 import { PodcastListSchema } from './server/schemas/podcast.schema';
 import { CommunityListSchema } from './server/schemas/community.schema';
-import communities from '../public/assets/data/community.json';
+import organizers from '../public/assets/data/organizers.json';
+import events from '../public/assets/data/events.json';
 import { Community } from './models/community.model';
 import { Podcast } from './models/podcast.model';
 import { isFuture, isToday } from 'date-fns';
 import { EventCallForPapers } from './models/call-for-papers.model';
 import { Event } from './models/event.model';
+import { CommunityEvent } from './models/community-event.model';
 
 export function app() {
   const server = new Elysia();
@@ -63,8 +65,8 @@ export function app() {
         query: { order: 'ASC' | 'DESC' };
       }) => {
         try {
-          parse(CommunityListSchema, communities);
-          return (communities as Community[]).filter(
+          // parse(CommunityListSchema, communities);
+          return (organizers as Community[]).filter(
             (community) =>
               community.type !== 'workshop' && community.type !== 'other',
           );
@@ -75,89 +77,21 @@ export function app() {
     )
     .get('/api/v1/communities/callforpapers', async () => {
       try {
-        parse(CommunityListSchema, communities);
-
-        return (communities as Community[])
-          .filter(
-            (community: Community) =>
-              community.callForPapersUrl && community.type === 'meetup',
-          )
-          .map(({ events, ...community }) => ({ ...community }));
+        return [];
       } catch (error) {
         throw new Error('Invalid community data format');
       }
     })
     .get('/api/v1/events', async ({ query }) => {
       try {
-        parse(CommunityListSchema, communities);
-        return (communities as Community[])
-          .map((community: Community) => {
-            const { events, ...communityMeta } = community;
-            return community.events
-              .map((event: Event) => {
-                return {
-                  ...event,
-                  name: event.name ?? communityMeta.name,
-                  community: communityMeta,
-                };
-              })
-              .flat();
-          })
-          .flat()
-          .filter((event) => applyQueryFilter(event, query))
-          .sort(
-            (a: any, b: any) =>
-              new Date(a.date).getTime() - new Date(b.date).getTime(),
-          );
+        return [];
       } catch (error) {
         throw new Error('Invalid community data format');
       }
     })
     .get('/api/v1/events/callforpapers', async () => {
       try {
-        parse(CommunityListSchema, communities);
-
-        return (communities as Community[])
-          .reduce((acc: any[], community: Community) => {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            const events = community.events.reduce(
-              (acc: EventCallForPapers[], event: Event) => {
-                if (event.callForPapersUrl) {
-                  if (
-                    event.callForPapersDueDate &&
-                    new Date(event.callForPapersDueDate) < new Date()
-                  ) {
-                    return acc;
-                  }
-
-                  if (event.date && new Date(event.date) < new Date()) {
-                    return acc;
-                  }
-
-                  acc.push({
-                    name: event.name ?? community.name,
-                    type: event.type,
-                    location: event.location,
-                    logo: community.logo,
-                    callForPapersUrl: event.callForPapersUrl,
-                    date: event.date,
-                    callForPapersDueDate: event.callForPapersDueDate,
-                    isRemote: event.isRemote,
-                    isOnsite: event.isOnsite,
-                  });
-                }
-                return acc;
-              },
-              [],
-            );
-            return [...acc, events];
-          }, [])
-          .flat()
-          .sort(
-            (a, b) =>
-              new Date(a.callForPapersDueDate ?? '').getTime() -
-              new Date(b.callForPapersDueDate ?? '').getTime(),
-          );
+        return [];
       } catch (error) {
         console.error(error);
         throw new Error('Invalid community data format');
@@ -165,30 +99,30 @@ export function app() {
     })
     .get('/api/v1/events/upcoming', async () => {
       try {
-        const parsed = parse(CommunityListSchema, communities);
-        const events = (communities as Community[])
-          .map((community) => {
-            const { events, ...communityMeta } = community;
-            return community.events
-              .map((event) => {
-                return {
-                  ...event,
-                  name: event.name ?? communityMeta.name,
-                  community: communityMeta,
-                };
-              })
-              .flat();
-          })
-          .flat()
+        const communityEvents: CommunityEvent[] = (events as Event[])
           .filter((event) => {
             const date = new Date(event.date);
             return isToday(date) || isFuture(date) || event.toBeAnnounced;
+          })
+          .map((event) => {
+            const organizer = organizers.find(
+              (organizer) => organizer.id === event.organizerId,
+            );
+            return {
+              ...event,
+              name: event.name ?? organizer?.name ?? '',
+              organizer: {
+                name: organizer?.name ?? '',
+                url: organizer?.eventsUrl ?? '',
+                logo: organizer?.logo ?? '',
+              },
+            };
           })
           .sort(
             (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
           );
 
-        return events;
+        return communityEvents;
       } catch (error) {
         throw new Error(error as string);
       }

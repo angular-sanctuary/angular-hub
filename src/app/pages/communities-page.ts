@@ -1,11 +1,8 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommunityCard } from '../components/cards/community-card';
 import { Title } from '@angular/platform-browser';
 import { JsonLdService } from '../services/json-ld.service';
-import { SelectModule } from 'primeng/select';
 import { FormsModule } from '@angular/forms';
-import { Banner } from '../components/banner';
-import { CheckboxModule } from 'primeng/checkbox';
 import { Community } from '../../models/community.model';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { HttpClient } from '@angular/common/http';
@@ -20,24 +17,24 @@ export const routeMeta = {
 };
 
 @Component({
-  imports: [CommunityCard, SelectModule, FormsModule, Banner, CheckboxModule],
+  imports: [CommunityCard, FormsModule],
   template: `
-    <app-banner description="Curated list of Angular Communities" />
-    <section class="flex flex-col md:flex-row gap-6 px-6 mt-6">
-      <form class="flex justify-center mt-2">
-        <p-select
-          ariaLabel="Select a country"
-          name="language"
-          [options]="countries()"
-          [style]="{ width: '230px' }"
-          [showClear]="true"
-          placeholder="Select a country"
-          [ngModel]="selectedCountry()"
-          (ngModelChange)="selectedCountry.set($event)"
-        />
-      </form>
-
-      <ul class="flex flex-col justify-center gap-4">
+    <section class="max-w-screen-xl mx-auto">
+      <input
+        class="w-full p-2 rounded-lg border-2 border-gray-300"
+        type="search"
+        placeholder="Search communities"
+      />
+      <ul class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+        @for (community of communities(); track community) {
+          <li>
+            <app-community-card
+              class="h-full"
+              [community]="community"
+            ></app-community-card>
+          </li>
+        }
+        <!--
         @for (community of communitiesWithUpcomingEvents(); track community) {
           <li>
             <app-community-card [community]="community"></app-community-card>
@@ -53,6 +50,7 @@ export const routeMeta = {
             <app-community-card [community]="community"></app-community-card>
           </li>
         }
+      -->
       </ul>
     </section>
   `,
@@ -65,25 +63,8 @@ export default class CommunitiesPage {
       initialValue: [],
     },
   );
-  selectedCountry = signal(null);
-  countries = computed(() =>
-    this.communities()
-      .map((community) => community.location)
-      .reduce<string[]>((acc, curr) => {
-        const location = curr
-          ? curr.includes(',')
-            ? curr.split(',').at(-1)
-            : curr
-          : '';
-        if (location && !acc.includes(location.trim())) {
-          acc.push(location.trim());
-        }
-        return acc;
-      }, [])
-      .sort((a, b) =>
-        a.toLocaleUpperCase().localeCompare(b.toLocaleUpperCase()),
-      ),
-  );
+
+  /*
 
   communitiesWithUpcomingEvents = computed(() =>
     this.filteredCommunities().filter((community) =>
@@ -157,6 +138,8 @@ export default class CommunitiesPage {
         : true,
     ),
   );
+
+  */
 
   constructor(
     private title: Title,
