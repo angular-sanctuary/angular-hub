@@ -1515,7 +1515,8 @@
     "isRemote": true,
     "isOnsite": true,
     "location": "Baltimore, Maryland, USA",
-    "startingPrice": 999
+    "startingPrice": 999,
+    "description": "ng-conf 2025 is a two-day conference focused on building the Angular community. Come be part of this amazing event! Meet the Angular Team and some of the biggest names in the community. Learn the latest in Angular, build your network, and grow your skills."
   },
   {
     "name": "NG Poland 2024",
@@ -1544,7 +1545,8 @@
     "isRemote": false,
     "isOnsite": true,
     "location": "Warsaw, Poland",
-    "startingPrice": 186
+    "startingPrice": 186,
+    "description": "Europe's Largest Angular Conference | Warsaw & Online"
   },
   {
     "name": "NG Rome 2023",
@@ -1826,7 +1828,8 @@
     "isOnsite": true,
     "callForPapersUrl": "https://2024.angularday.it/welcome/cfp.html",
     "callForPapersDueDate": "2025-06-15",
-    "url": "https://2024.angularday.it/"
+    "url": "https://2024.angularday.it/",
+    "description": "angularday 2024 is the 8th edition of the Italian angular conference, organized by GrUSP, organizers of events like reactjsday and jsday. The event is international and all sessions will be in English. The event’s goal is to allow all angular developers to meet and share experience while having fun and networking in an enjoyable context"
   },
   {
     "name": null,
@@ -1910,7 +1913,8 @@
     "isOnsite": true,
     "callForPapersUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfUAMqFo00towc_wwi93rB4GX8cwxWHONhu-hH6pA_frpY8Sw/viewform",
     "callForPapersDueDate": "2025-04-15",
-    "url": "https://angular-tlv.com/"
+    "url": "https://angular-tlv.com/",
+    "description": "Angular TLV Powered by E-SQUARE.io, Angular TLV is the leading and most active Angular community in Israel, serving as the primary hub for Angular enthusiasts through professional meetups and events. Organized by top Angular experts, the community brings together developers,professionals, and industry leaders who drive innovation, collaboration, and knowledge-sharing."
   },
   {
     "name": "NG-DE Conference",
@@ -1941,7 +1945,8 @@
     "isRemote": false,
     "isOnsite": true,
     "location": "Berlin, Germany",
-    "startingPrice": 799
+    "startingPrice": 799,
+    "description": "Join us for the premier Angular conference in Germany. Secure your spot today!"
   },
   {
     "name": "NG-BE 2024",
@@ -2197,7 +2202,8 @@
     "isFree": false,
     "isRemote": true,
     "isOnsite": true,
-    "location": "London, UK"
+    "location": "London, UK",
+    "description": "AngularConnect, powered by E-SQUARE.io and PUSH-BASED.io, returns as a leading Angular conference after a long break. Bringing together top experts, industry leaders, and developers, it remains a key hub for innovation, collaboration, and knowledge-sharing in the Angular ecosystem."
   },
   {
     "name": "Angular Day",
@@ -2268,7 +2274,8 @@
     "isFree": true,
     "isRemote": true,
     "isOnsite": false,
-    "location": null
+    "location": null,
+    "description": " Here you can join us and talk about Angular during Lunch and ask questions to your fellow Angular Developers and the Hosts from the Dutch Angular Group."
   },
   {
     "name": "Angular Lunch Session",
@@ -2282,7 +2289,8 @@
     "isFree": true,
     "isRemote": true,
     "isOnsite": false,
-    "location": null
+    "location": null,
+    "description": " Here you can join us and talk about Angular during Lunch and ask questions to your fellow Angular Developers and the Hosts from the Dutch Angular Group."
   },
   {
     "name": "Angular Lunch Session",
@@ -2296,7 +2304,8 @@
     "isFree": true,
     "isRemote": true,
     "isOnsite": false,
-    "location": null
+    "location": null,
+    "description": " Here you can join us and talk about Angular during Lunch and ask questions to your fellow Angular Developers and the Hosts from the Dutch Angular Group."
   },
   {
     "name": "Angular Lunch Session",
@@ -2310,7 +2319,8 @@
     "isFree": true,
     "isRemote": true,
     "isOnsite": false,
-    "location": null
+    "location": null,
+    "description": " Here you can join us and talk about Angular during Lunch and ask questions to your fellow Angular Developers and the Hosts from the Dutch Angular Group."
   },
   {
     "name": "Sharpen Your Angular Skills: Smarter Development with Mocks and Signals",
