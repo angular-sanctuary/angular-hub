@@ -20,18 +20,17 @@ export const routeMeta = {
 };
 
 @Component({
-  imports: [PodcastCard, FormsModule, Banner],
+  imports: [PodcastCard, FormsModule],
   template: `
-    <app-banner description="Curated list of Angular Podcasts" />
-    <ul
-      class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-x-8 gap-y-4 px-8"
-    >
-      @for (podcast of podcasts(); track podcast.name) {
-        <li>
-          <app-podcast-card [podcast]="podcast"></app-podcast-card>
-        </li>
-      }
-    </ul>
+    <section class="max-w-screen-xl w-full mx-auto px-6 lg:px-0">
+      <ul class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+        @for (podcast of podcasts(); track podcast.name) {
+          <li>
+            <app-podcast-card [podcast]="podcast" />
+          </li>
+        }
+      </ul>
+    </section>
   `,
 })
 export default class PodcastsPage {

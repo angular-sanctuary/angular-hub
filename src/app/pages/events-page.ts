@@ -39,7 +39,7 @@ export const routeMeta = {
 
 @Component({
   template: `
-    <section class="max-w-screen-xl w-full mx-auto">
+    <section class="max-w-screen-xl w-full mx-auto px-6 lg:px-0">
       <input
         class="w-full p-2 rounded-lg border-2 border-gray-300"
         type="search"
@@ -103,8 +103,13 @@ export default class EventsPage {
   );
 
   filteredEvents = computed(() => {
-    return this.events().filter((event) =>
-      event.name?.toLowerCase().includes(this.search().toLowerCase()),
+    return this.events().filter(
+      (event) =>
+        event.name?.toLowerCase().includes(this.search().toLowerCase()) ||
+        event.location?.toLowerCase().includes(this.search().toLowerCase()) ||
+        event.organizer?.name
+          ?.toLowerCase()
+          .includes(this.search().toLowerCase()),
     );
   });
 
