@@ -9,13 +9,11 @@ import { join } from 'node:path';
 import { parse } from 'valibot';
 import podcasts from '../public/assets/data/podcast.json';
 import { PodcastListSchema } from './server/schemas/podcast.schema';
-import { CommunityListSchema } from './server/schemas/community.schema';
 import organizers from '../public/assets/data/organizers.json';
 import events from '../public/assets/data/events.json';
 import { Community } from './models/community.model';
 import { Podcast } from './models/podcast.model';
 import { isFuture, isToday } from 'date-fns';
-import { EventCallForPapers } from './models/call-for-papers.model';
 import { Event } from './models/event.model';
 import { CommunityEvent } from './models/community-event.model';
 
