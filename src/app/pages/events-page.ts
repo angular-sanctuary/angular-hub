@@ -9,12 +9,11 @@ import { Title } from '@angular/platform-browser';
 import { ButtonModule } from 'primeng/button';
 import { MessageModule } from 'primeng/message';
 import {
-  Message,
   EmptySearchMessage,
   NoEventsMessage,
 } from '../components/message';
 import { JsonLdService } from '../services/json-ld.service';
-import { HttpClient, httpResource } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { EventCard } from '../components/cards/event-card';
 import { CommunityEvent } from '../../models/community-event.model';
 import { FormsModule } from '@angular/forms';
@@ -92,7 +91,6 @@ export const routeMeta = {
     ButtonModule,
     MessageModule,
     EventCard,
-    Message,
     EmptySearchMessage,
     NoEventsMessage,
     FormsModule,
