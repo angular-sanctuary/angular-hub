@@ -86,6 +86,22 @@ import { Community } from '../../../models/community.model';
             </a>
           </li>
         }
+        @if (community().blueskyUrl) {
+          <li>
+            <a
+              [href]="community().blueskyUrl"
+              target="_blank"
+              class="text-sm hover:underline flex items-center gap-2"
+            >
+              <img
+                src="/assets/icons/bluesky-icon.svg"
+                class="w-4 h-4"
+                alt=""
+              />
+              <span>Bluesky</span>
+            </a>
+          </li>
+        }
         @if (community().youtubeUrl) {
           <li>
             <a
