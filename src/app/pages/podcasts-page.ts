@@ -4,8 +4,6 @@ import { PodcastCard } from '../components/cards/podcast-card';
 
 import { JsonLdService } from '../services/json-ld.service';
 import { Title } from '@angular/platform-browser';
-import { Banner } from '../components/banner';
-import { signal } from '@angular/core';
 import { Podcast } from '../../models/podcast.model';
 import { HttpClient } from '@angular/common/http';
 import { toSignal } from '@angular/core/rxjs-interop';

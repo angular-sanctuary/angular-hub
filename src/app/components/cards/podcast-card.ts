@@ -6,7 +6,7 @@ import { Podcast } from '../../../models/podcast.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <article
-      class="rounded-2xl drop-shadow-xl p-6 bg-white h-full flex flex-col gap-4"
+      class="rounded-2xl drop-shadow-xl p-6 bg-white dark:bg-gray-800 h-full flex flex-col gap-4"
     >
       <div class="flex items-start gap-4">
         <img
@@ -25,7 +25,7 @@ import { Podcast } from '../../../models/podcast.model';
             {{ podcast().name }}
           </h3>
           <span
-            class="inline-flex items-center justify-center gap-1 bg-gray-100 rounded px-2 py-1 text-xs"
+            class="inline-flex items-center justify-center gap-1 bg-gray-100 dark:bg-gray-700 rounded px-2 py-1 text-xs"
           >
             <i class="pi pi-language text-xs" aria-hidden="true"></i>
             {{
@@ -45,8 +45,12 @@ import { Podcast } from '../../../models/podcast.model';
         target="_blank"
       >
         <div class="flex items-center gap-3">
-          <i class="pi pi-play-circle text-purple-600 text-2xl"></i>
-          <span class="font-medium text-purple-600">Listen Now</span>
+          <i
+            class="pi pi-play-circle text-purple-600 text-2xl dark:text-purple-300"
+          ></i>
+          <span class="font-medium text-purple-600 dark:text-purple-300"
+            >Listen Now</span
+          >
         </div>
       </a>
     </article>

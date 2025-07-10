@@ -12,13 +12,14 @@ import { CommunityEvent } from '../../../models/community-event.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <article
-      class="rounded-2xl drop-shadow-xl p-6 bg-white h-full flex flex-col gap-4"
+      class="rounded-2xl drop-shadow-xl p-6 bg-white dark:bg-gray-800 h-full flex flex-col gap-4"
     >
-      <header class="flex items-start justify-between">
+      <header class="flex items-start justify-between gap-2">
         <h2 class="text-lg font-bold">{{ event().name }}</h2>
-        <span class="text-sm bg-[#26A0D9] text-white px-2 py-1 rounded-lg">{{
-          event().type
-        }}</span>
+        <span
+          class="text-sm bg-[#26A0D9] text-white dark:text-gray-900 px-2 py-1 rounded-lg"
+          >{{ event().type }}</span
+        >
       </header>
       <ul class="flex flex-col gap-2">
         <li class="flex items-center gap-2">
@@ -40,11 +41,13 @@ import { CommunityEvent } from '../../../models/community-event.model';
       <p class="text-sm flex-1">{{ event().description }}</p>
       <footer class="flex flex-col gap-2">
         <div
-          class="flex items-center justify-between bg-gray-50 p-4 rounded-2xl"
+          class="flex items-center justify-between bg-gray-50 dark:bg-gray-700 p-4 rounded-2xl"
         >
           @if (!event().isFree) {
             <div class="flex flex-col">
-              <div class="text-sm text-gray-500">Starting from</div>
+              <div class="text-sm text-gray-500 dark:text-gray-200">
+                Starting from
+              </div>
               <div class="font-bold text-[#26A0D9] flex items-end gap-1">
                 @if (event().startingPrice) {
                   <span class="text-sm pb-1">
@@ -58,7 +61,9 @@ import { CommunityEvent } from '../../../models/community-event.model';
             </div>
           } @else {
             <div class="flex flex-col">
-              <div class="text-sm text-gray-500">Registration</div>
+              <div class="text-sm text-gray-500 dark:text-gray-200">
+                Registration
+              </div>
               <div class="font-bold text-2xl text-[#26A0D9]">Free</div>
             </div>
           }

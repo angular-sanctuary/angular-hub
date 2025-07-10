@@ -6,7 +6,7 @@ import { Community } from '../../../models/community.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <article
-      class="rounded-2xl drop-shadow-xl p-6 bg-white h-full flex flex-col gap-4"
+      class="rounded-2xl drop-shadow-xl p-6 bg-white dark:bg-gray-800 h-full flex flex-col gap-4"
     >
       <header class="flex items-start gap-4">
         <div class="flex items-center gap-2 bg-gray-100 p-2 rounded-lg">
@@ -14,7 +14,9 @@ import { Community } from '../../../models/community.model';
         </div>
         <div class="flex flex-col gap-1">
           <h2 class="text-lg font-bold">{{ community().name }}</h2>
-          <div class="flex items-center gap-1 text-sm text-gray-600">
+          <div
+            class="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-200"
+          >
             <i class="pi pi-globe" style="font-size: 0.8rem"></i>
             <span>{{ community().location ?? 'Online' }}</span>
           </div>
@@ -77,7 +79,9 @@ import { Community } from '../../../models/community.model';
               target="_blank"
               class="text-sm hover:underline flex items-center gap-2"
             >
-              <i class="pi pi-twitter text-2xl text-[#000000]"></i>
+              <i
+                class="pi pi-twitter text-2xl text-[#000000] dark:text-white"
+              ></i>
               <span>Twitter</span>
             </a>
           </li>

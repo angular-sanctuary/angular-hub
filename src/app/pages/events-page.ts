@@ -8,10 +8,7 @@ import {
 import { Title } from '@angular/platform-browser';
 import { ButtonModule } from 'primeng/button';
 import { MessageModule } from 'primeng/message';
-import {
-  EmptySearchMessage,
-  NoEventsMessage,
-} from '../components/message';
+import { EmptySearchMessage, NoEventsMessage } from '../components/message';
 import { JsonLdService } from '../services/json-ld.service';
 import { HttpClient } from '@angular/common/http';
 import { EventCard } from '../components/cards/event-card';
@@ -44,7 +41,7 @@ export const routeMeta = {
   template: `
     <section class="max-w-screen-xl w-full mx-auto px-6">
       <input
-        class="w-full p-2 rounded-lg border-2 border-gray-300"
+        class="w-full p-2 rounded-lg border-2 border-gray-300 dark:border-gray-700"
         type="search"
         placeholder="Search events"
         [(ngModel)]="search"

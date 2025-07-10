@@ -21,7 +21,7 @@ export const routeMeta = {
   template: `
     <section class="max-w-screen-xl mx-auto px-6">
       <input
-        class="w-full p-2 rounded-lg border-2 border-gray-300"
+        class="w-full p-2 rounded-lg border-2 border-gray-300 dark:border-gray-700"
         type="search"
         placeholder="Search communities"
         [(ngModel)]="search"
