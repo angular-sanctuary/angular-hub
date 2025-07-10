@@ -5,11 +5,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && npm run rename-files",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angular-hub": "node dist/angular-hub/server/server.mjs",
-    "rename-files": "node scripts/rename-server-files.js"
+    "serve:ssr:angular-hub": "node dist/angular-hub/server/server.mjs"
   },
   "private": true,
   "prettier": {
