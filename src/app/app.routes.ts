@@ -13,12 +13,6 @@ export const routes: Routes = [
     path: 'podcasts',
     loadComponent: () => import('./pages/podcasts-page'),
   },
-  /*
-  {
-    path: 'watch-party',
-    loadComponent: () => import('./pages/watch-parties-page'),
-  },
-  */
   {
     path: '**',
     loadComponent: () => import('./pages/not-found-page'),
