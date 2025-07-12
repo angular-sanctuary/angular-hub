@@ -34,9 +34,9 @@ export class Message {
       <h3 class="text-lg font-semibold text-gray-800 mb-2">{{ title() }}</h3>
       <p class="text-gray-600 mb-4">{{ description() }}</p>
       <div class="flex flex-col sm:flex-row gap-2 text-sm text-gray-500">
-        <span>Try adjusting your search terms</span>
+        <span i18n>Try adjusting your search terms</span>
         <span class="hidden sm:inline">•</span>
-        <span>or browse all events above</span>
+        <span i18n>or browse all events above</span>
       </div>
     </div>
   `,

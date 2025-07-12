@@ -32,7 +32,7 @@ import { Community } from '../../../models/community.model';
               class="text-sm hover:underline flex items-center gap-2"
             >
               <i class="pi pi-calendar text-2xl text-[#BF25B9]"></i>
-              <span>Events</span>
+              <span i18n>Events</span>
             </a>
           </li>
         }
@@ -44,7 +44,7 @@ import { Community } from '../../../models/community.model';
               class="text-sm hover:underline flex items-center gap-2"
             >
               <i class="pi pi-users text-2xl text-[#0077B5]"></i>
-              <span>Organizers</span>
+              <span i18n>Organizers</span>
             </a>
           </li>
         }
@@ -56,7 +56,7 @@ import { Community } from '../../../models/community.model';
               class="text-sm hover:underline flex items-center gap-2"
             >
               <i class="pi pi-globe text-2xl text-[#0077B5]"></i>
-              <span>Website</span>
+              <span i18n>Website</span>
             </a>
           </li>
         }
@@ -121,6 +121,7 @@ import { Community } from '../../../models/community.model';
           [href]="community().eventsUrl"
           target="_blank"
           class="w-full flex items-center justify-center text-sm bg-[#26A0D9] text-white p-2 rounded-lg"
+          i18n
         >
           Join the community
         </a>
