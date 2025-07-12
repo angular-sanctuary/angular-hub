@@ -12,7 +12,7 @@ export const routeMeta = {
   meta: [
     {
       name: 'description',
-      content: 'Curated list of Angular Talks',
+      content: $localize`Curated list of Angular Talks`,
     },
   ],
 };

@@ -8,7 +8,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angular-hub": "node dist/angular-hub/server/server.mjs"
+    "serve:ssr:angular-hub": "node dist/angular-hub/server/server.mjs",
+    "i18n:extract": "ng extract-i18n --format json",
+    "i18n:merge-translations": "node ./scripts/merge-translations.js"
   },
   "private": true,
   "prettier": {
@@ -56,6 +58,7 @@
     "@angular/cli": "^20.0.5",
     "@angular/compiler-cli": "^20.0.5",
     "@angular/language-service": "18.2.0",
+    "@angular/localize": "20.0.6",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "husky": "^9.0.11",
