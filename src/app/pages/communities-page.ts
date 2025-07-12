@@ -11,7 +11,7 @@ export const routeMeta = {
   meta: [
     {
       name: 'description',
-      content: 'Curated list of Angular communities',
+      content: $localize`Curated list of Angular communities`,
     },
   ],
 };

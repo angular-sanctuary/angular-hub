@@ -48,9 +48,9 @@ import { Podcast } from '../../../models/podcast.model';
           <i
             class="pi pi-play-circle text-purple-600 text-2xl dark:text-purple-300"
           ></i>
-          <span class="font-medium text-purple-600 dark:text-purple-300"
-            >Listen Now</span
-          >
+          <span class="font-medium text-purple-600 dark:text-purple-300" i18n>
+            Listen Now
+          </span>
         </div>
       </a>
     </article>

@@ -13,6 +13,20 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": {
+          "code": "en",
+          "subPath": ""
+        },
+        "locales": {
+          "de": {
+            "translation": "src/locale/messages.de.json"
+          },
+          "fr": {
+            "translation": "src/locale/messages.fr.json"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular/build:application",
@@ -20,6 +34,7 @@
             "browser": "src/main.ts",
             "index": "src/indexDefault.html",
             "tsConfig": "tsconfig.app.json",
+            "localize": true,
             "assets": [
               {
                 "glob": "**/*",
@@ -31,7 +46,10 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
-            }
+            },
+            "polyfills": [
+              "@angular/localize/init"
+            ]
           },
           "configurations": {
             "production": {
@@ -82,7 +100,12 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.css"]
+            "styles": [
+              "src/styles.css"
+            ],
+            "polyfills": [
+              "@angular/localize/init"
+            ]
           }
         }
       }
