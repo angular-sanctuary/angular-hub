@@ -15,16 +15,16 @@ export const routeMeta = {
   meta: [
     {
       name: 'description',
-      content: $localize`Curated list of Angular Calls for papers`,
+      content: $localize`:@@cfp.meta-description:Curated list of Angular Calls for papers`,
     },
   ],
 };
 
 @Component({
   template: `
-    <app-banner i18n-description description="Curated list of Angular Calls for Papers" />
+    <app-banner i18n-description="@@cfp.description" description="Curated list of Angular Calls for Papers" />
     <div class="px-6">
-      <h3 class="text-2xl font-bold mb-6 pl-4">Events</h3>
+      <h3 class="text-2xl font-bold mb-6 pl-4" i18n="@@cfp.title">Events</h3>
       <ul
         class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center gap-8"
       >
@@ -48,18 +48,18 @@ export const routeMeta = {
                 />
                 <div>
                   <dl>
-                    <dt><i class="pi pi-calendar-clock"></i><ng-container i18n>Date</ng-container></dt>
+                    <dt><i class="pi pi-calendar-clock"></i><ng-container i18n="@@cfp.date">Date</ng-container></dt>
                     <dd class="ml-5 opacity-65">{{ event.date }}</dd>
                     <!--
                     <dt><i class="pi pi-calendar-clock"></i> End date</dt>
                     <dd class="ml-5 opacity-65">{{ event.date }}</dd>
                     -->
-                    <dt><i class="pi pi-map-marker"></i><ng-container i18n>Location</ng-container></dt>
+                    <dt><i class="pi pi-map-marker"></i><ng-container i18n="@@cfp.location">Location</ng-container></dt>
                     <dd class="ml-5 opacity-65">
                       @if (event.location){
                         {{ event.location }}
                       } @else {
-                        <ng-container i18n>Online</ng-container>
+                        <ng-container i18n="@@cfp.online">Online</ng-container>
                       }
 ]                    </dd>
                   </dl>
@@ -67,7 +67,7 @@ export const routeMeta = {
               </div>
               <p-divider />
               <div class="text-center">
-                <div class="opacity-65" i18n>CFP due date</div>
+                <div class="opacity-65" i18n="@@cfp.due-date">CFP due date</div>
                 <div class="text-2xl font-bold">
                   {{ event.callForPapersDueDate | date: 'dd MMM' : 'en-US' }}
                 </div>
@@ -75,11 +75,11 @@ export const routeMeta = {
             </a>
           </li>
         } @empty {
-          <li i18n>No open call for papers found</li>
+          <li i18n="@@cfp.no-cfp-found">No open call for papers found</li>
         }
       </ul>
       <p-divider />
-      <h3 class="text-2xl font-bold my-6 pl-4" i18n>Communities</h3>
+      <h3 class="text-2xl font-bold my-6 pl-4" i18n="@@cfp.communities">Communities</h3>
       <ul
         class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-8"
       >
@@ -111,7 +111,7 @@ export const routeMeta = {
             </a>
           </li>
         } @empty {
-          <li i18n>No open call for papers found</li>
+          <li i18n="@@cfp.no-open-cfp">No open call for papers found</li>
         }
       </ul>
     </div>
