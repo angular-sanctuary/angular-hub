@@ -846,5 +846,21 @@
     "youtubeUrl": null,
     "twitchUrl": null,
     "callForPapersUrl": null
+  },
+  {
+    "id": "ng-delhi",
+    "name": "Ng Delhi",
+    "type": "conference",
+    "location": "Delhi, India",
+    "logo": "https://json.commudle.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMlZTQkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--3f4c1c3d80d968121d40100434abcde26078b2ce/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFKQUFXa0NRQUU2QzJ4dllXUmxjbnNHT2dsd1lXZGxNQT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--e1b8c3103b542b9d7ba47b2862e0d51860fbef22/Ng%20Delhi.png",
+    "eventsUrl": "https://www.commudle.com/communities/ng-delhi/events?page=1",
+    "websiteUrl": "https://www.commudle.com/communities/ng-delhi",
+    "organizersUrl": "https://www.commudle.com/communities/ng-delhi",
+    "blueskyUrl": null,
+    "xUrl": null,
+    "linkedinUrl": "https://www.linkedin.com/company/ng-delhi/",
+    "youtubeUrl": null,
+    "twitchUrl": null,
+    "callForPapersUrl": null
   }
 ]

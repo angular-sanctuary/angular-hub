@@ -2353,5 +2353,19 @@
     "isRemote": false,
     "isOnsite": true,
     "location": "Zürich, Switzerland"
+  },
+  {
+    "name": "NG DELHI Meetup 2.0",
+    "organizerId": "ng-delhi",
+    "type": "meetup",
+    "date": "2025-08-02",
+    "url": "https://www.commudle.com/communities/ng-delhi/events/ng-delhi-meetup-2",
+    "callForPapersUrl": null,
+    "callForPapersDueDate": null,
+    "language": "English",
+    "isFree": true,
+    "isRemote": false,
+    "isOnsite": true,
+    "location": "Delhi, India"
   }
 ]
