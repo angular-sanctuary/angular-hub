@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -10,7 +11,8 @@
     "test": "ng test",
     "serve:ssr:angular-hub": "node dist/angular-hub/server/server.mjs",
     "i18n:extract": "ng extract-i18n --format json",
-    "i18n:merge-translations": "node ./scripts/merge-translations.js"
+    "i18n:merge-translations": "node scripts/merge-translations.mjs",
+    "i18n:validate-no-empty-translations": "npm run i18n:extract && npm run i18n:merge-translations && node scripts/validate-no-empty-translations.mjs"
   },
   "private": true,
   "prettier": {

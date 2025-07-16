@@ -20,11 +20,11 @@ export const routeMeta = {
   meta: [
     {
       name: 'description',
-      content: $localize`Curated list of Angular Events`,
+      content: $localize`:@@events-page.meta-description:Curated list of Angular Events`,
     },
     {
       property: 'og:title',
-      content: $localize`Curated list of Angular Events`,
+      content: $localize`:@@events-page.og-title:Curated list of Angular Events`,
     },
     {
       property: 'og:image',
@@ -57,9 +57,9 @@ export const routeMeta = {
       <!-- Show message when search has no results -->
       @if (search().length && !filteredEvents().length && events().length > 0) {
         <app-empty-search-message
-          i18n-title
+          i18n-title="@@events-page.empty-search-message-title"
           title="No events found"
-          i18n-description
+          i18n-description="@@events-page.empty-search-message-description"
           description="We could not find any events matching your search criteria. Try different keywords or browse all available events."
         />
       }
@@ -67,9 +67,9 @@ export const routeMeta = {
       <!-- Show message when there are no events at all -->
       @if (!events().length) {
         <app-no-events-message
-          i18n-title
+          i18n-title="@@events-page.empty-events-message-title"
           title="No upcoming events"
-          i18n-description
+          i18n-description="@@events-page.empty-events-message-description"
           description="There are currently no upcoming Angular events scheduled. New events are added regularly, so please check back soon!"
         />
       }
@@ -129,11 +129,11 @@ export default class EventsPage {
       '@type': 'WebSite',
       url: 'https://angular-hub.com/',
       name: 'Angular Hub',
-      description: $localize`Curated list of Angular Communities, Events, Podcasts, and Call for Papers.`,
+      description: $localize`:@@events-page.json-ld.description:Curated list of Angular Communities, Events, Podcasts, and Call for Papers.`,
       audience: {
         '@type': 'Audience',
         audienceType: 'Developers',
-        description: $localize`Developers interested in Angular and related technologies.`,
+        description: $localize`:@@events-page.json-ld.audience-description:Developers interested in Angular and related technologies.`,
       },
       author: {
         '@type': 'Person',
@@ -148,7 +148,7 @@ export default class EventsPage {
       mainEntity: [
         {
           '@type': 'ItemList',
-          name: $localize`Angular Events`,
+          name: $localize`:@@events-page.json-ld.main-entity.name:Angular Events`,
           itemListElement: this.filteredEvents()?.map((event, index) => ({
             '@type': 'ListItem',
             position: index + 1,
@@ -160,7 +160,7 @@ export default class EventsPage {
                 '@type': 'Audience',
                 audienceType: 'Developers',
                 description:
-                  $localize`Developers interested in Angular and related technologies.`,
+                  $localize`:@@events-page.json-ld.main-entity.item.description:Developers interested in Angular and related technologies.`,
               },
               startDate: event.date,
               ...(event.location
@@ -175,7 +175,7 @@ export default class EventsPage {
                 ? {
                     location: {
                       '@type': 'VirtualLocation',
-                      name: $localize`Online`,
+                      name: $localize`:@@events-page.json-ld.main-entity.item.online:Online`,
                     },
                   }
                 : {}),

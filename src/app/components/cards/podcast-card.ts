@@ -48,7 +48,7 @@ import { Podcast } from '../../../models/podcast.model';
           <i
             class="pi pi-play-circle text-purple-600 text-2xl dark:text-purple-300"
           ></i>
-          <span class="font-medium text-purple-600 dark:text-purple-300" i18n>
+          <span class="font-medium text-purple-600 dark:text-purple-300" i18n="@@podcast-card.listen-now">
             Listen Now
           </span>
         </div>
