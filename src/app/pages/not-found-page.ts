@@ -4,9 +4,9 @@ import { RouterLink } from '@angular/router';
 @Component({
   imports: [RouterLink],
   template: `
-    <h2 class="title text-7xl mb-6 text-center" i18n>Page Not Found</h2>
+    <h2 class="title text-7xl mb-6 text-center" i18n="@@not-found-page.not-found">Page Not Found</h2>
 
-    <a class="underline" routerLink="/" i18n>Go Back Home</a>
+    <a class="underline" routerLink="/" i18n="@@not-found-page.go-home">Go Back Home</a>
   `,
   styles: [
     `
