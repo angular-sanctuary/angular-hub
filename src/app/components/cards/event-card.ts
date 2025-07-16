@@ -45,7 +45,7 @@ import { CommunityEvent } from '../../../models/community-event.model';
         >
           @if (!event().isFree) {
             <div class="flex flex-col">
-              <div class="text-sm text-gray-500 dark:text-gray-200">
+              <div class="text-sm text-gray-500 dark:text-gray-200" i18n="@@event-card.starting-from">
                 Starting from
               </div>
               <div class="font-bold text-[#26A0D9] flex items-end gap-1">
@@ -55,21 +55,23 @@ import { CommunityEvent } from '../../../models/community-event.model';
                   </span>
                   <span class="text-2xl"> {{ event().startingPrice }}* </span>
                 } @else {
-                  To be announced
+                  <ng-container i18n="@@event-card.tba">
+                    To be announced
+                  </ng-container>
                 }
               </div>
             </div>
           } @else {
             <div class="flex flex-col">
-              <div class="text-sm text-gray-500 dark:text-gray-200">
+              <div class="text-sm text-gray-500 dark:text-gray-200" i18n="@@event-card.registration">
                 Registration
               </div>
-              <div class="font-bold text-2xl text-[#26A0D9]">Free</div>
+              <div class="font-bold text-2xl text-[#26A0D9]" i18n="@@event-card.fee">Free</div>
             </div>
           }
           @if (event().attendeesCount) {
             <div class="flex flex-col items-center">
-              <div class="text-sm text-gray-500">Attendees</div>
+              <div class="text-sm text-gray-500" i18n="@@event-card.attendees">Attendees</div>
               <div class="text-sm font-bold">{{ event().attendeesCount }}</div>
             </div>
           }
@@ -79,12 +81,14 @@ import { CommunityEvent } from '../../../models/community-event.model';
             [href]="event().url"
             target="_blank"
             class="w-full flex items-center justify-center text-sm bg-[#26A0D9] text-white p-2 rounded-lg"
+            i18n="@@event-card.register-now"
           >
             Register now
           </a>
         } @else {
           <div
             class="w-full flex items-center justify-center text-sm bg-gray-200 p-2 rounded-lg"
+            i18n="@@event-card.no-registration"
           >
             No registration available
           </div>
@@ -94,7 +98,7 @@ import { CommunityEvent } from '../../../models/community-event.model';
           target="_blank"
           class="flex items-center gap-2 text-xs hover:underline hover:text-[#26A0D9]"
         >
-          <span>Organized by</span>
+          <span i18n="@@event-card.organized-by">Organized by</span>
           <div
             class="w-6 h-6 rounded-full p-1 bg-gray-100 flex items-center justify-center"
           >
