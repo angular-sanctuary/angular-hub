@@ -757,7 +757,7 @@
     "type": "conference",
     "location": "London, UK",
     "logo": "/assets/logos/angular-connect.png",
-    "eventsUrl": "https://angularconnect.com",
+    "eventsUrl": null,
     "websiteUrl": "https://angularconnect.com",
     "organizersUrl": null,
     "blueskyUrl": "https://bsky.app/profile/angularconnect.com",
