@@ -2367,5 +2367,33 @@
     "isRemote": false,
     "isOnsite": true,
     "location": "Delhi, India"
+  },
+  {
+    "name": "Angular London Meetup",
+    "organizerId": "angular-london",
+    "type": "meetup",
+    "date": "2025-09-11",
+    "url": "https://www.meetup.com/angular-london/events/308779045",
+    "callForPapersUrl": null,
+    "callForPapersDueDate": null,
+    "language": "English",
+    "isFree": true,
+    "isRemote": true,
+    "isOnsite": true,
+    "location": "London, UK"
+  },
+  {
+    "name": "Angular Community Meetup",
+    "organizerId": "angular-community",
+    "type": "meetup",
+    "date": "2025-07-21",
+    "url": "https://www.meetup.com/angularcommunity/events/309408529",
+    "callForPapersUrl": null,
+    "callForPapersDueDate": null,
+    "language": "English",
+    "isFree": true,
+    "isRemote": true,
+    "isOnsite": true,
+    "location": "Salt Lake City, UT"
   }
 ]
