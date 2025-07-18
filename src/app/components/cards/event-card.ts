@@ -4,7 +4,7 @@ import {
   computed,
   input,
 } from '@angular/core';
-import { DatePipe } from '@angular/common';
+import { DatePipe, NgOptimizedImage } from '@angular/common';
 import { CommunityEvent } from '../../../models/community-event.model';
 
 @Component({
@@ -98,14 +98,20 @@ import { CommunityEvent } from '../../../models/community-event.model';
           <div
             class="w-6 h-6 rounded-full p-1 bg-gray-100 flex items-center justify-center"
           >
-            <img [src]="event().organizer.logo" class="w-6" alt="" />
+            <img
+              [ngSrc]="event().organizer.logo"
+              class="w-6"
+              alt=""
+              width="24"
+              height="24"
+            />
           </div>
           <span>{{ event().organizer.name }}</span>
         </a>
       </footer>
     </article>
   `,
-  imports: [DatePipe],
+  imports: [DatePipe, NgOptimizedImage],
 })
 export class EventCard {
   event = input.required<CommunityEvent>();
