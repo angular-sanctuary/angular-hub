@@ -84,7 +84,7 @@ import { CommunityEvent } from '../../../models/community-event.model';
           </a>
         } @else {
           <div
-            class="w-full flex items-center justify-center text-sm bg-gray-200 p-2 rounded-lg"
+            class="w-full flex items-center justify-center text-sm bg-gray-200 p-2 rounded-lg dark:text-gray-900"
           >
             No registration available
           </div>
