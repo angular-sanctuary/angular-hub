@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { Community } from '../../models/community.model';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { HttpClient } from '@angular/common/http';
+import { EmptySearchCommunitiesMessage } from '../components/message';
 
 export const routeMeta = {
   meta: [
@@ -17,7 +18,7 @@ export const routeMeta = {
 };
 
 @Component({
-  imports: [CommunityCard, FormsModule],
+  imports: [CommunityCard, FormsModule, EmptySearchCommunitiesMessage],
   template: `
     <section class="max-w-screen-xl mx-auto px-6">
       <input
@@ -26,13 +27,29 @@ export const routeMeta = {
         placeholder="Search communities"
         [(ngModel)]="search"
       />
-      <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-6">
-        @for (community of filteredCommunities(); track community) {
-          <li>
-            <app-community-card class="h-full" [community]="community" />
-          </li>
-        }
-      </ul>
+      @if (filteredCommunities().length) {
+        <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-6">
+          @for (community of filteredCommunities(); track community) {
+            <li>
+              <app-community-card class="h-full" [community]="community" />
+            </li>
+          }
+        </ul>
+      }
+
+      <!-- Show message when search has no results -->
+      @if (
+        search().length &&
+        !filteredCommunities().length &&
+        communities().length > 0
+      ) {
+        <app-empty-search-communities-message
+          [title]="'No communities found'"
+          [description]="
+            'We could not find any communities matching your search criteria. Try different keywords or browse all available communities.'
+          "
+        />
+      }
     </section>
   `,
 })

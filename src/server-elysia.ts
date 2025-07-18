@@ -67,8 +67,7 @@ export function app() {
         try {
           // parse(CommunityListSchema, communities);
           return (organizers as Community[]).filter(
-            (community) =>
-              community.type !== 'workshop' && community.type !== 'other',
+            (community) => community.type === 'angular-community',
           );
         } catch (error) {
           throw new Error('Invalid community data format');
