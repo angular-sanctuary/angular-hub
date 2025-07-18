@@ -2,7 +2,7 @@
   {
     "id": "angular-training",
     "name": "Angular Training",
-    "type": "workshop",
+    "type": "company",
     "location": "Sacramento, California (online)",
     "logo": "https://interstate21.com/images/monthly-workshops.png",
     "eventsUrl": null,
@@ -18,7 +18,7 @@
   {
     "id": "angular-love",
     "name": "Angular.love",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Warsaw, Poland",
     "logo": "/assets/logos/angular-love.png",
     "eventsUrl": "https://meetup.angular.love/",
@@ -34,7 +34,7 @@
   {
     "id": "angular-athens",
     "name": "Angular Athens",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Athens, Greece",
     "logo": "https://pbs.twimg.com/profile_images/1755173401780486144/f1qf_cxl_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/angular-athens/events/",
@@ -50,7 +50,7 @@
   {
     "id": "angular-belgium",
     "name": "Angular Belgium",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Brussels, Belgium",
     "logo": "https://pbs.twimg.com/profile_images/1751914584305205248/iqTMArsp_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/angular-belgium/events/",
@@ -66,7 +66,7 @@
   {
     "id": "angular-belgrade",
     "name": "NG Belgrade",
-    "type": "conference",
+    "type": "angular-community",
     "location": "Belgrade, Serbia",
     "logo": "assets/logos/angular-belgrade.webp",
     "eventsUrl": null,
@@ -82,7 +82,7 @@
   {
     "id": "angular-birmingham",
     "name": "Angular Birmingham",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Birmingham, United Kingdom",
     "logo": "https://pbs.twimg.com/profile_images/989263965426470914/NvCmzUH-_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/angular-birmingham/events/",
@@ -98,7 +98,7 @@
   {
     "id": "angular-boston",
     "name": "Angular Boston",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Boston, USA",
     "logo": "https://pbs.twimg.com/profile_images/901109285660368897/o3SysHna_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/angular-boston/events/",
@@ -114,7 +114,7 @@
   {
     "id": "angular-community",
     "name": "Angular Community Meetup",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Worldwide Online",
     "logo": "https://pbs.twimg.com/profile_images/1547959576015749120/96f233Pr_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/angularcommunity/events/",
@@ -130,7 +130,7 @@
   {
     "id": "angular-costa-rica",
     "name": "Angular Costa Rica",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "San Jose, Costa Rica",
     "logo": "https://pbs.twimg.com/profile_images/1275887771048083459/SldZRi5t_400x400.jpg",
     "eventsUrl": "https://www.facebook.com/angularcostarica/events",
@@ -146,7 +146,7 @@
   {
     "id": "angular-devs-france",
     "name": "Angular Devs France",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "France",
     "logo": "assets/logos/angular-devs-france.webp",
     "eventsUrl": "https://angulardevs.fr/",
@@ -162,7 +162,7 @@
   {
     "id": "angular-kenya",
     "name": "Angular Kenya",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Nairobi, Kenya",
     "logo": "https://pbs.twimg.com/profile_images/1793887126494318594/b-0w7moy_400x400.jpg",
     "eventsUrl": null,
@@ -178,7 +178,7 @@
   {
     "id": "angular-leipzig",
     "name": "Angular Leipzig",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Leipzig, Germany",
     "logo": "https://pbs.twimg.com/profile_images/1195421264351039488/CcSwDFwj_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/angular-meetup-leipzig/events/",
@@ -194,7 +194,7 @@
   {
     "id": "angular-london",
     "name": "Angular London",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "London, United Kingdom",
     "logo": "assets/logos/official-logo.webp",
     "eventsUrl": "https://www.meetup.com/angular-london/events/",
@@ -210,7 +210,7 @@
   {
     "id": "angular-macedonia",
     "name": "Angular Macedonia",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Skopje, Macedonia",
     "logo": "https://www.angularmacedonia.org/logo.webp",
     "eventsUrl": "https://www.meetup.com/angular-macedonia/events/",
@@ -226,7 +226,7 @@
   {
     "id": "angular-meetup-berlin",
     "name": "Angular Meetup Berlin",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Berlin, Germany",
     "logo": "https://pbs.twimg.com/profile_images/1729219640901951488/c4JxFpbx_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/angular-meetup-berlin/events/",
@@ -242,7 +242,7 @@
   {
     "id": "angular-meetup-graz",
     "name": "Angular Meetup Graz",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Graz, Austria",
     "logo": "assets/logos/official-logo.webp",
     "eventsUrl": "https://www.meetup.com/angular-meetup-graz/events/",
@@ -258,7 +258,7 @@
   {
     "id": "angular-meetup-hamburg",
     "name": "Angular Meetup Hamburg",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Hamburg, Germany",
     "logo": "https://pbs.twimg.com/profile_images/779215302324285440/ZW-a6Rkd_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/hamburg-angularjs-meetup/events/",
@@ -274,7 +274,7 @@
   {
     "id": "angular-melbourne",
     "name": "Angular Melbourne",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Melbourne, Australia",
     "logo": "assets/logos/official-logo.webp",
     "eventsUrl": "https://www.meetup.com/angular-melbourne/events/",
@@ -290,7 +290,7 @@
   {
     "id": "angular-nyc",
     "name": "AngularNYC",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "New York, USA",
     "logo": "https://pbs.twimg.com/profile_images/869774200604688384/8mRWQji-_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/angularnyc/events/",
@@ -306,7 +306,7 @@
   {
     "id": "angular-ruhr",
     "name": "Angular Ruhr",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Ruhrgebiet, Germany",
     "logo": "assets/logos/official-logo.webp",
     "eventsUrl": "https://www.meetup.com/angular-ruhr/events/",
@@ -322,7 +322,7 @@
   {
     "id": "angular-singapore",
     "name": "Angular Singapore",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Singapore",
     "logo": "https://pbs.twimg.com/profile_images/1392680645852209152/0adFuWWd_400x400.jpg",
     "eventsUrl": null,
@@ -338,7 +338,7 @@
   {
     "id": "angular-vienna",
     "name": "Angular Vienna",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Vienna, Austria",
     "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQHVBAzC4-DKFA/company-logo_200_200/company-logo_200_200/0/1714120314791?e=1756339200&v=beta&t=mcViGwbNL5xDMhaAHO8AWFYe9JLmxdMFuFQri0Dy-Gs",
     "eventsUrl": "https://www.meetup.com/angular-vienna/events/",
@@ -354,7 +354,7 @@
   {
     "id": "angular-warsaw",
     "name": "Angular Warsaw",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Warsaw, Poland",
     "logo": "/assets/logos/angular-warsaw.jpeg",
     "eventsUrl": "https://www.meetup.com/angular-warsaw/events/",
@@ -370,7 +370,7 @@
   {
     "id": "angular-wroclaw",
     "name": "Angular Wrocław",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Wrocław, Poland",
     "logo": "https://pbs.twimg.com/profile_images/1004807532970500096/ACJf4KS7_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/angularwroclaw/events/",
@@ -386,7 +386,7 @@
   {
     "id": "angular-zurich",
     "name": "Angular Zurich",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Zurich, Switzerland",
     "logo": "https://pbs.twimg.com/profile_images/1087264580831715328/jABSCpDF_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/angularzrh/events/",
@@ -402,7 +402,7 @@
   {
     "id": "ng-girls",
     "name": "ngGirls",
-    "type": "workshop",
+    "type": "angular-community",
     "location": "Worldwide Onsite",
     "logo": "https://pbs.twimg.com/profile_images/1757125339090653184/5wgfX_ZD_400x400.jpg",
     "eventsUrl": "https://www.ng-girls.org/",
@@ -418,7 +418,7 @@
   {
     "id": "ng-conf",
     "name": "ng-conf",
-    "type": "conference",
+    "type": "angular-community",
     "location": "Salt Lake City, UT, USA",
     "logo": "https://pbs.twimg.com/profile_images/1910095911948013568/lW9Jvz2A_400x400.jpg",
     "eventsUrl": null,
@@ -434,7 +434,7 @@
   {
     "id": "ng-poland",
     "name": "NG Poland",
-    "type": "conference",
+    "type": "angular-community",
     "location": "Warsaw, Poland",
     "logo": "https://ng-poland.pl/images/logos/logo-small-2024.webp",
     "eventsUrl": null,
@@ -450,7 +450,7 @@
   {
     "id": "ng-rome",
     "name": "NG Rome",
-    "type": "conference",
+    "type": "angular-community",
     "location": "Rome, Italy",
     "logo": "assets/logos/ng-rome.svg",
     "eventsUrl": null,
@@ -466,7 +466,7 @@
   {
     "id": "ng-lodz",
     "name": "ngLodz",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Łódź, Poland",
     "logo": "https://pbs.twimg.com/profile_images/1747266292191789056/6eDCWDd9_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/ng-lodz/events/",
@@ -482,7 +482,7 @@
   {
     "id": "ng-asia",
     "name": "Ng Asia",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Worldwide Online",
     "logo": "https://pbs.twimg.com/profile_images/1748238047056191488/QArIjHBp_400x400.jpg",
     "eventsUrl": null,
@@ -498,7 +498,7 @@
   {
     "id": "angular-sp",
     "name": "AngularSP",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "São Paulo, Brazil",
     "logo": "assets/logos/angular-sp.webp",
     "eventsUrl": "https://www.meetup.com/angularjs-sao-paulo/events/",
@@ -514,7 +514,7 @@
   {
     "id": "ng-india",
     "name": "ng-India",
-    "type": "conference",
+    "type": "angular-community",
     "location": "Delhi, India",
     "logo": "https://www.ng-ind.com/assets/images/logo/logo-min.png",
     "eventsUrl": null,
@@ -530,7 +530,7 @@
   {
     "id": "angular-meetup-hungary",
     "name": "Angular Meetup Hungary",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Budapest, Hungary",
     "logo": "/assets/logos/official-logo.webp",
     "eventsUrl": "https://www.meetup.com/angularhungary/events/",
@@ -546,7 +546,7 @@
   {
     "id": "angularday",
     "name": "angularday",
-    "type": "conference",
+    "type": "angular-community",
     "location": "Verona, Italy",
     "logo": "https://pbs.twimg.com/profile_images/1118451217309609984/DiZ0M3wW_400x400.png",
     "eventsUrl": null,
@@ -562,7 +562,7 @@
   {
     "id": "angulartinyconf",
     "name": "angulartinyconf",
-    "type": "conference",
+    "type": "angular-community",
     "location": null,
     "logo": "https://pbs.twimg.com/profile_images/1585105346590285824/mfLP8eq-_400x400.jpg",
     "eventsUrl": null,
@@ -578,7 +578,7 @@
   {
     "id": "angular-tlv",
     "name": "Angular TLV",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Tel Aviv, Israel",
     "logo": "https://angular-tlv.com/assets/tlv-header-logo.png",
     "eventsUrl": "https://www.meetup.com/angular-tlv/events/",
@@ -594,7 +594,7 @@
   {
     "id": "ng-de",
     "name": "NG-DE",
-    "type": "conference",
+    "type": "angular-community",
     "location": "Bonn, Germany",
     "logo": "assets/logos/ng-de.svg",
     "eventsUrl": null,
@@ -610,7 +610,7 @@
   {
     "id": "ng-be",
     "name": "NG-BE",
-    "type": "conference",
+    "type": "angular-community",
     "location": "Ghent, Belgium",
     "logo": "https://pbs.twimg.com/profile_images/1751914584305205248/iqTMArsp_400x400.jpg",
     "eventsUrl": null,
@@ -626,7 +626,7 @@
   {
     "id": "angular-rome",
     "name": "Angular Rome",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Rome, Italy",
     "logo": "https://raw.githubusercontent.com/ngrome/.github/main/assets/angular_rome_logo.png",
     "eventsUrl": null,
@@ -642,7 +642,7 @@
   {
     "id": "angular-japan-usergroup",
     "name": "Angular Japan UserGroup",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Japan",
     "logo": "assets/logos/ng-jp.svg",
     "eventsUrl": "https://ngjapan.connpass.com/event/",
@@ -658,7 +658,7 @@
   {
     "id": "ng-gunma",
     "name": "ng-gunma",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Gunma, Japan",
     "logo": "assets/logos/ng-gunma.png",
     "eventsUrl": "https://ng-gunma.connpass.com/event/",
@@ -674,7 +674,7 @@
   {
     "id": "ng-kato",
     "name": "NG Kato",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Katowice, Poland",
     "logo": "assets/logos/ng-kato.svg",
     "eventsUrl": "https://www.meetup.com/ngkato/events",
@@ -690,7 +690,7 @@
   {
     "id": "angular-community-peru",
     "name": "Angular Community Perú",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Lima, Peru",
     "logo": "https://www.angular-peru.com/icons/logo_AngularPeru.svg",
     "eventsUrl": null,
@@ -706,7 +706,7 @@
   {
     "id": "ng-venice",
     "name": "NG Venice",
-    "type": "conference",
+    "type": "angular-community",
     "location": "Venice, Italy",
     "logo": "https://ng-venice.org/wp-content/uploads/2024/11/solo-scudo.svg",
     "eventsUrl": null,
@@ -722,7 +722,7 @@
   {
     "id": "paris-angular",
     "name": "Paris Angular",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Paris, France",
     "logo": "assets/logos/paris-angular.png",
     "eventsUrl": "https://www.meetup.com/paris-angular/events",
@@ -738,7 +738,7 @@
   {
     "id": "angular-toronto",
     "name": "Angular Toronto",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Toronto, Canada",
     "logo": "/assets/logos/angular-toronto.png",
     "eventsUrl": "https://guild.host/angular-toronto/events",
@@ -754,7 +754,7 @@
   {
     "id": "angular-connect",
     "name": "AngularConnect",
-    "type": "conference",
+    "type": "angular-community",
     "location": "London, UK",
     "logo": "/assets/logos/angular-connect.png",
     "eventsUrl": null,
@@ -770,7 +770,7 @@
   {
     "id": "frontendnation",
     "name": "FrontendNation",
-    "type": "conference",
+    "type": "company",
     "location": null,
     "logo": "/assets/logos/official-logo.webp",
     "eventsUrl": "https://frontendnation.com",
@@ -786,7 +786,7 @@
   {
     "id": "ng-poznan",
     "name": "ngPoznan Angular Meetup",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Poznan, Poland",
     "logo": "/assets/logos/ng-poznan.png",
     "eventsUrl": "https://www.meetup.com/ng-poznan-meetup/events/",
@@ -802,7 +802,7 @@
   {
     "id": "dutch-angular-group",
     "name": "Dutch Angular Group",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Netherlands",
     "logo": "assets/logos/dutch-angular-group.svg",
     "eventsUrl": "https://www.meetup.com/dutch-angular-group/events/",
@@ -818,7 +818,7 @@
   {
     "id": "ng-mumbai",
     "name": "ng-Mumbai",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Mumbai, India",
     "logo": "/assets/logos/official-logo.webp",
     "eventsUrl": null,
@@ -834,7 +834,7 @@
   {
     "id": "swissangular",
     "name": "SwissAngular",
-    "type": "meetup",
+    "type": "angular-community",
     "location": "Zürich, Switzerland",
     "logo": "https://pbs.twimg.com/profile_images/1032699295336726528/eC3mUepL_400x400.jpg",
     "eventsUrl": "https://www.meetup.com/swiss-angular/events/",
@@ -850,7 +850,7 @@
   {
     "id": "ng-delhi",
     "name": "Ng Delhi",
-    "type": "conference",
+    "type": "angular-community",
     "location": "Delhi, India",
     "logo": "https://json.commudle.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMlZTQkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--3f4c1c3d80d968121d40100434abcde26078b2ce/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFKQUFXa0NRQUU2QzJ4dllXUmxjbnNHT2dsd1lXZGxNQT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--e1b8c3103b542b9d7ba47b2862e0d51860fbef22/Ng%20Delhi.png",
     "eventsUrl": "https://www.commudle.com/communities/ng-delhi/events?page=1",

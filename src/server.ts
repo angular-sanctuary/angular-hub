@@ -45,8 +45,7 @@ app.get('/api/v1/communities', async (req, res) => {
 
     // parse(CommunityListSchema, communities);
     const communities = (organizers as Community[]).filter(
-      (community) =>
-        community.type !== 'workshop' && community.type !== 'other',
+      (community) => community.type === 'angular-community',
     );
 
     res.json(communities);

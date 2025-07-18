@@ -2,7 +2,7 @@ import { Event } from './event.model';
 
 export type Community = {
   name: string;
-  type: 'workshop' | 'conference' | 'meetup' | 'other';
+  type: 'company' | 'community' | 'angular-community';
   // change to nested 2 properties (city / country) || Online
   location: string | null;
   logo: string | null;
@@ -15,4 +15,4 @@ export type Community = {
   youtubeUrl: string | null;
   twitchUrl: string | null;
   callForPapersUrl: string | null;
-}
+};
