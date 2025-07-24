@@ -2123,6 +2123,20 @@
     "url": "https://ngconf.angular-peru.com/"
   },
   {
+    "name": "Ng Conf Perú",
+    "organizerId": "angular-peru",
+    "type": "conference",
+    "location": "Lima, Peru",
+    "date": "2025-09-05",
+    "language": "Spanish",
+    "isFree": true,
+    "isRemote": false,
+    "isOnsite": true,
+    "callForPapersUrl": null,
+    "callForPapersDueDate": null,
+    "url": "https://ngconf.angular-peru.com/"
+  },
+  {
     "name": "NG Venice 2025",
     "organizerId": "ng-venice",
     "type": "conference",
